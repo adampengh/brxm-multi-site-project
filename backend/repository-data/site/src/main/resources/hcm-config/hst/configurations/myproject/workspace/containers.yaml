@@ -2,3 +2,49 @@ definitions:
   config:
     /hst:hst/hst:configurations/myproject/hst:workspace/hst:containers:
       jcr:primaryType: hst:containercomponentfolder
+      /base:
+        jcr:primaryType: hst:containercomponentfolder
+        /top:
+          .meta:residual-child-node-category: content
+          jcr:primaryType: hst:containercomponent
+          hippo:identifier: 3dacac20-565e-41f0-9886-d81af0944cf4
+          hst:label: Top
+          hst:xtype: hst.vbox
+        /footer:
+          .meta:residual-child-node-category: content
+          jcr:primaryType: hst:containercomponent
+          hippo:identifier: cb5ca250-f916-45d3-b932-da4d5f18178e
+          hst:label: Footer
+          hst:xtype: hst.vbox
+      /homepage:
+        jcr:primaryType: hst:containercomponentfolder
+        /main:
+          .meta:residual-child-node-category: content
+          jcr:primaryType: hst:containercomponent
+          hippo:identifier: 91288b58-0a44-4fae-b686-535d96a14c9b
+          hst:label: Home Page Main
+          hst:xtype: hst.vbox
+      /pagenotfound:
+        jcr:primaryType: hst:containercomponentfolder
+        /main:
+          .meta:residual-child-node-category: content
+          jcr:primaryType: hst:containercomponent
+          hippo:identifier: 37161503-fc31-4d67-9921-6bcdc1e3cb63
+          hst:label: Page-Not-Found Main
+          hst:xtype: hst.vbox
+      /newslist:
+        jcr:primaryType: hst:containercomponentfolder
+        /main:
+          .meta:residual-child-node-category: content
+          jcr:primaryType: hst:containercomponent
+          hippo:identifier: 7c53597f-ab90-4316-ad55-737355203477
+          hst:label: News List Main
+          hst:xtype: hst.vbox
+      /newspage:
+        jcr:primaryType: hst:containercomponentfolder
+        /main:
+          .meta:residual-child-node-category: content
+          jcr:primaryType: hst:containercomponent
+          hippo:identifier: 32f0ecc8-7331-4014-ba74-f66dce23e737
+          hst:label: News Page Main
+          hst:xtype: hst.vbox
