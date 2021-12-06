@@ -15,11 +15,11 @@
   <version>0.1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <!-- 
+  <!--
     The below project elements are emptied/overridden as otherwise their metadata would be
     inherited or merged from the parent hippo-cms7-release pom (or its hippo-cms7-project pom).
 
-    DO NOT remove these tags but instead fill them in appropriately as needed, 
+    DO NOT remove these tags but instead fill them in appropriately as needed,
     UNLESS the inherited values are valid for your project.
   -->
   <organization />
@@ -71,6 +71,7 @@
 
     <hippo.cms.locales>nl,de,fr,es,zh</hippo.cms.locales>
     <buildNumber>${maven.build.timestamp}</buildNumber>
+    <cargo.run.jvmargs>-Xmx4096m</cargo.run.jvmargs>
   </properties>
 
   <repositories>
@@ -291,6 +292,9 @@
             <artifactId>cargo-maven2-plugin</artifactId>
             <configuration>
               <configuration>
+                <properties>
+                  <cargo.jvmargs>${cargo.run.jvmargs}</cargo.jvmargs>
+                </properties>
                 <configfiles>
                   <configfile>
                     <file>${project.basedir}/conf/context.xml</file>
@@ -378,6 +382,15 @@
 
         <!-- Comment out Dockerfile instruction that copies development modules to an image -->
         <docker.brxm.copy.dev.libs.cmd>#</docker.brxm.copy.dev.libs.cmd>
+      </properties>
+    </profile>
+
+    <profile>
+      <!-- additional profile to combine with cargo:run to enable hotswap-agent:
+           $ mvn -P cargo.run,with-hotswap-agent-->
+      <id>with-hotswap-agent</id>
+      <properties>
+        <cargo.run.jvmargs>-agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=n -Xmx4096m -XXaltjvm=dcevm -javaagent:${project.basedir}/hotswap-agent-1.4.1.jar</cargo.run.jvmargs>
       </properties>
     </profile>
 
