@@ -58,5 +58,11 @@
       <artifactId>hippo-addon-wpm-cms-dependencies</artifactId>
       <type>pom</type>
     </dependency>
+
+    <dependency>
+      <groupId>com.bloomreach.commercedxp</groupId>
+      <artifactId>starterstore-frontend-ng</artifactId>
+      <version>${starterstore.version}</version>
+    </dependency>
   </dependencies>
 </project>
