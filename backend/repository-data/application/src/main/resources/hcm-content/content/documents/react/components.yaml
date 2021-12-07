@@ -1,0 +1,6 @@
+/content/documents/react/components:
+  jcr:primaryType: hippostd:folder
+  jcr:mixinTypes: ['hippo:named', 'mix:versionable']
+  jcr:uuid: eb24f31c-54be-411d-87ea-3425cfd5a1cc
+  hippo:name: Components
+  hippostd:foldertype: [new-document, new-folder]

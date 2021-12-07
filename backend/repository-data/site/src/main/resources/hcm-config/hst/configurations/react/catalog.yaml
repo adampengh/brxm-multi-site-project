@@ -1,0 +1,6 @@
+definitions:
+  config:
+    /hst:hst/hst:configurations/react/hst:catalog:
+      jcr:primaryType: hst:catalog
+      /react-catalog:
+        jcr:primaryType: hst:containeritempackage

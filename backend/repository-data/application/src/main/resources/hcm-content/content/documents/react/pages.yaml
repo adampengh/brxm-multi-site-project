@@ -1,0 +1,7 @@
+/content/documents/react/pages:
+  .meta:order-before: components
+  jcr:primaryType: hippostd:folder
+  jcr:mixinTypes: ['hippo:named', 'mix:versionable']
+  jcr:uuid: 89cc0a9f-73e8-4a48-9a02-bb910a5c7bca
+  hippo:name: Pages
+  hippostd:foldertype: [new-document, new-folder]

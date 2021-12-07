@@ -22,3 +22,6 @@ definitions:
       /myproject:
         jcr:primaryType: hst:configuration
         hst:inheritsfrom: [../common]
+      /react:
+        jcr:primaryType: hst:configuration
+        hst:inheritsfrom: [../common]
