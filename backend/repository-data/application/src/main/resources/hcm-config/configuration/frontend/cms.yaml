@@ -1,0 +1,30 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:frontend/cms/ui-extensions/commerceCategoryPicker:
+      jcr:primaryType: frontend:uiExtension
+      frontend:config: "{\r\n  \"apollo.server.url\": \"http://localhost:4000/graphql\"\
+        ,\r\n  \"default.connector.id\": \"brsm\",\r\n  \"field.connector.id\": \"\
+        myproject:connectorid\"\r\n}"
+      frontend:displayName: Commerce Category Picker
+      frontend:extensionPoint: document.field
+      frontend:initialHeightInPixels: 80
+      frontend:url: angular/starterstore/index.html?id=categories
+    /hippo:configuration/hippo:frontend/cms/ui-extensions/commerceProductPicker:
+      jcr:primaryType: frontend:uiExtension
+      frontend:config: "{\r\n  \"apollo.server.url\": \"http://localhost:4000/graphql\"\
+        ,\r\n  \"default.connector.id\": \"brsm\",\r\n  \"field.connector.id\": \"\
+        myproject:connectorid\"\r\n}"
+      frontend:displayName: Commerce Product Picker
+      frontend:extensionPoint: document.field
+      frontend:initialHeightInPixels: 300
+      frontend:url: angular/starterstore/index.html?id=products
+    /hippo:configuration/hippo:frontend/cms/ui-extensions/commerceProductVariantPicker:
+      jcr:primaryType: frontend:uiExtension
+      frontend:config: "{\r\n  \"apollo.server.url\": \"http://localhost:4000/graphql\"\
+        ,\r\n  \"default.connector.id\": \"brsm\",\r\n  \"field.connector.id\": \"\
+        myproject:connectorid\",\r\n  \"field.product.id\": \"myproject:productid\"\
+        \r\n}"
+      frontend:displayName: Commerce Product Variant Picker
+      frontend:extensionPoint: document.field
+      frontend:initialHeightInPixels: 300
+      frontend:url: angular/starterstore/index.html?id=product-variants
