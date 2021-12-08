@@ -18,7 +18,14 @@ import React from 'react';
 import axios from 'axios';
 import { Link, RouteComponentProps } from 'react-router-dom';
 import { BrComponent, BrPage, BrPageContext } from '@bloomreach/react-sdk';
-import { Banner, Content, Menu, NewsList } from './components';
+
+// Components
+import {
+  Banner,
+  Content,
+  Menu,
+  NewsList
+} from './components';
 
 export default function App(props: RouteComponentProps) {
   const configuration = {
@@ -27,7 +34,13 @@ export default function App(props: RouteComponentProps) {
     httpClient: axios,
     path: `${props.location.pathname}${props.location.search}`,
   };
-  const mapping = { Banner, Content, 'News List': NewsList, 'Simple Content': Content };
+
+  const mapping = {
+    Banner,
+    Content,
+    'News List': NewsList,
+    'Simple Content': Content
+  };
 
   return (
     <BrPage configuration={configuration} mapping={mapping}>

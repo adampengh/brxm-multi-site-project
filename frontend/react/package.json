@@ -4,11 +4,12 @@
   "version": "14.6.1",
   "private": true,
   "dependencies": {
-    "@bloomreach/react-sdk": "^14.6.1",
+    "@bloomreach/react-sdk": "^14.6.0",
     "axios": "^0.21",
     "react": "^16.14",
     "react-dom": "^16.14",
-    "react-router-dom": "^5.2"
+    "react-router-dom": "^5.2",
+    "typescript": "4.0.5"
   },
   "scripts": {
     "build": "SKIP_PREFLIGHT_CHECK=true react-scripts build",
@@ -36,7 +37,6 @@
     "@types/react-router-dom": "^5.1",
     "eslint": "^7.12",
     "eslint-config-react-app": "^6.0",
-    "react-scripts": "4.0.0",
-    "typescript": "^4.0"
+    "react-scripts": "4.0.0"
   }
 }
