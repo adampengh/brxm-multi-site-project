@@ -1,7 +1,132 @@
 /content/documents/react/pages:
-  .meta:order-before: components
   jcr:primaryType: hippostd:folder
-  jcr:mixinTypes: ['hippo:named', 'mix:versionable']
-  jcr:uuid: 89cc0a9f-73e8-4a48-9a02-bb910a5c7bca
+  jcr:mixinTypes: ['hippo:named', 'hippostd:xpagefolder', 'hippotranslation:translated',
+    'mix:versionable']
+  jcr:uuid: 0a80ffed-e43f-4389-a18d-b23158d9dbd7
   hippo:name: Pages
-  hippostd:foldertype: [new-document, new-folder]
+  hippostd:channelid: react
+  hippostd:foldertype: [new-ExperiencePage-document, new-ExperiencePage-folder]
+  hippotranslation:id: 794bbeb7-f2db-4aee-83a3-81f5cb960f84
+  hippotranslation:locale: en
+  /level-one:
+    jcr:primaryType: hippostd:folder
+    jcr:mixinTypes: ['hippo:named', 'hippostd:xpagefolder', 'hippotranslation:translated',
+      'mix:versionable']
+    jcr:uuid: 19198b4c-6459-44ff-a22d-3f6a3ac0e84f
+    hippo:name: Level One
+    hippostd:channelid: react
+    hippostd:foldertype: [new-ExperiencePage-document, new-ExperiencePage-folder]
+    hippotranslation:id: 6e997bab-1c1a-49bc-95ba-130ec399d269
+    hippotranslation:locale: en
+    /test:
+      jcr:primaryType: hippo:handle
+      jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+      jcr:uuid: cfac3f80-72f8-426c-be4e-51f96d6a1e77
+      hippo:name: Test
+      hippo:versionHistory: 3272885b-773e-424d-9a8b-ba54099c6bb2
+      /test[1]:
+        jcr:primaryType: myproject:ExperiencePage
+        jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
+        jcr:uuid: 442474ce-f5c3-4032-9737-b32b3800677f
+        hippo:availability: []
+        hippostd:retainable: false
+        hippostd:state: draft
+        hippostd:transferable: false
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2021-12-08T11:28:58.429-05:00
+        hippostdpubwf:lastModificationDate: 2021-12-08T11:29:10.933-05:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: f3c07ca6-768d-4a3f-bfe0-f9d3416b6cb5
+        hippotranslation:locale: en
+        /myproject:pageMetadata:
+          jcr:primaryType: myproject:PageMetadata
+          myproject:canonicalUrl: ''
+          myproject:metaDescription: ''
+          myproject:metaKeywords: ['']
+          myproject:ogDescription: ''
+          myproject:ogTitle: ''
+          myproject:ogType: website
+          myproject:ogUrl: ''
+          myproject:pageTitle: Test Page
+          /myproject:ogImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+      /test[2]:
+        jcr:primaryType: myproject:ExperiencePage
+        jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable', 'mix:versionable']
+        jcr:uuid: 4bc9d2f9-fb50-4a60-b8b3-bfb9d4ff08c8
+        hippo:availability: [preview]
+        hippostd:retainable: false
+        hippostd:state: unpublished
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2021-12-08T11:28:58.429-05:00
+        hippostdpubwf:lastModificationDate: 2021-12-08T11:29:43.518-05:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: f3c07ca6-768d-4a3f-bfe0-f9d3416b6cb5
+        hippotranslation:locale: en
+        /myproject:pageMetadata:
+          jcr:primaryType: myproject:PageMetadata
+          myproject:canonicalUrl: ''
+          myproject:metaDescription: ''
+          myproject:metaKeywords: ['']
+          myproject:ogDescription: ''
+          myproject:ogTitle: ''
+          myproject:ogType: website
+          myproject:ogUrl: ''
+          myproject:pageTitle: Test Page
+          /myproject:ogImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+        /hst:xpage:
+          jcr:primaryType: hst:xpage
+          jcr:uuid: c7ebf64c-e4ee-4efd-a2ac-aefe8122d8e7
+          hst:pageref: single-column
+          /3957ec49-26e0-4a67-9575-0a62393fa69a:
+            jcr:primaryType: hst:containercomponent
+            jcr:uuid: 580ef9e3-507b-4b7d-8611-e66c4aaeba64
+            hippo:identifier: f13b1855-66f4-4afb-88e4-2c4e85ad3740
+            hst:lastmodified: 2021-12-08T11:29:43.518-05:00
+      /test[3]:
+        jcr:primaryType: myproject:ExperiencePage
+        jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
+        jcr:uuid: a3bf40c3-fd2f-4e31-9749-52121a76d969
+        hippo:availability: [live]
+        hippostd:retainable: false
+        hippostd:state: published
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2021-12-08T11:28:58.429-05:00
+        hippostdpubwf:lastModificationDate: 2021-12-08T11:29:06.208-05:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippostdpubwf:publicationDate: 2021-12-08T11:29:10.650-05:00
+        hippotranslation:id: f3c07ca6-768d-4a3f-bfe0-f9d3416b6cb5
+        hippotranslation:locale: en
+        /myproject:pageMetadata:
+          jcr:primaryType: myproject:PageMetadata
+          myproject:canonicalUrl: ''
+          myproject:metaDescription: ''
+          myproject:metaKeywords: ['']
+          myproject:ogDescription: ''
+          myproject:ogTitle: ''
+          myproject:ogType: website
+          myproject:ogUrl: ''
+          myproject:pageTitle: Test Page
+          /myproject:ogImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+        /hst:xpage:
+          jcr:primaryType: hst:xpage
+          jcr:uuid: f1500ca1-7f39-4352-96f4-fa70926d666a
+          hst:pageref: single-column
+          /3957ec49-26e0-4a67-9575-0a62393fa69a:
+            jcr:primaryType: hst:containercomponent
+            jcr:uuid: ed0cecdf-37c1-41bb-be9b-707e8ffc34d2
+            hippo:identifier: f13b1855-66f4-4afb-88e4-2c4e85ad3740

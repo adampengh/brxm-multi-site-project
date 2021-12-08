@@ -5,6 +5,10 @@ definitions:
       /_any_:
         jcr:primaryType: hst:sitemapitem
         hst:componentconfigurationid: hst:pages/pagenotfound
+        hst:relativecontentpath: pages/${1}
+        /_index_:
+          jcr:primaryType: hst:sitemapitem
+          hst:relativecontentpath: ${parent}/index
       /pagenotfound:
         jcr:primaryType: hst:sitemapitem
         hst:componentconfigurationid: hst:pages/pagenotfound

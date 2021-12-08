@@ -1,6 +1,8 @@
 /content/documents/react:
   jcr:primaryType: hippostd:folder
-  jcr:mixinTypes: ['hippo:named', 'mix:versionable']
-  jcr:uuid: f281f754-b2f7-48aa-bcfe-d80ee6c9f0e8
+  jcr:mixinTypes: ['hippo:named', 'hippotranslation:translated', 'mix:versionable']
+  jcr:uuid: d3ac2d62-a38d-4cb0-b07d-c321ab31d75a
   hippo:name: React
-  hippostd:foldertype: [new-document, new-folder]
+  hippostd:foldertype: [new-translated-folder, new-document]
+  hippotranslation:id: 6fc6ae5a-c522-4526-9683-2773bb9741ae
+  hippotranslation:locale: en

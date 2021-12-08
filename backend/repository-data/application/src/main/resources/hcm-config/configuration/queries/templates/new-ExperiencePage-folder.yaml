@@ -1,0 +1,17 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:queries/hippo:templates/new-ExperiencePage-folder:
+      jcr:primaryType: hippostd:templatequery
+      hippostd:modify: [./_name, $name, './hippotranslation:id', $uuid, './hippotranslation:locale',
+        $inherited]
+      jcr:language: xpath
+      jcr:statement: /jcr:root/hippo:configuration/hippo:queries/hippo:templates/new-ExperiencePage-folder/hippostd:templates/node()
+      /hippostd:templates:
+        jcr:primaryType: hippostd:templates
+        /hippostd:folder:
+          jcr:primaryType: hippostd:folder
+          jcr:mixinTypes: ['hippotranslation:translated', 'mix:versionable']
+          hippostd:foldertype: [new-ExperiencePage-document, new-ExperiencePage-folder]
+          hippotranslation:id: generated id
+          hippotranslation:locale: inherited locale
+          jcr:uuid: 6b8a17d8-cfb8-4490-b7b8-521bcaaed282

@@ -1,0 +1,75 @@
+definitions:
+  config:
+    /hippo:namespaces/myproject/ExperiencePage:
+      jcr:primaryType: hipposysedit:templatetype
+      jcr:mixinTypes: ['editor:editable', 'mix:referenceable']
+      jcr:uuid: b0484491-f927-41ba-a622-46a98a7e0c2f
+      /hipposysedit:nodetype:
+        jcr:primaryType: hippo:handle
+        jcr:mixinTypes: ['mix:referenceable']
+        jcr:uuid: 3f179888-7f7c-4f7a-a6dc-c7b7c86e53ca
+        /hipposysedit:nodetype:
+          jcr:primaryType: hipposysedit:nodetype
+          jcr:mixinTypes: ['mix:referenceable', 'hipposysedit:remodel']
+          jcr:uuid: b174ead1-f1f3-4f93-a58a-5b46ea9a662e
+          hipposysedit:node: true
+          hipposysedit:supertype: ['myproject:basedocument', 'hippostd:relaxed', 'hippotranslation:translated']
+          hipposysedit:uri: http://www.myproject.com/myproject/nt/1.0
+          /pageMetadata:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: myproject:pageMetadata
+            hipposysedit:primary: false
+            hipposysedit:type: myproject:PageMetadata
+      /hipposysedit:prototypes:
+        jcr:primaryType: hipposysedit:prototypeset
+        /hipposysedit:prototype:
+          jcr:primaryType: myproject:ExperiencePage
+          hippostd:holder: holder
+          hippostd:state: draft
+          hippostdpubwf:createdBy: ''
+          hippostdpubwf:lastModifiedBy: ''
+          hippotranslation:id: document-type-locale-id
+          hippotranslation:locale: document-type-locale
+          jcr:mixinTypes: ['mix:referenceable']
+          jcr:uuid: 373c1123-78a3-4415-9b14-eeb2d4d0903c
+          hippostdpubwf:lastModificationDate: 2021-12-08T10:52:13.046-05:00
+          hippostdpubwf:creationDate: 2021-12-08T10:52:13.047-05:00
+          /myproject:pageMetadata:
+            jcr:primaryType: myproject:PageMetadata
+            myproject:canonicalUrl: ''
+            myproject:metaDescription: ''
+            myproject:metaKeywords: ['']
+            myproject:ogDescription: ''
+            myproject:ogTitle: ''
+            myproject:ogType: website
+            myproject:ogUrl: ''
+            myproject:pageTitle: ''
+            /myproject:ogImage:
+              jcr:primaryType: hippogallerypicker:imagelink
+              hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
+      /editor:templates:
+        jcr:primaryType: editor:templateset
+        /_default_:
+          jcr:primaryType: frontend:plugincluster
+          frontend:properties: [mode]
+          frontend:references: [wicket.model, model.compareTo, engine, validator.id]
+          frontend:services: [wicket.id, validator.id]
+          /root:
+            jcr:primaryType: frontend:plugin
+            item: ${cluster.id}.field
+            plugin.class: org.hippoecm.frontend.service.render.ListViewPlugin
+          /pageMetadata:
+            jcr:primaryType: frontend:plugin
+            caption: Page Metadata
+            field: pageMetadata
+            hint: ''
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.NodeFieldPlugin
+            wicket.id: ${cluster.id}.field
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig

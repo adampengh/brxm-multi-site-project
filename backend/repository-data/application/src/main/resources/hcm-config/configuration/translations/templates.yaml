@@ -14,6 +14,8 @@ definitions:
       new-banner-document: new banner document
       new-news-document: new news item
       new-news-folder: new news item folder
+      new-ExperiencePage-document: new Experience Page document
+      new-ExperiencePage-folder: new Experience Page folder
     /hippo:configuration/hippo:translations/hippo:templates/fr:
       new-resource-bundle: nouveau resource bundle
       new-untranslated-folder: nouveau dossier non traduit
