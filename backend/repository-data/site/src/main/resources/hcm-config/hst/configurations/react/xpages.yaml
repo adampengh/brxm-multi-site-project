@@ -1,0 +1,13 @@
+definitions:
+  config:
+    /hst:hst/hst:configurations/react/hst:xpages:
+      jcr:primaryType: hst:xpages
+      /single-column:
+        jcr:primaryType: hst:xpage
+        hst:label: Single Column Page
+        hst:referencecomponent: hst:abstractpages/base
+        /main:
+          jcr:primaryType: hst:containercomponent
+          hippo:identifier: 3957ec49-26e0-4a67-9575-0a62393fa69a
+          hst:xtype: hst.vbox
+          hst:label: Main
