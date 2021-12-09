@@ -16,6 +16,6 @@ definitions:
         hst:refId: pagenotfound
       /homepage:
         jcr:primaryType: hst:sitemapitem
-        hst:componentconfigurationid: hst:pages/homepage
         hst:pagetitle: Home Page
         hst:refId: root
+        hst:relativecontentpath: pages/homepage
