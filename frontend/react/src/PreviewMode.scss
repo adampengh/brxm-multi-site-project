@@ -1,0 +1,47 @@
+@import './scss/variables';
+
+.preview-mode {
+    align-content: center;
+    align-items: center;
+    background: $color-brand-primary;
+    border: 1px solid rgba($color-brand-primary, 0.8);
+    border-radius: 0;
+    bottom: 8px;
+    box-shadow: 2px -2px 4px rgba(220, 175, 175, 0.2);
+    display: grid;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    grid-template-columns: 1fr;
+    height: 60px;
+    justify-content: center;
+    left: 8px;
+    padding: 16px;
+    position: fixed;
+    right: 8px;
+    z-index: 9999;
+
+    p {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0;
+        text-align: center;
+    }
+    button {
+        background: $color-brand-secondary;
+        border: none;
+        color: #000;
+        cursor: pointer;
+        display: inline-block;
+        flex-grow: 0;
+        flex-shrink: 1;
+        font-weight: bold;
+        justify-content: center;
+        padding: 12px;
+        position: absolute;
+        right: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 200px
+    }
+}

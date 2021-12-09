@@ -130,3 +130,133 @@
             jcr:primaryType: hst:containercomponent
             jcr:uuid: ed0cecdf-37c1-41bb-be9b-707e8ffc34d2
             hippo:identifier: f13b1855-66f4-4afb-88e4-2c4e85ad3740
+  /homepage:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+    jcr:uuid: 33dfd7ee-81d8-4659-abd2-a4b3480ee3e2
+    hippo:name: Homepage
+    hippo:versionHistory: e9f3d7fc-2f75-4ff4-a5b8-06c46e9a4ddc
+    /homepage[1]:
+      jcr:primaryType: myproject:ExperiencePage
+      jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
+      jcr:uuid: 3e27bb92-46b4-4696-bebf-3d665f722fe7
+      hippo:availability: []
+      hippostd:retainable: false
+      hippostd:state: draft
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2021-12-08T20:56:45.502-05:00
+      hippostdpubwf:lastModificationDate: 2021-12-08T20:56:51.097-05:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: 5b0f7c79-b157-4922-8c40-92b92ece91e9
+      hippotranslation:locale: en
+      /myproject:pageMetadata:
+        jcr:primaryType: myproject:PageMetadata
+        myproject:canonicalUrl: ''
+        myproject:metaDescription: ''
+        myproject:metaKeywords: ['']
+        myproject:ogDescription: ''
+        myproject:ogTitle: ''
+        myproject:ogType: website
+        myproject:ogUrl: ''
+        myproject:pageTitle: Homepage
+        /myproject:ogImage:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+    /homepage[2]:
+      jcr:primaryType: myproject:ExperiencePage
+      jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable', 'mix:versionable']
+      jcr:uuid: 1c01646d-a3bc-40c0-8370-7cca8aadf2ef
+      hippo:availability: [preview]
+      hippostd:retainable: false
+      hippostd:state: unpublished
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2021-12-08T20:56:45.502-05:00
+      hippostdpubwf:lastModificationDate: 2021-12-08T20:58:03.968-05:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: 5b0f7c79-b157-4922-8c40-92b92ece91e9
+      hippotranslation:locale: en
+      /myproject:pageMetadata:
+        jcr:primaryType: myproject:PageMetadata
+        myproject:canonicalUrl: ''
+        myproject:metaDescription: ''
+        myproject:metaKeywords: ['']
+        myproject:ogDescription: ''
+        myproject:ogTitle: ''
+        myproject:ogType: website
+        myproject:ogUrl: ''
+        myproject:pageTitle: Homepage
+        /myproject:ogImage:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+      /hst:xpage:
+        jcr:primaryType: hst:xpage
+        jcr:uuid: c59519f1-b264-407d-b643-177d37917afc
+        hst:pageref: single-column
+        /3957ec49-26e0-4a67-9575-0a62393fa69a:
+          jcr:primaryType: hst:containercomponent
+          jcr:uuid: 9b24aff9-0b14-4960-a4ff-d75eee869394
+          hippo:identifier: 7658ded6-d05b-4b9c-b26f-cd4d48d116c4
+          hst:lastmodified: 2021-12-09T01:58:03.967Z
+          /banner:
+            jcr:primaryType: hst:containeritemcomponent
+            jcr:uuid: 9f3d8b9b-1708-4fd6-8d23-9f24634bfad3
+            hst:componentclassname: org.onehippo.cms7.essentials.components.EssentialsBannerComponent
+            hst:iconpath: images/essentials/catalog-component-icons/banner.svg
+            hst:label: Banner
+            hst:parameternames: [document, org.hippoecm.hst.core.component.template]
+            hst:parametervalues: [components/banners/homepage-banner, 'webfile:/freemarker/hstdefault/essentials-banner.ftl']
+            hst:template: essentials-banner
+    /homepage[3]:
+      jcr:primaryType: myproject:ExperiencePage
+      jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
+      jcr:uuid: ce141825-7909-4a44-b0fa-69df85ef19af
+      hippo:availability: [live]
+      hippostd:retainable: false
+      hippostd:state: published
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2021-12-08T20:56:45.502-05:00
+      hippostdpubwf:lastModificationDate: 2021-12-08T20:58:03.968-05:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippostdpubwf:publicationDate: 2021-12-08T20:58:06.168-05:00
+      hippotranslation:id: 5b0f7c79-b157-4922-8c40-92b92ece91e9
+      hippotranslation:locale: en
+      /myproject:pageMetadata:
+        jcr:primaryType: myproject:PageMetadata
+        myproject:canonicalUrl: ''
+        myproject:metaDescription: ''
+        myproject:metaKeywords: ['']
+        myproject:ogDescription: ''
+        myproject:ogTitle: ''
+        myproject:ogType: website
+        myproject:ogUrl: ''
+        myproject:pageTitle: Homepage
+        /myproject:ogImage:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+      /hst:xpage:
+        jcr:primaryType: hst:xpage
+        jcr:uuid: 95291a1a-9404-4851-afea-6b783bac0292
+        hst:pageref: single-column
+        /3957ec49-26e0-4a67-9575-0a62393fa69a:
+          jcr:primaryType: hst:containercomponent
+          jcr:uuid: be14ef84-cd8f-40a6-a3b2-4e4ecd33011e
+          hippo:identifier: 7658ded6-d05b-4b9c-b26f-cd4d48d116c4
+          hst:lastmodified: 2021-12-09T01:58:03.967Z
+          /banner:
+            jcr:primaryType: hst:containeritemcomponent
+            jcr:uuid: faa62b28-5672-4974-8ebc-a4a843476709
+            hst:componentclassname: org.onehippo.cms7.essentials.components.EssentialsBannerComponent
+            hst:iconpath: images/essentials/catalog-component-icons/banner.svg
+            hst:label: Banner
+            hst:parameternames: [document, org.hippoecm.hst.core.component.template]
+            hst:parametervalues: [components/banners/homepage-banner, 'webfile:/freemarker/hstdefault/essentials-banner.ftl']
+            hst:template: essentials-banner

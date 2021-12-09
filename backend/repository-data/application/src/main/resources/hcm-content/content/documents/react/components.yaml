@@ -6,3 +6,100 @@
   hippostd:foldertype: [new-translated-folder, new-document]
   hippotranslation:id: 501db79b-d342-463d-bbdb-c8ece8d35daf
   hippotranslation:locale: en
+  /banners:
+    jcr:primaryType: hippostd:folder
+    jcr:mixinTypes: ['hippo:named', 'hippotranslation:translated', 'mix:versionable']
+    jcr:uuid: d06a6624-0113-4ad9-9f26-ad0b0d2fb0e6
+    hippo:name: Banners
+    hippostd:foldertype: [new-banner-document, new-banner-folder]
+    hippotranslation:id: 2051c530-54aa-4f1e-9e3c-39fb64e1733d
+    hippotranslation:locale: en
+    /homepage-banner:
+      jcr:primaryType: hippo:handle
+      jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+      jcr:uuid: 21aaabb5-1b23-4bef-ad0f-3559fdaaa516
+      hippo:name: Homepage Banner
+      hippo:versionHistory: 8c23c1f5-4191-4de9-8a05-0973195fe994
+      /homepage-banner[1]:
+        jcr:primaryType: myproject:bannerdocument
+        jcr:mixinTypes: ['mix:referenceable']
+        jcr:uuid: 5ec2dd25-99f3-4712-a219-09488672b7bd
+        hippo:availability: []
+        hippo:related___pathreference: []
+        hippostd:retainable: false
+        hippostd:state: draft
+        hippostd:transferable: false
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2021-12-08T20:33:16.134-05:00
+        hippostdpubwf:lastModificationDate: 2021-12-08T20:56:09.535-05:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: ccbe4826-fc33-4f5d-905d-950f8b0e37b5
+        hippotranslation:locale: en
+        myproject:title: Homepage Banner
+        /myproject:content:
+          jcr:primaryType: hippostd:html
+          hippostd:content: <h1>This is the homepage banner</h1>
+        /myproject:image:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: 9e440e6d-e93a-4d5f-913b-9c3b0867c812
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+        /myproject:link:
+          jcr:primaryType: hippo:mirror
+          hippo:docbase: cfac3f80-72f8-426c-be4e-51f96d6a1e77
+      /homepage-banner[2]:
+        jcr:primaryType: myproject:bannerdocument
+        jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+        jcr:uuid: 40e7d32c-f463-4683-b31a-223949532ec3
+        hippo:availability: [preview]
+        hippo:related___pathreference: []
+        hippostd:retainable: false
+        hippostd:state: unpublished
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2021-12-08T20:33:16.134-05:00
+        hippostdpubwf:lastModificationDate: 2021-12-08T20:56:07.456-05:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: ccbe4826-fc33-4f5d-905d-950f8b0e37b5
+        hippotranslation:locale: en
+        myproject:title: Homepage Banner
+        /myproject:content:
+          jcr:primaryType: hippostd:html
+          hippostd:content: <h1>This is the homepage banner</h1>
+        /myproject:image:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: 9e440e6d-e93a-4d5f-913b-9c3b0867c812
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+        /myproject:link:
+          jcr:primaryType: hippo:mirror
+          hippo:docbase: cfac3f80-72f8-426c-be4e-51f96d6a1e77
+      /homepage-banner[3]:
+        jcr:primaryType: myproject:bannerdocument
+        jcr:mixinTypes: ['mix:referenceable']
+        jcr:uuid: b8cfa805-e9d6-4160-beaa-b7444ed0bb08
+        hippo:availability: [live]
+        hippo:related___pathreference: []
+        hippostd:retainable: false
+        hippostd:state: published
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2021-12-08T20:33:16.134-05:00
+        hippostdpubwf:lastModificationDate: 2021-12-08T20:56:07.456-05:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippostdpubwf:publicationDate: 2021-12-08T20:56:09.255-05:00
+        hippotranslation:id: ccbe4826-fc33-4f5d-905d-950f8b0e37b5
+        hippotranslation:locale: en
+        myproject:title: Homepage Banner
+        /myproject:content:
+          jcr:primaryType: hippostd:html
+          hippostd:content: <h1>This is the homepage banner</h1>
+        /myproject:image:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: 9e440e6d-e93a-4d5f-913b-9c3b0867c812
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+        /myproject:link:
+          jcr:primaryType: hippo:mirror
+          hippo:docbase: cfac3f80-72f8-426c-be4e-51f96d6a1e77
