@@ -73,6 +73,7 @@
     <hippo.cms.locales>nl,de,fr,es,zh</hippo.cms.locales>
     <buildNumber>${maven.build.timestamp}</buildNumber>
     <cargo.run.jvmargs>-Xmx4096m</cargo.run.jvmargs>
+     <bloomreach.forge.sitemapv2.version>2.0.6</bloomreach.forge.sitemapv2.version>
   </properties>
 
   <repositories>
@@ -89,6 +90,18 @@
       <id>hippo-maven2-enterprise</id>
       <name>Hippo Enterprise Maven 2</name>
       <url>https://maven.onehippo.com/maven2-enterprise</url>
+    </repository>
+    <repository>
+      <id>hippo-forge</id>
+      <name>Bloomreach Forge Maven 2 repository.</name>
+      <url>https://maven.onehippo.com/maven2-forge/</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <layout>default</layout>
     </repository>
   </repositories>
 
@@ -121,6 +134,18 @@
         <groupId>org.freemarker</groupId>
         <artifactId>freemarker</artifactId>
         <version>${freemarker.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.onehippo.cms7</groupId>
+        <artifactId>hippo-plugin-sitemapv2-component</artifactId>
+        <version>${bloomreach.forge.sitemapv2.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.onehippo.cms7</groupId>
+        <artifactId>hippo-plugin-sitemapv2-hcm-site</artifactId>
+        <version>${bloomreach.forge.sitemapv2.version}</version>
       </dependency>
 
     </dependencies>
