@@ -1,3 +1,4 @@
 /hst:hst/hst:configurations/react/hst:workspace/hst:sitemenus/main/home:
+  .meta:order-before: Test
   jcr:primaryType: hst:sitemenuitem
   hst:referencesitemapitem: root

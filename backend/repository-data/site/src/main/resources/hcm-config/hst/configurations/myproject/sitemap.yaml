@@ -28,8 +28,3 @@ definitions:
           jcr:primaryType: hst:sitemapitem
           hst:componentconfigurationid: hst:pages/newslist
           hst:relativecontentpath: ${parent}/${1}
-      /robots.txt:
-        jcr:primaryType: hst:sitemapitem
-        hst:componentconfigurationid: hst:pages/robotstxt
-        hst:hiddeninchannelmanager: true
-        hst:relativecontentpath: ../administration/robots

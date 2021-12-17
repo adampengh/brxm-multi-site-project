@@ -1,0 +1,4 @@
+/hst:hst/hst:configurations/react/hst:workspace/hst:sitemenus/main/Test:
+  jcr:primaryType: hst:sitemenuitem
+  hst:referencesitemapitem: level-one/test
+  hst:repobased: false

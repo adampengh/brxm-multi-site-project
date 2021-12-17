@@ -32,22 +32,26 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 app.use(express.static(path.join(__dirname, 'build')));
 
-app.use('/robots.txt', createProxyMiddleware({
-  target: 'http://www.example.org',
+// Proxy robots.txt to brXM
+app.get('/robots.txt', createProxyMiddleware({
+  target: 'http://localhost:8080', // Only the protocol and domain
   changeOrigin: true,
+  pathRewrite: {
+    '/robots.txt': '/site/robots.txt'
+  }
 }));
 
-app.use('/sitemap.xml', createProxyMiddleware({
-  target: 'http://localhost:8080/site/sitemap.xml',
+// Proxy sitemap.xml to brXM
+app.get('/sitemap.xml', createProxyMiddleware({
+  target: 'http://localhost:8080', // Only the protocol and domain
   changeOrigin: true,
+  pathRewrite: {
+    '/sitemap.xml': '/site/sitemap.xml'
+  }
 }));
 
-// Handle GET requests to /api route
-app.get("/api", (req, res) => {
-  res.json({ message: "Hello from server!" });
-});
 
-app.get('*', (req, res) => {
+app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
