@@ -23,7 +23,7 @@
       jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
       jcr:uuid: cfac3f80-72f8-426c-be4e-51f96d6a1e77
       hippo:name: Test
-      hippo:versionHistory: 3272885b-773e-424d-9a8b-ba54099c6bb2
+      hippo:versionHistory: 2aee45a5-f2d6-45e6-8fdc-e6888a457aba
       /test[1]:
         jcr:primaryType: myproject:ExperiencePage
         jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
@@ -63,7 +63,7 @@
         hippostd:state: unpublished
         hippostdpubwf:createdBy: admin
         hippostdpubwf:creationDate: 2021-12-08T11:28:58.429-05:00
-        hippostdpubwf:lastModificationDate: 2021-12-08T11:29:43.518-05:00
+        hippostdpubwf:lastModificationDate: 2021-12-16T13:13:47.895-05:00
         hippostdpubwf:lastModifiedBy: admin
         hippotranslation:id: f3c07ca6-768d-4a3f-bfe0-f9d3416b6cb5
         hippotranslation:locale: en
@@ -91,7 +91,16 @@
             jcr:primaryType: hst:containercomponent
             jcr:uuid: 580ef9e3-507b-4b7d-8611-e66c4aaeba64
             hippo:identifier: f13b1855-66f4-4afb-88e4-2c4e85ad3740
-            hst:lastmodified: 2021-12-08T11:29:43.518-05:00
+            hst:lastmodified: 2021-12-16T18:13:47.895Z
+            /banner:
+              jcr:primaryType: hst:containeritemcomponent
+              jcr:uuid: a4b6fea2-811a-4845-842d-c1a05f94488c
+              hst:componentclassname: org.onehippo.cms7.essentials.components.EssentialsBannerComponent
+              hst:iconpath: images/essentials/catalog-component-icons/banner.svg
+              hst:label: Banner
+              hst:parameternames: [document, org.hippoecm.hst.core.component.template]
+              hst:parametervalues: [components/banners/homepage-banner, 'webfile:/freemarker/hstdefault/essentials-banner.ftl']
+              hst:template: essentials-banner
       /test[3]:
         jcr:primaryType: myproject:ExperiencePage
         jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
@@ -101,9 +110,9 @@
         hippostd:state: published
         hippostdpubwf:createdBy: admin
         hippostdpubwf:creationDate: 2021-12-08T11:28:58.429-05:00
-        hippostdpubwf:lastModificationDate: 2021-12-08T11:29:06.208-05:00
+        hippostdpubwf:lastModificationDate: 2021-12-16T13:13:47.895-05:00
         hippostdpubwf:lastModifiedBy: admin
-        hippostdpubwf:publicationDate: 2021-12-08T11:29:10.650-05:00
+        hippostdpubwf:publicationDate: 2021-12-16T13:13:52.635-05:00
         hippotranslation:id: f3c07ca6-768d-4a3f-bfe0-f9d3416b6cb5
         hippotranslation:locale: en
         /myproject:pageMetadata:
@@ -124,12 +133,22 @@
             hippo:values: []
         /hst:xpage:
           jcr:primaryType: hst:xpage
-          jcr:uuid: f1500ca1-7f39-4352-96f4-fa70926d666a
+          jcr:uuid: 465b54d6-648e-4cda-a873-806e1d94ddea
           hst:pageref: single-column
           /3957ec49-26e0-4a67-9575-0a62393fa69a:
             jcr:primaryType: hst:containercomponent
-            jcr:uuid: ed0cecdf-37c1-41bb-be9b-707e8ffc34d2
+            jcr:uuid: 1c308f3c-bec0-4205-92b7-02951acf57fc
             hippo:identifier: f13b1855-66f4-4afb-88e4-2c4e85ad3740
+            hst:lastmodified: 2021-12-16T18:13:47.895Z
+            /banner:
+              jcr:primaryType: hst:containeritemcomponent
+              jcr:uuid: d8f0e02b-1280-4e62-a336-0adda15c4e9e
+              hst:componentclassname: org.onehippo.cms7.essentials.components.EssentialsBannerComponent
+              hst:iconpath: images/essentials/catalog-component-icons/banner.svg
+              hst:label: Banner
+              hst:parameternames: [document, org.hippoecm.hst.core.component.template]
+              hst:parametervalues: [components/banners/homepage-banner, 'webfile:/freemarker/hstdefault/essentials-banner.ftl']
+              hst:template: essentials-banner
   /homepage:
     jcr:primaryType: hippo:handle
     jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']

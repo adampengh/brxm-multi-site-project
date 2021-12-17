@@ -103,3 +103,91 @@
         /myproject:link:
           jcr:primaryType: hippo:mirror
           hippo:docbase: cfac3f80-72f8-426c-be4e-51f96d6a1e77
+    /page-not-found:
+      jcr:primaryType: hippo:handle
+      jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+      jcr:uuid: 8bb44f55-876d-436a-bc5e-e59c2a4f59db
+      hippo:name: Page Not Found
+      hippo:versionHistory: 3c6d29ac-1199-4c88-9a67-d5a036a6877c
+      /page-not-found[1]:
+        jcr:primaryType: myproject:bannerdocument
+        jcr:mixinTypes: ['mix:referenceable']
+        jcr:uuid: 440d9e46-f08f-4d83-9088-ae02fc4ec414
+        hippo:availability: []
+        hippo:related___pathreference: []
+        hippostd:retainable: false
+        hippostd:state: draft
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2021-12-15T20:28:58.445-05:00
+        hippostdpubwf:lastModificationDate: 2021-12-15T20:29:16.517-05:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: d9d53bc3-f06d-472c-a135-3a1809d77ca0
+        hippotranslation:locale: en
+        myproject:title: 404 - Page Not Found
+        /myproject:content:
+          jcr:primaryType: hippostd:html
+          hippostd:content: ''
+        /myproject:image:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: dc6c2247-d3f4-4be0-976e-749b69927eee
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+        /myproject:link:
+          jcr:primaryType: hippo:mirror
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+      /page-not-found[2]:
+        jcr:primaryType: myproject:bannerdocument
+        jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+        jcr:uuid: bef11c6f-b5c9-4d8a-8001-1238cbad1b7f
+        hippo:availability: [preview]
+        hippo:related___pathreference: []
+        hippostd:retainable: false
+        hippostd:state: unpublished
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2021-12-15T20:28:58.445-05:00
+        hippostdpubwf:lastModificationDate: 2021-12-15T20:29:16.390-05:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: d9d53bc3-f06d-472c-a135-3a1809d77ca0
+        hippotranslation:locale: en
+        myproject:title: 404 - Page Not Found
+        /myproject:content:
+          jcr:primaryType: hippostd:html
+          hippostd:content: ''
+        /myproject:image:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: dc6c2247-d3f4-4be0-976e-749b69927eee
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+        /myproject:link:
+          jcr:primaryType: hippo:mirror
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+      /page-not-found[3]:
+        jcr:primaryType: myproject:bannerdocument
+        jcr:mixinTypes: ['mix:referenceable']
+        jcr:uuid: 2430c889-50e9-4f36-869c-df2f464d3be1
+        hippo:availability: [live]
+        hippo:related___pathreference: []
+        hippostd:retainable: false
+        hippostd:state: published
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2021-12-15T20:28:58.445-05:00
+        hippostdpubwf:lastModificationDate: 2021-12-15T20:29:16.390-05:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippostdpubwf:publicationDate: 2021-12-15T20:29:18.343-05:00
+        hippotranslation:id: d9d53bc3-f06d-472c-a135-3a1809d77ca0
+        hippotranslation:locale: en
+        myproject:title: 404 - Page Not Found
+        /myproject:content:
+          jcr:primaryType: hippostd:html
+          hippostd:content: ''
+        /myproject:image:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: dc6c2247-d3f4-4be0-976e-749b69927eee
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+        /myproject:link:
+          jcr:primaryType: hippo:mirror
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
