@@ -17,6 +17,7 @@
 import React from 'react';
 import axios from 'axios';
 import Cookies from 'universal-cookie';
+import GTM from './GTM';
 import { Link, RouteComponentProps } from 'react-router-dom';
 import { BrComponent, BrPage, BrPageContext } from '@bloomreach/react-sdk';
 import PreviewMode from './PreviewMode';
@@ -93,6 +94,7 @@ export default function App(props: RouteComponentProps) {
                     }
                 }}
             </BrPageContext.Consumer>
+            <GTM />
         </BrPage>
     );
 }
