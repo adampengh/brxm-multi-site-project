@@ -16,6 +16,12 @@
 [myproject:bannerdocument] > hippostd:relaxed, hippotranslation:translated, myproject:basedocument
   orderable
 
+[myproject:imageCompound] > hippo:compound, hippostd:relaxed
+  orderable
+
+[myproject:navigationBanner] > hippostd:relaxed, hippotranslation:translated, myproject:basedocument
+  orderable
+
 [myproject:newsdocument] > hippostd:relaxed, hippotranslation:translated, myproject:basedocument
   orderable
 

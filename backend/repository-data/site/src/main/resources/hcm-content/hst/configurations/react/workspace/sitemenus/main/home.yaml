@@ -1,4 +1,5 @@
-/hst:hst/hst:configurations/react/hst:workspace/hst:sitemenus/main/home:
-  .meta:order-before: Test
+/hst:hst/hst:configurations/react/hst:workspace/hst:sitemenus/main/Home:
+  .meta:order-before: Bed and Bath
   jcr:primaryType: hst:sitemenuitem
   hst:referencesitemapitem: root
+  hst:repobased: false

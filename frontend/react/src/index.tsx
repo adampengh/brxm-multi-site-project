@@ -23,8 +23,9 @@ import {
   Switch,
 } from 'react-router-dom';
 
-import './index.css';
 import App from './App';
+
+import './scss/styles.scss';
 
 ReactDOM.render(
   <BrowserRouter>

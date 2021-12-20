@@ -1,0 +1,120 @@
+/content/documents/react/navigation-banners:
+  jcr:primaryType: hippostd:folder
+  jcr:mixinTypes: ['hippo:named', 'hippotranslation:translated', 'mix:versionable']
+  jcr:uuid: 7a05d152-ecbc-4853-8312-935cf0fbd506
+  hippo:name: Navigation Banners
+  hippostd:foldertype: [new-navigationBanner-document]
+  hippotranslation:id: a2092c79-3603-4812-ad9a-b2685aaf177f
+  hippotranslation:locale: en
+  /bath-and-body:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+    jcr:uuid: 4701094c-adf8-4494-97d7-e892ee448906
+    hippo:name: Bath and Body
+    hippo:versionHistory: 36596f85-74fc-4499-93a9-733090c78543
+    /bath-and-body[1]:
+      jcr:primaryType: myproject:navigationBanner
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: 89b3ff32-2e0c-497e-9017-cac9d0017f7d
+      hippo:availability: []
+      hippostd:retainable: false
+      hippostd:state: draft
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2021-12-20T09:50:02.975-05:00
+      hippostdpubwf:lastModificationDate: 2021-12-20T10:52:48.280-05:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: b47a304e-c218-45b0-a63a-de4f7e1af227
+      hippotranslation:locale: en
+      myproject:heading: Bath & Body Store
+      /myproject:image:
+        jcr:primaryType: myproject:imageCompound
+        myproject:altText: Bath and Body Navigation Banner
+        /myproject:mobileImage:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: dba85cc1-8e44-4a34-8603-35329775470a
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+        /myproject:desktopImage:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+        /myproject:tabletImage:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+    /bath-and-body[2]:
+      jcr:primaryType: myproject:navigationBanner
+      jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+      jcr:uuid: 372b9f93-670b-45ea-a61a-f6346b169751
+      hippo:availability: [preview]
+      hippostd:retainable: false
+      hippostd:state: unpublished
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2021-12-20T09:50:02.975-05:00
+      hippostdpubwf:lastModificationDate: 2021-12-20T10:52:50.282-05:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: b47a304e-c218-45b0-a63a-de4f7e1af227
+      hippotranslation:locale: en
+      myproject:heading: Bath & Body Store
+      /myproject:image:
+        jcr:primaryType: myproject:imageCompound
+        myproject:altText: Bath and Body Navigation Banner
+        /myproject:mobileImage:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: dba85cc1-8e44-4a34-8603-35329775470a
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+        /myproject:desktopImage:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+        /myproject:tabletImage:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+    /bath-and-body[3]:
+      jcr:primaryType: myproject:navigationBanner
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: 9cc0711a-8a4e-4872-9089-3a2594c2346e
+      hippo:availability: [live]
+      hippostd:retainable: false
+      hippostd:state: published
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2021-12-20T09:50:02.975-05:00
+      hippostdpubwf:lastModificationDate: 2021-12-20T10:52:50.282-05:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippostdpubwf:publicationDate: 2021-12-20T10:52:52.225-05:00
+      hippotranslation:id: b47a304e-c218-45b0-a63a-de4f7e1af227
+      hippotranslation:locale: en
+      myproject:heading: Bath & Body Store
+      /myproject:image:
+        jcr:primaryType: myproject:imageCompound
+        myproject:altText: Bath and Body Navigation Banner
+        /myproject:mobileImage:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: dba85cc1-8e44-4a34-8603-35329775470a
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+        /myproject:desktopImage:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+        /myproject:tabletImage:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []

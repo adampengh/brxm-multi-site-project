@@ -1,0 +1,34 @@
+/content/gallery/react/navigation-banners:
+  jcr:primaryType: hippogallery:stdImageGallery
+  jcr:mixinTypes: ['hippo:named', 'mix:versionable']
+  jcr:uuid: 68756df6-f5f1-4f1d-9cf0-e9b710859d28
+  hippo:name: Navigation Banners
+  hippostd:foldertype: [new-image-folder]
+  hippostd:gallerytype: ['hippogallery:imageset']
+  /bathandbodyworks-interiors-14.jpeg:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['mix:referenceable']
+    jcr:uuid: dba85cc1-8e44-4a34-8603-35329775470a
+    /bathandbodyworks-interiors-14.jpeg:
+      jcr:primaryType: hippogallery:imageset
+      hippo:availability: [live, preview]
+      hippogallery:filename: bathandbodyworks-interiors-14.jpeg
+      /hippogallery:thumbnail:
+        jcr:primaryType: hippogallery:image
+        hippo:filename: bathandbodyworks-interiors-14.jpeg
+        hippogallery:height: 41
+        hippogallery:width: 60
+        jcr:data:
+          type: binary
+          resource: /content/gallery/react/navigation-banners/bathandbodyworks-interiors-14.jpeg/bathandbodyworks-interiors-14_thumbnail.jpeg
+        jcr:lastModified: 2021-12-20T09:51:03.046-05:00
+        jcr:mimeType: image/jpeg
+      /hippogallery:original:
+        jcr:primaryType: hippogallery:image
+        hippogallery:height: 690
+        hippogallery:width: 1000
+        jcr:data:
+          type: binary
+          resource: /content/gallery/react/navigation-banners/bathandbodyworks-interiors-14.jpeg/bathandbodyworks-interiors-14_original.jpeg
+        jcr:lastModified: 2021-12-20T09:51:03.046-05:00
+        jcr:mimeType: image/jpeg

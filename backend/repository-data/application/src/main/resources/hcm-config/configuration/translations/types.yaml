@@ -81,3 +81,8 @@ definitions:
       /en:
         jcr:primaryType: hipposys:resourcebundle
         jcr:name: Experience Page
+    /hippo:configuration/hippo:translations/hippo:types/myproject:navigationBanner:
+      jcr:primaryType: hipposys:resourcebundles
+      /en:
+        jcr:primaryType: hipposys:resourcebundle
+        jcr:name: Navigation Banner

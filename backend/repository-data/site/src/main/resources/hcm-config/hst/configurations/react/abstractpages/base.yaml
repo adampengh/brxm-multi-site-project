@@ -2,8 +2,6 @@ definitions:
   config:
     /hst:hst/hst:configurations/react/hst:abstractpages/base:
       jcr:primaryType: hst:component
-      /menu:
-        jcr:primaryType: hst:component
-        hst:componentclassname: org.onehippo.cms7.essentials.components.EssentialsMenuComponent
-        hst:parameternames: [selectedMenu, level, menu]
-        hst:parametervalues: ['on', '1', main]
+      /navigation:
+        jcr:primaryType: hst:containercomponentreference
+        hst:referencecomponent: base/navigation

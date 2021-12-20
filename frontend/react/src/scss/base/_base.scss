@@ -1,0 +1,28 @@
+body {
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 14px;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+
+    &[data-menu-open="true"] {
+        overflow-y: hidden;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.has-edit-button:not(.navigation) {
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    min-height: 1000px;
+}

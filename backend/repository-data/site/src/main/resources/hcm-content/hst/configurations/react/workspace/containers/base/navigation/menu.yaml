@@ -1,0 +1,6 @@
+/hst:hst/hst:configurations/react/hst:workspace/hst:containers/base/navigation/menu:
+  jcr:primaryType: hst:containeritemcomponent
+  hst:componentclassname: org.example.components.MenuItemBanners
+  hst:label: Navigation
+  hst:parameternames: [selectedMenu, level, menu]
+  hst:parametervalues: ['on', '1', main]

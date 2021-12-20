@@ -1,4 +1,5 @@
 /content/documents/react/pages:
+  .meta:order-before: navigation-banners
   jcr:primaryType: hippostd:folder
   jcr:mixinTypes: ['hippo:named', 'hippostd:xpagefolder', 'hippotranslation:translated',
     'mix:versionable']
