@@ -15,6 +15,7 @@
  */
 
 import React from 'react';
+import { Container, Row, Column } from '../../uikit/Layout';
 import { Link } from 'react-router-dom';
 import { Document, ImageSet } from '@bloomreach/spa-sdk';
 import { BrManageContentButton, BrProps } from '@bloomreach/react-sdk';
@@ -32,23 +33,28 @@ export function Banner(props: BrProps) {
   const link = linkRef && props.page.getContent<Document>(linkRef);
 
   return (
-    <div className={`jumbotron mb-3 ${props.page.isPreview() ? 'has-edit-button' : ''}`}>
-      <BrManageContentButton
-        content={document}
-        documentTemplateQuery="new-banner-document"
-        folderTemplateQuery="new-banner-folder"
-        parameter="document"
-        root="banners"
-        relative
-      />
-      { title && <h1>{title}</h1> }
-      { image && <img className="img-fluid" src={image.getOriginal()?.getUrl()} alt={title} /> }
-      { content && <div dangerouslySetInnerHTML={{ __html: props.page.rewriteLinks(content.value) }} /> }
-      { link && (
-        <p className="lead">
-          <Link to={link.getUrl()!} className="btn btn-primary btn-lg" role="button">Learn more</Link>
-        </p>
-      ) }
-    </div>
+    <Container className={`jumbotron mb-3 ${props.page.isPreview() ? 'has-edit-button' : ''}`}>
+      <Row>
+        <Column>
+          <BrManageContentButton
+            content={document}
+            documentTemplateQuery="new-banner-document"
+            folderTemplateQuery="new-banner-folder"
+            parameter="document"
+            root="banners"
+            relative
+          />
+          { title && <h1>{title}</h1> }
+          { image && <img className="img-fluid" src={image.getOriginal()?.getUrl()} alt={title} /> }
+          { content && <div dangerouslySetInnerHTML={{ __html: props.page.rewriteLinks(content.value) }} /> }
+          { link && (
+            <p className="lead">
+              <Link to={link.getUrl()!} className="btn btn-primary btn-lg" role="button">Learn more</Link>
+            </p>
+          ) }
+        </Column>
+      </Row>
+
+    </Container>
   );
 }
