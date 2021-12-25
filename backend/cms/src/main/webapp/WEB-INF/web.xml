@@ -150,6 +150,21 @@
   </servlet>
 
   <servlet>
+    <servlet-name>PageToolsResourceServlet</servlet-name>
+    <servlet-class>org.onehippo.cms7.utilities.servlet.SecureCmsResourceServlet</servlet-class>
+    <init-param>
+      <param-name>jarPathPrefix</param-name>
+      <param-value>/pagetools</param-value>
+    </init-param>
+    <init-param>
+      <param-name>allowedResourcePaths</param-name>
+      <param-value>
+        ^/.*\..*
+      </param-value>
+    </init-param>
+  </servlet>
+
+  <servlet>
     <servlet-name>SkinResourceServlet</servlet-name>
     <servlet-class>org.onehippo.cms7.utilities.servlet.ResourceServlet</servlet-class>
     <init-param>
@@ -216,6 +231,11 @@
   <servlet-mapping>
     <servlet-name>CKEditorResourceServlet</servlet-name>
     <url-pattern>/ckeditor/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>PageToolsResourceServlet</servlet-name>
+    <url-pattern>/pagetools/*</url-pattern>
   </servlet-mapping>
 
   <servlet-mapping>
