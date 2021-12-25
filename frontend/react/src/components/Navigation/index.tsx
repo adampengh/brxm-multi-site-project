@@ -106,11 +106,14 @@ const MegaMenu = ({ item, bannerRef }: any) => {
         >
             <div className="navigation__link">
                 <NavigationLink item={item} />
-                <ArrowDownIcon />
+                { item.getChildren().length > 0 && <ArrowDownIcon /> }
             </div>
             { item.getChildren().length !== 0 &&
                 <div className='mega-menu' data-show-menu={showSecondLevel}>
-                    <button className='back-button' onClick={() => setShowSecondLevel(false)}>&lt;&nbsp;Back</button>
+                    <button className='back-button' onClick={() => setShowSecondLevel(false)}>
+                        <ArrowDownIcon />
+                        <span>Back</span>
+                    </button>
                     <ul className='columns'>
                         { item.getChildren().map((item: any, index: number) => (
                             <li className='column' key={index}>
@@ -165,9 +168,11 @@ const SecondLevelMenu = ({ item }: any) => {
                 onClick={(e) => setAccordionStatus(e)}
             >
                 <ColumnHeading />
-                <span className="second-level__icon">
-                    <ArrowDownIcon />
-                </span>
+                { item.getChildren().length > 0 &&
+                    <span className="second-level__icon">
+                        <ArrowDownIcon />
+                    </span>
+                }
             </div>
 
             <ul className='second-level__list' data-accordion-open={accordionOpen}>
