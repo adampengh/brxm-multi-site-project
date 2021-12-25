@@ -191,3 +191,92 @@
         /myproject:link:
           jcr:primaryType: hippo:mirror
           hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+    /test-banner:
+      jcr:primaryType: hippo:handle
+      jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+      jcr:uuid: 03fbce88-4013-4fbb-8bd2-e87b09a326f5
+      hippo:name: Test Banner
+      hippo:versionHistory: 02ff1dd1-4a53-4f5d-a9a2-1982217e2b83
+      /test-banner[1]:
+        jcr:primaryType: myproject:bannerdocument
+        jcr:mixinTypes: ['mix:referenceable']
+        jcr:uuid: 0244e003-bbd7-42a2-a3cd-bfa195dd7d89
+        hippo:availability: []
+        hippo:related___pathreference: []
+        hippostd:retainable: false
+        hippostd:state: draft
+        hippostd:transferable: false
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2021-12-24T19:47:36.991-05:00
+        hippostdpubwf:lastModificationDate: 2021-12-24T19:48:34.517-05:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: 2a263d98-852c-4c0a-be28-596b7c433f98
+        hippotranslation:locale: en
+        myproject:title: Test Banner!!!!!!
+        /myproject:content:
+          jcr:primaryType: hippostd:html
+          hippostd:content: ''
+        /myproject:image:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: dc6c2247-d3f4-4be0-976e-749b69927eee
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+        /myproject:link:
+          jcr:primaryType: hippo:mirror
+          hippo:docbase: 33dfd7ee-81d8-4659-abd2-a4b3480ee3e2
+      /test-banner[2]:
+        jcr:primaryType: myproject:bannerdocument
+        jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+        jcr:uuid: add7c6a0-293a-4177-9923-254805c0e85d
+        hippo:availability: [preview]
+        hippo:related___pathreference: []
+        hippostd:retainable: false
+        hippostd:state: unpublished
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2021-12-24T19:47:36.991-05:00
+        hippostdpubwf:lastModificationDate: 2021-12-24T19:48:34.475-05:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: 2a263d98-852c-4c0a-be28-596b7c433f98
+        hippotranslation:locale: en
+        myproject:title: Test Banner!!!!!!
+        /myproject:content:
+          jcr:primaryType: hippostd:html
+          hippostd:content: ''
+        /myproject:image:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: dc6c2247-d3f4-4be0-976e-749b69927eee
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+        /myproject:link:
+          jcr:primaryType: hippo:mirror
+          hippo:docbase: 33dfd7ee-81d8-4659-abd2-a4b3480ee3e2
+      /test-banner[3]:
+        jcr:primaryType: myproject:bannerdocument
+        jcr:mixinTypes: ['mix:referenceable']
+        jcr:uuid: b5c35e7b-0404-4f38-a274-119a50265ee1
+        hippo:availability: [live]
+        hippo:related___pathreference: []
+        hippostd:retainable: false
+        hippostd:state: published
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2021-12-24T19:47:36.991-05:00
+        hippostdpubwf:lastModificationDate: 2021-12-24T19:47:59.071-05:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippostdpubwf:publicationDate: 2021-12-24T19:48:01.778-05:00
+        hippotranslation:id: 2a263d98-852c-4c0a-be28-596b7c433f98
+        hippotranslation:locale: en
+        myproject:title: Test Banner
+        /myproject:content:
+          jcr:primaryType: hippostd:html
+          hippostd:content: ''
+        /myproject:image:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: dc6c2247-d3f4-4be0-976e-749b69927eee
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+        /myproject:link:
+          jcr:primaryType: hippo:mirror
+          hippo:docbase: 33dfd7ee-81d8-4659-abd2-a4b3480ee3e2

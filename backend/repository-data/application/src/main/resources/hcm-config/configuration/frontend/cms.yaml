@@ -28,3 +28,9 @@ definitions:
       frontend:extensionPoint: document.field
       frontend:initialHeightInPixels: 300
       frontend:url: angular/starterstore/index.html?id=product-variants
+    /hippo:configuration/hippo:frontend/cms/ui-extensions/previewMode:
+      jcr:primaryType: frontend:uiExtension
+      frontend:config: '{ "spaUrl": "http://localhost:3000" }'
+      frontend:displayName: Preview Mode
+      frontend:extensionPoint: channel.page.tools
+      frontend:url: pagetools/previewMode/index.html
