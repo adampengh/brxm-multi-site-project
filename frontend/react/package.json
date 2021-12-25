@@ -4,6 +4,7 @@
   "version": "14.6.1",
   "private": true,
   "dependencies": {
+    "@bloomreach/connector-components-react": "^14.7.2",
     "@bloomreach/react-sdk": "^14.6.0",
     "axios": "^0.21",
     "express-http-proxy": "^1.6.3",
