@@ -1,0 +1,28 @@
+/content/gallery/react/blue-linear-logo.svg:
+  jcr:primaryType: hippo:handle
+  jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+  jcr:uuid: 4859bcb0-8c0c-463a-b8dc-f5916600ab92
+  hippo:name: Blue Linear Logo.svg
+  /blue-linear-logo.svg:
+    jcr:primaryType: hippogallery:imageset
+    hippo:availability: [live, preview]
+    hippogallery:filename: Blue Linear Logo.svg
+    /hippogallery:thumbnail:
+      jcr:primaryType: hippogallery:image
+      hippo:filename: Blue Linear Logo.svg
+      hippogallery:height: 60
+      hippogallery:width: 60
+      jcr:data:
+        type: binary
+        resource: /content/gallery/react/blue-linear-logo.svg/Blue-Linear-Logo_thumbnail.svg
+      jcr:lastModified: 2021-12-29T10:27:50.651-05:00
+      jcr:mimeType: image/svg+xml
+    /hippogallery:original:
+      jcr:primaryType: hippogallery:image
+      hippogallery:height: 0
+      hippogallery:width: 0
+      jcr:data:
+        type: binary
+        resource: /content/gallery/react/blue-linear-logo.svg/Blue-Linear-Logo_original.svg
+      jcr:lastModified: 2021-12-29T10:27:50.651-05:00
+      jcr:mimeType: image/svg+xml

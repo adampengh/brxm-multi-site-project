@@ -1,9 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { BrComponent } from '@bloomreach/react-sdk';
+import { BrComponent, BrPageContext } from '@bloomreach/react-sdk';
+import { GlobalElementsContext } from '../../context/GlobalElementsContext';
 import { ReactComponent as Logo } from '../../assets/logo.svg';
 
 export const Header = () => {
+    const page = useContext(BrPageContext);
+    const { globalElements }: any = useContext(GlobalElementsContext);
+    const logoRef = globalElements?.globalElementsHeader?.logo;
+    const logo = logoRef && page?.getContent(logoRef);
+
     useEffect(() => {
         const header = document.getElementById('header');
         if (header) {
@@ -23,7 +29,7 @@ export const Header = () => {
             <section className='header__primary'>
                 <div className='header__primary--inner'>
                     <Link to='/' className='header__logo'>
-                        <Logo />
+                        { logo ? <img src={logo.getOriginal().getUrl()} alt='logo' /> : <Logo /> }
                     </Link>
                     <BrComponent path="navigation" />
                 </div>

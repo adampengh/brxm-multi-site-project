@@ -5,3 +5,6 @@ definitions:
       /navigation:
         jcr:primaryType: hst:containercomponentreference
         hst:referencecomponent: base/navigation
+      /globalElements:
+        jcr:primaryType: hst:containercomponentreference
+        hst:referencecomponent: base/globalElements

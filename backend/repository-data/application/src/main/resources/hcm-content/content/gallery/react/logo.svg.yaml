@@ -1,0 +1,28 @@
+/content/gallery/react/logo.svg:
+  .meta:order-before: blue-linear-logo.svg
+  jcr:primaryType: hippo:handle
+  jcr:mixinTypes: ['mix:referenceable']
+  jcr:uuid: 0ca85880-7f5a-435b-aa6f-fa4a42d94c0b
+  /logo.svg:
+    jcr:primaryType: hippogallery:imageset
+    hippo:availability: [live, preview]
+    hippogallery:filename: logo.svg
+    /hippogallery:thumbnail:
+      jcr:primaryType: hippogallery:image
+      hippo:filename: logo.svg
+      hippogallery:height: 12
+      hippogallery:width: 60
+      jcr:data:
+        type: binary
+        resource: /content/gallery/react/logo.svg/logo_thumbnail.svg
+      jcr:lastModified: 2021-12-28T12:28:14.306-05:00
+      jcr:mimeType: image/svg+xml
+    /hippogallery:original:
+      jcr:primaryType: hippogallery:image
+      hippogallery:height: 43
+      hippogallery:width: 200
+      jcr:data:
+        type: binary
+        resource: /content/gallery/react/logo.svg/logo_original.svg
+      jcr:lastModified: 2021-12-28T12:28:14.306-05:00
+      jcr:mimeType: image/svg+xml

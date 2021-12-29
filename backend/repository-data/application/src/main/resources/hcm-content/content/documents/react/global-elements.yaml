@@ -1,0 +1,112 @@
+/content/documents/react/global-elements:
+  jcr:primaryType: hippo:handle
+  jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+  jcr:uuid: c5431f63-d671-40d2-97fc-2b2dd153fa16
+  hippo:name: Global Elements
+  hippo:versionHistory: 8b878114-0500-4594-a998-b49b69a7fff3
+  /global-elements[1]:
+    jcr:primaryType: myproject:globalElements
+    jcr:mixinTypes: ['mix:referenceable']
+    jcr:uuid: abef7e2e-1971-4e56-9291-f586c9268d91
+    hippo:availability: []
+    hippostd:retainable: false
+    hippostd:state: draft
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2021-12-28T12:29:23.939-05:00
+    hippostdpubwf:lastModificationDate: 2021-12-29T10:36:41.307-05:00
+    hippostdpubwf:lastModifiedBy: admin
+    hippotranslation:id: a47534a3-8653-4d7a-93e9-6c9af5b875ce
+    hippotranslation:locale: en
+    /myproject:logo:
+      jcr:primaryType: hippogallerypicker:imagelink
+      hippo:docbase: 0ca85880-7f5a-435b-aa6f-fa4a42d94c0b
+      hippo:facets: []
+      hippo:modes: []
+      hippo:values: []
+    /myproject:globalElementsHeader:
+      jcr:primaryType: myproject:globalElementsHeader
+      /myproject:logo:
+        jcr:primaryType: hippogallerypicker:imagelink
+        hippo:docbase: 0ca85880-7f5a-435b-aa6f-fa4a42d94c0b
+        hippo:facets: []
+        hippo:modes: []
+        hippo:values: []
+    /myproject:globalElementsFooter:
+      jcr:primaryType: myproject:globalElementsFooter
+      /myproject:logo:
+        jcr:primaryType: hippogallerypicker:imagelink
+        hippo:docbase: 4859bcb0-8c0c-463a-b8dc-f5916600ab92
+        hippo:facets: []
+        hippo:modes: []
+        hippo:values: []
+  /global-elements[2]:
+    jcr:primaryType: myproject:globalElements
+    jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+    jcr:uuid: 460a9e0f-2544-435e-8331-36f2e6916f60
+    hippo:availability: [preview]
+    hippostd:retainable: false
+    hippostd:state: unpublished
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2021-12-28T12:29:23.939-05:00
+    hippostdpubwf:lastModificationDate: 2021-12-29T10:36:46.700-05:00
+    hippostdpubwf:lastModifiedBy: admin
+    hippotranslation:id: a47534a3-8653-4d7a-93e9-6c9af5b875ce
+    hippotranslation:locale: en
+    /myproject:logo:
+      jcr:primaryType: hippogallerypicker:imagelink
+      hippo:docbase: 0ca85880-7f5a-435b-aa6f-fa4a42d94c0b
+      hippo:facets: []
+      hippo:modes: []
+      hippo:values: []
+    /myproject:globalElementsHeader:
+      jcr:primaryType: myproject:globalElementsHeader
+      /myproject:logo:
+        jcr:primaryType: hippogallerypicker:imagelink
+        hippo:docbase: 0ca85880-7f5a-435b-aa6f-fa4a42d94c0b
+        hippo:facets: []
+        hippo:modes: []
+        hippo:values: []
+    /myproject:globalElementsFooter:
+      jcr:primaryType: myproject:globalElementsFooter
+      /myproject:logo:
+        jcr:primaryType: hippogallerypicker:imagelink
+        hippo:docbase: 4859bcb0-8c0c-463a-b8dc-f5916600ab92
+        hippo:facets: []
+        hippo:modes: []
+        hippo:values: []
+  /global-elements[3]:
+    jcr:primaryType: myproject:globalElements
+    jcr:mixinTypes: ['mix:referenceable']
+    jcr:uuid: c931b68f-9fde-4c32-8714-3f190e8565da
+    hippo:availability: [live]
+    hippostd:retainable: false
+    hippostd:state: published
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2021-12-28T12:29:23.939-05:00
+    hippostdpubwf:lastModificationDate: 2021-12-29T10:36:46.700-05:00
+    hippostdpubwf:lastModifiedBy: admin
+    hippostdpubwf:publicationDate: 2021-12-29T10:36:47.946-05:00
+    hippotranslation:id: a47534a3-8653-4d7a-93e9-6c9af5b875ce
+    hippotranslation:locale: en
+    /myproject:logo:
+      jcr:primaryType: hippogallerypicker:imagelink
+      hippo:docbase: 0ca85880-7f5a-435b-aa6f-fa4a42d94c0b
+      hippo:facets: []
+      hippo:modes: []
+      hippo:values: []
+    /myproject:globalElementsHeader:
+      jcr:primaryType: myproject:globalElementsHeader
+      /myproject:logo:
+        jcr:primaryType: hippogallerypicker:imagelink
+        hippo:docbase: 0ca85880-7f5a-435b-aa6f-fa4a42d94c0b
+        hippo:facets: []
+        hippo:modes: []
+        hippo:values: []
+    /myproject:globalElementsFooter:
+      jcr:primaryType: myproject:globalElementsFooter
+      /myproject:logo:
+        jcr:primaryType: hippogallerypicker:imagelink
+        hippo:docbase: 4859bcb0-8c0c-463a-b8dc-f5916600ab92
+        hippo:facets: []
+        hippo:modes: []
+        hippo:values: []

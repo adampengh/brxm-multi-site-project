@@ -1,6 +1,13 @@
 @import '../../scss/variables';
 
 .footer {
-    background-color: $color-brand-primary;
-    color: #fff;
+    background-color: #f8f8f8;
+    color: #333;
+    padding-top: 3rem;
+    padding-bottom: 16rem;
+
+    img,
+    svg {
+        max-width: 200px;
+    }
 }

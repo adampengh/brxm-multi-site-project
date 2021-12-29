@@ -1,4 +1,5 @@
 /content/gallery/react/navigation-banners:
+  .meta:order-before: logo.svg
   jcr:primaryType: hippogallery:stdImageGallery
   jcr:mixinTypes: ['hippo:named', 'mix:versionable']
   jcr:uuid: 68756df6-f5f1-4f1d-9cf0-e9b710859d28
