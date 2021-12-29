@@ -18,10 +18,10 @@ import React from 'react';
 import axios from 'axios';
 import Cookies from 'universal-cookie';
 import GTM from './GTM';
-import { Container, Row, Column } from './uikit/Layout';
-import { RouteComponentProps } from 'react-router-dom';
-import { BrComponent, BrPage, BrPageContext } from '@bloomreach/react-sdk';
 import PreviewMode from './PreviewMode';
+import { BrComponent, BrPage, BrPageContext } from '@bloomreach/react-sdk';
+import { RouteComponentProps } from 'react-router-dom';
+import { GlobalElementsProvider } from './context/GlobalElementsContext';
 
 // Components
 import {
@@ -64,24 +64,13 @@ export default function App(props: RouteComponentProps) {
 
     return (
         <BrPage configuration={configuration} mapping={MAPPING}>
-            <Header />
-            <main>
-                <Hero />
-
-                <Container>
-                    <h1>Container</h1>
-                    <Row>
-                        <Column>Column</Column>
-                        <Column>Column</Column>
-                        <Column>Column</Column>
-                    </Row>
-
-                </Container>
-
-                <BrComponent path="main" />
-            </main>
-            <Footer />
-
+            <GlobalElementsProvider>
+                <Header />
+                <main>
+                    <BrComponent path="main" />
+                </main>
+                <Footer />
+            </GlobalElementsProvider>
             <BrPageContext.Consumer>
                 { page => {
                     if (!page?.isPreview() && previewMode) {

@@ -1,3 +1,7 @@
 /hst:hst/hst:configurations/react/hst:workspace/hst:channel/hst:channelinfo:
   jcr:primaryType: hst:channelinfo
+  color: blue
+  logo: /content/gallery/react/logo.svg
   org.hippoecm.hst.configuration.channel.PreviewURLChannelInfo_url: http://localhost:3000
+  pageTitlePrefix: My Hippo Project
+  themeCss: /content/assets/themes/css/green.css

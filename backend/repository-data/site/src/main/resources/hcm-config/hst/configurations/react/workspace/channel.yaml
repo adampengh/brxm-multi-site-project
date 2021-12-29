@@ -5,3 +5,10 @@ definitions:
       jcr:primaryType: hst:channel
       hst:name: React
       hst:type: website
+      hst:lastmodifiedby: admin
+      hst:defaultdevice: default
+      hst:devices: ['{ "id": "Watch", "width": 224, "icon": "mdi-watch" }', '{ "id":
+          "phone", "width": 375 }', '{ "id": "tablet", "width": 768 }', '{ "id": "desktop",
+          "width": 1025 }', '{ "id": "Desktop-XL", "width": 1400, "icon": "mdi-desktop-mac-dashboard"
+          }']
+      hst:lastmodified: 2021-12-28T12:28:24.889-05:00

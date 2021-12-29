@@ -86,3 +86,18 @@ definitions:
       /en:
         jcr:primaryType: hipposys:resourcebundle
         jcr:name: Navigation Banner
+    /hippo:configuration/hippo:translations/hippo:types/myproject:globalElements:
+      jcr:primaryType: hipposys:resourcebundles
+      /en:
+        jcr:primaryType: hipposys:resourcebundle
+        jcr:name: Global Elements
+    /hippo:configuration/hippo:translations/hippo:types/myproject:globalElementsHeader:
+      jcr:primaryType: hipposys:resourcebundles
+      /en:
+        jcr:primaryType: hipposys:resourcebundle
+        jcr:name: Global Elements (Header)
+    /hippo:configuration/hippo:translations/hippo:types/myproject:globalElementsFooter:
+      jcr:primaryType: hipposys:resourcebundles
+      /en:
+        jcr:primaryType: hipposys:resourcebundle
+        jcr:name: Global Elements (Footer)
