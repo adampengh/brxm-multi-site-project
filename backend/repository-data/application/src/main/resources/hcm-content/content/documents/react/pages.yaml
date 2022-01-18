@@ -280,3 +280,131 @@
             hst:parameternames: [document, org.hippoecm.hst.core.component.template]
             hst:parametervalues: [components/banners/homepage-banner, 'webfile:/freemarker/hstdefault/essentials-banner.ftl']
             hst:template: essentials-banner
+  /categories:
+    jcr:primaryType: hippostd:folder
+    jcr:mixinTypes: ['hippo:named', 'hippostd:xpagefolder', 'mix:versionable']
+    jcr:uuid: e44247b9-8d88-4449-8048-293b445aa39c
+    hippo:name: Categories
+    hippostd:channelid: react
+    hippostd:foldertype: [new-ExperiencePage-document]
+    /test-category:
+      jcr:primaryType: hippo:handle
+      jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+      jcr:uuid: ec2b9f89-39a1-4142-a802-1455da62769b
+      hippo:name: Test Category
+      hippo:versionHistory: bf794da7-51f1-4c13-9adb-77e2d56a2609
+      /test-category[1]:
+        jcr:primaryType: myproject:ExperiencePage
+        jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
+        jcr:uuid: 27a11e15-35a2-44af-8801-0e38a43fb27e
+        hippo:availability: []
+        hippostd:retainable: false
+        hippostd:state: draft
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-01-11T09:00:41.184-05:00
+        hippostdpubwf:lastModificationDate: 2022-01-13T12:25:37.064-05:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: d80d2eca-cd44-417d-8271-26c91da261b7
+        hippotranslation:locale: document-type-locale
+        myproject:categoryId: '116990'
+        /myproject:pageMetadata:
+          jcr:primaryType: myproject:PageMetadata
+          myproject:canonicalUrl: ''
+          myproject:metaDescription: ''
+          myproject:metaKeywords: ['']
+          myproject:ogDescription: ''
+          myproject:ogTitle: ''
+          myproject:ogType: website
+          myproject:ogUrl: ''
+          myproject:pageTitle: Bath & Body
+          /myproject:ogImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+      /test-category[2]:
+        jcr:primaryType: myproject:ExperiencePage
+        jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable', 'mix:versionable']
+        jcr:uuid: 31a2889b-3692-4e16-a4e8-608a1c3930c8
+        hippo:availability: [preview]
+        hippostd:retainable: false
+        hippostd:state: unpublished
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-01-11T09:00:41.184-05:00
+        hippostdpubwf:lastModificationDate: 2022-01-13T12:28:53.234-05:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: d80d2eca-cd44-417d-8271-26c91da261b7
+        hippotranslation:locale: document-type-locale
+        myproject:categoryId: '116990'
+        /hst:xpage:
+          jcr:primaryType: hst:xpage
+          jcr:uuid: c37d5ba7-c89f-4f3a-8e5a-876a0dd23d57
+          hst:pageref: product-listing
+          /032a3a4a-826b-4721-bb0f-c5b8a76e94b5:
+            jcr:primaryType: hst:containercomponent
+            jcr:uuid: ab98387d-4fea-4824-8289-2a73b8a8906d
+            hippo:identifier: fd788672-7df6-49ba-9e2d-8e65f94ee889
+          /bb745c41-7ada-4afb-9240-44034412aae7:
+            jcr:primaryType: hst:containercomponent
+            jcr:uuid: c343603f-6c71-41a1-9156-9f58ada26cc6
+            hippo:identifier: b6935596-6be4-4ae3-af04-d86b7aa12c88
+        /myproject:pageMetadata:
+          jcr:primaryType: myproject:PageMetadata
+          myproject:canonicalUrl: ''
+          myproject:metaDescription: ''
+          myproject:metaKeywords: ['']
+          myproject:ogDescription: ''
+          myproject:ogTitle: ''
+          myproject:ogType: website
+          myproject:ogUrl: ''
+          myproject:pageTitle: Bath & Body
+          /myproject:ogImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+      /test-category[3]:
+        jcr:primaryType: myproject:ExperiencePage
+        jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
+        jcr:uuid: d3cf7881-151a-4e40-8e41-f6579c992d0e
+        hippo:availability: [live]
+        hippostd:retainable: false
+        hippostd:state: published
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-01-11T09:00:41.184-05:00
+        hippostdpubwf:lastModificationDate: 2022-01-13T12:28:53.234-05:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippostdpubwf:publicationDate: 2022-01-13T12:28:54.750-05:00
+        hippotranslation:id: d80d2eca-cd44-417d-8271-26c91da261b7
+        hippotranslation:locale: document-type-locale
+        myproject:categoryId: '116990'
+        /hst:xpage:
+          jcr:primaryType: hst:xpage
+          jcr:uuid: 5242e44c-73dd-4981-9037-660cf3eb0964
+          hst:pageref: product-listing
+          /032a3a4a-826b-4721-bb0f-c5b8a76e94b5:
+            jcr:primaryType: hst:containercomponent
+            jcr:uuid: a474f444-b3a4-4ef3-9df1-426746bf0fb7
+            hippo:identifier: fd788672-7df6-49ba-9e2d-8e65f94ee889
+          /bb745c41-7ada-4afb-9240-44034412aae7:
+            jcr:primaryType: hst:containercomponent
+            jcr:uuid: 7c4feeba-e269-4878-9fcc-14b466e3e4e2
+            hippo:identifier: b6935596-6be4-4ae3-af04-d86b7aa12c88
+        /myproject:pageMetadata:
+          jcr:primaryType: myproject:PageMetadata
+          myproject:canonicalUrl: ''
+          myproject:metaDescription: ''
+          myproject:metaKeywords: ['']
+          myproject:ogDescription: ''
+          myproject:ogTitle: ''
+          myproject:ogType: website
+          myproject:ogUrl: ''
+          myproject:pageTitle: Bath & Body
+          /myproject:ogImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []

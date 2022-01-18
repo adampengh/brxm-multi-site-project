@@ -11,7 +11,7 @@ definitions:
         /hipposysedit:nodetype:
           jcr:primaryType: hipposysedit:nodetype
           jcr:mixinTypes: ['mix:referenceable', 'hipposysedit:remodel']
-          jcr:uuid: b174ead1-f1f3-4f93-a58a-5b46ea9a662e
+          jcr:uuid: e9a18bfb-cce8-4780-96a4-3fd1fbfeec11
           hipposysedit:node: true
           hipposysedit:supertype: ['myproject:basedocument', 'hippostd:relaxed', 'hippotranslation:translated']
           hipposysedit:uri: http://www.myproject.com/myproject/nt/1.0
@@ -23,6 +23,14 @@ definitions:
             hipposysedit:path: myproject:pageMetadata
             hipposysedit:primary: false
             hipposysedit:type: myproject:PageMetadata
+          /categoryId:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: myproject:categoryId
+            hipposysedit:primary: false
+            hipposysedit:type: OpenUiString
       /hipposysedit:prototypes:
         jcr:primaryType: hipposysedit:prototypeset
         /hipposysedit:prototype:
@@ -34,9 +42,10 @@ definitions:
           hippotranslation:id: document-type-locale-id
           hippotranslation:locale: document-type-locale
           jcr:mixinTypes: ['mix:referenceable']
-          jcr:uuid: 373c1123-78a3-4415-9b14-eeb2d4d0903c
+          jcr:uuid: c6c1f6af-af74-4707-83e7-81410a4e2422
           hippostdpubwf:lastModificationDate: 2021-12-08T10:52:13.046-05:00
           hippostdpubwf:creationDate: 2021-12-08T10:52:13.047-05:00
+          myproject:categoryId: ''
           /myproject:pageMetadata:
             jcr:primaryType: myproject:PageMetadata
             myproject:canonicalUrl: ''
@@ -64,6 +73,16 @@ definitions:
             jcr:primaryType: frontend:plugin
             item: ${cluster.id}.field
             plugin.class: org.hippoecm.frontend.service.render.ListViewPlugin
+          /categoryId:
+            jcr:primaryType: frontend:plugin
+            caption: Category
+            field: categoryId
+            hint: ''
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.field
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+              ui.extension: commerceCategoryPicker
           /pageMetadata:
             jcr:primaryType: frontend:plugin
             caption: Page Metadata

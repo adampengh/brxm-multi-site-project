@@ -1,5 +1,7 @@
 
+// ================================================
 // BREAKPOINTS
+// ================================================
 $breakpoint-xs:             640px;
 $breakpoint-sm:             640px;
 $breakpoint-md:             768px;
@@ -8,8 +10,17 @@ $breakpoint-xl:             1200px;
 $breakpoint-xxl:            1440px;
 
 
-
+// ================================================
 // COLORS
+// ================================================
 $color-brand-primary:       #002840;
 $color-brand-secondary:     #FFD500;
 $color-brand-tertiary:      #00B2DB;
+
+
+
+// ================================================
+// Fonts
+// ================================================
+$font-primary: 'Montserrat', Helvetica, Arial, sans-serif;
+$font-secondary: 'Taviraj', serif;

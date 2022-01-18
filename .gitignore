@@ -47,3 +47,4 @@ hotswap-agent.properties
 build
 dist
 node_modules
+.vscode

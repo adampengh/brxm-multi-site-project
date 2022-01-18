@@ -1,0 +1,49 @@
+@import '../../scss/variables';
+
+.product-listing {
+    display: block;
+    padding-top: 1rem;
+}
+
+.product-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 3fr;
+    padding-top: 1rem;
+
+    &__facets {
+        // background: rgba(green, 0.1);
+        // border: 1px solid rgba(green, 0.3);
+        @media screen and (min-width: $breakpoint-lg) {
+
+        }
+    }
+
+    &__grid {
+        // background: rgba(red, 0.1);
+        // border: 1px solid rgba(red, 0.3);
+        @media screen and (min-width: $breakpoint-lg) {
+        }
+    }
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+
+        @for $i from 3 through 6 {
+            &[data-desktop-columns="#{$i}"] {
+                grid-template-columns: repeat($i, 1fr);
+            }
+        }
+
+        // @media screen and (min-width: $breakpoint-md) {
+        //     grid-template-columns: repeat(3, 1fr);
+        // }
+        // @media screen and (min-width: $breakpoint-lg) {
+        //     grid-template-columns: repeat(3, 1fr);
+        // }
+    }
+}

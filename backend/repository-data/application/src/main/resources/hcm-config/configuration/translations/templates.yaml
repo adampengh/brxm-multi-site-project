@@ -18,6 +18,8 @@ definitions:
       new-ExperiencePage-folder: new Experience Page folder
       new-navigationBanner-document: new Navigation Banner document
       new-navigationBanner-folder: new Navigation Banner folder
+      new-CategoryPage-document: new Category Page document
+      new-CategoryPage-folder: new Category Page folder
     /hippo:configuration/hippo:translations/hippo:templates/fr:
       new-resource-bundle: nouveau resource bundle
       new-untranslated-folder: nouveau dossier non traduit

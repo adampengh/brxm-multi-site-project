@@ -1,21 +1,14 @@
 import React from 'react';
 
-interface ContainerProps {
+interface LayoutProps {
     children?: React.ReactNode;
     className?: string;
+
+    [property: string]: any;
 }
 
-interface RowProps {
-    children?: React.ReactNode;
-    className?: string;
-}
 
-interface ColumnProps {
-    children?: React.ReactNode;
-    className?: string;
-}
-
-const Container = ({ className, children, ...props }: ContainerProps) => {
+const Container = ({ className, children, ...props }: LayoutProps) => {
     return (
         <section className={`container ${className ? className : ''}`} {...props}>
             { children }
@@ -23,17 +16,17 @@ const Container = ({ className, children, ...props }: ContainerProps) => {
     )
 };
 
-const Row = ({ children, className, ...props }: RowProps) => {
+const Row = ({ children, className, ...props }: LayoutProps) => {
     return (
-        <div className={`row ${className}`} {...props}>
+        <div className={`row ${className ? className : ''}`} {...props}>
             { children }
         </div>
     )
 }
 
-const Column = ({ children, className, ...props }: ColumnProps) => {
+const Column = ({ children, className, ...props }: LayoutProps) => {
     return (
-        <div className={`column ${className}`} {...props}>
+        <div className={`column ${className ? className : ''}`} {...props}>
             { children }
         </div>
     )

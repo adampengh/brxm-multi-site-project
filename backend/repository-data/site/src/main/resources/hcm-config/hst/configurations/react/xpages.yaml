@@ -11,3 +11,18 @@ definitions:
           hippo:identifier: 3957ec49-26e0-4a67-9575-0a62393fa69a
           hst:xtype: hst.vbox
           hst:label: Main
+      /product-listing:
+        jcr:primaryType: hst:xpage
+        hst:label: Product Listing Page
+        hst:referencecomponent: hst:abstractpages/base
+        /top:
+          jcr:primaryType: hst:containercomponent
+          hippo:identifier: 032a3a4a-826b-4721-bb0f-c5b8a76e94b5
+        /main:
+          jcr:primaryType: hst:component
+          /ProductListingGrid:
+            jcr:primaryType: hst:component
+            hst:referencecomponent: hst:components/ProductListingGrid
+        /bottom:
+          jcr:primaryType: hst:containercomponent
+          hippo:identifier: bb745c41-7ada-4afb-9240-44034412aae7
