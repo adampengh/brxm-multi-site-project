@@ -19,3 +19,17 @@ definitions:
         hst:pagetitle: Home Page
         hst:refId: root
         hst:relativecontentpath: pages/homepage
+      /c:
+        jcr:primaryType: hst:sitemapitem
+        hst:componentconfigurationid: hst:pages/pagenotfound
+        hst:hiddeninchannelmanager: true
+        /_default_:
+          jcr:primaryType: hst:sitemapitem
+          hst:parameternames: [categoryId]
+          hst:parametervalues: ['${1}']
+          hst:relativecontentpath: pages/categories/${1}
+          /_any_:
+            jcr:primaryType: hst:sitemapitem
+            hst:parameternames: [categoryId]
+            hst:parametervalues: ['${1}']
+            hst:relativecontentpath: pages/categories/${1}

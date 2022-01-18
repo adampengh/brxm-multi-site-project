@@ -1,0 +1,13 @@
+.breadcrumbs {
+    display: block;
+    position: relative;
+
+    a,
+    span {
+        color: #333;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        text-decoration: none;
+    }
+}

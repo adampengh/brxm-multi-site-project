@@ -20,6 +20,7 @@ import Cookies from 'universal-cookie';
 import GTM from './GTM';
 import PreviewMode from './PreviewMode';
 import { BrComponent, BrPage, BrPageContext } from '@bloomreach/react-sdk';
+import { CommerceConnectorProvider } from '@bloomreach/connector-components-react';
 import { RouteComponentProps } from 'react-router-dom';
 import { GlobalElementsProvider } from './context/GlobalElementsContext';
 
@@ -32,6 +33,7 @@ import {
     Hero,
     Navigation,
     NewsList,
+    ProductListingGrid,
 } from './components';
 
 const MAPPING = {
@@ -40,10 +42,14 @@ const MAPPING = {
     Hero,
     Navigation,
     'News List': NewsList,
-    'Simple Content': Content
+    'Simple Content': Content,
+    ProductListingGrid,
 };
 
 export default function App(props: RouteComponentProps) {
+    const connector = process.env.REACT_APP_DEFAULT_CONNECTOR || 'brsm';
+    const graphqlServiceUrl = process.env.REACT_APP_DEFAULT_GRAPHQL_SERVICE_URL || 'http://localhost:4000';
+    const existingToken = sessionStorage.getItem('token') ?? undefined; // retrieve existing token from session storage
 
     // To view the site in "Preview" mode, pass the query sting parameter "preview=true"
     const cookies = new Cookies();
@@ -65,11 +71,19 @@ export default function App(props: RouteComponentProps) {
     return (
         <BrPage configuration={configuration} mapping={MAPPING}>
             <GlobalElementsProvider>
-                <Header />
-                <main>
-                    <BrComponent path="main" />
-                </main>
-                <Footer />
+                <CommerceConnectorProvider
+                    connector={connector}
+                    graphqlServiceUrl={graphqlServiceUrl}
+                    existingToken={existingToken}
+                    >
+                    <Header />
+                    <main>
+                        <BrComponent path='top' />
+                        <BrComponent path='main' />
+                        <BrComponent path='bottom' />
+                    </main>
+                    <Footer />
+                </CommerceConnectorProvider>
             </GlobalElementsProvider>
             <BrPageContext.Consumer>
                 { page => {

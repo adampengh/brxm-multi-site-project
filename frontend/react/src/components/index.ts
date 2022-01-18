@@ -22,3 +22,4 @@ export * from './Hero';
 export * from './Menu';
 export * from './Navigation';
 export * from './NewsList';
+export * from './ProductListingGrid';
