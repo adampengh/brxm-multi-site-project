@@ -3,30 +3,15 @@ import React from 'react';
 interface ImageProps {
     altText: string;
     className?: string;
-    mobileImage: string;
-    tabletImage?: string;
-    desktopImage?: string;
+    source: string;
 }
 
 export const Image = ({
-    altText = 'Placeholder',
+    altText,
     className,
-    mobileImage = 'https://via.placeholder.com/800x800',
-    tabletImage,
-    desktopImage,
+    source = 'https://via.placeholder.com/800x800',
 }: ImageProps) => {
     return (
-        <picture className={`${className ? className : ''}`}>
-            <source
-                srcSet={mobileImage}
-                media="(max-width: 767px)" />
-            {tabletImage && <source
-                srcSet={tabletImage}
-                media="(min-width: 768px) and (max-width: 1024px)" /> }
-            {desktopImage && <source
-                srcSet={desktopImage}
-                media="(min-width: 1025px)" /> }
-            <img src={mobileImage} alt={altText} />
-        </picture>
+        <img className={`${className ? className : ''}`} src={source} alt={altText} />
     )
 };
