@@ -9,7 +9,7 @@ interface PictureProps {
 }
 
 export const Picture = ({
-    altText = 'Placeholder',
+    altText,
     className,
     mobileImage = 'https://via.placeholder.com/800x800',
     tabletImage,
