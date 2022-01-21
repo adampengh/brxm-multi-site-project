@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface ImageProps {
+interface PictureProps {
     altText: string;
     className?: string;
     mobileImage: string;
@@ -8,13 +8,13 @@ interface ImageProps {
     desktopImage?: string;
 }
 
-export const Image = ({
+export const Picture = ({
     altText = 'Placeholder',
     className,
     mobileImage = 'https://via.placeholder.com/800x800',
     tabletImage,
     desktopImage,
-}: ImageProps) => {
+}: PictureProps) => {
     return (
         <picture className={`${className ? className : ''}`}>
             <source
