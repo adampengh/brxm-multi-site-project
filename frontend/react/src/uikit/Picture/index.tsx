@@ -1,4 +1,5 @@
 import React from 'react';
+import { Image } from '../Image';
 
 interface PictureProps {
     altText: string;
@@ -26,7 +27,7 @@ export const Picture = ({
             {desktopImage && <source
                 srcSet={desktopImage}
                 media="(min-width: 1025px)" /> }
-            <img src={mobileImage} alt={altText} />
+            <Image src={mobileImage} altText={altText} />
         </picture>
     )
 };

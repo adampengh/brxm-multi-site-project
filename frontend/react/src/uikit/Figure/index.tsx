@@ -4,18 +4,18 @@ interface FigureProps {
     altText: string;
     caption?: string;
     className?: string;
-    source: string;
+    src: string;
 }
 
 export const Figure = ({
     altText,
     caption,
     className,
-    source = 'https://via.placeholder.com/800x800',
+    src,
 }: FigureProps) => {
     return (
         <figure className={`${className ? className : ''}`}>
-            <Image source={source} altText={altText} />
+            <Image src={src} altText={altText} />
             {caption && <figcaption>{ caption }</figcaption> }
         </figure>
     )

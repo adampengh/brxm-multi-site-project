@@ -13,12 +13,13 @@ const Template: ComponentStory<typeof Figure> = (args) => <Figure {...args} />;
 export const FigureWithoutCaption = Template.bind({});
 FigureWithoutCaption.args = {
     altText: 'Placeholder - 4x3',
-    source: '/static/images/Image-4x3.jpg',
+    src: '/static/images/Image-4x3.jpg',
 };
+FigureWithoutCaption.storyName = 'Figure';
 
 export const FigureWithCaption = Template.bind({});
 FigureWithCaption.args = {
     altText: 'Placeholder - 4x3',
     caption: 'This is a sample caption',
-    source: '/static/images/Image-4x3.jpg',
+    src: '/static/images/Image-4x3.jpg',
 };

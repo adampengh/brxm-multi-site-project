@@ -3,15 +3,15 @@ import React from 'react';
 interface ImageProps {
     altText: string;
     className?: string;
-    source: string;
+    src: string;
 }
 
 export const Image = ({
     altText,
     className,
-    source = 'https://via.placeholder.com/800x800',
+    src,
 }: ImageProps) => {
     return (
-        <img className={`${className ? className : ''}`} src={source} alt={altText} />
+        <img className={`${className ? className : ''}`} src={src} alt={altText} />
     )
 };
