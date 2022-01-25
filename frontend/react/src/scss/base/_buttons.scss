@@ -1,18 +1,111 @@
 // ================================================
 // BUTTONS
 // ================================================
+
 .button {
-    background-color: #e8e8e8;
-    border: none;
+    // ------------------------------------------------
+    // Default
+    // ------------------------------------------------
+    border: 1px solid transparent;
     border-radius: 0;
-    color: #000;
     cursor: pointer;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 16px;
-    &.active {
-        background-color: #43494F;
-        color: #fff;
+    font-size: pxToRem(14);
+    font-weight: 600;
+    line-height: pxToRem(18);
+    padding: pxToRem(8) pxToRem(24);
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    @include button($color-neutral-gray-25, $color-neutral-white, $color-neutral-gray-25);
+    &[disabled] {
+        cursor: not-allowed;
+    }
+
+    // ------------------------------------------------
+    // Dark
+    // ------------------------------------------------
+    &-dark {
+        @include button($color-neutral-gray-32, $color-neutral-white, $color-neutral-gray-32);
+        &-outline {
+            @include buttonOutline($color-neutral-white, $color-neutral-gray-32, $color-neutral-gray-32);
+        }
+    }
+    &-light {
+        @include button($color-neutral-gray-91, $color-neutral-gray-25, $color-neutral-gray-91);
+        &-outline {
+            @include buttonOutline($color-neutral-white, $color-neutral-gray-64, $color-neutral-gray-64);
+        }
+    }
+    &-primary {
+        @include button($color-brand-primary, $color-neutral-white, $color-brand-primary);
+        &-outline {
+            @include buttonOutline($color-neutral-white, $color-brand-primary, $color-brand-primary);
+        }
+    }
+    &-secondary {
+        @include button($color-brand-secondary, $color-neutral-white, $color-brand-secondary);
+        &-outline {
+            @include buttonOutline($color-neutral-white, $color-brand-secondary, $color-brand-secondary);
+        }
+    }
+    &-success {
+        @include button($color-utility-success, $color-neutral-white, $color-utility-success);
+        &-outline {
+            @include buttonOutline($color-neutral-white, $color-utility-success, $color-utility-success);
+        }
+    }
+    &-warning {
+        @include button($color-utility-warning, $color-neutral-white, $color-utility-warning);
+        &-outline {
+            @include buttonOutline($color-neutral-white, $color-utility-warning, $color-utility-warning);
+        }
+    }
+    &-error {
+        @include button($color-utility-error, $color-neutral-white, $color-utility-error);
+        &-outline {
+            @include buttonOutline($color-neutral-white, $color-utility-error, $color-utility-error);
+        }
+    }
+    &-info {
+        @include button($color-utility-info, $color-neutral-white, $color-utility-info);
+        &-outline {
+            @include buttonOutline($color-neutral-white, $color-utility-info, $color-utility-info);
+        }
+    }
+
+
+
+    // ================================================
+    // Sizes
+    // ================================================
+    &-sm {
+        font-size: pxToRem(10);
+        line-height: pxToRem(12);
+        @media screen and (min-width: $breakpoint-lg) {
+            font-size: pxToRem(10);
+            line-height: pxToRem(12);
+        }
+    }
+
+    &-lg {
+        font-size: pxToRem(16);
+        line-height: pxToRem(20);
+        padding: pxToRem(12) pxToRem(32);
+        @media screen and (min-width: $breakpoint-lg) {
+            font-size: pxToRem(20);
+            line-height: pxToRem(24);
+        }
+    }
+
+
+    // ================================================
+    // Style
+    // ================================================
+    &-rounded {
+        border-radius: pxToRem(8);
+    }
+
+    &-round {
+        border-radius: pxToRem(1000);
     }
 
 
@@ -25,21 +118,21 @@
             align-items: center;
             display: inline-flex;
             flex-wrap: nowrap;
-            height: 24px;
+            height: pxToRem(24);
             justify-content: center;
             &-small {
-                width: 24px;
+                width: pxToRem(24);
             }
             &-medium {
-                width: 32px;
+                width: pxToRem(32);
             }
             &:first-child {
-                border-bottom-left-radius: 4px;
-                border-top-left-radius: 4px;
+                border-bottom-left-radius: pxToRem(4);
+                border-top-left-radius: pxToRem(4);
             }
             &:last-child {
-                border-bottom-right-radius: 4px;
-                border-top-right-radius: 4px;
+                border-bottom-right-radius: pxToRem(4);
+                border-top-right-radius: pxToRem(4);
             }
         }
 
