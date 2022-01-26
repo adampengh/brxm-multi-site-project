@@ -1,0 +1,51 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:security/ldaps:
+      jcr:primaryType: hippoldap:securityprovider
+      hippoldap:authentication: simple
+      hippoldap:credentials: Password1!
+      hippoldap:cronexpression: '*/1 * * * * ?'
+      hippoldap:disabled: true
+      hippoldap:initialfactory: com.sun.jndi.ldap.LdapCtxFactory
+      hippoldap:principal: uid=ldapadmin,ou=Users,o=61f033c8a2efb85db3e2db91,dc=jumpcloud,dc=com
+      hippoldap:providerurl: ldaps://ldap.jumpcloud.com:636
+      hippoldap:searchbase: ou=Users,o=61f033c8a2efb85db3e2db91,dc=jumpcloud,dc=com
+      hipposys:classname: org.hippoecm.repository.security.ldap.LdapSecurityProvider
+      /hipposys:userprovider:
+        jcr:primaryType: hippoldap:userprovider
+        hipposys:dirlevels: 0
+        /hippoldap:search:
+          jcr:primaryType: hippoldap:usersearch
+          hippoldap:basedn: ou=Users,o=61f033c8a2efb85db3e2db91,dc=jumpcloud,dc=com
+          hippoldap:filter: (objectClass=inetOrgPerson)
+          hippoldap:nameattribute: uid
+        /hippoldap:mapping[1]:
+          jcr:primaryType: hippoldap:mapping
+          hippoldap:multi: false
+          hippoldap:source: mail
+          hippoldap:target: hipposys:email
+        /hippoldap:mapping[2]:
+          jcr:primaryType: hippoldap:mapping
+          hippoldap:multi: false
+          hippoldap:source: sn
+          hippoldap:target: hipposys:lastname
+        /hippoldap:mapping[3]:
+          jcr:primaryType: hippoldap:mapping
+          hippoldap:multi: false
+          hippoldap:source: givenName
+          hippoldap:target: hipposys:firstname
+      /hipposys:groupprovider:
+        jcr:primaryType: hippoldap:groupprovider
+        hipposys:dirlevels: 0
+        /hippoldap:search:
+          jcr:primaryType: hippoldap:groupsearch
+          hippoldap:basedn: ou=Users,o=61f033c8a2efb85db3e2db91,dc=jumpcloud,dc=com
+          hippoldap:filter: (objectClass=groupOfNames)
+          hippoldap:membernamematcher: <dn>
+          hippoldap:nameattribute: cn
+          hippoldap:memberattribute: member
+        /hippoldap:mapping:
+          jcr:primaryType: hippoldap:mapping
+          hippoldap:multi: false
+          hippoldap:source: cn
+          hippoldap:target: hipposys:description

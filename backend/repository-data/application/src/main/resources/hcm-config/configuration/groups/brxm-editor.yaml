@@ -1,0 +1,17 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:groups/brxm-editor:
+      jcr:primaryType: hipposys:externalgroup
+      hippoldap:dn: cn=brxm-editor,ou=Users,o=61f033c8a2efb85db3e2db91,dc=jumpcloud,dc=com
+      hipposys:description: brxm-editor
+      hipposys:members:
+        .meta:category: system
+        .meta:add-new-system-values: true
+        type: string
+        value: [testeditor]
+      hipposys:securityprovider: ldaps
+      hipposys:userroles:
+        .meta:category: system
+        .meta:add-new-system-values: true
+        type: string
+        value: [xm.default-user.editor]
