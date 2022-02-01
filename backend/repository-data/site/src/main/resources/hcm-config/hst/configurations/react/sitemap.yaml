@@ -33,3 +33,11 @@ definitions:
             hst:parameternames: [categoryId]
             hst:parametervalues: ['${1}']
             hst:relativecontentpath: pages/categories/${1}
+      /p:
+        jcr:primaryType: hst:sitemapitem
+        hst:componentconfigurationid: hst:pages/pagenotfound
+        hst:hiddeninchannelmanager: true
+        /_default_:
+          jcr:primaryType: hst:sitemapitem
+          hst:componentconfigurationid: hst:pages/product-detail
+          hst:relativecontentpath: p/${1}

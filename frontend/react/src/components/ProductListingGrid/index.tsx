@@ -5,6 +5,7 @@ import { parse } from 'query-string';
 import { Container, Row, Column } from '../../uikit/Layout';
 
 import { CategoryBreadcrumb } from '../Breadcrumbs';
+import FacetsList from './FacetsList';
 import PageTitle from '../PageTitle';
 import ProductCard from './ProductCard';
 
@@ -13,13 +14,14 @@ import './ProductListingGrid.scss';
 export const ProductListingGrid = ({ page, component }: BrProps) => {
     console.log('ProductListingGrid');
 
-    const CONNECTOR = 'brsm';
+    const connector = 'brsm';
 
     // State
     const [queryPageSize, setQueryPageSize] = useState(24);
     let [queryOffset, setQueryOffset] = useState(0);
 
-    const [desktopColumns, setDesktopColumns] = useState(3);
+    const [mobileColumns, setMobileColumns] = useState(2);
+    const [desktopColumns, setDesktopColumns] = useState(4);
 
     const documentRef = component?.getModels()?.document;
     const document = page?.getContent(documentRef);
@@ -34,6 +36,7 @@ export const ProductListingGrid = ({ page, component }: BrProps) => {
         categoryId,
         pageMetadata,
     } = document?.getData<any>();
+    console.log('categoryId', categoryId);
 
     const {
         // canonicalUrl,
@@ -50,9 +53,13 @@ export const ProductListingGrid = ({ page, component }: BrProps) => {
     // An exmple usage with the hook.
     const [, itemsPageResult, loading, error] = useProductGridCategory({
         categoryId,
-        connector: CONNECTOR,
-        pageSize: queryPageSize,
+        customAttrFields: ['reviews', 'reviews_count', 'OnlineOnly', 'inStoreOnly'],
+        // customVariantAttrFields,
+        connector,
+        // facetFieldFilters,
         offset: queryOffset,
+        pageSize: queryPageSize,
+        sortFields: '-sale_price',
     });
 
     if (loading) {
@@ -87,9 +94,7 @@ export const ProductListingGrid = ({ page, component }: BrProps) => {
         <Container className='product-listing'>
             <Row>
                 <Column>
-                    <CategoryBreadcrumb
-                        text={pageTitle}
-                    />
+                    <CategoryBreadcrumb text={pageTitle} />
                 </Column>
             </Row>
 
@@ -99,45 +104,54 @@ export const ProductListingGrid = ({ page, component }: BrProps) => {
                 </Column>
             </Row>
 
-            <Row>
-                <Column>
-                    <p>
-                        Items <span>{ start }</span> to <span>{ end }</span> of <span>{ total } </span>
-                    </p>
-                </Column>
-                <Column style={{textAlign: 'right'}}>
-                    <label>Items Per Row</label>
-                    <select onChange={(event) => setDesktopColumns(Number(event.target.value))} style={{marginLeft: '4px'}}>
-                        {[3,4,5,6].map((item) => <option value={ item }>{ item }</option> )}
+            <Row className='product-listing__header'>
+                <Column className='product-listing__header-filters'>Filters</Column>
+                <Column className='product-listing__header-sorting'>
+                    <label>Sort By: </label>
+                    <select>
+                        <option>Newest</option>
+                        <option>Best Selling</option>
+                        <option>Price: High to Low</option>
+                        <option>Price: Low to Hight</option>
                     </select>
                 </Column>
-            </Row>
-            <Row className='product-listing__header'>
-                <Column>Filters</Column>
-                <Column>Sorting</Column>
-                <Column>
-                    <span>
+                <Column className='product-listing__header-options'>
+                    <span className='button-group'>
                         <label>Grid View: </label>
-                        <span className='button-group'>
-                            {[3,4,6].map((item) =>
+                        <span className='hidden-lg'>
+                            {[1,2].map((item, index) =>
                                 <button
-                                    className={`button button-small ${desktopColumns === item ? 'active': ''}`}
+                                    className={`button ${mobileColumns === item ? 'active': ''}`}
+                                    value={ item }
+                                    onClick={() => setMobileColumns(Number(item))}
+                                    key={index}
+                                >
+                                    { item }
+                                </button>
+                            )}
+                        </span>
+                        <span className='hidden-sm hidden-md'>
+                            {[3,4,5,6].map((item, index) =>
+                                <button
+                                    className={`button ${desktopColumns === item ? 'active': ''}`}
                                     value={ item }
                                     onClick={() => setDesktopColumns(Number(item))}
+                                    key={index}
                                 >
                                     { item }
                                 </button>
                             )}
                         </span>
                     </span>
-                    <span>
+                    <span className='button-group'>
                         <label>Products: </label>
-                        <span className='button-group'>
-                            {[24,48].map((item) =>
+                        <span>
+                            {[24,48].map((item, index) =>
                                 <button
-                                    className={`button button-medium ${queryPageSize === item ? 'active' : ''}`}
+                                    className={`button ${queryPageSize === item ? 'active' : ''}`}
                                     value={ item }
                                     onClick={() => setQueryPageSize(Number(item))}
+                                    key={index}
                                 >
                                     { item }
                                 </button>
@@ -146,16 +160,25 @@ export const ProductListingGrid = ({ page, component }: BrProps) => {
                     </span>
                 </Column>
             </Row>
+
             <Row className='product-grid'>
                 <Column className='product-grid__facets'>
-                    <h4>Facets</h4>
+                    {/* <FacetsList facets={facetResult?.fields} /> */}
                 </Column>
                 <Column className='product-grid__grid'>
-                    <ul className='product-grid__list' data-desktop-columns={desktopColumns}>
+                    <ul className='product-grid__list' data-mobile-columns={mobileColumns} data-desktop-columns={desktopColumns}>
                         { items && items.map((item: any, index: number) =>
                             <ProductCard item={item} key={index} />
                         )}
                     </ul>
+                </Column>
+            </Row>
+
+            <Row>
+                <Column>
+                    <p style={{ textAlign: 'center' }}>
+                        Items <span>{ start }</span> to <span>{ end }</span> of <span>{ total } </span>
+                    </p>
                 </Column>
             </Row>
         </Container>

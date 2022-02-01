@@ -1,0 +1,15 @@
+/hst:hst/hst:configurations/react/hst:workspace/hst:sitemenus/footer/Company:
+  jcr:primaryType: hst:sitemenuitem
+  hst:repobased: false
+  /About Us:
+    jcr:primaryType: hst:sitemenuitem
+    hst:repobased: false
+  /Careers:
+    jcr:primaryType: hst:sitemenuitem
+    hst:repobased: false
+  /Terms of Use:
+    jcr:primaryType: hst:sitemenuitem
+    hst:repobased: false
+  /Privacy Policy:
+    jcr:primaryType: hst:sitemenuitem
+    hst:repobased: false

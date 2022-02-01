@@ -2,9 +2,24 @@ definitions:
   config:
     /hst:hst/hst:configurations/react/hst:abstractpages/base:
       jcr:primaryType: hst:component
-      /navigation:
-        jcr:primaryType: hst:containercomponentreference
-        hst:referencecomponent: base/navigation
       /globalElements:
         jcr:primaryType: hst:containercomponentreference
         hst:referencecomponent: base/globalElements
+      /navigation:
+        jcr:primaryType: hst:containercomponentreference
+        hst:referencecomponent: base/navigation
+      /promoBar:
+        jcr:primaryType: hst:containercomponentreference
+        hst:referencecomponent: base/promoBar
+      /footerMenu:
+        jcr:primaryType: hst:containeritemcomponent
+        hst:componentclassname: org.onehippo.cms7.essentials.components.EssentialsMenuComponent
+        hst:parameternames: [menu]
+        hst:parametervalues: [footer]
+        hst:label: footerMenu
+      /footerSocial:
+        jcr:primaryType: hst:containeritemcomponent
+        hst:componentclassname: org.onehippo.cms7.essentials.components.EssentialsMenuComponent
+        hst:label: footerSocial
+        hst:parameternames: [menu]
+        hst:parametervalues: [footerSocial]

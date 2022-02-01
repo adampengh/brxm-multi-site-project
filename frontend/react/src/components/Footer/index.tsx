@@ -1,6 +1,9 @@
 import React, { useContext } from 'react';
 import { BrComponent, BrPageContext } from '@bloomreach/react-sdk';
+import FooterMenu from './FooterMenu';
+import FooterSocial from './FooterSocial';
 import { GlobalElementsContext } from '../../context/GlobalElementsContext';
+import { Container } from '../../uikit/Layout';
 
 import './Footer.scss';
 
@@ -12,14 +15,22 @@ export const Footer = () => {
     console.log('logo', logo);
 
     return(
-        <footer className="footer">
-            <div className="container">
-                { logo && <img src={logo.getOriginal().getUrl()} alt='logo' /> }
-                <div className="">&copy;{new Date().getFullYear()} Bloomreach</div>
-                <div className="">
-                    <BrComponent path="footer" />
-                </div>
-            </div>
+        <footer className='footer'>
+            <Container className='footer__container'>
+                <section className='footer__top'>
+                    <div className='footer__logo'>
+                        { logo && <img src={logo.getOriginal().getUrl()} alt='logo' /> }
+                        <BrComponent path="footerSocial">
+                            <FooterSocial />
+                        </BrComponent>
+                    </div>
+                    <BrComponent path="footerMenu">
+                        <FooterMenu />
+                    </BrComponent>
+                </section>
+
+                <p className='footer__copyright'>&copy;{new Date().getFullYear()} Bloomreach, Inc. All Rights Reserved.</p>
+            </Container>
         </footer>
     );
 }

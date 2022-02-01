@@ -2,23 +2,30 @@ import React from 'react';
 
 interface ButtonProps {
     active?: boolean;
+    children?: any;
     className?: string;
     disabled?: boolean;
+    onClick?: () => void;
     prefix?: string;
     size?: string;
     style?: string;
-    text: string;
+    text?: string;
+    value?: any;
     variant?: string;
+    [property: string]: any;
 }
 
 export const Button = ({
     active = false,
+    children,
     className,
     disabled = false,
+    onClick,
     prefix = 'button',
     size,
     style,
     text,
+    value,
     variant = 'primary',
 }: ButtonProps) => {
     let classes = `${prefix}`;
@@ -32,9 +39,11 @@ export const Button = ({
         <button
             className={classes}
             disabled={disabled}
-            onClick={(event) => console.log(event.target)}
+            onClick={onClick}
+            value={value}
         >
-            <span>{ text }</span>
+            { text && <span>{ text }</span> }
+            { children }
         </button>
     )
 };

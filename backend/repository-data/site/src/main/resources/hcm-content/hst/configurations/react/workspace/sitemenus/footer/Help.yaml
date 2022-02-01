@@ -1,0 +1,18 @@
+/hst:hst/hst:configurations/react/hst:workspace/hst:sitemenus/footer/Help:
+  jcr:primaryType: hst:sitemenuitem
+  hst:repobased: false
+  /Track Order:
+    jcr:primaryType: hst:sitemenuitem
+    hst:repobased: false
+  /Returns & Exchanges:
+    jcr:primaryType: hst:sitemenuitem
+    hst:repobased: false
+  /Shipping:
+    jcr:primaryType: hst:sitemenuitem
+    hst:repobased: false
+  /International Orders:
+    jcr:primaryType: hst:sitemenuitem
+    hst:repobased: false
+  /Contact Us:
+    jcr:primaryType: hst:sitemenuitem
+    hst:repobased: false

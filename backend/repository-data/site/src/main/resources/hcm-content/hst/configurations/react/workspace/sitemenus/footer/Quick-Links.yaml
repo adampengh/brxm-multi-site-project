@@ -1,0 +1,19 @@
+/hst:hst/hst:configurations/react/hst:workspace/hst:sitemenus/footer/Quick Links:
+  .meta:order-before: Help
+  jcr:primaryType: hst:sitemenuitem
+  hst:repobased: false
+  /Find a Store:
+    jcr:primaryType: hst:sitemenuitem
+    hst:repobased: false
+  /My Account:
+    jcr:primaryType: hst:sitemenuitem
+    hst:repobased: false
+  /Rewards:
+    jcr:primaryType: hst:sitemenuitem
+    hst:repobased: false
+  /Daily Deals:
+    jcr:primaryType: hst:sitemenuitem
+    hst:repobased: false
+  /Gift Cards:
+    jcr:primaryType: hst:sitemenuitem
+    hst:repobased: false

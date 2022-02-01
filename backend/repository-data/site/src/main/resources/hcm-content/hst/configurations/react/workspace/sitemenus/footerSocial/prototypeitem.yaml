@@ -1,0 +1,5 @@
+/hst:hst/hst:configurations/react/hst:workspace/hst:sitemenus/footerSocial/hst:prototypeitem:
+  .meta:order-before: Facebook
+  jcr:primaryType: hst:sitemenuitem
+  hst:parameternames: [icon]
+  hst:parametervalues: ['']

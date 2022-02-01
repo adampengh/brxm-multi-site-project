@@ -32,6 +32,8 @@ export default {
                 'primary-outline',
                 'secondary',
                 'secondary-outline',
+                'tertiary',
+                'tertiary-outline',
                 'success',
                 'success-outline',
                 'warning',

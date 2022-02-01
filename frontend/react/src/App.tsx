@@ -24,25 +24,26 @@ import { CommerceConnectorProvider } from '@bloomreach/connector-components-reac
 import { RouteComponentProps } from 'react-router-dom';
 import { GlobalElementsProvider } from './context/GlobalElementsContext';
 
+import Drawer from './uikit/Drawer';
+
 // Components
 import {
     Banner,
-    Content,
     Footer,
     Header,
     Hero,
     Navigation,
     NewsList,
+    ProductDetail,
     ProductListingGrid,
 } from './components';
 
 const MAPPING = {
     Banner,
-    Content,
     Hero,
     Navigation,
     'News List': NewsList,
-    'Simple Content': Content,
+    ProductDetail,
     ProductListingGrid,
 };
 
@@ -75,13 +76,14 @@ export default function App(props: RouteComponentProps) {
                     connector={connector}
                     graphqlServiceUrl={graphqlServiceUrl}
                     existingToken={existingToken}
-                    >
+                >
                     <Header />
                     <main>
                         <BrComponent path='top' />
                         <BrComponent path='main' />
                         <BrComponent path='bottom' />
                     </main>
+                    <Drawer />
                     <Footer />
                 </CommerceConnectorProvider>
             </GlobalElementsProvider>

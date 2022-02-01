@@ -1,0 +1,43 @@
+@import '../../scss/variables';
+
+.promo-slider {
+    background: #f0f1f2;
+    text-align: center;
+
+    &__slide {
+        display: flex;
+        align-items: center;
+        padding-top: 11px;
+        padding-bottom: 10px;
+        font-size: 11px;
+        line-height: 15px;
+        font-weight: 500;
+        font-family: $font-primary;
+        p {
+            margin: 0;
+        }
+    }
+
+
+
+    .slick-arrow {
+        width: 36px;
+        height: 36px;
+        background: #f0f1f2;
+        z-index: 1;
+        svg {
+            width: 36px;
+            height: 36px;
+        }
+        &:before {
+            display: none;
+        }
+        &.slick-prev {
+            left: 0;
+        }
+        &.slick-next {
+            right: 0;
+        }
+    }
+}
+

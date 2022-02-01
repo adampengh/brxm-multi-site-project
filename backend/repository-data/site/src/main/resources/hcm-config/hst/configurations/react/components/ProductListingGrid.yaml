@@ -1,6 +1,7 @@
 definitions:
   config:
     /hst:hst/hst:configurations/react/hst:components/ProductListingGrid:
+      .meta:order-before: ProductDetail
       jcr:primaryType: hst:component
       hst:componentclassname: org.onehippo.cms7.essentials.components.EssentialsDocumentComponent
       hst:parameternames: [categoryId, document]

@@ -4,7 +4,7 @@
 
 .button {
     // ------------------------------------------------
-    // Default
+    // DEFAULT
     // ------------------------------------------------
     border: 1px solid transparent;
     border-radius: 0;
@@ -21,7 +21,7 @@
     }
 
     // ------------------------------------------------
-    // Dark
+    // VARIANTS
     // ------------------------------------------------
     &-dark {
         @include button($color-neutral-gray-32, $color-neutral-white, $color-neutral-gray-32);
@@ -42,9 +42,15 @@
         }
     }
     &-secondary {
-        @include button($color-brand-secondary, $color-neutral-white, $color-brand-secondary);
+        @include button($color-brand-secondary, $color-brand-primary, $color-brand-secondary);
         &-outline {
             @include buttonOutline($color-neutral-white, $color-brand-secondary, $color-brand-secondary);
+        }
+    }
+    &-tertiary {
+        @include button($color-brand-tertiary, $color-neutral-white, $color-brand-tertiary);
+        &-outline {
+            @include buttonOutline($color-neutral-white, $color-brand-tertiary, $color-brand-tertiary);
         }
     }
     &-success {
@@ -112,29 +118,32 @@
     // ------------------------------------------------
     // BUTTON GROUPS
     // ------------------------------------------------
-    &-group {
-        .button {
-            align-content: center;
-            align-items: center;
-            display: inline-flex;
-            flex-wrap: nowrap;
-            height: pxToRem(24);
-            justify-content: center;
-            &-small {
-                width: pxToRem(24);
-            }
-            &-medium {
-                width: pxToRem(32);
-            }
-            &:first-child {
-                border-bottom-left-radius: pxToRem(4);
-                border-top-left-radius: pxToRem(4);
-            }
-            &:last-child {
-                border-bottom-right-radius: pxToRem(4);
-                border-top-right-radius: pxToRem(4);
-            }
-        }
-
-    }
+    // &-group {
+    //     .button {
+    //         align-content: center;
+    //         align-items: center;
+    //         display: inline-flex;
+    //         flex-wrap: nowrap;
+    //         height: pxToRem(24);
+    //         justify-content: center;
+    //         padding: pxToRem(8);
+    //         &-small {
+    //             width: pxToRem(24);
+    //         }
+    //         &-medium {
+    //             width: pxToRem(32);
+    //         }
+    //         &:first-child {
+    //             border-bottom-left-radius: pxToRem(4);
+    //             border-top-left-radius: pxToRem(4);
+    //         }
+    //         &:last-child {
+    //             border-bottom-right-radius: pxToRem(4);
+    //             border-top-right-radius: pxToRem(4);
+    //         }
+    //         &:not(:last-child) {
+    //             border-right: transparent;
+    //         }
+    //     }
+    // }
 }

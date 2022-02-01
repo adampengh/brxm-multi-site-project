@@ -1,0 +1,7 @@
+/hst:hst/hst:configurations/react/hst:workspace/hst:sitemenus/footerSocial/Twitter:
+  .meta:order-before: Instagram
+  jcr:primaryType: hst:sitemenuitem
+  hst:externallink: https://www.twitter.com/
+  hst:parameternames: [icon]
+  hst:parametervalues: [twitter]
+  hst:repobased: false

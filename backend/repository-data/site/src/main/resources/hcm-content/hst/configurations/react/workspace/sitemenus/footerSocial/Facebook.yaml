@@ -1,0 +1,6 @@
+/hst:hst/hst:configurations/react/hst:workspace/hst:sitemenus/footerSocial/Facebook:
+  jcr:primaryType: hst:sitemenuitem
+  hst:externallink: https://www.facebook.com/
+  hst:parameternames: [icon]
+  hst:parametervalues: [facebook-f]
+  hst:repobased: false

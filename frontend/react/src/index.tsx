@@ -24,6 +24,9 @@ import {
 } from 'react-router-dom';
 
 import App from './App';
+import './fontawesome';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 import './scss/styles.scss';
 

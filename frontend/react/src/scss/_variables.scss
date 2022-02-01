@@ -2,21 +2,19 @@
 // ================================================
 // BREAKPOINTS
 // ================================================
-$breakpoint-xs:             640px;
-$breakpoint-sm:             640px;
-$breakpoint-md:             768px;
-$breakpoint-lg:             1024px;
-$breakpoint-xl:             1200px;
-$breakpoint-xxl:            1440px;
-
+$breakpoint-xs:                640px;
+$breakpoint-sm:                640px;
+$breakpoint-md:                768px;
+$breakpoint-lg:                1025px;
+$breakpoint-xl:                1200px;
+$breakpoint-xxl:               1440px;
 
 // ================================================
 // COLORS
 // ================================================
-$color-brand-primary:          #711E2B;
-$color-brand-primary-light:    #B33B44;
-$color-brand-secondary:        #DABE85;
-$color-brand-secondary-light:  #F1E7D6;
+$color-brand-primary:          #002840;
+$color-brand-secondary:        #FFD500;
+$color-brand-tertiary:         #00B2DB;
 
 $color-neutral-black:          #1B1F22;
 $color-neutral-gray-18:        #2D3339;
@@ -37,11 +35,27 @@ $color-utility-error:          #ED565D;
 $color-utility-info:           #1487B8;
 
 // ================================================
-// Fonts
+// CONTAINERS
+// ================================================
+$container-sm:                  576px;
+$container-md:                  720px;
+$container-lg:                  960px;
+$container-xl:                  1180px;
+$container-xxl:                 1440px;
+
+// ================================================
+// FONT - FAMILIES
 // ================================================
 $font-primary: 'Montserrat', Helvetica, Arial, sans-serif;
 $font-secondary: 'Taviraj', serif;
 
 // ================================================
-// Font Sizes
+// FONT - SIZES
 // ================================================
+
+
+// ================================================
+// Z-INDEX
+// ================================================
+$z-index-drawer:               10050;
+$z-index-modal:                10070;

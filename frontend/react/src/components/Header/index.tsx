@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { BrComponent, BrPageContext } from '@bloomreach/react-sdk';
 import { GlobalElementsContext } from '../../context/GlobalElementsContext';
 import { ReactComponent as Logo } from '../../assets/logo.svg';
+import SlickSlider from '../SlickSlider';
 
 export const Header = () => {
     const page = useContext(BrPageContext);
@@ -15,7 +16,6 @@ export const Header = () => {
         if (header) {
             document.body.style.paddingTop = String(header.offsetHeight) + 'px';
         }
-
         window.addEventListener('resize', () => document.body.style.paddingTop = String(header?.offsetHeight) + 'px')
         return () => {
             window.addEventListener('resize', () => document.body.style.paddingTop = String(header?.offsetHeight) + 'px')
@@ -23,17 +23,23 @@ export const Header = () => {
     });
 
     return (
-        <header className='header' id='header'>
-            <section className='promo-bar'>Promo Bar</section>
+        <>
+            <header className='header' id='header'>
+                {/* <section className='promo-bar'>Promo Bar</section> */}
 
-            <section className='header__primary'>
-                <div className='header__primary--inner'>
-                    <Link to='/' className='header__logo'>
-                        { logo ? <img src={logo.getOriginal().getUrl()} alt='logo' /> : <Logo /> }
-                    </Link>
-                    <BrComponent path="navigation" />
-                </div>
-            </section>
-        </header>
+                <section className='header__main'>
+                    <div className='header__main--inner'>
+                        <Link to='/' className='header__logo'>
+                            { logo ? <img src={logo.getOriginal().getUrl()} alt='logo' /> : <Logo /> }
+                        </Link>
+                        <BrComponent path="navigation" />
+                    </div>
+                </section>
+            </header>
+
+            <BrComponent path="promoBar">
+                <SlickSlider />
+            </BrComponent>
+        </>
     );
 }

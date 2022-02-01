@@ -1,0 +1,6 @@
+definitions:
+  config:
+    /hst:hst/hst:configurations/react/hst:components/ProductDetail:
+      jcr:primaryType: hst:component
+      hst:parameternames: [productId]
+      hst:parametervalues: ['${1}']

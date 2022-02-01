@@ -1,5 +1,3 @@
-@import '../variables';
-
 .container {
     // background: rgba(red, 0.1);
     // border: 1px solid rgba(red, 0.3);
@@ -8,26 +6,24 @@
     padding-right: 0.75rem;
 
     @media screen and (min-width: $breakpoint-sm) {
-        max-width: 576px;
+        max-width: $container-sm;
     }
     @media screen and (min-width: $breakpoint-md) {
-        max-width: 720px;
+        max-width: $container-md;
     }
     @media screen and (min-width: $breakpoint-lg) {
-        max-width: 960px;
+        max-width: $container-lg;
     }
     @media screen and (min-width: $breakpoint-xl) {
-        max-width: 1180px;
+        max-width: $container-xl;
     }
     @media screen and (min-width: $breakpoint-xxl) {
-        max-width: 1180px;
+        max-width: $container-xxl;
     }
 }
 
 
 .row {
-    // background: rgba(red, 0.1);
-    // border: 1px solid rgba(red, 0.3);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -37,8 +33,6 @@
 
 
 .column {
-    // background: rgba(#563D7C, 0.15);
-    // border: 1px solid rgba(#563D7C, 0.2);
     flex: 1 1 auto;
     padding-left: 0.75rem;
     padding-right: 0.75rem;

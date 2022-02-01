@@ -1,0 +1,6 @@
+/hst:hst/hst:configurations/react/hst:workspace/hst:sitemenus/footerSocial/Instagram:
+  jcr:primaryType: hst:sitemenuitem
+  hst:externallink: https://www.instagram.com
+  hst:parameternames: [icon]
+  hst:parametervalues: [instagram]
+  hst:repobased: false

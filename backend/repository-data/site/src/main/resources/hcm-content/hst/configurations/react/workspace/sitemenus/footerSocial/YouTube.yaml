@@ -1,0 +1,6 @@
+/hst:hst/hst:configurations/react/hst:workspace/hst:sitemenus/footerSocial/YouTube:
+  jcr:primaryType: hst:sitemenuitem
+  hst:externallink: https://www.youtube.com/
+  hst:parameternames: [icon]
+  hst:parametervalues: [youtube]
+  hst:repobased: false

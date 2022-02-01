@@ -3,19 +3,26 @@ definitions:
     /hst:hst/hst:configurations/react/hst:workspace:
       jcr:primaryType: hst:workspace
       jcr:mixinTypes: ['dxphst:mergeable']
-      dxphst:treehash: 6D61043D83C63518371F2C0DC57E19E5
+      dxphst:treehash: 106EEEB99DCFF4D687D1A6560583CD2C
       /hst:containers:
         jcr:primaryType: hst:containercomponentfolder
         /base:
           jcr:primaryType: hst:containercomponentfolder
-          /navigation:
-            .meta:residual-child-node-category: content
-            jcr:primaryType: hst:containercomponent
-            hippo:identifier: 8a06bd65-4dec-4a40-8692-d7408a1fdada
           /globalElements:
             .meta:residual-child-node-category: content
             jcr:primaryType: hst:containercomponent
             hippo:identifier: 10bd9e14-1943-4b47-94ea-286145e564f6
+          /navigation:
+            .meta:residual-child-node-category: content
+            jcr:primaryType: hst:containercomponent
+            hippo:identifier: 8a06bd65-4dec-4a40-8692-d7408a1fdada
+            hst:xtype: hst.nomarkup
+            hst:lastmodified: 2022-02-01T09:41:10.530-05:00
+          /promoBar:
+            .meta:residual-child-node-category: content
+            jcr:primaryType: hst:containercomponent
+            hippo:identifier: 6b820251-4f2b-44f3-ab06-4fff0074094c
+            hst:lastmodified: 2022-02-01T09:41:10.530-05:00
         /pagenotfound:
           jcr:primaryType: hst:containercomponentfolder
           /main:
@@ -31,3 +38,11 @@ definitions:
           .meta:residual-child-node-category: content
           jcr:primaryType: hst:sitemenu
           hst:lastmodified: 2022-01-13T12:29:12.479-05:00
+        /footer:
+          .meta:residual-child-node-category: content
+          jcr:primaryType: hst:sitemenu
+          hst:lastmodified: 2022-01-28T09:48:14.254-05:00
+        /footerSocial:
+          .meta:residual-child-node-category: content
+          jcr:primaryType: hst:sitemenu
+          hst:lastmodified: 2022-02-01T09:43:31.687-05:00
