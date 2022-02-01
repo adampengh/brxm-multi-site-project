@@ -65,13 +65,13 @@ const ProductGrid = ({ item }: any) => {
                     className='product-card__img-quick-view'
                     onClick={() => setShowQuickview(true)}
                 >QuickView</button>
-                <div className='modal' id={item?.itemId?.id} data-modal-status={showQuickview}>
-                    <button onClick={() => setShowQuickview(false)}>Close</button>
-                    <div className='modal__content'>
-                        <QuickView item={item} />
-                    </div>
-                    <div className='modal__overlay' onClick={() => setShowQuickview(false)} />
-                </div>
+                <Modal
+                    id={`product-id-${item?.itemId?.id}`}
+                    showModal={showQuickview}
+                    setShowModal={setShowQuickview}
+                >
+                    <QuickView item={item} />
+                </Modal>
             </div>
 
             <Link to={`/p/${item?.itemId?.id}`}>

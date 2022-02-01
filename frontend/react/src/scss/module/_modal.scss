@@ -19,16 +19,46 @@ $prefix: modal;
         }
     }
 
+    // ================================================
+    // CLOSE
+    // ================================================
+    &__close {
+        align-items: center;
+        background: $color-neutral-white;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        font-size: pxToRem(24);
+        height: pxToRem(48);
+        justify-content: center;
+        line-height: pxToRem(18);
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: all 0.3s ease;
+        width: pxToRem(48);
+        &:hover {
+            background: $color-neutral-gray-91;
+        }
+    }
+
+
+
+    // ================================================
+    // CONTENT
+    // ================================================
     &__content {
+        background: $color-neutral-white;
         display: block;
-        position: fixed;
-        width: 400px;
-        height: 300px;
-        background: #fff;
-        top: 50%;
+        height: 80%;
         left: 50%;
+        padding: pxToRem(30);
+        position: fixed;
+        top: 50%;
         transform: translate(-50%, -50%);
         z-index: $z-index-modal + 2;
+        width: 80%;
+        overflow: auto;
     }
 
     // ========================================================
