@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-import './QuickView.scss';
+import './QuickView.scss'
 
 const QuickView = ({ item }: any) => {
     if (!item) {
@@ -13,6 +14,7 @@ const QuickView = ({ item }: any) => {
             </div>
             <div className='quick-view__right'>
                 <h1>{ item?.displayName }</h1>
+                <Link to={`/p/${item?.itemId?.id}`}>View Details</Link>
             </div>
 
         </div>

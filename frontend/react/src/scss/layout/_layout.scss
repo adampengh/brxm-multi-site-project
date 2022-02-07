@@ -1,3 +1,4 @@
+@use "sass:map";
 .container {
     // background: rgba(red, 0.1);
     // border: 1px solid rgba(red, 0.3);
@@ -22,6 +23,14 @@
     }
 }
 
+$sizes: (
+    "xs": 12,
+    "sm": 12,
+    "md": 12,
+    "lg": 12,
+    "xl": 12,
+    "xxl": 12
+);
 
 .row {
     display: flex;
@@ -33,7 +42,21 @@
 
 
 .column {
-    flex: 1 1 auto;
+    // flex: 1 1 auto;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
+    @each $size, $columns in $sizes {
+        &-#{$size} {
+            font-size: #{$breakpoint-sm}px;
+        }
+        &-#{$size} {
+            @media screen and (min-width: map-get($breakpoints, $size)) {
+                @for $i from 1 through 12 {
+                    &-#{$i} {
+                        width: 100% * ($i / 12);
+                    }
+                }
+            }
+        }
+    }
 }

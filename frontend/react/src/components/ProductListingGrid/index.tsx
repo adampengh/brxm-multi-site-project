@@ -14,9 +14,8 @@ import './ProductListingGrid.scss';
 export const ProductListingGrid = ({ page, component }: BrProps) => {
     console.log('ProductListingGrid');
 
-    const connector = 'brsm';
-
     // State
+    let [querySort, setQuerySort] = useState('-price');
     const [queryPageSize, setQueryPageSize] = useState(24);
     let [queryOffset, setQueryOffset] = useState(0);
 
@@ -26,17 +25,10 @@ export const ProductListingGrid = ({ page, component }: BrProps) => {
     const documentRef = component?.getModels()?.document;
     const document = page?.getContent(documentRef);
 
-    const params = parse(window.location.search);
-    console.log('params', params);
-    if (params.page) {
-        queryOffset = (Number(params.page) - 1) * queryPageSize;
-    }
-
     const {
         categoryId,
         pageMetadata,
     } = document?.getData<any>();
-    console.log('categoryId', categoryId);
 
     const {
         // canonicalUrl,
@@ -51,15 +43,34 @@ export const ProductListingGrid = ({ page, component }: BrProps) => {
     } = pageMetadata;
 
     // An exmple usage with the hook.
+    const params = parse(window.location.search);
+    if (params.page) {
+        queryOffset = (Number(params.page) - 1) * queryPageSize;
+    }
+    if (params.sort) {
+        let sort;
+        if (typeof params.sort === 'object') {
+            sort = params.sort[params.sort.length - 1];
+        } else {
+            sort = params.sort;
+        }
+
+        sort = sort.split('-');
+        if (sort[1] === 'desc') {
+            sort = `-${sort[0]}`;
+        } else {
+            sort = `${sort[0]}`;
+        }
+    }
     const [, itemsPageResult, loading, error] = useProductGridCategory({
         categoryId,
         customAttrFields: ['reviews', 'reviews_count', 'OnlineOnly', 'inStoreOnly'],
         // customVariantAttrFields,
-        connector,
+        connector: process.env.REACT_APP_DEFAULT_CONNECTOR || 'brsm',
         // facetFieldFilters,
         offset: queryOffset,
         pageSize: queryPageSize,
-        sortFields: '-sale_price',
+        sortFields: querySort,
     });
 
     if (loading) {
@@ -73,7 +84,7 @@ export const ProductListingGrid = ({ page, component }: BrProps) => {
     if (!itemsPageResult) {
         return null;
     }
-    console.log('itemsPageResult', itemsPageResult);
+
     const {
         // count,
         facetResult,

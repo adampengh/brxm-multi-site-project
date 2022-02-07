@@ -3,7 +3,7 @@ definitions:
     /hst:hst/hst:configurations/react/hst:workspace:
       jcr:primaryType: hst:workspace
       jcr:mixinTypes: ['dxphst:mergeable']
-      dxphst:treehash: 106EEEB99DCFF4D687D1A6560583CD2C
+      dxphst:treehash: 9EA5C5FE0816F5B8F5CF7B6600A76B8E
       /hst:containers:
         jcr:primaryType: hst:containercomponentfolder
         /base:
@@ -32,6 +32,27 @@ definitions:
             hst:label: Page-Not-Found Main
             hst:xtype: hst.vbox
             hst:lastmodified: 2021-12-15T20:32:19.662-05:00
+        /product-detail:
+          jcr:primaryType: hst:containercomponentfolder
+          /product-detail-bottom-1:
+            .meta:residual-child-node-category: content
+            jcr:primaryType: hst:containercomponent
+            hippo:identifier: 026fc68b-c50d-40f5-91c0-47bce518f450
+            hst:label: Product Detail Bottom Container 1
+            hst:xtype: hst.vbox
+            hst:lastmodified: 2022-02-02T13:15:48.861-05:00
+          /product-detail-bottom-2:
+            .meta:residual-child-node-category: content
+            jcr:primaryType: hst:containercomponent
+            hippo:identifier: 026fc68b-c50d-40f5-91c0-47bce518f450
+            hst:label: Product Detail Bottom Container 2
+            hst:xtype: hst.vbox
+          /product-detail-bottom-3:
+            .meta:residual-child-node-category: content
+            jcr:primaryType: hst:containercomponent
+            hippo:identifier: 026fc68b-c50d-40f5-91c0-47bce518f450
+            hst:label: Product Detail Bottom Container 3
+            hst:xtype: hst.vbox
       /hst:sitemenus:
         jcr:primaryType: hst:sitemenus
         /main:

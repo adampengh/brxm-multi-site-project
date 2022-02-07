@@ -10,7 +10,7 @@ interface ButtonProps {
     size?: string;
     style?: string;
     text?: string;
-    value?: any;
+    value?: string;
     variant?: string;
     [property: string]: any;
 }

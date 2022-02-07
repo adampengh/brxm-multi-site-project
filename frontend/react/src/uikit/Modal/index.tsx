@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface ModalProps {
@@ -20,7 +21,7 @@ const Modal = ({
         return null;
     }
 
-    return (
+    const Component = () =>
         <div className={prefix} id={id ? id : ''} data-modal-status={showModal}>
             <div className={`${prefix}__content`}>
                 <button className={`${prefix}__close`} onClick={() => setShowModal(false)}>
@@ -31,6 +32,11 @@ const Modal = ({
             </div>
             <div className={`${prefix}__overlay`} onClick={() => setShowModal(false)} />
         </div>
+
+
+    return ReactDOM.createPortal(
+        <Component />,
+        document.body
     );
 }
 

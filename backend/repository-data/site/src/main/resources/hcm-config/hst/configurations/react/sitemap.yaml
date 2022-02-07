@@ -35,9 +35,13 @@ definitions:
             hst:relativecontentpath: pages/categories/${1}
       /p:
         jcr:primaryType: hst:sitemapitem
-        hst:componentconfigurationid: hst:pages/pagenotfound
-        hst:hiddeninchannelmanager: true
+        hst:componentconfigurationid: hst:pages/product-detail-template
+        hst:hiddeninchannelmanager: false
         /_default_:
           jcr:primaryType: hst:sitemapitem
           hst:componentconfigurationid: hst:pages/product-detail
-          hst:relativecontentpath: p/${1}
+          hst:relativecontentpath: ${parent}/${1}
+          /_any_:
+            jcr:primaryType: hst:sitemapitem
+            hst:componentconfigurationid: hst:pages/product-detail
+            hst:relativecontentpath: p/${parent}

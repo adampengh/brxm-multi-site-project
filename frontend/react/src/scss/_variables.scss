@@ -9,6 +9,15 @@ $breakpoint-lg:                1025px;
 $breakpoint-xl:                1200px;
 $breakpoint-xxl:               1440px;
 
+$breakpoints: (
+    "xs": 375px,
+    "sm": 640px,
+    "md": 768px,
+    "lg": 1025px,
+    "xl": 1200px,
+    "xxl": 1440px
+);
+
 // ================================================
 // COLORS
 // ================================================

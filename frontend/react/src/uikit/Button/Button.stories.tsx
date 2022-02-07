@@ -60,6 +60,7 @@ ButtonTemplate.args = {
     size: '',
     style: '',
     text: 'Button',
-    variant: '',
+    value: 'button',
+    variant: 'primary',
 };
 ButtonTemplate.storyName = 'Button';

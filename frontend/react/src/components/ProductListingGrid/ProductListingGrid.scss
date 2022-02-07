@@ -7,6 +7,7 @@
     // Header
     // ------------------------------------------------
     &__header {
+        padding-top: 2rem;
         .column {
             flex: 1 1 25%;
         }
@@ -67,7 +68,7 @@
 .product-grid {
     display: grid !important;
     grid-template-columns: 1fr;
-    padding-top: 40px;
+    padding-top: 2rem;
     @media screen and (min-width: $breakpoint-md) {
         grid-template-columns: 1fr;
     }

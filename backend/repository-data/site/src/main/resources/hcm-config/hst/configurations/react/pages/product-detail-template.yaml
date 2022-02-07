@@ -1,6 +1,6 @@
 definitions:
   config:
-    /hst:hst/hst:configurations/react/hst:pages/product-detail:
+    /hst:hst/hst:configurations/react/hst:pages/product-detail-template:
       jcr:primaryType: hst:component
       hst:referencecomponent: hst:abstractpages/base
       /main:
@@ -8,6 +8,8 @@ definitions:
         /ProductDetail:
           jcr:primaryType: hst:component
           hst:referencecomponent: hst:components/ProductDetail
+          hst:parameternames: [productId]
+          hst:parametervalues: [82473fam]
           /product-detail-bottom-1:
             jcr:primaryType: hst:containercomponentreference
             hst:referencecomponent: product-detail/product-detail-bottom-1

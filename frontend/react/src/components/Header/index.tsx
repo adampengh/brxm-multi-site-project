@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { BrComponent, BrPageContext } from '@bloomreach/react-sdk';
 import { GlobalElementsContext } from '../../context/GlobalElementsContext';
 import { ReactComponent as Logo } from '../../assets/logo.svg';
-import SlickSlider from '../SlickSlider';
+import PromoSlider from '../PromoSlider';
 
 export const Header = () => {
     const page = useContext(BrPageContext);
@@ -38,7 +38,7 @@ export const Header = () => {
             </header>
 
             <BrComponent path="promoBar">
-                <SlickSlider />
+                <PromoSlider />
             </BrComponent>
         </>
     );
