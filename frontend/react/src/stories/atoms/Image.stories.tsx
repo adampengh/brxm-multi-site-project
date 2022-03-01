@@ -1,11 +1,12 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
-import { Image } from '.';
+import { Image } from '../../uikit';
 
 export default {
     title: 'Design System/Atoms/Image',
     component: Image,
+    args: {}
 } as ComponentMeta<typeof Image>;
 
 const Template: ComponentStory<typeof Image> = (args) => <Image {...args} />;

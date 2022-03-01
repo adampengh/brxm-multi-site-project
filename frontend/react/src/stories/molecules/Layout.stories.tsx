@@ -20,7 +20,20 @@ export default {
     },
 } as ComponentMeta<typeof Layout>;
 
-const Template: ComponentStory<typeof Layout> = (args) => <Layout {...args} />;
+const Template: ComponentStory<typeof Layout> = (args) => {
+    return (
+        <div style={{ paddingBottom: '32px' }}>
+            <Layout {...args} />
+            <p style={{
+                position: 'fixed',
+                bottom: 0,
+                left: 0,
+                padding: '8px',
+                background: '#fff'
+            }}>*Background color/borders only for storybook</p>
+        </div>
+    )
+}
 
 export const LayoutTemplate = Template.bind({});
 LayoutTemplate.args = {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
-import { Picture } from '.';
+import { Picture } from '../../uikit/Picture';
 
 export default {
     title: 'Design System/Atoms/Picture',

@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 
 interface ImageProps {
     altText: string;
@@ -12,6 +13,6 @@ export const Image = ({
     src,
 }: ImageProps) => {
     return (
-        <img className={`${className ? className : ''}`} src={src} alt={altText} />
+        <img className={classNames(className)} src={src} alt={altText} />
     )
 };

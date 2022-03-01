@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
-import { Button } from '.';
+import { Button } from '../../uikit/Button';
 
 export default {
     title: 'Design System/Atoms/Button',
@@ -48,7 +48,12 @@ export default {
     }
 } as ComponentMeta<typeof Button>;
 
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+const Template: ComponentStory<typeof Button> = (args) => {
+    console.log('button', args);
+    return (
+        <Button {...args} />
+    );
+};
 
 // Primary
 export const ButtonTemplate = Template.bind({});

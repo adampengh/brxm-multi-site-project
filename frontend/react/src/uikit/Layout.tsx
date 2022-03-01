@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 
 interface ContainerProps {
     children?: React.ReactNode;
@@ -31,7 +32,7 @@ interface ColumnProps {
 
 const Container = ({ className, children, ...props }: ContainerProps) => {
     return (
-        <section className={`container ${className ? className : ''}`} {...props}>
+        <section className={classNames('container', className)} {...props}>
             { children }
         </section>
     )
@@ -39,7 +40,7 @@ const Container = ({ className, children, ...props }: ContainerProps) => {
 
 const Row = ({ children, className, ...props }: RowProps) => {
     return (
-        <div className={`row ${className ? className : ''}`} {...props}>
+        <div className={classNames('row', className)} {...props}>
             { children }
         </div>
     )
@@ -56,17 +57,19 @@ const Column = ({
     xxl,
     ...props
 }: ColumnProps) => {
-    let classes = '';
-    classes += xs ? `column-xs-${xs} ` : '';
-    classes += sm ? `column-sm-${sm} ` : '';
-    classes += md ? `column-md-${md} ` : '';
-    classes += lg ? `column-lg-${lg} ` : '';
-    classes += xl ? `column-xl-${xl} ` : '';
-    classes += xxl ? `column-xxl-${xxl}` : '';
-    classes += className ? className : '';
+    const columnClass = classNames(
+        'column',
+        xs && `column-xs-${xs}`,
+        sm && `column-sm-${sm}`,
+        md && `column-md-${md}`,
+        lg && `column-lg-${lg}`,
+        xl && `column-xl-${xl}`,
+        xxl && `column-xxl-${xxl}`,
+        className,
+    )
 
     return (
-        <div className={`column column-sm ${classes}`} {...props}>
+        <div className={columnClass} {...props}>
             { children }
         </div>
     )

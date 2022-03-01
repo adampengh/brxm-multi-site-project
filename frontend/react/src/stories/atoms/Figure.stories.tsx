@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
-import { Figure } from '.';
+import { Figure } from '../../uikit/Figure';
 
 export default {
     title: 'Design System/Atoms/Figure',

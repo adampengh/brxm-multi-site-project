@@ -1,0 +1,44 @@
+// ================================================
+// Accordion
+// ================================================
+.accordion {
+    $parent: &;
+    display: block;
+    position: relative;
+
+    &__item {
+        border: 1px solid #ccc;
+        &:not(:last-child) {
+            border-bottom: none;
+        }
+    }
+
+
+    // ------------------------------------------------
+    // Header
+    // ------------------------------------------------
+    &__header {
+        display: block;
+        margin: 0;
+        button {
+            align-items: center;
+            background: none;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+
+
+
+    // ------------------------------------------------
+    // Body
+    // ------------------------------------------------
+    &__body {
+        display: none;
+    }
+}

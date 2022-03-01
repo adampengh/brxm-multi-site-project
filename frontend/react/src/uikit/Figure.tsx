@@ -1,5 +1,7 @@
 import React from 'react';
-import { Image } from '../Image';
+import classNames from 'classnames';
+import { Image } from './Image';
+
 interface FigureProps {
     altText: string;
     caption?: string;
@@ -14,7 +16,7 @@ export const Figure = ({
     src,
 }: FigureProps) => {
     return (
-        <figure className={`${className ? className : ''}`}>
+        <figure className={classNames(className)}>
             <Image src={src} altText={altText} />
             {caption && <figcaption>{ caption }</figcaption> }
         </figure>

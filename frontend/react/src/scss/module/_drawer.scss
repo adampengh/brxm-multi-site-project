@@ -26,11 +26,111 @@ $prefix: drawer;
             &__overlay {
                 display: block;
             }
-            // &__content {
-            //     opacity: 1;
-            // }
         }
     }
+
+
+
+
+    // ========================================================
+    // INNER
+    // ========================================================
+    &__inner {
+        background: $color-neutral-white;
+        display: block;
+        position: absolute;
+        z-index: $z-index-drawer + 1;
+        @include transition();
+    }
+
+
+    // ========================================================
+    // Header
+    // ========================================================
+    &__header {
+        align-content: center;
+        align-items: center;
+        background: $color-neutral-black;
+        border: 1px solid $color-neutral-white;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        position: absolute;
+
+        &-text {
+            padding-left: pxToRem(10);;
+            width: 360px;
+            h3 {
+                color: $color-neutral-white;
+                font-size: pxToRem(12);
+                font-weight: 700;
+                line-height: pxToRem(14);
+                margin: 0;
+                margin-bottom: pxToRem(2);
+                @media screen and (min-width: $breakpoint-md) {
+                    font-size: pxToRem(14);
+                    line-height: pxToRem(18);
+                }
+            }
+            p {
+                color: $color-neutral-white;
+                font-size: pxToRem(10);
+                line-height: pxToRem(12);
+                margin: 0;
+                @media screen and (min-width: $breakpoint-md) {
+                    font-size: pxToRem(11);
+                    line-height: pxToRem(14);
+                }
+            }
+        }
+
+        &-arrow {
+            svg {
+                fill: $color-neutral-white;
+                height: pxToRem(24);
+                margin-top: pxToRem(-4);
+                width: pxToRem(32);
+                @include transition();
+                @media screen and (min-width: $breakpoint-md) {
+                    margin-top: 0;
+                }
+                path {
+                    fill: $color-neutral-white;
+                }
+            }
+        }
+    }
+
+
+    // ========================================================
+    // CONTENT
+    // ========================================================
+    &__content {
+        padding: pxToRem(16);
+        @include transition();
+    }
+
+
+    // ========================================================
+    // OVERLAY
+    // ========================================================
+    &__overlay {
+        background: #333;
+        display: none;
+        height: 100%;
+        left: 0;
+        opacity: 0.7;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+
+    // ================================================
+    // STATE
+    // ================================================
 
     // ------------------------------------------------
     // SIDE: BOTTOM OR TOP
@@ -46,6 +146,9 @@ $prefix: drawer;
                 width: 100%;
             }
             &__header {
+                border-bottom: none;
+                border-top-left-radius: pxToRem(6);
+                border-top-right-radius: pxToRem(6);
                 height: pxToRem(50);
                 left: 0;
                 padding-left: pxToRem(10);
@@ -84,9 +187,6 @@ $prefix: drawer;
                 transform: translate3d(-50%, 100%, 0);
             }
             &__header {
-                border-bottom: none;
-                border-top-left-radius: pxToRem(6);
-                border-top-right-radius: pxToRem(6);
                 box-shadow: -3px -3px 4px rgba(0, 0, 0, 0.2);
                 top: 0;
                 transform: translate3d(0, -100%, 0);
@@ -125,9 +225,6 @@ $prefix: drawer;
                 transform: translate3d(-50%, -100%, 0);
             }
             &__header {
-                border-top: none;
-                border-bottom-left-radius: pxToRem(6);
-                border-bottom-right-radius: pxToRem(6);
                 bottom: 0;
                 box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
                 transform: translate3d(0, 100%, 0);
@@ -165,23 +262,23 @@ $prefix: drawer;
     // ------------------------------------------------
     &[data-drawer-side="left"],
     &[data-drawer-side="right"] {
-        top: 0;
         height: 100%;
+        top: 0;
 
         #{$parent} {
             &__inner {
-                top: 50%;
                 height: 100%;
+                top: 50%;
             }
             &__header {
-                border-top: none;
                 border-bottom-left-radius: pxToRem(6);
                 border-bottom-right-radius: pxToRem(6);
+                border-top: none;
                 box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
                 height: pxToRem(50);
-                top: 50%;
                 padding-left: pxToRem(10);
                 padding-right: pxToRem(20);
+                top: 50%;
                 width: 100%;
                 @media screen and (min-width: $breakpoint-sm) {
                     left: 50%;
@@ -250,109 +347,12 @@ $prefix: drawer;
                 left: 0;
                 transform: translate3d(0, 100%, 0);
                 @media screen and (min-width: $breakpoint-sm) {
-                    transform-origin: left top;
                     transform: rotate(90deg) translate3d(-50%, 0%, 0);
+                    transform-origin: left top;
                 }
 
             }
         }
-    }
-
-
-    // ========================================================
-    // INNER
-    // ========================================================
-    &__inner {
-        background: $color-neutral-white;
-        display: block;
-        position: absolute;
-        @include transition();
-        z-index: $z-index-drawer + 1;
-    }
-
-
-    // ========================================================
-    // Header
-    // ========================================================
-    &__header {
-        align-content: center;
-        align-items: center;
-        background: $color-neutral-black;
-        border: 1px solid $color-neutral-white;
-        cursor: pointer;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        position: absolute;
-
-        &-text {
-            padding-left: pxToRem(10);;
-            width: 360px;
-            h3 {
-                color: $color-neutral-white;
-                font-size: pxToRem(12);
-                font-weight: 700;
-                line-height: pxToRem(14);
-                margin: 0;
-                margin-bottom: pxToRem(2);
-                @media screen and (min-width: $breakpoint-md) {
-                    font-size: pxToRem(14);
-                    line-height: pxToRem(18);
-                }
-            }
-            p {
-                color: $color-neutral-white;
-                font-size: pxToRem(10);
-                line-height: pxToRem(12);
-                margin: 0;
-                @media screen and (min-width: $breakpoint-md) {
-                    font-size: pxToRem(11);
-                    line-height: pxToRem(14);
-                }
-            }
-        }
-
-        &-arrow {
-            svg {
-                fill: $color-neutral-white;
-                height: pxToRem(24);
-                margin-top: pxToRem(-4);
-                width: pxToRem(32);
-                @include transition();
-                @media screen and (min-width: $breakpoint-md) {
-                    margin-top: 0;
-                }
-                path {
-                    fill: $color-neutral-white;
-                }
-            }
-        }
-    }
-
-
-    // ========================================================
-    // CONTENT
-    // ========================================================
-    &__content {
-        // opacity: 0;
-        padding: pxToRem(16);
-        @include transition();
-    }
-
-
-    // ========================================================
-    // OVERLAY
-    // ========================================================
-    &__overlay {
-        background: #333;
-        display: none;
-        height: 100%;
-        left: 0;
-        opacity: 0.7;
-        position: fixed;
-        top: 0;
-        width: 100%;
     }
 
 }

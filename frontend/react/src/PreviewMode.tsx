@@ -19,7 +19,7 @@ const PreviewModal = () => {
             <p>You are currently viewing the site in Preview Mode</p>
             <button onClick={() => exitPreviewMode()}>Exit Preview Mode</button>
         </div>
-    , document.body);
+        , document.body);
 }
 
 export default PreviewModal;

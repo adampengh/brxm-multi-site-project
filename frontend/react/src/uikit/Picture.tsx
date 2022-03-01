@@ -1,5 +1,7 @@
 import React from 'react';
-import { Image } from '../Image';
+import classNames from 'classnames';
+
+import { Image } from './Image';
 
 interface PictureProps {
     altText: string;
@@ -17,7 +19,7 @@ export const Picture = ({
     desktopImage,
 }: PictureProps) => {
     return (
-        <picture className={`${className ? className : ''}`}>
+        <picture className={classNames(className)}>
             <source
                 srcSet={mobileImage}
                 media="(max-width: 767px)" />

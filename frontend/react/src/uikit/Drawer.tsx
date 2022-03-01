@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import classNames from 'classnames';
 
 interface DrawerProps {
     className?: string;
@@ -9,7 +9,7 @@ interface DrawerProps {
     tabTextOpen?: string;
 }
 
-const Drawer = ({
+export const Drawer = ({
     className,
     prefix = 'drawer',
     side = 'bottom',
@@ -20,7 +20,7 @@ const Drawer = ({
 
     return (
         <section
-            className={`${prefix} ${className ? className : ''}`}
+            className={classNames(prefix, className)}
             role='dialog'
             tabIndex={-1}
             data-drawer-side={side}
@@ -41,7 +41,9 @@ const Drawer = ({
                         <h3>{ showDrawer ? tabTextOpen : tabTextClosed }</h3>
                     </div>
                     <div className={`${prefix}__header-arrow`}>
-                        <FontAwesomeIcon icon={["fas", "angle-up"]} size="lg" />
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M34.545 31L36 29.4475L24 16.6L12 29.4475L13.4475 31L24 19.7125L34.545 31Z" fill="#43494F"/>
+                        </svg>
                     </div>
                 </div>
 
@@ -56,5 +58,3 @@ const Drawer = ({
         </section>
     );
 }
-
-export default Drawer;
