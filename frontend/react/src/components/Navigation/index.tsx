@@ -115,7 +115,7 @@ const MegaMenu = ({ item, bannerRef }: any) => {
                         <span>Back</span>
                     </button>
                     <ul className='columns'>
-                        { item.getChildren().map((item: any, index: number) => (
+                        { item.getChildren().map((item: MenuItem, index: number) => (
                             <li className='column' key={index}>
                                 <Column item={item} />
                             </li>
@@ -129,18 +129,18 @@ const MegaMenu = ({ item, bannerRef }: any) => {
 }
 
 
-const Column = ({ item }: any) => {
-  return (
-    <>
-      { item.getChildren().map((item: any, index: number) => (
-        <SecondLevelMenu item={item} key={index} />
-      ))}
-    </>
-  )
+const Column = ({item}: MenuLinkProps) => {
+    return (
+        <>
+            { item.getChildren().map((item: MenuItem, index: number) => (
+                <SecondLevelMenu item={item} key={index} />
+            ))}
+        </>
+    )
 }
 
 
-const SecondLevelMenu = ({ item }: any) => {
+const SecondLevelMenu = ({item}: MenuLinkProps) => {
     const [accordionOpen, setAccordionOpen] = React.useState(false);
 
     const setAccordionStatus = (e: any) => {
@@ -152,7 +152,7 @@ const SecondLevelMenu = ({ item }: any) => {
         if (item.getLink()) {
             return (
                 <h2 data-accordion-open={accordionOpen}>
-                    <Link to={item.getUrl()}>{item.getName()}</Link>
+                    {item && <Link to={item?.getUrl()?.toString() || ''}>{item.getName()}</Link> }
                 </h2>
             );
         }
@@ -191,11 +191,11 @@ const NavigationLink = ({ item }: MenuLinkProps) => {
     const url = item.getUrl();
 
     if (!url) {
-      return <span className="navigagion-link disabled">{item.getName()}</span>;
+        return <span className="navigagion-link disabled">{item.getName()}</span>;
     }
 
     if (item.getLink()?.type === TYPE_LINK_EXTERNAL) {
-      return <Link to={url} className="navigagion-link">{item.getName()}</Link>;
+        return <Link to={url} className="navigagion-link">{item.getName()}</Link>;
     }
 
     return <Link to={url} className="navigagion-link">{item.getName()}</Link>;

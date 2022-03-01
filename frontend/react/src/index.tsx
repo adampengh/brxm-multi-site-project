@@ -17,10 +17,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {
-  BrowserRouter,
-  Redirect,
-  Route,
-  Switch,
+    BrowserRouter,
+    Redirect,
+    Route,
+    Switch,
 } from 'react-router-dom';
 
 import App from './App';
@@ -31,11 +31,11 @@ import 'slick-carousel/slick/slick-theme.css';
 import './scss/styles.scss';
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Switch>
-      <Route path="/(.*)" component={App} />
-      <Redirect to="/" />
-    </Switch>
-  </BrowserRouter>,
-  document.getElementById('root'),
+    <BrowserRouter>
+        <Switch>
+            <Route path="/(.*)" component={App} />
+            <Redirect to="/" />
+        </Switch>
+    </BrowserRouter>,
+    document.getElementById('root'),
 );

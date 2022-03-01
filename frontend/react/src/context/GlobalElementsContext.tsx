@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { BrComponentContext, BrPageContext } from "@bloomreach/react-sdk";
+import React, { useEffect } from 'react';
+import { BrComponentContext, BrPageContext } from '@bloomreach/react-sdk';
 
 const GlobalElementsContext = React.createContext({});
 

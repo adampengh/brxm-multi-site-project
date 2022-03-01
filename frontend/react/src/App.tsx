@@ -24,7 +24,7 @@ import { CommerceConnectorProvider } from '@bloomreach/connector-components-reac
 import { RouteComponentProps } from 'react-router-dom';
 import { GlobalElementsProvider } from './context/GlobalElementsContext';
 
-import Drawer from './uikit/Drawer';
+import { Drawer } from './uikit';
 
 // Components
 import {
@@ -47,7 +47,7 @@ const MAPPING = {
     ProductListingGrid,
 };
 
-export default function App(props: RouteComponentProps) {
+const App = (props: RouteComponentProps) => {
     const connector = process.env.REACT_APP_DEFAULT_CONNECTOR || 'brsm';
     const graphqlServiceUrl = process.env.REACT_APP_DEFAULT_GRAPHQL_SERVICE_URL || 'http://localhost:4000';
     const existingToken = sessionStorage.getItem('token') ?? undefined; // retrieve existing token from session storage
@@ -63,7 +63,7 @@ export default function App(props: RouteComponentProps) {
     // brXM Configuration
     const previewMode = cookies.get('previewMode') || false;
     const configuration = {
-        endpoint: previewMode === "true" ? process.env.REACT_APP_BRXM_ENDPOINT_PREVIEW : process.env.REACT_APP_BRXM_ENDPOINT,
+        endpoint: previewMode === 'true' ? process.env.REACT_APP_BRXM_ENDPOINT_PREVIEW : process.env.REACT_APP_BRXM_ENDPOINT,
         endpointQueryParameter: 'endpoint',
         httpClient: axios,
         path: `${props.location.pathname}${props.location.search}`,
@@ -83,8 +83,8 @@ export default function App(props: RouteComponentProps) {
                         <BrComponent path='main' />
                         <BrComponent path='bottom' />
                     </main>
-                    <Drawer />
                     <Footer />
+                    <Drawer />
                 </CommerceConnectorProvider>
             </GlobalElementsProvider>
             <BrPageContext.Consumer>
@@ -98,3 +98,5 @@ export default function App(props: RouteComponentProps) {
         </BrPage>
     );
 }
+
+export default App;

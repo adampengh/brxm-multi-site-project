@@ -5,7 +5,7 @@ import { parse } from 'query-string';
 import { Container, Row, Column } from '../../uikit/Layout';
 
 import { CategoryBreadcrumb } from '../Breadcrumbs';
-import FacetsList from './FacetsList';
+// import FacetsList from './FacetsList';
 import PageTitle from '../PageTitle';
 import ProductCard from './ProductCard';
 
@@ -15,9 +15,9 @@ export const ProductListingGrid = ({ page, component }: BrProps) => {
     console.log('ProductListingGrid');
 
     // State
-    let [querySort, setQuerySort] = useState('-price');
+    let [querySort, ] = useState('-price');
     const [queryPageSize, setQueryPageSize] = useState(24);
-    let [queryOffset, setQueryOffset] = useState(0);
+    let [queryOffset, ] = useState(0);
 
     const [mobileColumns, setMobileColumns] = useState(2);
     const [desktopColumns, setDesktopColumns] = useState(4);
@@ -87,7 +87,7 @@ export const ProductListingGrid = ({ page, component }: BrProps) => {
 
     const {
         // count,
-        facetResult,
+        // facetResult,
         items,
         limit,
         offset,

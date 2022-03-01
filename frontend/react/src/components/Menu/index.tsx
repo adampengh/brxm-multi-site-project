@@ -24,37 +24,37 @@ interface MenuLinkProps {
 }
 
 function MenuLink({ item }: MenuLinkProps) {
-  const url = item.getUrl();
+    const url = item.getUrl();
 
-  if (!url) {
-    return <span className="nav-link text-capitalize disabled">{item.getName()}</span>;
-  }
+    if (!url) {
+        return <span className="nav-link text-capitalize disabled">{item.getName()}</span>;
+    }
 
-  if (item.getLink()?.type === TYPE_LINK_EXTERNAL) {
-    return <a className="nav-link text-capitalize" href={url}>{item.getName()}</a>;
-  }
+    if (item.getLink()?.type === TYPE_LINK_EXTERNAL) {
+        return <a className="nav-link text-capitalize" href={url}>{item.getName()}</a>;
+    }
 
-  return <Link to={url} className="nav-link text-capitalize">{item.getName()}</Link>;
+    return <Link to={url} className="nav-link text-capitalize">{item.getName()}</Link>;
 }
 
 export function Menu() {
-  const component = React.useContext(BrComponentContext);
-  const page = React.useContext(BrPageContext);
-  const menuRef = component?.getModels<MenuModels>()?.menu;
-  const menu = menuRef && page?.getContent<BrMenu>(menuRef);
+    const component = React.useContext(BrComponentContext);
+    const page = React.useContext(BrPageContext);
+    const menuRef = component?.getModels<MenuModels>()?.menu;
+    const menu = menuRef && page?.getContent<BrMenu>(menuRef);
 
-  if (!isMenu(menu)) {
-    return null;
-  }
+    if (!isMenu(menu)) {
+        return null;
+    }
 
-  return (
-    <ul className={`navbar-nav col-12 ${page!.isPreview() ? 'has-edit-button' : ''}`}>
-      <BrManageMenuButton menu={menu} />
-      { menu.getItems().map((item, index) => (
-        <li key={index} className={`nav-item ${item.isSelected() ? 'active' : ''}`}>
-          <MenuLink item={item} />
-        </li>
-      )) }
-    </ul>
-  );
+    return (
+        <ul className={`navbar-nav col-12 ${page!.isPreview() ? 'has-edit-button' : ''}`}>
+            <BrManageMenuButton menu={menu} />
+            { menu.getItems().map((item, index) => (
+                <li key={index} className={`nav-item ${item.isSelected() ? 'active' : ''}`}>
+                    <MenuLink item={item} />
+                </li>
+            )) }
+        </ul>
+    );
 }

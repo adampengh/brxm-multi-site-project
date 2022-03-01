@@ -31,7 +31,7 @@ const FooterMenu = () => {
 
     if (!isMenu(menu)) {
         return null;
-     }
+    }
 
     return (
         <div className='footer__menu'>

@@ -12,6 +12,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.17",
     "axios": "^0.21",
+    "classnames": "^2.3.1",
     "express-http-proxy": "^1.6.3",
     "http-proxy-middleware": "^2.0.1",
     "node-sass": "^4.0.0",
@@ -22,32 +23,22 @@
     "react-gtm-module": "^2.0.11",
     "react-router-dom": "^5.2",
     "react-slick": "^0.28.1",
+    "react-transition-group": "^4.4.2",
     "slick-carousel": "^1.8.1",
     "typescript": "4.0.5",
+    "uncontrollable": "^7.2.1",
     "universal-cookie": "^4.0.4"
   },
   "scripts": {
     "build": "SKIP_PREFLIGHT_CHECK=true react-scripts build",
     "dev": "SKIP_PREFLIGHT_CHECK=true react-scripts start",
+    "dev:storybook": "concurrently \"yarn dev\" \"yarn storybook\"",
     "lint": "eslint --ext js,ts,tsx src",
     "start-express": "node server.js",
     "start-nginx": "nginx -c ~/Projects/brxm-multi-site-project/frontend/react/nginx.conf",
     "stop-nginx": "nginx -s stop",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
-  },
-  "eslintConfig": {
-    "extends": "react-app",
-    "overrides": [
-      {
-        "files": [
-          "**/*.stories.*"
-        ],
-        "rules": {
-          "import/no-anonymous-default-export": "off"
-        }
-      }
-    ]
   },
   "browserslist": {
     "production": [
@@ -74,8 +65,10 @@
     "@types/react-gtm-module": "^2.0.1",
     "@types/react-router-dom": "^5.1",
     "@types/react-slick": "^0.23.8",
+    "concurrently": "^7.0.0",
     "eslint": "^7.12",
     "eslint-config-react-app": "^6.0",
+    "prettier": "^2.5.1",
     "react-scripts": "4.0.0"
   }
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Modal from '../../uikit/Modal';
+import { Modal } from '../../uikit/Modal';
 import ProductPrice from './ProductPrice';
 import QuickView from './QuickView';
 

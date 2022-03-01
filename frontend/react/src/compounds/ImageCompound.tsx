@@ -1,9 +1,17 @@
 import React, { useContext } from 'react';
-import { ImageSet } from '@bloomreach/spa-sdk';
+import { ImageSet, Reference } from '@bloomreach/spa-sdk';
 import { BrPageContext } from '@bloomreach/react-sdk';
 
+interface ImageCompoundProps {
+    image: {
+        altText: string;
+        desktopImage?: Reference;
+        mobileImage: Reference;
+        tabletImage?: Reference;
+    }
+}
 
-const ImageCompound = ({ image }: any) => {
+const ImageCompound = ({ image }: ImageCompoundProps) => {
     const page = useContext(BrPageContext);
     const {
         altText,

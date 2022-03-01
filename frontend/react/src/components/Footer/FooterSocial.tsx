@@ -32,7 +32,7 @@ const FooterSocial = () => {
 
     if (!isMenu(menu)) {
         return null;
-     }
+    }
 
     return (
         <ul className='footer__social'>
@@ -55,7 +55,7 @@ const FooterSocialLink = ({ item }: FooterSocialLinkProps) => {
     if (!url) {
         return <span className='footer__social-link'>
             <span className='visually-hidden'>{ item.getName() }</span>
-            { icon && <FontAwesomeIcon icon={["fab", icon]} /> }
+            { icon && <FontAwesomeIcon icon={['fab', icon]} /> }
         </span>;
     }
 
@@ -63,7 +63,7 @@ const FooterSocialLink = ({ item }: FooterSocialLinkProps) => {
         return (
             <a className='footer__social-link' href={url} target='_blank' rel='noopener noreferrer'>
                 <span className='visually-hidden'>{ item.getName() }</span>
-                { icon && <FontAwesomeIcon icon={["fab", icon]} /> }
+                { icon && <FontAwesomeIcon icon={['fab', icon]} /> }
             </a>
         );
     }
@@ -71,7 +71,7 @@ const FooterSocialLink = ({ item }: FooterSocialLinkProps) => {
     return (
         <Link to={url} className='footer__social-link'>
             <span className='visually-hidden'>{ item.getName() }</span>
-            { icon && <FontAwesomeIcon icon={["fab", icon]} /> }
+            { icon && <FontAwesomeIcon icon={['fab', icon]} /> }
         </Link>
     );
 }
