@@ -23,3 +23,6 @@ definitions:
         hst:label: footerSocial
         hst:parameternames: [menu]
         hst:parametervalues: [footerSocial]
+      /drawer:
+        jcr:primaryType: hst:containercomponentreference
+        hst:referencecomponent: base/drawer

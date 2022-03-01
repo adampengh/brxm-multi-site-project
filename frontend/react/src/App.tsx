@@ -84,7 +84,9 @@ const App = (props: RouteComponentProps) => {
                         <BrComponent path='bottom' />
                     </main>
                     <Footer />
-                    <Drawer />
+                    <BrComponent path='drawer'>
+                        <Drawer />
+                    </BrComponent>
                 </CommerceConnectorProvider>
             </GlobalElementsProvider>
             <BrPageContext.Consumer>
