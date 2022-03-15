@@ -12,7 +12,7 @@
     font-size: pxToRem(14);
     font-weight: 600;
     line-height: pxToRem(18);
-    padding: pxToRem(8) pxToRem(24);
+    padding: pxToRem(8) pxToRem(36);
     text-transform: uppercase;
     transition: all 0.3s ease;
     @include button($color-neutral-gray-25, $color-neutral-white, $color-neutral-gray-25);
@@ -42,13 +42,13 @@
         }
     }
     &-secondary {
-        @include button($color-brand-secondary, $color-brand-primary, $color-brand-secondary);
+        @include button($color-brand-secondary, $color-neutral-white, $color-brand-secondary);
         &-outline {
             @include buttonOutline($color-neutral-white, $color-brand-secondary, $color-brand-secondary);
         }
     }
     &-tertiary {
-        @include button($color-brand-tertiary, $color-neutral-white, $color-brand-tertiary);
+        @include button($color-brand-tertiary, $color-brand-primary, $color-brand-tertiary);
         &-outline {
             @include buttonOutline($color-neutral-white, $color-brand-tertiary, $color-brand-tertiary);
         }

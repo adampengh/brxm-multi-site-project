@@ -155,7 +155,7 @@
     jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
     jcr:uuid: 33dfd7ee-81d8-4659-abd2-a4b3480ee3e2
     hippo:name: Homepage
-    hippo:versionHistory: e9f3d7fc-2f75-4ff4-a5b8-06c46e9a4ddc
+    hippo:versionHistory: 21683eab-c9e7-47b1-90b4-c2233f6c270a
     /homepage[1]:
       jcr:primaryType: myproject:ExperiencePage
       jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
@@ -194,7 +194,7 @@
       hippostd:state: unpublished
       hippostdpubwf:createdBy: admin
       hippostdpubwf:creationDate: 2021-12-08T20:56:45.502-05:00
-      hippostdpubwf:lastModificationDate: 2021-12-08T20:58:03.968-05:00
+      hippostdpubwf:lastModificationDate: 2022-03-14T12:15:14.556-07:00
       hippostdpubwf:lastModifiedBy: admin
       hippotranslation:id: 5b0f7c79-b157-4922-8c40-92b92ece91e9
       hippotranslation:locale: en
@@ -222,7 +222,7 @@
           jcr:primaryType: hst:containercomponent
           jcr:uuid: 9b24aff9-0b14-4960-a4ff-d75eee869394
           hippo:identifier: 7658ded6-d05b-4b9c-b26f-cd4d48d116c4
-          hst:lastmodified: 2021-12-09T01:58:03.967Z
+          hst:lastmodified: 2022-03-14T19:15:14.555Z
           /banner:
             jcr:primaryType: hst:containeritemcomponent
             jcr:uuid: 9f3d8b9b-1708-4fd6-8d23-9f24634bfad3
@@ -232,6 +232,16 @@
             hst:parameternames: [document, org.hippoecm.hst.core.component.template]
             hst:parametervalues: [components/banners/homepage-banner, 'webfile:/freemarker/hstdefault/essentials-banner.ftl']
             hst:template: essentials-banner
+          /PathwaysRecommendations:
+            jcr:primaryType: hst:containeritemcomponent
+            jcr:uuid: 4d88c2ff-5cb3-4c5f-9ee8-90d962255980
+            hst:componentdefinition: hst:components/essentials-catalog/PathwaysRecommendations
+            hst:parameternames: [dots, widgetId, infinite, arrows, vertical, rows,
+              title, pauseOnDotsHover, widgetType, autoplay, speed, dotsStyle, slidesPerRow,
+              fade, pauseOnFocus, pauseOnHover, slidesToScroll, slidesToShow, autoplaySpeed]
+            hst:parametervalues: ['on', 4len2dl2, 'on', 'on', 'off', '1', Best Sellers,
+              'off', global, 'off', '750', dots, '1', 'off', 'off', 'off', '1', '5',
+              '3000']
     /homepage[3]:
       jcr:primaryType: myproject:ExperiencePage
       jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
@@ -241,9 +251,9 @@
       hippostd:state: published
       hippostdpubwf:createdBy: admin
       hippostdpubwf:creationDate: 2021-12-08T20:56:45.502-05:00
-      hippostdpubwf:lastModificationDate: 2021-12-08T20:58:03.968-05:00
+      hippostdpubwf:lastModificationDate: 2022-03-14T12:15:14.556-07:00
       hippostdpubwf:lastModifiedBy: admin
-      hippostdpubwf:publicationDate: 2021-12-08T20:58:06.168-05:00
+      hippostdpubwf:publicationDate: 2022-03-14T12:15:18.269-07:00
       hippotranslation:id: 5b0f7c79-b157-4922-8c40-92b92ece91e9
       hippotranslation:locale: en
       /myproject:pageMetadata:
@@ -264,22 +274,32 @@
           hippo:values: []
       /hst:xpage:
         jcr:primaryType: hst:xpage
-        jcr:uuid: 95291a1a-9404-4851-afea-6b783bac0292
+        jcr:uuid: 301adaba-22e6-437e-8c1c-ca83e156a6ac
         hst:pageref: single-column
         /3957ec49-26e0-4a67-9575-0a62393fa69a:
           jcr:primaryType: hst:containercomponent
-          jcr:uuid: be14ef84-cd8f-40a6-a3b2-4e4ecd33011e
+          jcr:uuid: 052b16ca-8c60-4a62-a31c-27d8265bc6d2
           hippo:identifier: 7658ded6-d05b-4b9c-b26f-cd4d48d116c4
-          hst:lastmodified: 2021-12-09T01:58:03.967Z
+          hst:lastmodified: 2022-03-14T19:15:14.555Z
           /banner:
             jcr:primaryType: hst:containeritemcomponent
-            jcr:uuid: faa62b28-5672-4974-8ebc-a4a843476709
+            jcr:uuid: 8819090c-d8e1-417d-82af-911e22008492
             hst:componentclassname: org.onehippo.cms7.essentials.components.EssentialsBannerComponent
             hst:iconpath: images/essentials/catalog-component-icons/banner.svg
             hst:label: Banner
             hst:parameternames: [document, org.hippoecm.hst.core.component.template]
             hst:parametervalues: [components/banners/homepage-banner, 'webfile:/freemarker/hstdefault/essentials-banner.ftl']
             hst:template: essentials-banner
+          /PathwaysRecommendations:
+            jcr:primaryType: hst:containeritemcomponent
+            jcr:uuid: 0ba17d13-7e64-43bf-9f68-1fa03cdb4c66
+            hst:componentdefinition: hst:components/essentials-catalog/PathwaysRecommendations
+            hst:parameternames: [dots, widgetId, infinite, arrows, vertical, rows,
+              title, pauseOnDotsHover, widgetType, autoplay, speed, dotsStyle, slidesPerRow,
+              fade, pauseOnFocus, pauseOnHover, slidesToScroll, slidesToShow, autoplaySpeed]
+            hst:parametervalues: ['on', 4len2dl2, 'on', 'on', 'off', '1', Best Sellers,
+              'off', global, 'off', '750', dots, '1', 'off', 'off', 'off', '1', '5',
+              '3000']
   /categories:
     jcr:primaryType: hippostd:folder
     jcr:mixinTypes: ['hippo:named', 'hippostd:xpagefolder', 'mix:versionable']
@@ -292,7 +312,7 @@
       jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
       jcr:uuid: ec2b9f89-39a1-4142-a802-1455da62769b
       hippo:name: Test Category
-      hippo:versionHistory: bf794da7-51f1-4c13-9adb-77e2d56a2609
+      hippo:versionHistory: ce4f7faa-7fc3-4870-9dc9-eececb80d7ae
       /test-category[1]:
         jcr:primaryType: myproject:ExperiencePage
         jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
@@ -332,7 +352,7 @@
         hippostd:state: unpublished
         hippostdpubwf:createdBy: admin
         hippostdpubwf:creationDate: 2022-01-11T09:00:41.184-05:00
-        hippostdpubwf:lastModificationDate: 2022-01-13T12:28:53.234-05:00
+        hippostdpubwf:lastModificationDate: 2022-03-14T12:54:06.858-07:00
         hippostdpubwf:lastModifiedBy: admin
         hippotranslation:id: d80d2eca-cd44-417d-8271-26c91da261b7
         hippotranslation:locale: document-type-locale
@@ -345,10 +365,22 @@
             jcr:primaryType: hst:containercomponent
             jcr:uuid: ab98387d-4fea-4824-8289-2a73b8a8906d
             hippo:identifier: fd788672-7df6-49ba-9e2d-8e65f94ee889
+            hst:lastmodified: 2022-03-14T12:53:39.641-07:00
           /bb745c41-7ada-4afb-9240-44034412aae7:
             jcr:primaryType: hst:containercomponent
             jcr:uuid: c343603f-6c71-41a1-9156-9f58ada26cc6
             hippo:identifier: b6935596-6be4-4ae3-af04-d86b7aa12c88
+            hst:lastmodified: 2022-03-14T19:54:06.858Z
+            /PathwaysRecommendations:
+              jcr:primaryType: hst:containeritemcomponent
+              jcr:uuid: 45a4a9d9-8515-4271-9b92-e64d448181b5
+              hst:componentdefinition: hst:components/essentials-catalog/PathwaysRecommendations
+              hst:parameternames: [dots, widgetId, infinite, arrows, vertical, title,
+                rows, pauseOnDotsHover, widgetType, autoplay, speed, dotsStyle, slidesPerRow,
+                fade, pauseOnFocus, pauseOnHover, slidesToScroll, slidesToShow, autoplaySpeed]
+              hst:parametervalues: ['on', dl4qk396, 'on', 'on', 'off', Bath & Body
+                  Best Sellers, '1', 'off', category, 'off', '750', dots, '1', 'off',
+                'off', 'off', '1', '4', '3000']
         /myproject:pageMetadata:
           jcr:primaryType: myproject:PageMetadata
           myproject:canonicalUrl: ''
@@ -374,24 +406,36 @@
         hippostd:state: published
         hippostdpubwf:createdBy: admin
         hippostdpubwf:creationDate: 2022-01-11T09:00:41.184-05:00
-        hippostdpubwf:lastModificationDate: 2022-01-13T12:28:53.234-05:00
+        hippostdpubwf:lastModificationDate: 2022-03-14T12:54:06.858-07:00
         hippostdpubwf:lastModifiedBy: admin
-        hippostdpubwf:publicationDate: 2022-01-13T12:28:54.750-05:00
+        hippostdpubwf:publicationDate: 2022-03-14T12:54:09.670-07:00
         hippotranslation:id: d80d2eca-cd44-417d-8271-26c91da261b7
         hippotranslation:locale: document-type-locale
         myproject:categoryId: '116990'
         /hst:xpage:
           jcr:primaryType: hst:xpage
-          jcr:uuid: 5242e44c-73dd-4981-9037-660cf3eb0964
+          jcr:uuid: aafbf990-c372-473b-a69b-812ac1b83f2f
           hst:pageref: product-listing
           /032a3a4a-826b-4721-bb0f-c5b8a76e94b5:
             jcr:primaryType: hst:containercomponent
-            jcr:uuid: a474f444-b3a4-4ef3-9df1-426746bf0fb7
+            jcr:uuid: 0e8f50bb-5951-478d-8d96-c5cd2cfc6c43
             hippo:identifier: fd788672-7df6-49ba-9e2d-8e65f94ee889
+            hst:lastmodified: 2022-03-14T12:53:39.641-07:00
           /bb745c41-7ada-4afb-9240-44034412aae7:
             jcr:primaryType: hst:containercomponent
-            jcr:uuid: 7c4feeba-e269-4878-9fcc-14b466e3e4e2
+            jcr:uuid: b73cef75-912e-4d3e-bcbc-080d8a2f0ea8
             hippo:identifier: b6935596-6be4-4ae3-af04-d86b7aa12c88
+            hst:lastmodified: 2022-03-14T19:54:06.858Z
+            /PathwaysRecommendations:
+              jcr:primaryType: hst:containeritemcomponent
+              jcr:uuid: eb9eeedd-3ef2-41d8-a3d4-b6ff34fad91d
+              hst:componentdefinition: hst:components/essentials-catalog/PathwaysRecommendations
+              hst:parameternames: [dots, widgetId, infinite, arrows, vertical, title,
+                rows, pauseOnDotsHover, widgetType, autoplay, speed, dotsStyle, slidesPerRow,
+                fade, pauseOnFocus, pauseOnHover, slidesToScroll, slidesToShow, autoplaySpeed]
+              hst:parametervalues: ['on', dl4qk396, 'on', 'on', 'off', Bath & Body
+                  Best Sellers, '1', 'off', category, 'off', '750', dots, '1', 'off',
+                'off', 'off', '1', '4', '3000']
         /myproject:pageMetadata:
           jcr:primaryType: myproject:PageMetadata
           myproject:canonicalUrl: ''

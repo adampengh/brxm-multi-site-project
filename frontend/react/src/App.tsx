@@ -34,6 +34,7 @@ import {
     Hero,
     Navigation,
     NewsList,
+    PathwaysRecommendations,
     ProductDetail,
     ProductListingGrid,
 } from './components';
@@ -43,6 +44,7 @@ const MAPPING = {
     Hero,
     Navigation,
     'News List': NewsList,
+    PathwaysRecommendations,
     ProductDetail,
     ProductListingGrid,
 };

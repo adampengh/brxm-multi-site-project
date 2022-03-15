@@ -6,7 +6,8 @@
     },
     "extends": [
         "react-app",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended"
     ],
     "overrides": [
         {
@@ -22,12 +23,13 @@
             "jsx": true
         }
     },
-    "plugins": ["react"],
+    "plugins": ["react", "react-hooks"],
     "rules": {
         "import/no-anonymous-default-export": "off",
         "indent": ["warn", 4],
         "quotes": ["error", "single", {
             "allowTemplateLiterals": true
-        }]
+        }],
+        "react-hooks/exhaustive-deps": "off"
     }
 }

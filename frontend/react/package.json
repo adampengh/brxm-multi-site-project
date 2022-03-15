@@ -34,9 +34,9 @@
     "dev": "SKIP_PREFLIGHT_CHECK=true react-scripts start",
     "dev:storybook": "concurrently \"yarn dev\" \"yarn storybook\"",
     "lint": "eslint --ext js,ts,tsx src",
-    "start-express": "node server.js",
-    "start-nginx": "nginx -c ~/Projects/brxm-multi-site-project/frontend/react/nginx.conf",
-    "stop-nginx": "nginx -s stop",
+    "start:express": "node server.js",
+    "start:nginx": "nginx -c ~/Projects/brxm-multi-site-project/frontend/react/nginx.conf",
+    "stop:nginx": "nginx -s stop",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
   },
@@ -68,6 +68,7 @@
     "concurrently": "^7.0.0",
     "eslint": "^7.12",
     "eslint-config-react-app": "^6.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "prettier": "^2.5.1",
     "react-scripts": "4.0.0"
   }

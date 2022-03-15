@@ -1,0 +1,56 @@
+/content/documents/administration/pathways-recommendations-widget-type:
+  .meta:order-before: pathways-recommendations-dots-style
+  jcr:primaryType: hippo:handle
+  jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+  jcr:uuid: 9ace7489-34e5-4512-9839-da8ee0465f03
+  hippo:name: Pathways Recommendations Widget Type
+  hippo:versionHistory: a5e6cca6-7442-46c5-9097-46316825f49b
+  /pathways-recommendations-widget-type[1]:
+    jcr:primaryType: resourcebundle:resourcebundle
+    jcr:mixinTypes: ['mix:referenceable']
+    jcr:uuid: ec493900-ac30-4242-9c25-49bf880eca4b
+    hippo:availability: []
+    hippostd:retainable: false
+    hippostd:state: draft
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2022-03-13T16:11:19.328-07:00
+    hippostdpubwf:lastModificationDate: 2022-03-14T11:54:15.914-07:00
+    hippostdpubwf:lastModifiedBy: admin
+    resourcebundle:descriptions: ['', '', '', '', '']
+    resourcebundle:id: PathwaysRecommendationsWidgetType
+    resourcebundle:keys: [item, keyword, category, personalized, global]
+    resourcebundle:messages: [Item, Keyword, Category, Personalization, Global]
+    resourcebundle:messages_New Value Set: ['', '', '', '', '']
+  /pathways-recommendations-widget-type[2]:
+    jcr:primaryType: resourcebundle:resourcebundle
+    jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+    jcr:uuid: b4bcbac8-4e3d-4158-a785-e7ffb8df1215
+    hippo:availability: [preview]
+    hippostd:retainable: false
+    hippostd:state: unpublished
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2022-03-13T16:11:19.328-07:00
+    hippostdpubwf:lastModificationDate: 2022-03-14T11:54:34.355-07:00
+    hippostdpubwf:lastModifiedBy: admin
+    resourcebundle:descriptions: ['', '', '', '', '']
+    resourcebundle:id: PathwaysRecommendationsWidgetType
+    resourcebundle:keys: [item, keyword, category, personalized, global]
+    resourcebundle:messages: [Item, Keyword, Category, Personalization, Global]
+    resourcebundle:messages_New Value Set: ['', '', '', '', '']
+  /pathways-recommendations-widget-type[3]:
+    jcr:primaryType: resourcebundle:resourcebundle
+    jcr:mixinTypes: ['mix:referenceable']
+    jcr:uuid: c024131e-f14a-4b41-b8f9-a26c15557ed3
+    hippo:availability: [live]
+    hippostd:retainable: false
+    hippostd:state: published
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2022-03-13T16:11:19.328-07:00
+    hippostdpubwf:lastModificationDate: 2022-03-14T11:54:34.355-07:00
+    hippostdpubwf:lastModifiedBy: admin
+    hippostdpubwf:publicationDate: 2022-03-14T11:55:01.069-07:00
+    resourcebundle:descriptions: ['', '', '', '', '']
+    resourcebundle:id: PathwaysRecommendationsWidgetType
+    resourcebundle:keys: [item, keyword, category, personalized, global]
+    resourcebundle:messages: [Item, Keyword, Category, Personalization, Global]
+    resourcebundle:messages_New Value Set: ['', '', '', '', '']

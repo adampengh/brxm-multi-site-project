@@ -20,3 +20,116 @@ definitions:
         hst:iconpath: images/essentials/catalog-component-icons/news-list.svg
         hst:label: News List
         hst:template: newslist-main-newslist
+      /PathwaysRecommendations:
+        jcr:primaryType: hst:componentdefinition
+        hst:componentclassname: org.hippoecm.hst.component.support.bean.dynamic.BaseHstDynamicComponent
+        hst:ctype: PathwaysRecommendations
+        hst:label: Pathways & Recommendations
+        hst:iconpath: images/essentials/catalog-component-icons/carousel.svg
+        hst:fieldgroups: [Widget, Slider Settings]
+        hst:fieldgroups.Widget: [widgetType, widgetId, title]
+        hst:fieldgroups.Slider Settings: [arrows, autoplay, autoplaySpeed, dots, dotsStyle,
+          fade, infinite, pauseOnDotsHover, pauseOnFocus, pauseOnHover, rows, slidesPerRow,
+          slidesToScroll, slidesToShow, speed, vertical]
+        /widgetType:
+          jcr:primaryType: hst:dynamicparameter
+          hst:displayname: Widget Type
+          hst:valuetype: text
+          hst:required: true
+          /hst:fieldconfig:
+            jcr:primaryType: hst:dropdown
+            hst:sourceid: PathwaysRecommendationsWidgetType
+        /widgetId:
+          jcr:primaryType: hst:dynamicparameter
+          hst:displayname: Widget ID
+          hst:required: true
+          hst:valuetype: text
+          hst:defaultvalue: 4len2dl2
+        /arrows:
+          jcr:primaryType: hst:dynamicparameter
+          hst:defaultvalue: 'true'
+          hst:displayname: Arrows
+          hst:valuetype: boolean
+        /autoplay:
+          jcr:primaryType: hst:dynamicparameter
+          hst:defaultvalue: 'false'
+          hst:displayname: Autoplay
+          hst:valuetype: boolean
+        /autoplaySpeed:
+          jcr:primaryType: hst:dynamicparameter
+          hst:defaultvalue: '3000'
+          hst:displayname: Autoplay Speed
+          hst:valuetype: integer
+        /dots:
+          jcr:primaryType: hst:dynamicparameter
+          hst:defaultvalue: 'true'
+          hst:displayname: Dots
+          hst:valuetype: boolean
+        /fade:
+          jcr:primaryType: hst:dynamicparameter
+          hst:defaultvalue: 'false'
+          hst:displayname: Fade
+          hst:valuetype: boolean
+        /infinite:
+          jcr:primaryType: hst:dynamicparameter
+          hst:defaultvalue: 'true'
+          hst:displayname: Infinite
+          hst:valuetype: boolean
+        /pauseOnDotsHover:
+          jcr:primaryType: hst:dynamicparameter
+          hst:defaultvalue: 'false'
+          hst:displayname: Pause On Dots Hover
+          hst:valuetype: boolean
+        /pauseOnFocus:
+          jcr:primaryType: hst:dynamicparameter
+          hst:defaultvalue: 'false'
+          hst:displayname: Pause On Focus
+          hst:valuetype: boolean
+        /pauseOnHover:
+          jcr:primaryType: hst:dynamicparameter
+          hst:defaultvalue: 'false'
+          hst:displayname: Pause On Hover
+          hst:valuetype: boolean
+        /rows:
+          jcr:primaryType: hst:dynamicparameter
+          hst:defaultvalue: '1'
+          hst:displayname: Rows
+          hst:valuetype: integer
+        /slidesPerRow:
+          jcr:primaryType: hst:dynamicparameter
+          hst:defaultvalue: '1'
+          hst:displayname: Slides Per Row
+          hst:valuetype: integer
+        /slidesToScroll:
+          jcr:primaryType: hst:dynamicparameter
+          hst:defaultvalue: '1'
+          hst:displayname: Slides To Scroll
+          hst:valuetype: integer
+        /slidesToShow:
+          jcr:primaryType: hst:dynamicparameter
+          hst:defaultvalue: '4'
+          hst:displayname: Slides To Show
+          hst:valuetype: integer
+        /vertical:
+          jcr:primaryType: hst:dynamicparameter
+          hst:defaultvalue: 'false'
+          hst:displayname: Vertical
+          hst:valuetype: boolean
+        /dotsStyle:
+          jcr:primaryType: hst:dynamicparameter
+          hst:defaultvalue: dots
+          hst:displayname: Dots Style
+          hst:valuetype: text
+          /hst:fieldconfig:
+            jcr:primaryType: hst:dropdown
+            hst:sourceid: PathwaysRecommendationsDotsStyle
+        /title:
+          jcr:primaryType: hst:dynamicparameter
+          hst:defaultvalue: Title
+          hst:displayname: Title
+          hst:valuetype: text
+        /speed:
+          jcr:primaryType: hst:dynamicparameter
+          hst:defaultvalue: '750'
+          hst:displayname: Speed
+          hst:valuetype: integer

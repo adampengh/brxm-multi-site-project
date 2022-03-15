@@ -1,0 +1,7 @@
+/content/documents/administration/value-lists:
+  .meta:order-before: pathways-recommendations-widget-type
+  jcr:primaryType: hippostd:folder
+  jcr:mixinTypes: ['hippo:named', 'mix:versionable']
+  jcr:uuid: 84514d6a-815a-4289-bb2d-c766d901f6a1
+  hippo:name: Value Lists
+  hippostd:foldertype: [new-resource-bundle, new-untranslated-folder, new-document]

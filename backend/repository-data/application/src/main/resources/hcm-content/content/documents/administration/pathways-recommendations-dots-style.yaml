@@ -1,0 +1,52 @@
+/content/documents/administration/pathways-recommendations-dots-style:
+  jcr:primaryType: hippo:handle
+  jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+  jcr:uuid: 353ecd9a-e323-48c7-9e16-bb6ee61467f1
+  hippo:name: Pathways Recommendations Dots Style
+  hippo:versionHistory: 9e865817-44c8-4bb5-b53a-957e56801dbf
+  /pathways-recommendations-dots-style[1]:
+    jcr:primaryType: resourcebundle:resourcebundle
+    jcr:mixinTypes: ['mix:referenceable']
+    jcr:uuid: d29cd89f-4eb4-45de-bd1b-2de93f55dffc
+    hippo:availability: []
+    hippostd:retainable: false
+    hippostd:state: draft
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2022-03-14T11:55:14.093-07:00
+    hippostdpubwf:lastModificationDate: 2022-03-14T11:55:14.093-07:00
+    hippostdpubwf:lastModifiedBy: admin
+    resourcebundle:descriptions: ['', '']
+    resourcebundle:id: PathwaysRecommendationsDotsStyle
+    resourcebundle:keys: [dots, bars]
+    resourcebundle:messages: [Dots, Bars]
+  /pathways-recommendations-dots-style[2]:
+    jcr:primaryType: resourcebundle:resourcebundle
+    jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+    jcr:uuid: 5acd52b7-16f9-42f6-962e-302b0edf3407
+    hippo:availability: [preview]
+    hippostd:retainable: false
+    hippostd:state: unpublished
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2022-03-14T11:55:14.093-07:00
+    hippostdpubwf:lastModificationDate: 2022-03-14T11:55:41.008-07:00
+    hippostdpubwf:lastModifiedBy: admin
+    resourcebundle:descriptions: ['', '']
+    resourcebundle:id: PathwaysRecommendationsDotsStyle
+    resourcebundle:keys: [dots, bars]
+    resourcebundle:messages: [Dots, Bars]
+  /pathways-recommendations-dots-style[3]:
+    jcr:primaryType: resourcebundle:resourcebundle
+    jcr:mixinTypes: ['mix:referenceable']
+    jcr:uuid: a71bfc35-054a-40b2-b571-4b7bf85ff80e
+    hippo:availability: [live]
+    hippostd:retainable: false
+    hippostd:state: published
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2022-03-14T11:55:14.093-07:00
+    hippostdpubwf:lastModificationDate: 2022-03-14T11:55:41.008-07:00
+    hippostdpubwf:lastModifiedBy: admin
+    hippostdpubwf:publicationDate: 2022-03-14T11:55:42.801-07:00
+    resourcebundle:descriptions: ['', '']
+    resourcebundle:id: PathwaysRecommendationsDotsStyle
+    resourcebundle:keys: [dots, bars]
+    resourcebundle:messages: [Dots, Bars]

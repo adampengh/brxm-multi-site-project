@@ -1,14 +1,17 @@
 /content/documents/administration/robots-disallow:
+  .meta:order-before: pathways-recommendations-widget-type
   jcr:primaryType: hippo:handle
   jcr:mixinTypes: ['mix:referenceable']
+  jcr:uuid: 947521b3-a4ac-419f-b0a8-6e21d9a06f1e
   /robots-disallow:
     jcr:primaryType: robotstxt:robotstxt
     jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+    jcr:uuid: 6c4c22b4-3fec-4924-b6ca-255ee0da3820
     hippo:availability: [live, preview]
     hippostd:state: published
     hippostdpubwf:createdBy: admin
-    hippostdpubwf:creationDate: 2020-03-20T00:00:00.000+02:00
-    hippostdpubwf:lastModificationDate: 2020-03-20T00:00:00.000+02:00
+    hippostdpubwf:creationDate: 2020-03-20T00:00:00+02:00
+    hippostdpubwf:lastModificationDate: 2020-03-20T00:00:00+02:00
     hippostdpubwf:lastModifiedBy: admin
     /robotstxt:section:
       jcr:primaryType: robotstxt:section
