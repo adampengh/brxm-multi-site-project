@@ -1,0 +1,159 @@
+definitions:
+  config:
+    /hippo:namespaces/myproject/PathwaysRecommendationsDocument:
+      jcr:primaryType: hipposysedit:templatetype
+      jcr:mixinTypes: ['editor:editable', 'mix:referenceable']
+      jcr:uuid: c04e995a-0877-4d6c-8096-d02ac3a14f04
+      /hipposysedit:nodetype:
+        jcr:primaryType: hippo:handle
+        jcr:mixinTypes: ['mix:referenceable']
+        jcr:uuid: 6f0e35bd-0b44-48f4-a308-ef44d3532ac2
+        /hipposysedit:nodetype:
+          jcr:primaryType: hipposysedit:nodetype
+          jcr:mixinTypes: ['mix:referenceable', 'hipposysedit:remodel']
+          jcr:uuid: 6b70ca04-39ca-4f43-a25f-23527ae99ac2
+          hipposysedit:node: true
+          hipposysedit:supertype: ['myproject:basedocument', 'hippostd:relaxed', 'hippotranslation:translated']
+          hipposysedit:uri: http://www.myproject.com/myproject/nt/1.0
+          /title:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: myproject:title
+            hipposysedit:primary: false
+            hipposysedit:type: String
+          /widgetId:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: myproject:widgetId
+            hipposysedit:primary: false
+            hipposysedit:type: String
+            hipposysedit:validators: [required]
+          /widgetType:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: myproject:widgetType
+            hipposysedit:primary: false
+            hipposysedit:type: DynamicDropdown
+            hipposysedit:validators: [required]
+          /settings:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: myproject:settings
+            hipposysedit:primary: false
+            hipposysedit:type: myproject:slickSliderSettingsCompound
+          /responsive:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: true
+            hipposysedit:ordered: true
+            hipposysedit:path: myproject:responsive
+            hipposysedit:primary: false
+            hipposysedit:type: myproject:slickSliderResponsiveSettingsCompound
+      /hipposysedit:prototypes:
+        jcr:primaryType: hipposysedit:prototypeset
+        /hipposysedit:prototype:
+          jcr:primaryType: myproject:PathwaysRecommendationsDocument
+          hippostd:holder: holder
+          hippostd:state: draft
+          hippostdpubwf:createdBy: ''
+          hippostdpubwf:lastModifiedBy: ''
+          hippotranslation:id: document-type-locale-id
+          hippotranslation:locale: document-type-locale
+          jcr:mixinTypes: ['mix:referenceable']
+          myproject:title: ''
+          myproject:widgetId: ''
+          myproject:widgetType: item
+          jcr:uuid: b2af51ec-9722-40a7-93a2-fb5bc0733638
+          hippostdpubwf:lastModificationDate: 2022-04-04T06:54:11.439-07:00
+          hippostdpubwf:creationDate: 2022-04-04T06:54:11.439-07:00
+          /myproject:settings:
+            jcr:primaryType: myproject:slickSliderSettingsCompound
+            myproject:arrows: true
+            myproject:autoplay: false
+            myproject:autoplaySpeed: 3000
+            myproject:dots: false
+            myproject:dotsStyle: dots
+            myproject:fade: false
+            myproject:infinite: true
+            myproject:pauseOnDotsHover: false
+            myproject:pauseOnFocus: false
+            myproject:pauseOnHover: false
+            myproject:rows: 1
+            myproject:slidesPerRow: 1
+            myproject:slidesToScroll: 1
+            myproject:slidesToShow: 4
+            myproject:speed: 500
+            myproject:vertical: false
+      /editor:templates:
+        jcr:primaryType: editor:templateset
+        /_default_:
+          jcr:primaryType: frontend:plugincluster
+          frontend:properties: [mode]
+          frontend:references: [wicket.model, model.compareTo, engine, validator.id]
+          frontend:services: [wicket.id, validator.id]
+          /root:
+            jcr:primaryType: frontend:plugin
+            extension.left: ${cluster.id}.left
+            extension.right: ${cluster.id}.right
+            plugin.class: org.hippoecm.frontend.editor.layout.TwoColumnMirrored
+            wicket.extensions: [extension.left, extension.right]
+          /left:
+            jcr:primaryType: frontend:plugin
+            item: ${cluster.id}.left.item
+            plugin.class: org.hippoecm.frontend.service.render.ListViewPlugin
+            wicket.id: ${cluster.id}.left
+          /right:
+            jcr:primaryType: frontend:plugin
+            item: ${cluster.id}.right.item
+            plugin.class: org.hippoecm.frontend.service.render.ListViewPlugin
+            wicket.id: ${cluster.id}.right
+          /title:
+            jcr:primaryType: frontend:plugin
+            caption: Title
+            field: title
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.left.item
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+          /widgetId:
+            jcr:primaryType: frontend:plugin
+            caption: Widget ID
+            field: widgetId
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.left.item
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+          /widgetType:
+            jcr:primaryType: frontend:plugin
+            caption: Widget Type
+            field: widgetType
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.left.item
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+              source: /content/documents/administration/value-lists/pathways-recommendations-widget-type
+          /settings:
+            jcr:primaryType: frontend:plugin
+            caption: Settings
+            field: settings
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.NodeFieldPlugin
+            wicket.id: ${cluster.id}.right.item
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+          /responsive:
+            jcr:primaryType: frontend:plugin
+            caption: Responsive
+            field: responsive
+            hint: ''
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.NodeFieldPlugin
+            wicket.id: ${cluster.id}.right.item
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig

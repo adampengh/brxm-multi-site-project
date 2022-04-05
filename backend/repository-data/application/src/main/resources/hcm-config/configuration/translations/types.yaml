@@ -101,3 +101,13 @@ definitions:
       /en:
         jcr:primaryType: hipposys:resourcebundle
         jcr:name: Global Elements (Footer)
+    /hippo:configuration/hippo:translations/hippo:types/myproject:slickSliderSettingsCompound:
+      jcr:primaryType: hipposys:resourcebundles
+      /en:
+        jcr:primaryType: hipposys:resourcebundle
+        jcr:name: Slick Slider Settings Compound
+    /hippo:configuration/hippo:translations/hippo:types/myproject:PathwaysRecommendationsDocument:
+      jcr:primaryType: hipposys:resourcebundles
+      /en:
+        jcr:primaryType: hipposys:resourcebundle
+        jcr:name: Pathways and Recommendations

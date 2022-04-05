@@ -1,0 +1,27 @@
+/content/gallery/react/spacejoy-desktop.jpg:
+  jcr:primaryType: hippo:handle
+  jcr:mixinTypes: ['mix:referenceable']
+  jcr:uuid: ac5247db-61f1-4d07-b9f9-f0dbe927c949
+  /spacejoy-desktop.jpg:
+    jcr:primaryType: hippogallery:imageset
+    hippo:availability: [live, preview]
+    hippogallery:filename: spacejoy-desktop.jpg
+    /hippogallery:thumbnail:
+      jcr:primaryType: hippogallery:image
+      hippo:filename: spacejoy-desktop.jpg
+      hippogallery:height: 26
+      hippogallery:width: 60
+      jcr:data:
+        type: binary
+        resource: /content/gallery/react/spacejoy-desktop.jpg/spacejoy-desktop_thumbnail.jpg
+      jcr:lastModified: 2022-04-04T12:46:10.720-07:00
+      jcr:mimeType: image/jpeg
+    /hippogallery:original:
+      jcr:primaryType: hippogallery:image
+      hippogallery:height: 700
+      hippogallery:width: 1600
+      jcr:data:
+        type: binary
+        resource: /content/gallery/react/spacejoy-desktop.jpg/spacejoy-desktop_original.jpg
+      jcr:lastModified: 2022-04-04T12:46:10.720-07:00
+      jcr:mimeType: image/jpeg

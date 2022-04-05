@@ -1,0 +1,311 @@
+definitions:
+  config:
+    /hippo:namespaces/myproject/slickSliderSettingsCompound:
+      jcr:primaryType: hipposysedit:templatetype
+      jcr:mixinTypes: ['editor:editable', 'mix:referenceable']
+      jcr:uuid: 4e9baa3a-afff-486f-8115-77377fcca9c5
+      /hipposysedit:nodetype:
+        jcr:primaryType: hippo:handle
+        jcr:mixinTypes: ['mix:referenceable']
+        jcr:uuid: febc0602-b58d-4daf-a932-77315461faf2
+        /hipposysedit:nodetype:
+          jcr:primaryType: hipposysedit:nodetype
+          jcr:mixinTypes: ['mix:referenceable', 'hipposysedit:remodel']
+          jcr:uuid: 765ac73e-712f-4ad1-8f7a-a24d41e72870
+          hipposysedit:node: true
+          hipposysedit:supertype: ['hippo:compound', 'hippostd:relaxed']
+          hipposysedit:uri: http://www.myproject.com/myproject/nt/1.0
+          /arrows:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: myproject:arrows
+            hipposysedit:primary: false
+            hipposysedit:type: selection:BooleanRadioGroup
+          /autoplay:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: myproject:autoplay
+            hipposysedit:primary: false
+            hipposysedit:type: selection:BooleanRadioGroup
+          /autoplaySpeed:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: myproject:autoplaySpeed
+            hipposysedit:primary: false
+            hipposysedit:type: Long
+          /dots:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: myproject:dots
+            hipposysedit:primary: false
+            hipposysedit:type: selection:BooleanRadioGroup
+          /dotsStyle:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: myproject:dotsStyle
+            hipposysedit:primary: false
+            hipposysedit:type: DynamicDropdown
+          /fade:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: myproject:fade
+            hipposysedit:primary: false
+            hipposysedit:type: selection:BooleanRadioGroup
+          /infinite:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: myproject:infinite
+            hipposysedit:primary: false
+            hipposysedit:type: selection:BooleanRadioGroup
+          /pauseOnDotsHover:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: myproject:pauseOnDotsHover
+            hipposysedit:primary: false
+            hipposysedit:type: selection:BooleanRadioGroup
+          /pauseOnFocus:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: myproject:pauseOnFocus
+            hipposysedit:primary: false
+            hipposysedit:type: selection:BooleanRadioGroup
+          /pauseOnHover:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: myproject:pauseOnHover
+            hipposysedit:primary: false
+            hipposysedit:type: selection:BooleanRadioGroup
+          /rows:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: myproject:rows
+            hipposysedit:primary: false
+            hipposysedit:type: Long
+          /slidesPerRow:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: myproject:slidesPerRow
+            hipposysedit:primary: false
+            hipposysedit:type: Long
+          /slidesToScroll:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: myproject:slidesToScroll
+            hipposysedit:primary: false
+            hipposysedit:type: Long
+          /vertical:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: myproject:vertical
+            hipposysedit:primary: false
+            hipposysedit:type: selection:BooleanRadioGroup
+          /speed:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: myproject:speed
+            hipposysedit:primary: false
+            hipposysedit:type: Long
+          /slidesToShow:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: myproject:slidesToShow
+            hipposysedit:primary: false
+            hipposysedit:type: Long
+      /hipposysedit:prototypes:
+        jcr:primaryType: hipposysedit:prototypeset
+        /hipposysedit:prototype:
+          jcr:primaryType: myproject:slickSliderSettingsCompound
+          myproject:arrows: true
+          myproject:autoplay: false
+          myproject:autoplaySpeed: 3000
+          myproject:dots: false
+          myproject:dotsStyle: dots
+          myproject:fade: false
+          myproject:infinite: true
+          myproject:pauseOnDotsHover: false
+          myproject:pauseOnFocus: false
+          myproject:pauseOnHover: false
+          myproject:rows: 1
+          myproject:slidesPerRow: 1
+          myproject:slidesToScroll: 1
+          myproject:vertical: false
+          myproject:speed: 500
+          myproject:slidesToShow: 4
+      /editor:templates:
+        jcr:primaryType: editor:templateset
+        /_default_:
+          jcr:primaryType: frontend:plugincluster
+          frontend:properties: [mode]
+          frontend:references: [wicket.model, model.compareTo, engine, validator.id]
+          frontend:services: [wicket.id, validator.id]
+          /root:
+            jcr:primaryType: frontend:plugin
+            item: ${cluster.id}.field
+            plugin.class: org.hippoecm.frontend.service.render.ListViewPlugin
+          /arrows:
+            jcr:primaryType: frontend:plugin
+            caption: Arrows
+            field: arrows
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.field
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+          /autoplay:
+            jcr:primaryType: frontend:plugin
+            caption: Auto-Play
+            field: autoplay
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.field
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+          /autoplaySpeed:
+            jcr:primaryType: frontend:plugin
+            caption: Auto-Play Speed
+            field: autoplaySpeed
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.field
+            hint: in milliseconds
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+          /dots:
+            jcr:primaryType: frontend:plugin
+            caption: Dots
+            field: dots
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.field
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+          /dotsStyle:
+            jcr:primaryType: frontend:plugin
+            caption: Dots Style
+            field: dotsStyle
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.field
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+              source: /content/documents/administration/value-lists/slick-slider-dots-style
+              valuelistProvider: ''
+          /fade:
+            jcr:primaryType: frontend:plugin
+            caption: Fade
+            field: fade
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.field
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+          /infinite:
+            jcr:primaryType: frontend:plugin
+            caption: Infinite
+            field: infinite
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.field
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+          /pauseOnDotsHover:
+            jcr:primaryType: frontend:plugin
+            caption: Pause On Dots Hover
+            field: pauseOnDotsHover
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.field
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+          /pauseOnFocus:
+            jcr:primaryType: frontend:plugin
+            caption: Pause On Focus
+            field: pauseOnFocus
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.field
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+          /pauseOnHover:
+            jcr:primaryType: frontend:plugin
+            caption: Pause On Hover
+            field: pauseOnHover
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.field
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+          /rows:
+            jcr:primaryType: frontend:plugin
+            caption: Rows
+            field: rows
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.field
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+          /slidesPerRow:
+            jcr:primaryType: frontend:plugin
+            caption: Slides Per Row
+            field: slidesPerRow
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.field
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+          /slidesToScroll:
+            jcr:primaryType: frontend:plugin
+            caption: Slides to Scroll
+            field: slidesToScroll
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.field
+            hint: ''
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+          /slidesToShow:
+            jcr:primaryType: frontend:plugin
+            caption: Slides to Show
+            field: slidesToShow
+            hint: ''
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.field
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+          /speed:
+            jcr:primaryType: frontend:plugin
+            caption: Speed
+            field: speed
+            hint: in milliseconds
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.field
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+          /vertical:
+            jcr:primaryType: frontend:plugin
+            caption: Vertical
+            field: vertical
+            hint: ''
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.field
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig

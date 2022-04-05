@@ -103,3 +103,37 @@ definitions:
             /hst:fieldconfig:
               jcr:primaryType: hst:dropdown
               hst:sourceid: dotsStyle
+        /PathwaysRecommendations:
+          jcr:primaryType: hst:componentdefinition
+          hst:componentclassname: org.hippoecm.hst.component.support.bean.dynamic.BaseHstDynamicComponent
+          hst:ctype: PathwaysRecommendations
+          hst:iconpath: images/essentials/catalog-component-icons/carousel.svg
+          hst:label: Pathways & Recommendations
+          /document:
+            jcr:primaryType: hst:dynamicparameter
+            hst:displayname: Pathways & Recommendations Document
+            hst:required: false
+            hst:valuetype: text
+            /hst:fieldconfig:
+              jcr:primaryType: hst:jcrpath
+              hst:pickerconfiguration: cms-pickers/documents-only
+              hst:relative: true
+              hst:pickerselectablenodetypes: ['myproject:PathwaysRecommendationsDocument']
+              hst:pickerinitialpath: components/pathways-and-recommendations
+        /Hero:
+          jcr:primaryType: hst:componentdefinition
+          hst:componentclassname: org.hippoecm.hst.component.support.bean.dynamic.BaseHstDynamicComponent
+          hst:ctype: Hero
+          hst:iconpath: images/essentials/catalog-component-icons/banner.svg
+          hst:label: Hero
+          /document:
+            jcr:primaryType: hst:dynamicparameter
+            hst:displayname: Hero Document
+            hst:required: false
+            hst:valuetype: text
+            /hst:fieldconfig:
+              jcr:primaryType: hst:jcrpath
+              hst:pickerconfiguration: cms-pickers/documents-only
+              hst:pickerinitialpath: components/hero
+              hst:pickerselectablenodetypes: ['myproject:HeroDocument']
+              hst:relative: true

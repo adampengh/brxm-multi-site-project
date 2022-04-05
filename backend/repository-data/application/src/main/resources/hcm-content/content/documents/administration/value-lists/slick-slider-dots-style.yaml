@@ -1,0 +1,21 @@
+/content/documents/administration/value-lists/slick-slider-dots-style:
+  .meta:order-before: pathways-recommendations-widget-type
+  jcr:primaryType: hippo:handle
+  jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+  jcr:uuid: 6531638d-f6e7-4924-b3e6-145604cbb9a1
+  hippo:name: Slick Slider Dots Style
+  /slick-slider-dots-style:
+    jcr:primaryType: selection:valuelist
+    jcr:mixinTypes: ['hippotranslation:translated', 'mix:referenceable']
+    jcr:uuid: 2226d7de-849b-4194-9db4-f49f2b80a9d9
+    hippo:availability: [live, preview]
+    hippotranslation:id: 995c821a-5a4c-4ebc-8c3e-d82542f30630
+    hippotranslation:locale: inherited - from query
+    /selection:listitem[1]:
+      jcr:primaryType: selection:listitem
+      selection:key: dots
+      selection:label: Dots
+    /selection:listitem[2]:
+      jcr:primaryType: selection:listitem
+      selection:key: bars
+      selection:label: Bars

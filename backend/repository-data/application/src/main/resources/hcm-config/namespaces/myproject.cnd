@@ -10,7 +10,13 @@
 [myproject:ExperiencePage] > hippostd:relaxed, hippotranslation:translated, myproject:basedocument
   orderable
 
+[myproject:HeroDocument] > hippostd:relaxed, hippotranslation:translated, myproject:basedocument
+  orderable
+
 [myproject:PageMetadata] > hippo:compound, hippostd:relaxed
+  orderable
+
+[myproject:PathwaysRecommendationsDocument] > hippostd:relaxed, hippotranslation:translated, myproject:basedocument
   orderable
 
 [myproject:bannerdocument] > hippostd:relaxed, hippotranslation:translated, myproject:basedocument
@@ -32,5 +38,11 @@
   orderable
 
 [myproject:newsdocument] > hippostd:relaxed, hippotranslation:translated, myproject:basedocument
+  orderable
+
+[myproject:slickSliderResponsiveSettingsCompound] > hippo:compound, hippostd:relaxed
+  orderable
+
+[myproject:slickSliderSettingsCompound] > hippo:compound, hippostd:relaxed
   orderable
 

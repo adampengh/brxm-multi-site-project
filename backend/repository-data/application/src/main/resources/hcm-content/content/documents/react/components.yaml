@@ -1,6 +1,7 @@
 /content/documents/react/components:
   jcr:primaryType: hippostd:folder
-  jcr:mixinTypes: ['hippo:named', 'hippotranslation:translated', 'mix:versionable']
+  jcr:mixinTypes: ['frontend:orderChildFolders', 'hippo:named', 'hippotranslation:translated',
+    'mix:versionable']
   jcr:uuid: 44e98fdf-8ffe-4622-9058-14c829227b02
   hippo:name: Components
   hippostd:foldertype: [new-translated-folder, new-document]
@@ -31,7 +32,7 @@
         hippostd:transferable: false
         hippostdpubwf:createdBy: admin
         hippostdpubwf:creationDate: 2021-12-08T20:33:16.134-05:00
-        hippostdpubwf:lastModificationDate: 2021-12-08T20:56:09.535-05:00
+        hippostdpubwf:lastModificationDate: 2022-04-04T08:13:05.974-07:00
         hippostdpubwf:lastModifiedBy: admin
         hippotranslation:id: ccbe4826-fc33-4f5d-905d-950f8b0e37b5
         hippotranslation:locale: en
@@ -280,3 +281,455 @@
         /myproject:link:
           jcr:primaryType: hippo:mirror
           hippo:docbase: 33dfd7ee-81d8-4659-abd2-a4b3480ee3e2
+  /pathways-and-recommendations:
+    jcr:primaryType: hippostd:folder
+    jcr:mixinTypes: ['hippo:named', 'hippotranslation:translated', 'mix:versionable']
+    jcr:uuid: 9dec19f5-5aa3-4b38-b64f-f8aad30f4433
+    hippo:name: Pathways and Recommendations
+    hippostd:foldertype: [new-translated-folder, new-document]
+    hippotranslation:id: 7f288aab-e33d-4fdc-b544-59b18e523dd7
+    hippotranslation:locale: en
+    /trending-products:
+      jcr:primaryType: hippo:handle
+      jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+      jcr:uuid: 79ffa0e5-148b-4627-a416-1755601af6fb
+      hippo:name: Trending Products
+      hippo:versionHistory: beebd728-3470-488d-b512-50028b0e6828
+      /trending-products[1]:
+        jcr:primaryType: myproject:PathwaysRecommendationsDocument
+        jcr:mixinTypes: ['mix:referenceable']
+        jcr:uuid: 7e8a5b0b-27bf-4b15-bfff-9b5d4c098aad
+        hippo:availability: []
+        hippostd:retainable: false
+        hippostd:state: draft
+        hippostd:transferable: false
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-04-04T07:01:48.943-07:00
+        hippostdpubwf:lastModificationDate: 2022-04-04T10:09:32.842-07:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: f72e13d6-d790-4a68-88ad-93f6c6608e5e
+        hippotranslation:locale: en
+        myproject:title: Trending Products
+        myproject:widgetId: 4len2dl2
+        myproject:widgetType: global
+        /myproject:settings:
+          jcr:primaryType: myproject:slickSliderSettingsCompound
+          myproject:arrows: true
+          myproject:autoplay: false
+          myproject:autoplaySpeed: 3000
+          myproject:dots: false
+          myproject:dotsStyle: dots
+          myproject:fade: false
+          myproject:infinite: true
+          myproject:pauseOnDotsHover: false
+          myproject:pauseOnFocus: false
+          myproject:pauseOnHover: false
+          myproject:rows: 1
+          myproject:slidesPerRow: 1
+          myproject:slidesToScroll: 1
+          myproject:slidesToShow: 5
+          myproject:speed: 500
+          myproject:vertical: false
+        /myproject:responsive[1]:
+          jcr:primaryType: myproject:slickSliderResponsiveSettingsCompound
+          myproject:breakpoint: 1200
+          /myproject:settings:
+            jcr:primaryType: myproject:slickSliderSettingsCompound
+            myproject:arrows: true
+            myproject:autoplay: false
+            myproject:autoplaySpeed: 3000
+            myproject:dots: false
+            myproject:dotsStyle: dots
+            myproject:fade: false
+            myproject:infinite: true
+            myproject:pauseOnDotsHover: false
+            myproject:pauseOnFocus: false
+            myproject:pauseOnHover: false
+            myproject:rows: 1
+            myproject:slidesPerRow: 1
+            myproject:slidesToScroll: 1
+            myproject:slidesToShow: 4
+            myproject:speed: 500
+            myproject:vertical: false
+        /myproject:responsive[2]:
+          jcr:primaryType: myproject:slickSliderResponsiveSettingsCompound
+          myproject:breakpoint: 1025
+          /myproject:settings:
+            jcr:primaryType: myproject:slickSliderSettingsCompound
+            myproject:arrows: true
+            myproject:autoplay: false
+            myproject:autoplaySpeed: 3000
+            myproject:dots: false
+            myproject:dotsStyle: dots
+            myproject:fade: false
+            myproject:infinite: true
+            myproject:pauseOnDotsHover: false
+            myproject:pauseOnFocus: false
+            myproject:pauseOnHover: false
+            myproject:rows: 1
+            myproject:slidesPerRow: 1
+            myproject:slidesToScroll: 1
+            myproject:slidesToShow: 3
+            myproject:speed: 500
+            myproject:vertical: false
+        /myproject:responsive[3]:
+          jcr:primaryType: myproject:slickSliderResponsiveSettingsCompound
+          myproject:breakpoint: 768
+          /myproject:settings:
+            jcr:primaryType: myproject:slickSliderSettingsCompound
+            myproject:arrows: true
+            myproject:autoplay: false
+            myproject:autoplaySpeed: 3000
+            myproject:dots: false
+            myproject:dotsStyle: dots
+            myproject:fade: false
+            myproject:infinite: true
+            myproject:pauseOnDotsHover: false
+            myproject:pauseOnFocus: false
+            myproject:pauseOnHover: false
+            myproject:rows: 1
+            myproject:slidesPerRow: 1
+            myproject:slidesToScroll: 1
+            myproject:slidesToShow: 2
+            myproject:speed: 500
+            myproject:vertical: false
+      /trending-products[2]:
+        jcr:primaryType: myproject:PathwaysRecommendationsDocument
+        jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+        jcr:uuid: dfb946c1-671d-4390-b694-0d704d6fd71d
+        hippo:availability: [preview]
+        hippostd:retainable: false
+        hippostd:state: unpublished
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-04-04T07:01:48.943-07:00
+        hippostdpubwf:lastModificationDate: 2022-04-04T08:15:38.056-07:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: f72e13d6-d790-4a68-88ad-93f6c6608e5e
+        hippotranslation:locale: en
+        myproject:title: Trending Products
+        myproject:widgetId: 4len2dl2
+        myproject:widgetType: global
+        /myproject:settings:
+          jcr:primaryType: myproject:slickSliderSettingsCompound
+          myproject:arrows: true
+          myproject:autoplay: false
+          myproject:autoplaySpeed: 3000
+          myproject:dots: false
+          myproject:dotsStyle: dots
+          myproject:fade: false
+          myproject:infinite: true
+          myproject:pauseOnDotsHover: false
+          myproject:pauseOnFocus: false
+          myproject:pauseOnHover: false
+          myproject:rows: 1
+          myproject:slidesPerRow: 1
+          myproject:slidesToScroll: 1
+          myproject:slidesToShow: 5
+          myproject:speed: 500
+          myproject:vertical: false
+        /myproject:responsive[1]:
+          jcr:primaryType: myproject:slickSliderResponsiveSettingsCompound
+          myproject:breakpoint: 1200
+          /myproject:settings:
+            jcr:primaryType: myproject:slickSliderSettingsCompound
+            myproject:arrows: true
+            myproject:autoplay: false
+            myproject:autoplaySpeed: 3000
+            myproject:dots: false
+            myproject:dotsStyle: dots
+            myproject:fade: false
+            myproject:infinite: true
+            myproject:pauseOnDotsHover: false
+            myproject:pauseOnFocus: false
+            myproject:pauseOnHover: false
+            myproject:rows: 1
+            myproject:slidesPerRow: 1
+            myproject:slidesToScroll: 1
+            myproject:slidesToShow: 4
+            myproject:speed: 500
+            myproject:vertical: false
+        /myproject:responsive[2]:
+          jcr:primaryType: myproject:slickSliderResponsiveSettingsCompound
+          myproject:breakpoint: 1025
+          /myproject:settings:
+            jcr:primaryType: myproject:slickSliderSettingsCompound
+            myproject:arrows: true
+            myproject:autoplay: false
+            myproject:autoplaySpeed: 3000
+            myproject:dots: false
+            myproject:dotsStyle: dots
+            myproject:fade: false
+            myproject:infinite: true
+            myproject:pauseOnDotsHover: false
+            myproject:pauseOnFocus: false
+            myproject:pauseOnHover: false
+            myproject:rows: 1
+            myproject:slidesPerRow: 1
+            myproject:slidesToScroll: 1
+            myproject:slidesToShow: 3
+            myproject:speed: 500
+            myproject:vertical: false
+        /myproject:responsive[3]:
+          jcr:primaryType: myproject:slickSliderResponsiveSettingsCompound
+          myproject:breakpoint: 768
+          /myproject:settings:
+            jcr:primaryType: myproject:slickSliderSettingsCompound
+            myproject:arrows: true
+            myproject:autoplay: false
+            myproject:autoplaySpeed: 3000
+            myproject:dots: false
+            myproject:dotsStyle: dots
+            myproject:fade: false
+            myproject:infinite: true
+            myproject:pauseOnDotsHover: false
+            myproject:pauseOnFocus: false
+            myproject:pauseOnHover: false
+            myproject:rows: 1
+            myproject:slidesPerRow: 1
+            myproject:slidesToScroll: 1
+            myproject:slidesToShow: 2
+            myproject:speed: 500
+            myproject:vertical: false
+      /trending-products[3]:
+        jcr:primaryType: myproject:PathwaysRecommendationsDocument
+        jcr:mixinTypes: ['mix:referenceable']
+        jcr:uuid: 6dddf860-b74c-43d7-a895-0049dadb4b1b
+        hippo:availability: [live]
+        hippostd:retainable: false
+        hippostd:state: published
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-04-04T07:01:48.943-07:00
+        hippostdpubwf:lastModificationDate: 2022-04-04T08:15:38.056-07:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippostdpubwf:publicationDate: 2022-04-04T10:09:32.628-07:00
+        hippotranslation:id: f72e13d6-d790-4a68-88ad-93f6c6608e5e
+        hippotranslation:locale: en
+        myproject:title: Trending Products
+        myproject:widgetId: 4len2dl2
+        myproject:widgetType: global
+        /myproject:settings:
+          jcr:primaryType: myproject:slickSliderSettingsCompound
+          myproject:arrows: true
+          myproject:autoplay: false
+          myproject:autoplaySpeed: 3000
+          myproject:dots: false
+          myproject:dotsStyle: dots
+          myproject:fade: false
+          myproject:infinite: true
+          myproject:pauseOnDotsHover: false
+          myproject:pauseOnFocus: false
+          myproject:pauseOnHover: false
+          myproject:rows: 1
+          myproject:slidesPerRow: 1
+          myproject:slidesToScroll: 1
+          myproject:slidesToShow: 5
+          myproject:speed: 500
+          myproject:vertical: false
+        /myproject:responsive[1]:
+          jcr:primaryType: myproject:slickSliderResponsiveSettingsCompound
+          myproject:breakpoint: 1200
+          /myproject:settings:
+            jcr:primaryType: myproject:slickSliderSettingsCompound
+            myproject:arrows: true
+            myproject:autoplay: false
+            myproject:autoplaySpeed: 3000
+            myproject:dots: false
+            myproject:dotsStyle: dots
+            myproject:fade: false
+            myproject:infinite: true
+            myproject:pauseOnDotsHover: false
+            myproject:pauseOnFocus: false
+            myproject:pauseOnHover: false
+            myproject:rows: 1
+            myproject:slidesPerRow: 1
+            myproject:slidesToScroll: 1
+            myproject:slidesToShow: 4
+            myproject:speed: 500
+            myproject:vertical: false
+        /myproject:responsive[2]:
+          jcr:primaryType: myproject:slickSliderResponsiveSettingsCompound
+          myproject:breakpoint: 1025
+          /myproject:settings:
+            jcr:primaryType: myproject:slickSliderSettingsCompound
+            myproject:arrows: true
+            myproject:autoplay: false
+            myproject:autoplaySpeed: 3000
+            myproject:dots: false
+            myproject:dotsStyle: dots
+            myproject:fade: false
+            myproject:infinite: true
+            myproject:pauseOnDotsHover: false
+            myproject:pauseOnFocus: false
+            myproject:pauseOnHover: false
+            myproject:rows: 1
+            myproject:slidesPerRow: 1
+            myproject:slidesToScroll: 1
+            myproject:slidesToShow: 3
+            myproject:speed: 500
+            myproject:vertical: false
+        /myproject:responsive[3]:
+          jcr:primaryType: myproject:slickSliderResponsiveSettingsCompound
+          myproject:breakpoint: 768
+          /myproject:settings:
+            jcr:primaryType: myproject:slickSliderSettingsCompound
+            myproject:arrows: true
+            myproject:autoplay: false
+            myproject:autoplaySpeed: 3000
+            myproject:dots: false
+            myproject:dotsStyle: dots
+            myproject:fade: false
+            myproject:infinite: true
+            myproject:pauseOnDotsHover: false
+            myproject:pauseOnFocus: false
+            myproject:pauseOnHover: false
+            myproject:rows: 1
+            myproject:slidesPerRow: 1
+            myproject:slidesToScroll: 1
+            myproject:slidesToShow: 2
+            myproject:speed: 500
+            myproject:vertical: false
+  /hero:
+    jcr:primaryType: hippostd:folder
+    jcr:mixinTypes: ['hippo:named', 'hippotranslation:translated', 'mix:versionable']
+    jcr:uuid: 5da54cfc-ed59-46b8-9428-eafe391d4075
+    hippo:name: Hero
+    hippostd:foldertype: [new-translated-folder, new-document]
+    hippotranslation:id: 11b3be86-7522-49d1-99f4-57683fd3ae63
+    hippotranslation:locale: en
+    /hero:
+      jcr:primaryType: hippo:handle
+      jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+      jcr:uuid: 9484eb35-db1f-4c82-864f-7b855c346685
+      hippo:name: Hero
+      hippo:versionHistory: ae5f435a-a595-4025-af0f-44457d47b6f6
+      /hero[1]:
+        jcr:primaryType: myproject:HeroDocument
+        jcr:mixinTypes: ['mix:referenceable']
+        jcr:uuid: 0eb24ba1-fb00-4763-a137-00f1192a0e13
+        hippo:availability: []
+        hippostd:holder: admin
+        hippostd:retainable: false
+        hippostd:state: draft
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-04-04T12:20:43.703-07:00
+        hippostdpubwf:lastModificationDate: 2022-04-05T07:57:34.444-07:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: 73422872-feef-4366-9a36-0365b98a7fcd
+        hippotranslation:locale: en
+        myproject:fullHeightTextBox: true
+        myproject:horizontalPosition: left
+        myproject:verticalPosition: center
+        /myproject:image:
+          jcr:primaryType: myproject:imageCompound
+          myproject:altText: a home office
+          /myproject:mobileImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: fe7064e0-bb66-4a55-9e0e-5f0574f89118
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+          /myproject:desktopImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: ac5247db-61f1-4d07-b9f9-f0dbe927c949
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+          /myproject:tabletImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: e0946975-439a-46c5-92ff-a9c45a977eb8
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+        /myproject:html:
+          jcr:primaryType: hippostd:html
+          hippostd:content: |-
+            <h3>Text Heading</h3>
+
+            <p>Mauris et lacinia ante. Sed tempus facilisis consectetur. Duis ut tempus enim. Duis ut accumsan nibh. Vestibulum non pellentesque lectus. Ut nec ex nisl. Vestibulum tincidunt mauris scelerisque, feugiat nisi nec, vestibulum felis. Mauris imperdiet metus justo, ac blandit urna euismod eget.</p>
+      /hero[2]:
+        jcr:primaryType: myproject:HeroDocument
+        jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+        jcr:uuid: 504d7cb0-d7f4-4002-bb3a-867db6eeb457
+        hippo:availability: [preview]
+        hippostd:retainable: false
+        hippostd:state: unpublished
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-04-04T12:20:43.703-07:00
+        hippostdpubwf:lastModificationDate: 2022-04-05T07:57:34.402-07:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: 73422872-feef-4366-9a36-0365b98a7fcd
+        hippotranslation:locale: en
+        myproject:fullHeightTextBox: true
+        myproject:horizontalPosition: left
+        myproject:verticalPosition: center
+        /myproject:image:
+          jcr:primaryType: myproject:imageCompound
+          myproject:altText: a home office
+          /myproject:mobileImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: fe7064e0-bb66-4a55-9e0e-5f0574f89118
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+          /myproject:desktopImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: ac5247db-61f1-4d07-b9f9-f0dbe927c949
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+          /myproject:tabletImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: e0946975-439a-46c5-92ff-a9c45a977eb8
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+        /myproject:html:
+          jcr:primaryType: hippostd:html
+          hippostd:content: |-
+            <h3>Text Heading</h3>
+
+            <p>Mauris et lacinia ante. Sed tempus facilisis consectetur. Duis ut tempus enim. Duis ut accumsan nibh. Vestibulum non pellentesque lectus. Ut nec ex nisl. Vestibulum tincidunt mauris scelerisque, feugiat nisi nec, vestibulum felis. Mauris imperdiet metus justo, ac blandit urna euismod eget.</p>
+      /hero[3]:
+        jcr:primaryType: myproject:HeroDocument
+        jcr:mixinTypes: ['mix:referenceable']
+        jcr:uuid: 1f4a3f30-5450-4008-ae9f-3a3d23abc6b9
+        hippo:availability: [live]
+        hippostd:retainable: false
+        hippostd:state: published
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-04-04T12:20:43.703-07:00
+        hippostdpubwf:lastModificationDate: 2022-04-05T07:48:39.836-07:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippostdpubwf:publicationDate: 2022-04-05T07:49:17.270-07:00
+        hippotranslation:id: 73422872-feef-4366-9a36-0365b98a7fcd
+        hippotranslation:locale: en
+        myproject:fullHeightTextBox: true
+        myproject:horizontalPosition: right
+        myproject:verticalPosition: center
+        /myproject:image:
+          jcr:primaryType: myproject:imageCompound
+          myproject:altText: a home office
+          /myproject:mobileImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: fe7064e0-bb66-4a55-9e0e-5f0574f89118
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+          /myproject:desktopImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: ac5247db-61f1-4d07-b9f9-f0dbe927c949
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+          /myproject:tabletImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: e0946975-439a-46c5-92ff-a9c45a977eb8
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+        /myproject:html:
+          jcr:primaryType: hippostd:html
+          hippostd:content: |-
+            <h3>Text Heading</h3>
+
+            <p>Mauris et lacinia ante. Sed tempus facilisis consectetur. Duis ut tempus enim. Duis ut accumsan nibh. Vestibulum non pellentesque lectus. Ut nec ex nisl. Vestibulum tincidunt mauris scelerisque, feugiat nisi nec, vestibulum felis. Mauris imperdiet metus justo, ac blandit urna euismod eget.</p>

@@ -1,0 +1,32 @@
+/content/documents/administration/value-lists/pathways-recommendations-widget-type:
+  jcr:primaryType: hippo:handle
+  jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+  jcr:uuid: 7667677b-d1dc-4ea1-b9b9-6483fe2df821
+  hippo:name: Pathways Recommendations Widget Type
+  /pathways-recommendations-widget-type:
+    jcr:primaryType: selection:valuelist
+    jcr:mixinTypes: ['hippotranslation:translated', 'mix:referenceable']
+    jcr:uuid: 7ef98f29-c3f3-49ce-8177-e2b721158c4a
+    hippo:availability: [live, preview]
+    hippotranslation:id: 3e3cb8a8-9173-4f1e-bc38-d4d1f17175f6
+    hippotranslation:locale: inherited - from query
+    /selection:listitem[1]:
+      jcr:primaryType: selection:listitem
+      selection:key: item
+      selection:label: Item
+    /selection:listitem[2]:
+      jcr:primaryType: selection:listitem
+      selection:key: keyword
+      selection:label: Keyword
+    /selection:listitem[3]:
+      jcr:primaryType: selection:listitem
+      selection:key: category
+      selection:label: Category
+    /selection:listitem[4]:
+      jcr:primaryType: selection:listitem
+      selection:key: personalized
+      selection:label: Personalization
+    /selection:listitem[5]:
+      jcr:primaryType: selection:listitem
+      selection:key: global
+      selection:label: Global

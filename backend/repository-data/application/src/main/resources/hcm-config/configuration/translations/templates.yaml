@@ -20,6 +20,8 @@ definitions:
       new-navigationBanner-folder: new Navigation Banner folder
       new-CategoryPage-document: new Category Page document
       new-CategoryPage-folder: new Category Page folder
+      new-PathwaysRecommendationsDocument-document: New Pathways Recommendations Document
+      new-PathwaysRecommendationsDocument-folder: New Pathways Recommendations Folder
     /hippo:configuration/hippo:translations/hippo:templates/fr:
       new-resource-bundle: nouveau resource bundle
       new-untranslated-folder: nouveau dossier non traduit

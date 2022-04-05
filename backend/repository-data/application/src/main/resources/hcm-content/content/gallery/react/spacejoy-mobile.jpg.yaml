@@ -1,0 +1,27 @@
+/content/gallery/react/spacejoy-mobile.jpg:
+  jcr:primaryType: hippo:handle
+  jcr:mixinTypes: ['mix:referenceable']
+  jcr:uuid: fe7064e0-bb66-4a55-9e0e-5f0574f89118
+  /spacejoy-mobile.jpg:
+    jcr:primaryType: hippogallery:imageset
+    hippo:availability: [live, preview]
+    hippogallery:filename: spacejoy-mobile.jpg
+    /hippogallery:thumbnail:
+      jcr:primaryType: hippogallery:image
+      hippo:filename: spacejoy-mobile.jpg
+      hippogallery:height: 60
+      hippogallery:width: 60
+      jcr:data:
+        type: binary
+        resource: /content/gallery/react/spacejoy-mobile.jpg/spacejoy-mobile_thumbnail.jpg
+      jcr:lastModified: 2022-04-04T12:46:10.960-07:00
+      jcr:mimeType: image/jpeg
+    /hippogallery:original:
+      jcr:primaryType: hippogallery:image
+      hippogallery:height: 800
+      hippogallery:width: 800
+      jcr:data:
+        type: binary
+        resource: /content/gallery/react/spacejoy-mobile.jpg/spacejoy-mobile_original.jpg
+      jcr:lastModified: 2022-04-04T12:46:10.960-07:00
+      jcr:mimeType: image/jpeg

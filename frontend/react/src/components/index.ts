@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-export * from './Banner';
-export * from './Content';
-export * from './Footer';
-export * from './Header';
-export * from './Hero';
-export * from './Menu';
-export * from './Navigation';
-export * from './NewsList';
-export * from './PathwaysRecommendations';
-export * from './ProductDetail';
-export * from './ProductListingGrid';
+export * from './organisms/Banner';
+export * from './organisms/Content';
+export * from './organisms/Footer';
+export * from './organisms/Header';
+export * from './organisms/Hero';
+export * from './organisms/Menu';
+export * from './organisms/Navigation';
+export * from './organisms/NewsList';
+export * from './organisms/PathwaysRecommendations';
+export * from './organisms/ProductDetail';
+export * from './organisms/ProductListingGrid';
