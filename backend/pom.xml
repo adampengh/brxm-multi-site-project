@@ -60,7 +60,7 @@
 
     <!--***START temporary override of versions*** -->
     <!-- ***END temporary override of versions*** -->
-
+    <bloomreach.content-hal-api.version>4.1.0</bloomreach.content-hal-api.version>
     <bloomreach.forge.sitemapv2.version>2.0.6</bloomreach.forge.sitemapv2.version>
     <essentials.version>${hippo.cms.version}</essentials.version>
     <jsp-api.version>2.2</jsp-api.version>

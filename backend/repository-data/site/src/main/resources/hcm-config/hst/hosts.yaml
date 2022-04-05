@@ -29,3 +29,11 @@ definitions:
               hst:responseheaders: ['Access-Control-Allow-Origin: http://localhost:3000',
                 'Access-Control-Allow-Credentials: true']
               hst:type: preview
+          /api:
+            .meta:residual-child-node-category: content
+            jcr:primaryType: hst:mount
+            hst:alias: api
+            hst:ismapped: false
+            hst:namedpipeline: HalRestApiPipeline
+            hst:types: [rest]
+            hst:mountpoint: /hst:myproject/hst:sites/urlrewriter
