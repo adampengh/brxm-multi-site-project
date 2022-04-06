@@ -165,6 +165,21 @@
   </servlet>
 
   <servlet>
+    <servlet-name>UiExtensionsResourceServlet</servlet-name>
+    <servlet-class>org.onehippo.cms7.utilities.servlet.SecureCmsResourceServlet</servlet-class>
+    <init-param>
+      <param-name>jarPathPrefix</param-name>
+      <param-value>/ui-extensions</param-value>
+    </init-param>
+    <init-param>
+      <param-name>allowedResourcePaths</param-name>
+      <param-value>
+        ^/.*\..*
+      </param-value>
+    </init-param>
+  </servlet>
+
+  <servlet>
     <servlet-name>SkinResourceServlet</servlet-name>
     <servlet-class>org.onehippo.cms7.utilities.servlet.ResourceServlet</servlet-class>
     <init-param>
@@ -236,6 +251,11 @@
   <servlet-mapping>
     <servlet-name>PageToolsResourceServlet</servlet-name>
     <url-pattern>/pagetools/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>UiExtensionsResourceServlet</servlet-name>
+    <url-pattern>/ui-extensions/*</url-pattern>
   </servlet-mapping>
 
   <servlet-mapping>

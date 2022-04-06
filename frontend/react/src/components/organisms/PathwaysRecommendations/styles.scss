@@ -3,12 +3,13 @@
 
     &__title {
         display: block;
+        font-size: 18px;
     }
 
     &__grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
         grid-gap: 1rem;
+        grid-template-columns: repeat(4, 1fr);
     }
 
     &__slider {
@@ -23,14 +24,18 @@
         }
 
         &-arrow {
+            background-color: rgba(255, 255, 255, 0.7);
             display: block;
-            z-index: 1;
-            // border: 1px solid red;
-            width: 36px;
             height: 36px;
+            transition: all 0.3s ease;
+            width: 36px;
+            z-index: 1;
+            &:hover {
+                background-color: rgba(255, 255, 255, 1);
+            }
             svg {
-                width: 36px;
                 height: 36px;
+                width: 36px;
             }
             &::before {
                 display: none;

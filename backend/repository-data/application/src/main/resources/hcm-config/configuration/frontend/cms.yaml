@@ -34,3 +34,10 @@ definitions:
       frontend:displayName: Preview Mode
       frontend:extensionPoint: channel.page.tools
       frontend:url: pagetools/previewMode/index.html
+    /hippo:configuration/hippo:frontend/cms/ui-extensions/unsplash:
+      jcr:primaryType: frontend:uiExtension
+      frontend:config: '{"clientId":"e-N5y0yesl02zmuVUpSXPa1svoTqoWiI8JXCXQhep2Y",
+        "unsplashRandomUrl":"https://api.unsplash.com/photos/random","unsplashSearchUrl":"https://api.unsplash.com/search/photos"}'
+      frontend:displayName: Unsplash
+      frontend:extensionPoint: document.field
+      frontend:url: ui-extensions/unsplash/index.html

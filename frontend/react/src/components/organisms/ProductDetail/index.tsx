@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrComponent, BrProps } from '@bloomreach/react-sdk';
+import { BrProps } from '@bloomreach/react-sdk';
 import { useProductDetail } from '@bloomreach/connector-components-react';
 import { Container, Row, Column } from '../../../uikit/Layout';
 
@@ -7,10 +7,8 @@ import './ProductDetail.scss';
 
 
 export const ProductDetail = ({ component, page }: BrProps) => {
-    console.log('ProductDetail');
     const prefix = 'product-detail';
     const parameters: any = component.getParameters();
-    console.log('parameters', parameters);
     const itemId = parameters.productId;
 
     const [item, loading, error] = useProductDetail({
@@ -30,8 +28,6 @@ export const ProductDetail = ({ component, page }: BrProps) => {
         return null;
     }
 
-    console.log('item', item);
-
     return (
         <>
             <Container className={prefix}>
@@ -46,30 +42,7 @@ export const ProductDetail = ({ component, page }: BrProps) => {
                         <p>{ item.description }</p>
                     </Column>
                 </Row>
-
-                <Row className={`${prefix}__bottom`}>
-                    <Column>
-                        <Row>
-                            <Column>
-                                <BrComponent path='product-detail-bottom-1' />
-                            </Column>
-                        </Row>
-                        <Row>
-                            <Column>
-                                <BrComponent path='product-detail-bottom-2' />
-                            </Column>
-                        </Row>
-                        <Row>
-                            <Column>
-                                <BrComponent path='product-detail-bottom-3' />
-                            </Column>
-                        </Row>
-                    </Column>
-                </Row>
-
             </Container>
-
         </>
-
     )
 }

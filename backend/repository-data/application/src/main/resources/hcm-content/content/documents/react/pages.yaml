@@ -155,7 +155,7 @@
     jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
     jcr:uuid: 33dfd7ee-81d8-4659-abd2-a4b3480ee3e2
     hippo:name: Homepage
-    hippo:versionHistory: ce6640ad-7c70-4691-9483-f038bd516958
+    hippo:versionHistory: f8aad92a-d868-438a-9724-0b7ad4e4e03b
     /homepage[1]:
       jcr:primaryType: myproject:ExperiencePage
       jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
@@ -194,7 +194,7 @@
       hippostd:state: unpublished
       hippostdpubwf:createdBy: admin
       hippostdpubwf:creationDate: 2021-12-08T20:56:45.502-05:00
-      hippostdpubwf:lastModificationDate: 2022-04-04T12:23:05.242-07:00
+      hippostdpubwf:lastModificationDate: 2022-04-05T11:24:39.898-07:00
       hippostdpubwf:lastModifiedBy: admin
       hippotranslation:id: 5b0f7c79-b157-4922-8c40-92b92ece91e9
       hippotranslation:locale: en
@@ -222,22 +222,13 @@
           jcr:primaryType: hst:containercomponent
           jcr:uuid: 9b24aff9-0b14-4960-a4ff-d75eee869394
           hippo:identifier: 7658ded6-d05b-4b9c-b26f-cd4d48d116c4
-          hst:lastmodified: 2022-04-04T19:23:05.242Z
+          hst:lastmodified: 2022-04-05T11:24:39.896-07:00
           /Hero:
             jcr:primaryType: hst:containeritemcomponent
             jcr:uuid: 628baf6a-6a52-40e4-ab68-a6825f08d3a8
             hst:componentdefinition: hst:components/react-catalog/Hero
             hst:parameternames: [document]
             hst:parametervalues: [components/hero/hero]
-          /banner:
-            jcr:primaryType: hst:containeritemcomponent
-            jcr:uuid: 9f3d8b9b-1708-4fd6-8d23-9f24634bfad3
-            hst:componentclassname: org.onehippo.cms7.essentials.components.EssentialsBannerComponent
-            hst:iconpath: images/essentials/catalog-component-icons/banner.svg
-            hst:label: Banner
-            hst:parameternames: [document, org.hippoecm.hst.core.component.template]
-            hst:parametervalues: [components/banners/homepage-banner, 'webfile:/freemarker/hstdefault/essentials-banner.ftl']
-            hst:template: essentials-banner
           /PathwaysRecommendations:
             jcr:primaryType: hst:containeritemcomponent
             jcr:uuid: 4cc64db0-59fb-483c-a43b-4559efbf7a81
@@ -253,9 +244,9 @@
       hippostd:state: published
       hippostdpubwf:createdBy: admin
       hippostdpubwf:creationDate: 2021-12-08T20:56:45.502-05:00
-      hippostdpubwf:lastModificationDate: 2022-04-04T12:23:05.242-07:00
+      hippostdpubwf:lastModificationDate: 2022-04-05T11:24:39.898-07:00
       hippostdpubwf:lastModifiedBy: admin
-      hippostdpubwf:publicationDate: 2022-04-04T12:23:09.534-07:00
+      hippostdpubwf:publicationDate: 2022-04-05T11:24:44.283-07:00
       hippotranslation:id: 5b0f7c79-b157-4922-8c40-92b92ece91e9
       hippotranslation:locale: en
       /myproject:pageMetadata:
@@ -276,31 +267,22 @@
           hippo:values: []
       /hst:xpage:
         jcr:primaryType: hst:xpage
-        jcr:uuid: 4813db41-6673-4f3b-9b66-b98496d41beb
+        jcr:uuid: 6c09bf8d-a85d-466f-b0e2-e9caf0532774
         hst:pageref: single-column
         /3957ec49-26e0-4a67-9575-0a62393fa69a:
           jcr:primaryType: hst:containercomponent
-          jcr:uuid: 95d39ad1-c76d-4298-b1bf-2d8f04f63d4d
+          jcr:uuid: 49dae438-9990-406a-b8bb-6fa7562cb671
           hippo:identifier: 7658ded6-d05b-4b9c-b26f-cd4d48d116c4
-          hst:lastmodified: 2022-04-04T19:23:05.242Z
+          hst:lastmodified: 2022-04-05T11:24:39.896-07:00
           /Hero:
             jcr:primaryType: hst:containeritemcomponent
-            jcr:uuid: 215ae74c-b925-4f67-8e7b-6566823f4ac2
+            jcr:uuid: 6f5faf46-6c89-48d5-83d5-fb719b34b2c0
             hst:componentdefinition: hst:components/react-catalog/Hero
             hst:parameternames: [document]
             hst:parametervalues: [components/hero/hero]
-          /banner:
-            jcr:primaryType: hst:containeritemcomponent
-            jcr:uuid: 19ee0bc9-282b-40a9-8290-3206b3e99f50
-            hst:componentclassname: org.onehippo.cms7.essentials.components.EssentialsBannerComponent
-            hst:iconpath: images/essentials/catalog-component-icons/banner.svg
-            hst:label: Banner
-            hst:parameternames: [document, org.hippoecm.hst.core.component.template]
-            hst:parametervalues: [components/banners/homepage-banner, 'webfile:/freemarker/hstdefault/essentials-banner.ftl']
-            hst:template: essentials-banner
           /PathwaysRecommendations:
             jcr:primaryType: hst:containeritemcomponent
-            jcr:uuid: 18a611b4-893a-4285-864b-10aac5cdbfd8
+            jcr:uuid: f73a6e86-fb92-4b9b-b56a-8bdff4921228
             hst:componentdefinition: hst:components/react-catalog/PathwaysRecommendations
             hst:parameternames: [document]
             hst:parametervalues: [components/pathways-and-recommendations/trending-products]

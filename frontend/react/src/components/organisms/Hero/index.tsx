@@ -18,10 +18,14 @@ export const Hero = ({ component, page}: BrProps) => {
         horizontalPosition,
         html,
         image,
+        unsplashImage,
         verticalPosition,
     } = document.getData();
 
     console.log(document.getData())
+
+    const unsplash = unsplashImage && JSON.parse(unsplashImage);
+    console.log('unsplash', unsplash);
 
     const {
         altText,
@@ -44,12 +48,20 @@ export const Hero = ({ component, page}: BrProps) => {
                 content={document}
             />
             <div className={`${className}__img`}>
-                <Picture
-                    altText={altText}
-                    mobileImage={mobileImage.getOriginal().getUrl()}
-                    tabletImage={tabletImage?.getOriginal()?.getUrl()}
-                    desktopImage={desktopImage?.getOriginal()?.getUrl()}
-                />
+                {unsplash
+                    ? <Picture
+                        altText={unsplash.urls.alt_description}
+                        mobileImage={unsplash.urls.small}
+                        tabletImage={unsplash.urls.regular}
+                        desktopImage={unsplash.urls.full}
+                    />
+                    : <Picture
+                        altText={altText}
+                        mobileImage={mobileImage.getOriginal().getUrl()}
+                        tabletImage={tabletImage?.getOriginal()?.getUrl()}
+                        desktopImage={desktopImage?.getOriginal()?.getUrl()}
+                    />
+                }
             </div>
 
 

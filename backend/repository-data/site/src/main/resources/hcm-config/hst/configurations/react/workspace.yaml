@@ -38,25 +38,6 @@ definitions:
             hst:lastmodified: 2021-12-15T20:32:19.662-05:00
         /product-detail:
           jcr:primaryType: hst:containercomponentfolder
-          /product-detail-bottom-1:
-            .meta:residual-child-node-category: content
-            jcr:primaryType: hst:containercomponent
-            hippo:identifier: 026fc68b-c50d-40f5-91c0-47bce518f450
-            hst:label: Product Detail Bottom Container 1
-            hst:xtype: hst.vbox
-            hst:lastmodified: 2022-02-02T13:15:48.861-05:00
-          /product-detail-bottom-2:
-            .meta:residual-child-node-category: content
-            jcr:primaryType: hst:containercomponent
-            hippo:identifier: 026fc68b-c50d-40f5-91c0-47bce518f450
-            hst:label: Product Detail Bottom Container 2
-            hst:xtype: hst.vbox
-          /product-detail-bottom-3:
-            .meta:residual-child-node-category: content
-            jcr:primaryType: hst:containercomponent
-            hippo:identifier: 026fc68b-c50d-40f5-91c0-47bce518f450
-            hst:label: Product Detail Bottom Container 3
-            hst:xtype: hst.vbox
       /hst:sitemenus:
         jcr:primaryType: hst:sitemenus
         /main:
