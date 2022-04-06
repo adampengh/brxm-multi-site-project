@@ -120,6 +120,11 @@ definitions:
               hst:relative: true
               hst:pickerselectablenodetypes: ['myproject:PathwaysRecommendationsDocument']
               hst:pickerinitialpath: components/pathways-and-recommendations
+          /productId:
+            jcr:primaryType: hst:dynamicparameter
+            hst:displayname: Product ID
+            hst:required: false
+            hst:valuetype: text
         /Hero:
           jcr:primaryType: hst:componentdefinition
           hst:componentclassname: org.hippoecm.hst.component.support.bean.dynamic.BaseHstDynamicComponent

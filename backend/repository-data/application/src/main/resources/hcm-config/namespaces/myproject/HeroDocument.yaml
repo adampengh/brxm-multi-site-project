@@ -11,7 +11,7 @@ definitions:
         /hipposysedit:nodetype:
           jcr:primaryType: hipposysedit:nodetype
           jcr:mixinTypes: ['mix:referenceable', 'hipposysedit:remodel']
-          jcr:uuid: 6ab5bf03-638f-4647-8316-7dccac81a8b3
+          jcr:uuid: bda368aa-d95f-4cf1-83e1-dcc73b32361a
           hipposysedit:node: true
           hipposysedit:supertype: ['myproject:basedocument', 'hippostd:relaxed', 'hippotranslation:translated']
           hipposysedit:uri: http://www.myproject.com/myproject/nt/1.0
@@ -57,6 +57,14 @@ definitions:
             hipposysedit:path: myproject:fullHeightTextBox
             hipposysedit:primary: false
             hipposysedit:type: selection:BooleanRadioGroup
+          /unsplashImage:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: myproject:unsplashImage
+            hipposysedit:primary: false
+            hipposysedit:type: OpenUiString
       /hipposysedit:prototypes:
         jcr:primaryType: hipposysedit:prototypeset
         /hipposysedit:prototype:
@@ -70,10 +78,11 @@ definitions:
           jcr:mixinTypes: ['mix:referenceable']
           myproject:horizontalPosition: left
           myproject:verticalPosition: center
-          jcr:uuid: 04619793-3789-4bdb-9fd7-3facd77d6a5d
+          jcr:uuid: 26e3f5cb-d89a-4418-9c99-dc9da99b288c
           hippostdpubwf:lastModificationDate: 2022-04-04T12:20:08.803-07:00
           hippostdpubwf:creationDate: 2022-04-04T12:20:08.803-07:00
           myproject:fullHeightTextBox: false
+          myproject:unsplashImage: ''
           /myproject:image:
             jcr:primaryType: myproject:imageCompound
             myproject:altText: ''
@@ -164,3 +173,12 @@ definitions:
             /cluster.options:
               jcr:primaryType: frontend:pluginconfig
               selectable.options: top,center,bottom
+          /unsplashImage:
+            jcr:primaryType: frontend:plugin
+            caption: Unsplash Image
+            field: unsplashImage
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.left.item
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+              ui.extension: unsplash

@@ -8,12 +8,15 @@ definitions:
         /ProductDetail:
           jcr:primaryType: hst:component
           hst:referencecomponent: hst:components/ProductDetail
-          /product-detail-bottom-1:
-            jcr:primaryType: hst:containercomponentreference
-            hst:referencecomponent: product-detail/product-detail-bottom-1
-          /product-detail-bottom-2:
-            jcr:primaryType: hst:containercomponentreference
-            hst:referencecomponent: product-detail/product-detail-bottom-2
-          /product-detail-bottom-3:
-            jcr:primaryType: hst:containercomponentreference
-            hst:referencecomponent: product-detail/product-detail-bottom-3
+        /FrequentlyViewedTogether:
+          jcr:primaryType: hst:containeritemcomponent
+          hst:componentdefinition: hst:components/react-catalog/PathwaysRecommendations
+          hst:parameternames: [document, productId]
+          hst:parametervalues: [components/pathways-and-recommendations/pdp-frequently-viewed-together,
+            '${1}']
+        /FrequentlyBoughtTogether:
+          jcr:primaryType: hst:containeritemcomponent
+          hst:componentdefinition: hst:components/react-catalog/PathwaysRecommendations
+          hst:parameternames: [document, productId]
+          hst:parametervalues: [components/pathways-and-recommendations/pdp-frequently-bought-together,
+            '${1}']

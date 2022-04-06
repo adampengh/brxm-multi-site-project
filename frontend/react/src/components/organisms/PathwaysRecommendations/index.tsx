@@ -20,9 +20,14 @@ export const PathwaysRecommendations = ({ page, component }: BrProps) => {
     const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState([]);
 
+    // Component Parameters
+    const {
+        productId
+    } = component.getParameters();
+
+    // Document Data
     const { document: documentRef } = component.getModels();
     const document = documentRef && page.getContent(documentRef);
-
     const {
         title,
         widgetId,
@@ -38,6 +43,7 @@ export const PathwaysRecommendations = ({ page, component }: BrProps) => {
         _br_uid_2: cookies.get('_br_uid_2'),
         fields: 'pid,title,price,sale_price,url,thumb_image,reviews,reviews_count',
         // ...(categoryId && {cat_id: categoryId}),
+        ...(productId && {item_ids: productId}),
     }
 
     useEffect(() => {
@@ -121,8 +127,8 @@ export const PathwaysRecommendations = ({ page, component }: BrProps) => {
                             <img src={item.thumb_image} alt='product' style={{width:'100%'}} />
                         </Link>
 
-                        <div className='pathways-recommendations__title'><strong>{ item.title }</strong></div>
-                        <div className='pathways-recommendations__title'>
+                        <div className='pathways-recommendations__slide-title'><strong>{ item.title }</strong></div>
+                        <div className='pathways-recommendations__slide-price'>
                             <span>{ item.price }</span>
                             <span>{ item.sale_price }</span>
                         </div>
