@@ -8,7 +8,7 @@ definitions:
         .meta:category: system
         .meta:add-new-system-values: true
         type: string
-        value: [ldapadmin, apengh]
+        value: [apengh, ldapadmin]
       hipposys:securityprovider: ldaps
       hipposys:userroles:
         .meta:category: system

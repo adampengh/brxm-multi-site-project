@@ -5,7 +5,7 @@ definitions:
       hippoldap:authentication: simple
       hippoldap:credentials: Password1!
       hippoldap:cronexpression: '*/1 * * * * ?'
-      hippoldap:disabled: true
+      hippoldap:disabled: false
       hippoldap:initialfactory: com.sun.jndi.ldap.LdapCtxFactory
       hippoldap:principal: uid=ldapadmin,ou=Users,o=61f033c8a2efb85db3e2db91,dc=jumpcloud,dc=com
       hippoldap:providerurl: ldaps://ldap.jumpcloud.com:636

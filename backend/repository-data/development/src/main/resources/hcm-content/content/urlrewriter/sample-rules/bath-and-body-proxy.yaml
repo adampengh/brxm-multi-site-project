@@ -1,0 +1,65 @@
+/content/urlrewriter/sample-rules/bath-and-body-proxy:
+  jcr:primaryType: hippo:handle
+  jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+  jcr:uuid: ec179d29-1af8-4109-a43d-3c6a4214575b
+  hippo:name: Bath and Body Proxy
+  hippo:versionHistory: d1b55f6b-6cca-4e89-b0b4-c811467d2280
+  /bath-and-body-proxy[1]:
+    jcr:primaryType: urlrewriter:advancedrule
+    jcr:mixinTypes: ['mix:referenceable']
+    jcr:uuid: 488c623c-a807-4549-a194-f0ba47777048
+    hippo:availability: []
+    hippostd:retainable: false
+    hippostd:state: draft
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2022-04-06T07:17:53.948-07:00
+    hippostdpubwf:lastModificationDate: 2022-04-06T07:17:53.948-07:00
+    hippostdpubwf:lastModifiedBy: admin
+    hippostdpubwf:publicationDate: 2008-03-26T12:03:00+01:00
+    urlrewriter:casesensitive: false
+    urlrewriter:isnotlast: true
+    urlrewriter:iswildcardtype: false
+    urlrewriter:qsappend: false
+    urlrewriter:ruledescription: Bath and Body Proxy Rule
+    urlrewriter:rulefrom: /bath-body
+    urlrewriter:ruleto: /c/test-category
+    urlrewriter:ruletype: proxy
+  /bath-and-body-proxy[2]:
+    jcr:primaryType: urlrewriter:advancedrule
+    jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+    jcr:uuid: 3e1c68cd-88b1-4e5f-8e37-e29456f7fd32
+    hippo:availability: [preview]
+    hippostd:retainable: false
+    hippostd:state: unpublished
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2022-04-06T07:17:53.948-07:00
+    hippostdpubwf:lastModificationDate: 2022-04-06T07:18:50.373-07:00
+    hippostdpubwf:lastModifiedBy: admin
+    urlrewriter:casesensitive: false
+    urlrewriter:isnotlast: true
+    urlrewriter:iswildcardtype: false
+    urlrewriter:qsappend: false
+    urlrewriter:ruledescription: Bath and Body Proxy Rule
+    urlrewriter:rulefrom: /bath-body
+    urlrewriter:ruleto: /c/test-category
+    urlrewriter:ruletype: proxy
+  /bath-and-body-proxy[3]:
+    jcr:primaryType: urlrewriter:advancedrule
+    jcr:mixinTypes: ['mix:referenceable']
+    jcr:uuid: aef37ce0-ffd4-4cab-a908-f4f459ef9ccc
+    hippo:availability: []
+    hippostd:retainable: false
+    hippostd:state: published
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2022-04-06T07:17:53.948-07:00
+    hippostdpubwf:lastModificationDate: 2022-04-06T07:18:50.373-07:00
+    hippostdpubwf:lastModifiedBy: admin
+    hippostdpubwf:publicationDate: 2022-04-06T07:18:51.978-07:00
+    urlrewriter:casesensitive: false
+    urlrewriter:isnotlast: true
+    urlrewriter:iswildcardtype: false
+    urlrewriter:qsappend: false
+    urlrewriter:ruledescription: Bath and Body Proxy Rule
+    urlrewriter:rulefrom: /bath-body
+    urlrewriter:ruleto: /c/test-category
+    urlrewriter:ruletype: proxy

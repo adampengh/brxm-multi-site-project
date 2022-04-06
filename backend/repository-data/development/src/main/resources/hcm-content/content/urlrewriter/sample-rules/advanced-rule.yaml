@@ -1,0 +1,44 @@
+/content/urlrewriter/sample-rules/advanced-rule:
+  jcr:primaryType: hippo:handle
+  jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+  jcr:uuid: c2eb5a51-f326-4ff7-9894-8edfda89359b
+  hippo:name: Advanced Rule
+  hippo:versionHistory: fe4ff832-9b39-4124-b638-e1d33e380c4f
+  /advanced-rule[1]:
+    jcr:primaryType: urlrewriter:advancedrule
+    jcr:mixinTypes: ['mix:referenceable']
+    jcr:uuid: a52aa63f-51f6-40c3-898c-f4b6da29834e
+    hippo:availability: []
+    hippo:related___pathreference: rule-documents/advanced-rule
+    hippostd:holder: admin
+    hippostd:state: published
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2012-05-29T16:37:19.726+02:00
+    hippostdpubwf:lastModificationDate: 2012-05-31T17:25:04.454+02:00
+    hippostdpubwf:lastModifiedBy: admin
+    hippostdpubwf:publicationDate: 2015-05-19T23:36:45.858+02:00
+    urlrewriter:casesensitive: false
+    urlrewriter:isnotlast: false
+    urlrewriter:iswildcardtype: false
+    urlrewriter:ruledescription: demo rule
+    urlrewriter:rulefrom: /contact
+    urlrewriter:ruleto: https://www.onehippo.org
+    urlrewriter:ruletype: temporary-redirect
+  /advanced-rule[2]:
+    jcr:primaryType: urlrewriter:advancedrule
+    jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+    jcr:uuid: 99040b19-3253-48c9-af66-9dc76e39ce2b
+    hippo:availability: [preview]
+    hippo:related___pathreference: rule-documents/advanced-rule
+    hippostd:state: unpublished
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2012-05-29T16:37:19.726+02:00
+    hippostdpubwf:lastModificationDate: 2012-05-31T17:25:04.454+02:00
+    hippostdpubwf:lastModifiedBy: admin
+    urlrewriter:casesensitive: false
+    urlrewriter:isnotlast: false
+    urlrewriter:iswildcardtype: false
+    urlrewriter:ruledescription: demo rule
+    urlrewriter:rulefrom: /contact
+    urlrewriter:ruleto: https://www.onehippo.org
+    urlrewriter:ruletype: temporary-redirect

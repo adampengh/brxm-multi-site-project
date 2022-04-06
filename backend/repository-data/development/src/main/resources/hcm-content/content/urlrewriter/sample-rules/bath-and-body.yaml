@@ -1,0 +1,53 @@
+/content/urlrewriter/sample-rules/bath-and-body:
+  jcr:primaryType: hippo:handle
+  jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+  jcr:uuid: 3b8930cd-d92d-44ef-9ec5-28eebb5e221e
+  hippo:name: Bath and Body
+  hippo:versionHistory: b627d5c0-6524-4dbe-8be2-4263e33196f1
+  /bath-and-body[1]:
+    jcr:primaryType: urlrewriter:rule
+    jcr:mixinTypes: ['mix:referenceable']
+    jcr:uuid: f013373d-939a-4601-b694-bfe946a3852c
+    hippo:availability: []
+    hippostd:retainable: false
+    hippostd:state: draft
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2022-04-06T07:16:25.311-07:00
+    hippostdpubwf:lastModificationDate: 2022-04-06T07:16:25.311-07:00
+    hippostdpubwf:lastModifiedBy: admin
+    hippostdpubwf:publicationDate: 2008-03-26T12:03:00+01:00
+    urlrewriter:ruledescription: Bath and Body vanity url
+    urlrewriter:rulefrom: /bath-and-body
+    urlrewriter:ruleto: /c/test-category
+    urlrewriter:ruletype: temporary-redirect
+  /bath-and-body[2]:
+    jcr:primaryType: urlrewriter:rule
+    jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+    jcr:uuid: 5b1b5294-0f2f-4470-9548-75fa4d8392cd
+    hippo:availability: [preview]
+    hippostd:retainable: false
+    hippostd:state: unpublished
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2022-04-06T07:16:25.311-07:00
+    hippostdpubwf:lastModificationDate: 2022-04-06T07:16:50.055-07:00
+    hippostdpubwf:lastModifiedBy: admin
+    urlrewriter:ruledescription: Bath and Body vanity url
+    urlrewriter:rulefrom: /bath-and-body
+    urlrewriter:ruleto: /c/test-category
+    urlrewriter:ruletype: temporary-redirect
+  /bath-and-body[3]:
+    jcr:primaryType: urlrewriter:rule
+    jcr:mixinTypes: ['mix:referenceable']
+    jcr:uuid: 971aaa80-75ec-4183-b1c9-19b3cf3ed1c7
+    hippo:availability: [live]
+    hippostd:retainable: false
+    hippostd:state: published
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2022-04-06T07:16:25.311-07:00
+    hippostdpubwf:lastModificationDate: 2022-04-06T07:16:50.055-07:00
+    hippostdpubwf:lastModifiedBy: admin
+    hippostdpubwf:publicationDate: 2022-04-06T07:23:15.197-07:00
+    urlrewriter:ruledescription: Bath and Body vanity url
+    urlrewriter:rulefrom: /bath-and-body
+    urlrewriter:ruleto: /c/test-category
+    urlrewriter:ruletype: temporary-redirect

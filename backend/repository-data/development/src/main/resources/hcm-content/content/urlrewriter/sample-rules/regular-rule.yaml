@@ -1,0 +1,39 @@
+/content/urlrewriter/sample-rules/regular-rule:
+  .meta:order-before: advanced-rule
+  jcr:primaryType: hippo:handle
+  jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+  jcr:uuid: 2ee95e90-7c79-49f3-b908-c963ac2511d3
+  hippo:name: Regular Rule
+  hippo:versionHistory: 93177dfd-b5e5-4ad6-b4cb-8a6fe8adf3f3
+  /regular-rule[1]:
+    jcr:primaryType: urlrewriter:rule
+    jcr:mixinTypes: ['mix:referenceable']
+    jcr:uuid: 7645342a-4283-4578-8c7c-223484aca656
+    hippo:availability: []
+    hippo:related___pathreference: rule-documents/regular-rule
+    hippostd:holder: admin
+    hippostd:state: published
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2012-05-29T16:44:25.017+02:00
+    hippostdpubwf:lastModificationDate: 2012-05-31T17:40:10.887+02:00
+    hippostdpubwf:lastModifiedBy: admin
+    hippostdpubwf:publicationDate: 2015-05-19T23:36:50.296+02:00
+    urlrewriter:ruledescription: rewrite about
+    urlrewriter:rulefrom: /about
+    urlrewriter:ruleto: https://www.bloomreach.com
+    urlrewriter:ruletype: permanent-redirect
+  /regular-rule[2]:
+    jcr:primaryType: urlrewriter:rule
+    jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+    jcr:uuid: b8ff0b97-ef28-4fa1-8b1e-602841ab272b
+    hippo:availability: [preview]
+    hippo:related___pathreference: rule-documents/regular-rule
+    hippostd:state: unpublished
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2012-05-29T16:44:25.017+02:00
+    hippostdpubwf:lastModificationDate: 2012-05-31T17:40:10.887+02:00
+    hippostdpubwf:lastModifiedBy: admin
+    urlrewriter:ruledescription: rewrite about
+    urlrewriter:rulefrom: /about
+    urlrewriter:ruleto: https://www.bloomreach.com
+    urlrewriter:ruletype: permanent-redirect

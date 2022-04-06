@@ -1,0 +1,46 @@
+/content/urlrewriter/sample-rules/xml-rule:
+  .meta:order-before: bath-and-body
+  jcr:primaryType: hippo:handle
+  jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+  jcr:uuid: 2dffbf0b-acb6-4c74-9f97-378217119357
+  hippo:name: XML Rule
+  hippo:versionHistory: 175334e0-ed4d-4466-acdc-cb3c0319e0d3
+  /xml-rule[1]:
+    jcr:primaryType: urlrewriter:xmlrule
+    jcr:mixinTypes: ['mix:referenceable']
+    jcr:uuid: 434d1c0a-4d40-4384-831f-01ce34ef4fdb
+    hippo:availability: []
+    hippo:related___pathreference: rule-documents/xml-rule
+    hippostd:state: published
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2015-05-19T16:50:53.926+02:00
+    hippostdpubwf:lastModificationDate: 2015-05-19T23:38:16.531+02:00
+    hippostdpubwf:lastModifiedBy: admin
+    hippostdpubwf:publicationDate: 2015-05-19T23:38:21.749+02:00
+    urlrewriter:rule: |-
+      <rule>
+        <note>
+          This rule means that requests to /test/status will be redirected to /rewrite-status.
+        </note>
+        <from>/test/status</from>
+        <to type="redirect">%{context-path}/rewrite-status</to>
+      </rule>
+  /xml-rule[2]:
+    jcr:primaryType: urlrewriter:xmlrule
+    jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+    jcr:uuid: 51aff19c-505b-4c06-81fa-d01ac168e6d1
+    hippo:availability: [preview]
+    hippo:related___pathreference: rule-documents/xml-rule
+    hippostd:state: unpublished
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2015-05-19T16:50:53.926+02:00
+    hippostdpubwf:lastModificationDate: 2015-05-19T23:38:16.531+02:00
+    hippostdpubwf:lastModifiedBy: admin
+    urlrewriter:rule: |-
+      <rule>
+        <note>
+          This rule means that requests to /test/status will be redirected to /rewrite-status.
+        </note>
+        <from>/test/status</from>
+        <to type="redirect">%{context-path}/rewrite-status</to>
+      </rule>
