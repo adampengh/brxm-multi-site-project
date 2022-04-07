@@ -11,7 +11,7 @@ definitions:
         /hipposysedit:nodetype:
           jcr:primaryType: hipposysedit:nodetype
           jcr:mixinTypes: ['mix:referenceable', 'hipposysedit:remodel']
-          jcr:uuid: 2910d90d-c160-449a-957f-0494e39401bd
+          jcr:uuid: 8137c3a2-b119-48d1-b9aa-894116e7160c
           hipposysedit:node: true
           hipposysedit:supertype: ['hippo:compound', 'hippostd:relaxed']
           hipposysedit:uri: http://www.myproject.com/myproject/nt/1.0
@@ -23,7 +23,6 @@ definitions:
             hipposysedit:path: myproject:mobileImage
             hipposysedit:primary: false
             hipposysedit:type: hippogallerypicker:imagelink
-            hipposysedit:validators: [required]
           /desktopImage:
             jcr:primaryType: hipposysedit:field
             hipposysedit:mandatory: false
@@ -49,11 +48,20 @@ definitions:
             hipposysedit:path: myproject:tabletImage
             hipposysedit:primary: false
             hipposysedit:type: hippogallerypicker:imagelink
+          /unsplash:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: myproject:unsplash
+            hipposysedit:primary: false
+            hipposysedit:type: OpenUiString
       /hipposysedit:prototypes:
         jcr:primaryType: hipposysedit:prototypeset
         /hipposysedit:prototype:
           jcr:primaryType: myproject:imageCompound
           myproject:altText: ''
+          myproject:unsplash: ''
           /myproject:mobileImage:
             jcr:primaryType: hippogallerypicker:imagelink
             hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
@@ -83,12 +91,22 @@ definitions:
             jcr:primaryType: frontend:plugin
             item: ${cluster.id}.field
             plugin.class: org.hippoecm.frontend.service.render.ListViewPlugin
+          /unsplash:
+            jcr:primaryType: frontend:plugin
+            caption: UnSplash
+            field: unsplash
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.field
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+              ui.extension: unsplash
           /mobileImage:
             jcr:primaryType: frontend:plugin
             caption: Mobile Image
             field: mobileImage
             plugin.class: org.hippoecm.frontend.editor.plugins.field.NodeFieldPlugin
             wicket.id: ${cluster.id}.field
+            hint: ''
             /cluster.options:
               jcr:primaryType: frontend:pluginconfig
           /tabletImage:

@@ -7,9 +7,9 @@ import { Container, Row, Column } from '../../../uikit/Layout';
 import { CategoryBreadcrumb } from '../../molecules/Breadcrumbs';
 // import FacetsList from './FacetsList';
 import PageTitle from '../../atoms/PageTitle';
-import ProductCard from './ProductCard';
+import ProductCard from '../../molecules/ProductCard';
 
-import './ProductListingGrid.scss';
+import './styles.scss';
 
 export const ProductListingGrid = ({ page, component }: BrProps) => {
     console.log('ProductListingGrid');
@@ -178,9 +178,18 @@ export const ProductListingGrid = ({ page, component }: BrProps) => {
                 </Column>
                 <Column className='product-grid__grid'>
                     <ul className='product-grid__list' data-mobile-columns={mobileColumns} data-desktop-columns={desktopColumns}>
-                        { items && items.map((item: any, index: number) =>
-                            <ProductCard item={item} key={index} />
-                        )}
+                        { items && items.map((item: any, index: number) => {
+                            return (
+                                <ProductCard
+                                    key={index}
+                                    pid={item?.itemId.id}
+                                    image={item?.imageSet?.original?.link?.href}
+                                    title={item?.displayName}
+                                    price={item.listPrice?.moneyAmounts?.[0].amount}
+                                    salePrice={item?.purchasePrice?.moneyAmounts?.[0].amount}
+                                />
+                            )
+                        }) }
                     </ul>
                 </Column>
             </Row>

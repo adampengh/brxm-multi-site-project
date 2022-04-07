@@ -6,7 +6,7 @@ import { Image } from './Image';
 interface PictureProps {
     altText: string;
     className?: string;
-    mobileImage: string;
+    mobileImage?: string;
     tabletImage?: string;
     desktopImage?: string;
 }

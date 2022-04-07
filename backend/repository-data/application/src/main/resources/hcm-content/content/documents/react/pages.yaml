@@ -293,22 +293,23 @@
     hippo:name: Categories
     hippostd:channelid: react
     hippostd:foldertype: [new-ExperiencePage-document]
-    /test-category:
+    /bath-and-body:
       jcr:primaryType: hippo:handle
       jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
       jcr:uuid: ec2b9f89-39a1-4142-a802-1455da62769b
-      hippo:name: Test Category
-      hippo:versionHistory: e8bf1542-3261-4869-8499-0a2c954991bd
-      /test-category[1]:
+      hippo:name: Bath and Body
+      hippo:versionHistory: a4cb2fc1-4617-4a21-a03f-8ceccefb46e1
+      /bath-and-body[1]:
         jcr:primaryType: myproject:ExperiencePage
         jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
         jcr:uuid: 27a11e15-35a2-44af-8801-0e38a43fb27e
         hippo:availability: []
         hippostd:retainable: false
         hippostd:state: draft
+        hippostd:transferable: false
         hippostdpubwf:createdBy: admin
         hippostdpubwf:creationDate: 2022-01-11T09:00:41.184-05:00
-        hippostdpubwf:lastModificationDate: 2022-01-13T12:25:37.064-05:00
+        hippostdpubwf:lastModificationDate: 2022-04-06T11:13:44.226-07:00
         hippostdpubwf:lastModifiedBy: admin
         hippotranslation:id: d80d2eca-cd44-417d-8271-26c91da261b7
         hippotranslation:locale: document-type-locale
@@ -329,7 +330,7 @@
             hippo:facets: []
             hippo:modes: []
             hippo:values: []
-      /test-category[2]:
+      /bath-and-body[2]:
         jcr:primaryType: myproject:ExperiencePage
         jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable', 'mix:versionable']
         jcr:uuid: 31a2889b-3692-4e16-a4e8-608a1c3930c8
@@ -373,7 +374,7 @@
             hippo:facets: []
             hippo:modes: []
             hippo:values: []
-      /test-category[3]:
+      /bath-and-body[3]:
         jcr:primaryType: myproject:ExperiencePage
         jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
         jcr:uuid: d3cf7881-151a-4e40-8e41-f6579c992d0e
@@ -384,22 +385,22 @@
         hippostdpubwf:creationDate: 2022-01-11T09:00:41.184-05:00
         hippostdpubwf:lastModificationDate: 2022-04-03T16:58:43.161-07:00
         hippostdpubwf:lastModifiedBy: admin
-        hippostdpubwf:publicationDate: 2022-04-03T16:58:54.205-07:00
+        hippostdpubwf:publicationDate: 2022-04-06T11:14:18.039-07:00
         hippotranslation:id: d80d2eca-cd44-417d-8271-26c91da261b7
         hippotranslation:locale: document-type-locale
         myproject:categoryId: '116990'
         /hst:xpage:
           jcr:primaryType: hst:xpage
-          jcr:uuid: 55d3bebc-5c71-4dcb-92d6-291485032e91
+          jcr:uuid: 037b3c60-e6f2-4f2c-b71b-74bdc2b56964
           hst:pageref: product-listing
           /032a3a4a-826b-4721-bb0f-c5b8a76e94b5:
             jcr:primaryType: hst:containercomponent
-            jcr:uuid: 4cc1a67b-ec9c-4e8b-be84-c6d82d70acc9
+            jcr:uuid: 1ad42bf3-189d-471c-87aa-23e3e2c06755
             hippo:identifier: fd788672-7df6-49ba-9e2d-8e65f94ee889
             hst:lastmodified: 2022-03-14T12:53:39.641-07:00
           /bb745c41-7ada-4afb-9240-44034412aae7:
             jcr:primaryType: hst:containercomponent
-            jcr:uuid: 4d102342-6c25-4d51-a89b-3b88edf94cb7
+            jcr:uuid: 6a4f0a4b-81bc-4dcf-8ed8-bf2e89daad08
             hippo:identifier: b6935596-6be4-4ae3-af04-d86b7aa12c88
             hst:lastmodified: 2022-04-03T16:58:43.160-07:00
         /myproject:pageMetadata:
@@ -412,6 +413,128 @@
           myproject:ogType: website
           myproject:ogUrl: ''
           myproject:pageTitle: Bath & Body
+          /myproject:ogImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+    /furniture:
+      jcr:primaryType: hippo:handle
+      jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+      jcr:uuid: b5c7ed7d-9a21-4328-98aa-31d3cdd4b9cb
+      hippo:name: Furniture
+      hippo:versionHistory: 31326875-3591-4f85-8ac9-e2c096a28ea2
+      /furniture[1]:
+        jcr:primaryType: myproject:ExperiencePage
+        jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
+        jcr:uuid: dd0cb404-e543-412a-a19a-2d544d5ee69f
+        hippo:availability: []
+        hippostd:retainable: false
+        hippostd:state: draft
+        hippostd:transferable: false
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-04-06T11:24:08.690-07:00
+        hippostdpubwf:lastModificationDate: 2022-04-06T11:36:57.390-07:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: 5bff6984-81fd-40b7-8677-f6945994d58f
+        hippotranslation:locale: document-type-locale
+        myproject:categoryId: '116745'
+        /myproject:pageMetadata:
+          jcr:primaryType: myproject:PageMetadata
+          myproject:canonicalUrl: ''
+          myproject:metaDescription: ''
+          myproject:metaKeywords: ['']
+          myproject:ogDescription: ''
+          myproject:ogTitle: ''
+          myproject:ogType: website
+          myproject:ogUrl: ''
+          myproject:pageTitle: Shop All Furniture
+          /myproject:ogImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+      /furniture[2]:
+        jcr:primaryType: myproject:ExperiencePage
+        jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable', 'mix:versionable']
+        jcr:uuid: 9368ed12-1cce-4533-9ddc-db748eb3562d
+        hippo:availability: [preview]
+        hippostd:retainable: false
+        hippostd:state: unpublished
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-04-06T11:24:08.690-07:00
+        hippostdpubwf:lastModificationDate: 2022-04-06T11:36:57.328-07:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: 5bff6984-81fd-40b7-8677-f6945994d58f
+        hippotranslation:locale: document-type-locale
+        myproject:categoryId: '116745'
+        /hst:xpage:
+          jcr:primaryType: hst:xpage
+          jcr:uuid: 6bab3f5f-d60b-4b98-ab9b-0aded6d3367b
+          hst:pageref: product-listing
+          /032a3a4a-826b-4721-bb0f-c5b8a76e94b5:
+            jcr:primaryType: hst:containercomponent
+            jcr:uuid: 5f35391f-1074-428b-84b7-c767131e75f3
+            hippo:identifier: c8b27b94-a08f-4a82-9a67-f1ed2dac8655
+          /bb745c41-7ada-4afb-9240-44034412aae7:
+            jcr:primaryType: hst:containercomponent
+            jcr:uuid: d558e896-b157-4cf7-bf84-fd41e9b10f5f
+            hippo:identifier: 98dca791-a28e-4528-a64e-d703b7eed3a5
+        /myproject:pageMetadata:
+          jcr:primaryType: myproject:PageMetadata
+          myproject:canonicalUrl: ''
+          myproject:metaDescription: ''
+          myproject:metaKeywords: ['']
+          myproject:ogDescription: ''
+          myproject:ogTitle: ''
+          myproject:ogType: website
+          myproject:ogUrl: ''
+          myproject:pageTitle: Shop All Furniture
+          /myproject:ogImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+      /furniture[3]:
+        jcr:primaryType: myproject:ExperiencePage
+        jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
+        jcr:uuid: 5c2556e3-2c0b-437f-a0b5-19ae52526cfe
+        hippo:availability: [live]
+        hippostd:retainable: false
+        hippostd:state: published
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-04-06T11:24:08.690-07:00
+        hippostdpubwf:lastModificationDate: 2022-04-06T11:36:57.328-07:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippostdpubwf:publicationDate: 2022-04-06T11:37:04.494-07:00
+        hippotranslation:id: 5bff6984-81fd-40b7-8677-f6945994d58f
+        hippotranslation:locale: document-type-locale
+        myproject:categoryId: '116745'
+        /hst:xpage:
+          jcr:primaryType: hst:xpage
+          jcr:uuid: 7aabc1da-1ae9-453b-859a-898022d85419
+          hst:pageref: product-listing
+          /032a3a4a-826b-4721-bb0f-c5b8a76e94b5:
+            jcr:primaryType: hst:containercomponent
+            jcr:uuid: 2f8335a0-e231-468a-8f6d-b689394557ba
+            hippo:identifier: c8b27b94-a08f-4a82-9a67-f1ed2dac8655
+          /bb745c41-7ada-4afb-9240-44034412aae7:
+            jcr:primaryType: hst:containercomponent
+            jcr:uuid: 9293bd82-734a-4eae-bcb8-4e94eb0f7441
+            hippo:identifier: 98dca791-a28e-4528-a64e-d703b7eed3a5
+        /myproject:pageMetadata:
+          jcr:primaryType: myproject:PageMetadata
+          myproject:canonicalUrl: ''
+          myproject:metaDescription: ''
+          myproject:metaKeywords: ['']
+          myproject:ogDescription: ''
+          myproject:ogTitle: ''
+          myproject:ogType: website
+          myproject:ogUrl: ''
+          myproject:pageTitle: Shop All Furniture
           /myproject:ogImage:
             jcr:primaryType: hippogallerypicker:imagelink
             hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe

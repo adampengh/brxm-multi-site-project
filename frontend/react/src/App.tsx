@@ -14,15 +14,17 @@
  * limitations under the License.
  */
 
-import React from 'react';
+import React, { useContext } from 'react';
 import axios from 'axios';
 import Cookies from 'universal-cookie';
 import GTM from './GTM';
 import PreviewMode from './PreviewMode';
 import { BrComponent, BrPage, BrPageContext } from '@bloomreach/react-sdk';
 import { CommerceConnectorProvider } from '@bloomreach/connector-components-react';
-import { RouteComponentProps } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { GlobalElementsProvider } from './context/GlobalElementsContext';
+import { ErrorContext, ErrorCode } from './ErrorContext';
+import ErrorPage from './ErrorPage';
 
 import { Drawer } from './uikit';
 
@@ -49,7 +51,28 @@ const MAPPING = {
     ProductListingGrid,
 };
 
-const App = (props: RouteComponentProps) => {
+export const ERROR_PAGE_PATH_MAP = {
+    [ErrorCode.NOT_FOUND]: '/404',
+    [ErrorCode.INTERNAL_SERVER_ERROR]: '/500',
+    [ErrorCode.GENERAL_ERROR]: '/_error',
+};
+
+const App = () => {
+    const { errorCode, requestURL } = useContext(ErrorContext);
+    const location = useLocation();
+
+    if (errorCode && requestURL) {
+        const { pathname } = new URL(requestURL);
+        if (pathname.endsWith(ERROR_PAGE_PATH_MAP[errorCode])) {
+            // To avoid infinite loop
+            return <ErrorPage />;
+        }
+    }
+
+    const path = errorCode
+        ? `${ERROR_PAGE_PATH_MAP[errorCode] ?? ERROR_PAGE_PATH_MAP[ErrorCode.GENERAL_ERROR]}${location.search}`
+        : `${location.pathname}${location.search}`;
+
     const connector = process.env.REACT_APP_DEFAULT_CONNECTOR || 'brsm';
     const graphqlServiceUrl = process.env.REACT_APP_DEFAULT_GRAPHQL_SERVICE_URL || 'http://localhost:4000';
     const existingToken = sessionStorage.getItem('token') ?? undefined; // retrieve existing token from session storage
@@ -68,7 +91,7 @@ const App = (props: RouteComponentProps) => {
         endpoint: previewMode === 'true' ? process.env.REACT_APP_BRXM_ENDPOINT_PREVIEW : process.env.REACT_APP_BRXM_ENDPOINT,
         endpointQueryParameter: 'endpoint',
         httpClient: axios,
-        path: `${props.location.pathname}${props.location.search}`,
+        path,
     };
 
     return (

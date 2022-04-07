@@ -1,23 +1,24 @@
-/hst:hst/hst:configurations/react/hst:workspace/hst:sitemenus/main/Bed & Bath:
+/hst:hst/hst:configurations/react/hst:workspace/hst:sitemenus/main/Furniture:
+  .meta:order-before: Bed & Bath
   jcr:primaryType: hst:sitemenuitem
   hst:parameternames: [Banner Name]
-  hst:parametervalues: [bath-and-body]
+  hst:parametervalues: [furniture-navigation-banner]
   hst:repobased: false
   /Column 1:
     jcr:primaryType: hst:sitemenuitem
     hst:parameternames: [Banner Name]
     hst:parametervalues: ['']
     hst:repobased: false
-    /Bed & Bath:
+    /Furniture:
       jcr:primaryType: hst:sitemenuitem
       hst:parameternames: [Banner Name]
       hst:parametervalues: ['']
       hst:repobased: false
-      /Bath & Body:
+      /All Furniture:
         jcr:primaryType: hst:sitemenuitem
         hst:parameternames: [Banner Name]
         hst:parametervalues: ['']
-        hst:referencesitemapitem: c/bath-and-body
+        hst:referencesitemapitem: c/furniture
         hst:repobased: false
   /Column 2:
     jcr:primaryType: hst:sitemenuitem
@@ -29,18 +30,8 @@
     hst:parameternames: [Banner Name]
     hst:parametervalues: ['']
     hst:repobased: false
-    /Heading:
-      jcr:primaryType: hst:sitemenuitem
-      hst:parameternames: [Banner Name]
-      hst:parametervalues: ['']
-      hst:repobased: false
   /Column 4:
     jcr:primaryType: hst:sitemenuitem
     hst:parameternames: [Banner Name]
     hst:parametervalues: ['']
     hst:repobased: false
-    /Heading:
-      jcr:primaryType: hst:sitemenuitem
-      hst:parameternames: [Banner Name]
-      hst:parametervalues: ['']
-      hst:repobased: false

@@ -4,10 +4,9 @@ import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import { BrManageContentButton, BrProps } from '@bloomreach/react-sdk';
 import { Container } from '../../../uikit';
-import { Link } from 'react-router-dom';
 import { ReactComponent as AngleLeft } from '../../../assets/icons/angle-left.svg';
 import { ReactComponent as AngleRight } from '../../../assets/icons/angle-right.svg';
-import ProductPrice from '../ProductListingGrid/ProductPrice';
+import ProductCard from '../../molecules/ProductCard';
 
 import './styles.scss';
 
@@ -107,6 +106,7 @@ export const PathwaysRecommendations = ({ page, component }: BrProps) => {
         nextArrow: <NextArrow />,
         ...settings,
         responsive: [...responsive],
+        lazyLoad: true,
     };
 
     return (
@@ -122,18 +122,14 @@ export const PathwaysRecommendations = ({ page, component }: BrProps) => {
             {title && <h3 className='pathways-recommendations__title'>{ title }</h3> }
             <Slider className='pathways-recommendations__slider' {...sliderSettings}>
                 {items.map((item: any, index) => (
-                    <div key={index} className='pathways-recommendations__slide'>
-                        <Link to={`/p/${item.pid}`}>
-                            <img src={item.thumb_image} alt='product' style={{width:'100%'}} />
-                        </Link>
-
-                        <div className='pathways-recommendations__slide-title'><strong>{ item.title }</strong></div>
-                        <div className='pathways-recommendations__slide-price'>
-                            <span>{ item.price }</span>
-                            <span>{ item.sale_price }</span>
-                        </div>
-                        <ProductPrice item={item} />
-                    </div>
+                    <ProductCard
+                        key={index}
+                        pid={item.pid}
+                        price={item.price}
+                        salePrice={item.sale_price}
+                        image={item.thumb_image}
+                        title={item.title}
+                    />
                 ))}
             </Slider>
         </Container>

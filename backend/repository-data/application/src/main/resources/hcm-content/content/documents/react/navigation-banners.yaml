@@ -12,7 +12,7 @@
     jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
     jcr:uuid: 4701094c-adf8-4494-97d7-e892ee448906
     hippo:name: Bath and Body
-    hippo:versionHistory: 36596f85-74fc-4499-93a9-733090c78543
+    hippo:versionHistory: 22f75cb7-693f-4079-a520-e3598f8f9eea
     /bath-and-body[1]:
       jcr:primaryType: myproject:navigationBanner
       jcr:mixinTypes: ['mix:referenceable']
@@ -22,7 +22,7 @@
       hippostd:state: draft
       hippostdpubwf:createdBy: admin
       hippostdpubwf:creationDate: 2021-12-20T09:50:02.975-05:00
-      hippostdpubwf:lastModificationDate: 2021-12-20T10:52:48.280-05:00
+      hippostdpubwf:lastModificationDate: 2022-04-06T11:50:29.673-07:00
       hippostdpubwf:lastModifiedBy: admin
       hippotranslation:id: b47a304e-c218-45b0-a63a-de4f7e1af227
       hippotranslation:locale: en
@@ -30,9 +30,14 @@
       /myproject:image:
         jcr:primaryType: myproject:imageCompound
         myproject:altText: Bath and Body Navigation Banner
+        myproject:unsplash: '{"id":"PibraWHb4h8","created_at":"2017-10-10T12:19:50-04:00","updated_at":"2022-04-06T14:02:25-04:00","promoted_at":"2017-10-11T22:12:06-04:00","width":6547,"height":4365,"color":"#a68c73","blur_hash":"LJIg=gI@IV%M~p-pE1xuR.xa9ZWU","description":null,"alt_description":"white
+          ceramic bathtub","urls":{"raw":"https://images.unsplash.com/photo-1507652313519-d4e9174996dd?ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwyfHxiYXRoJTIwYm9keXxlbnwwfHx8fDE2NDkyNzEwMzU&ixlib=rb-1.2.1","full":"https://images.unsplash.com/photo-1507652313519-d4e9174996dd?crop=entropy&cs=srgb&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwyfHxiYXRoJTIwYm9keXxlbnwwfHx8fDE2NDkyNzEwMzU&ixlib=rb-1.2.1&q=85","regular":"https://images.unsplash.com/photo-1507652313519-d4e9174996dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwyfHxiYXRoJTIwYm9keXxlbnwwfHx8fDE2NDkyNzEwMzU&ixlib=rb-1.2.1&q=80&w=1080","small":"https://images.unsplash.com/photo-1507652313519-d4e9174996dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwyfHxiYXRoJTIwYm9keXxlbnwwfHx8fDE2NDkyNzEwMzU&ixlib=rb-1.2.1&q=80&w=400","thumb":"https://images.unsplash.com/photo-1507652313519-d4e9174996dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwyfHxiYXRoJTIwYm9keXxlbnwwfHx8fDE2NDkyNzEwMzU&ixlib=rb-1.2.1&q=80&w=200","small_s3":"https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1507652313519-d4e9174996dd"},"links":{"self":"https://api.unsplash.com/photos/PibraWHb4h8","html":"https://unsplash.com/photos/PibraWHb4h8","download":"https://unsplash.com/photos/PibraWHb4h8/download?ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwyfHxiYXRoJTIwYm9keXxlbnwwfHx8fDE2NDkyNzEwMzU","download_location":"https://api.unsplash.com/photos/PibraWHb4h8/download?ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwyfHxiYXRoJTIwYm9keXxlbnwwfHx8fDE2NDkyNzEwMzU"},"categories":[],"likes":3203,"liked_by_user":false,"current_user_collections":[],"sponsorship":null,"topic_submissions":{"interiors":{"status":"approved","approved_on":"2020-04-24T11:21:48-04:00"},"architecture-interior":{"status":"approved","approved_on":"2021-09-15T04:58:40-04:00"}},"user":{"id":"gqpWsyEhMb8","updated_at":"2022-04-06T10:44:12-04:00","username":"jareddrice","name":"Jared
+          Rice","first_name":"Jared","last_name":"Rice","twitter_username":null,"portfolio_url":null,"bio":"Travel.
+          Photos. Live Life. Inspired by so many talented people out there! ","location":"California
+          ","links":{"self":"https://api.unsplash.com/users/jareddrice","html":"https://unsplash.com/@jareddrice","photos":"https://api.unsplash.com/users/jareddrice/photos","likes":"https://api.unsplash.com/users/jareddrice/likes","portfolio":"https://api.unsplash.com/users/jareddrice/portfolio","following":"https://api.unsplash.com/users/jareddrice/following","followers":"https://api.unsplash.com/users/jareddrice/followers"},"profile_image":{"small":"https://images.unsplash.com/profile-1506186666013-2f303d37516e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=32&w=32","medium":"https://images.unsplash.com/profile-1506186666013-2f303d37516e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64","large":"https://images.unsplash.com/profile-1506186666013-2f303d37516e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128"},"instagram_username":"jareddrice","total_collections":5,"total_likes":0,"total_photos":28,"accepted_tos":true,"for_hire":true,"social":{"instagram_username":"jareddrice","portfolio_url":null,"twitter_username":null,"paypal_email":null}},"tags":[{"type":"search","title":"interior"},{"type":"search","title":"bathroom"}]}'
         /myproject:mobileImage:
           jcr:primaryType: hippogallerypicker:imagelink
-          hippo:docbase: dba85cc1-8e44-4a34-8603-35329775470a
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
           hippo:facets: []
           hippo:modes: []
           hippo:values: []
@@ -57,7 +62,7 @@
       hippostd:state: unpublished
       hippostdpubwf:createdBy: admin
       hippostdpubwf:creationDate: 2021-12-20T09:50:02.975-05:00
-      hippostdpubwf:lastModificationDate: 2021-12-20T10:52:50.282-05:00
+      hippostdpubwf:lastModificationDate: 2022-04-06T11:50:44.703-07:00
       hippostdpubwf:lastModifiedBy: admin
       hippotranslation:id: b47a304e-c218-45b0-a63a-de4f7e1af227
       hippotranslation:locale: en
@@ -65,9 +70,14 @@
       /myproject:image:
         jcr:primaryType: myproject:imageCompound
         myproject:altText: Bath and Body Navigation Banner
+        myproject:unsplash: '{"id":"PibraWHb4h8","created_at":"2017-10-10T12:19:50-04:00","updated_at":"2022-04-06T14:02:25-04:00","promoted_at":"2017-10-11T22:12:06-04:00","width":6547,"height":4365,"color":"#a68c73","blur_hash":"LJIg=gI@IV%M~p-pE1xuR.xa9ZWU","description":null,"alt_description":"white
+          ceramic bathtub","urls":{"raw":"https://images.unsplash.com/photo-1507652313519-d4e9174996dd?ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwyfHxiYXRoJTIwYm9keXxlbnwwfHx8fDE2NDkyNzEwMzU&ixlib=rb-1.2.1","full":"https://images.unsplash.com/photo-1507652313519-d4e9174996dd?crop=entropy&cs=srgb&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwyfHxiYXRoJTIwYm9keXxlbnwwfHx8fDE2NDkyNzEwMzU&ixlib=rb-1.2.1&q=85","regular":"https://images.unsplash.com/photo-1507652313519-d4e9174996dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwyfHxiYXRoJTIwYm9keXxlbnwwfHx8fDE2NDkyNzEwMzU&ixlib=rb-1.2.1&q=80&w=1080","small":"https://images.unsplash.com/photo-1507652313519-d4e9174996dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwyfHxiYXRoJTIwYm9keXxlbnwwfHx8fDE2NDkyNzEwMzU&ixlib=rb-1.2.1&q=80&w=400","thumb":"https://images.unsplash.com/photo-1507652313519-d4e9174996dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwyfHxiYXRoJTIwYm9keXxlbnwwfHx8fDE2NDkyNzEwMzU&ixlib=rb-1.2.1&q=80&w=200","small_s3":"https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1507652313519-d4e9174996dd"},"links":{"self":"https://api.unsplash.com/photos/PibraWHb4h8","html":"https://unsplash.com/photos/PibraWHb4h8","download":"https://unsplash.com/photos/PibraWHb4h8/download?ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwyfHxiYXRoJTIwYm9keXxlbnwwfHx8fDE2NDkyNzEwMzU","download_location":"https://api.unsplash.com/photos/PibraWHb4h8/download?ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwyfHxiYXRoJTIwYm9keXxlbnwwfHx8fDE2NDkyNzEwMzU"},"categories":[],"likes":3203,"liked_by_user":false,"current_user_collections":[],"sponsorship":null,"topic_submissions":{"interiors":{"status":"approved","approved_on":"2020-04-24T11:21:48-04:00"},"architecture-interior":{"status":"approved","approved_on":"2021-09-15T04:58:40-04:00"}},"user":{"id":"gqpWsyEhMb8","updated_at":"2022-04-06T10:44:12-04:00","username":"jareddrice","name":"Jared
+          Rice","first_name":"Jared","last_name":"Rice","twitter_username":null,"portfolio_url":null,"bio":"Travel.
+          Photos. Live Life. Inspired by so many talented people out there! ","location":"California
+          ","links":{"self":"https://api.unsplash.com/users/jareddrice","html":"https://unsplash.com/@jareddrice","photos":"https://api.unsplash.com/users/jareddrice/photos","likes":"https://api.unsplash.com/users/jareddrice/likes","portfolio":"https://api.unsplash.com/users/jareddrice/portfolio","following":"https://api.unsplash.com/users/jareddrice/following","followers":"https://api.unsplash.com/users/jareddrice/followers"},"profile_image":{"small":"https://images.unsplash.com/profile-1506186666013-2f303d37516e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=32&w=32","medium":"https://images.unsplash.com/profile-1506186666013-2f303d37516e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64","large":"https://images.unsplash.com/profile-1506186666013-2f303d37516e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128"},"instagram_username":"jareddrice","total_collections":5,"total_likes":0,"total_photos":28,"accepted_tos":true,"for_hire":true,"social":{"instagram_username":"jareddrice","portfolio_url":null,"twitter_username":null,"paypal_email":null}},"tags":[{"type":"search","title":"interior"},{"type":"search","title":"bathroom"}]}'
         /myproject:mobileImage:
           jcr:primaryType: hippogallerypicker:imagelink
-          hippo:docbase: dba85cc1-8e44-4a34-8603-35329775470a
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
           hippo:facets: []
           hippo:modes: []
           hippo:values: []
@@ -92,18 +102,147 @@
       hippostd:state: published
       hippostdpubwf:createdBy: admin
       hippostdpubwf:creationDate: 2021-12-20T09:50:02.975-05:00
-      hippostdpubwf:lastModificationDate: 2021-12-20T10:52:50.282-05:00
+      hippostdpubwf:lastModificationDate: 2022-04-06T11:50:44.703-07:00
       hippostdpubwf:lastModifiedBy: admin
-      hippostdpubwf:publicationDate: 2021-12-20T10:52:52.225-05:00
+      hippostdpubwf:publicationDate: 2022-04-06T11:50:46.140-07:00
       hippotranslation:id: b47a304e-c218-45b0-a63a-de4f7e1af227
       hippotranslation:locale: en
       myproject:heading: Bath & Body Store
       /myproject:image:
         jcr:primaryType: myproject:imageCompound
         myproject:altText: Bath and Body Navigation Banner
+        myproject:unsplash: '{"id":"PibraWHb4h8","created_at":"2017-10-10T12:19:50-04:00","updated_at":"2022-04-06T14:02:25-04:00","promoted_at":"2017-10-11T22:12:06-04:00","width":6547,"height":4365,"color":"#a68c73","blur_hash":"LJIg=gI@IV%M~p-pE1xuR.xa9ZWU","description":null,"alt_description":"white
+          ceramic bathtub","urls":{"raw":"https://images.unsplash.com/photo-1507652313519-d4e9174996dd?ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwyfHxiYXRoJTIwYm9keXxlbnwwfHx8fDE2NDkyNzEwMzU&ixlib=rb-1.2.1","full":"https://images.unsplash.com/photo-1507652313519-d4e9174996dd?crop=entropy&cs=srgb&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwyfHxiYXRoJTIwYm9keXxlbnwwfHx8fDE2NDkyNzEwMzU&ixlib=rb-1.2.1&q=85","regular":"https://images.unsplash.com/photo-1507652313519-d4e9174996dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwyfHxiYXRoJTIwYm9keXxlbnwwfHx8fDE2NDkyNzEwMzU&ixlib=rb-1.2.1&q=80&w=1080","small":"https://images.unsplash.com/photo-1507652313519-d4e9174996dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwyfHxiYXRoJTIwYm9keXxlbnwwfHx8fDE2NDkyNzEwMzU&ixlib=rb-1.2.1&q=80&w=400","thumb":"https://images.unsplash.com/photo-1507652313519-d4e9174996dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwyfHxiYXRoJTIwYm9keXxlbnwwfHx8fDE2NDkyNzEwMzU&ixlib=rb-1.2.1&q=80&w=200","small_s3":"https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1507652313519-d4e9174996dd"},"links":{"self":"https://api.unsplash.com/photos/PibraWHb4h8","html":"https://unsplash.com/photos/PibraWHb4h8","download":"https://unsplash.com/photos/PibraWHb4h8/download?ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwyfHxiYXRoJTIwYm9keXxlbnwwfHx8fDE2NDkyNzEwMzU","download_location":"https://api.unsplash.com/photos/PibraWHb4h8/download?ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwyfHxiYXRoJTIwYm9keXxlbnwwfHx8fDE2NDkyNzEwMzU"},"categories":[],"likes":3203,"liked_by_user":false,"current_user_collections":[],"sponsorship":null,"topic_submissions":{"interiors":{"status":"approved","approved_on":"2020-04-24T11:21:48-04:00"},"architecture-interior":{"status":"approved","approved_on":"2021-09-15T04:58:40-04:00"}},"user":{"id":"gqpWsyEhMb8","updated_at":"2022-04-06T10:44:12-04:00","username":"jareddrice","name":"Jared
+          Rice","first_name":"Jared","last_name":"Rice","twitter_username":null,"portfolio_url":null,"bio":"Travel.
+          Photos. Live Life. Inspired by so many talented people out there! ","location":"California
+          ","links":{"self":"https://api.unsplash.com/users/jareddrice","html":"https://unsplash.com/@jareddrice","photos":"https://api.unsplash.com/users/jareddrice/photos","likes":"https://api.unsplash.com/users/jareddrice/likes","portfolio":"https://api.unsplash.com/users/jareddrice/portfolio","following":"https://api.unsplash.com/users/jareddrice/following","followers":"https://api.unsplash.com/users/jareddrice/followers"},"profile_image":{"small":"https://images.unsplash.com/profile-1506186666013-2f303d37516e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=32&w=32","medium":"https://images.unsplash.com/profile-1506186666013-2f303d37516e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64","large":"https://images.unsplash.com/profile-1506186666013-2f303d37516e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128"},"instagram_username":"jareddrice","total_collections":5,"total_likes":0,"total_photos":28,"accepted_tos":true,"for_hire":true,"social":{"instagram_username":"jareddrice","portfolio_url":null,"twitter_username":null,"paypal_email":null}},"tags":[{"type":"search","title":"interior"},{"type":"search","title":"bathroom"}]}'
         /myproject:mobileImage:
           jcr:primaryType: hippogallerypicker:imagelink
-          hippo:docbase: dba85cc1-8e44-4a34-8603-35329775470a
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+        /myproject:desktopImage:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+        /myproject:tabletImage:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+  /furniture-navigation-banner:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+    jcr:uuid: 99b726e4-2128-47e3-8e2c-ca53a0989154
+    hippo:name: Furniture Navigation Banner
+    hippo:versionHistory: a0c2df10-e890-4951-9e9a-fbe4ebdfcde3
+    /furniture-navigation-banner[1]:
+      jcr:primaryType: myproject:navigationBanner
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: 73450f67-c36a-4e77-ab9d-4ffb29a95da8
+      hippo:availability: []
+      hippostd:retainable: false
+      hippostd:state: draft
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2022-04-06T11:58:08.476-07:00
+      hippostdpubwf:lastModificationDate: 2022-04-06T11:58:08.476-07:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: c6ba57d2-b2c4-4995-a0d5-bc14c0e968be
+      hippotranslation:locale: en
+      myproject:heading: Furniture Store
+      /myproject:image:
+        jcr:primaryType: myproject:imageCompound
+        myproject:altText: Furniture store
+        myproject:unsplash: '{"id":"4HG3Ca3EzWw","created_at":"2017-03-10T13:39:18-05:00","updated_at":"2022-04-05T22:01:19-04:00","promoted_at":"2017-03-10T13:39:18-05:00","width":5501,"height":3095,"color":"#f3f3f3","blur_hash":"LgJ*x99Zxt-;_ND%nhkCtSRPbJad","description":"Communal
+          Coworking interior","alt_description":"photo of flat screen television","urls":{"raw":"https://images.unsplash.com/photo-1489171078254-c3365d6e359f?ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxM3x8RnVybml0dXJlfGVufDB8MHx8fDE2NDkyNzE1MDQ&ixlib=rb-1.2.1","full":"https://images.unsplash.com/photo-1489171078254-c3365d6e359f?crop=entropy&cs=srgb&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxM3x8RnVybml0dXJlfGVufDB8MHx8fDE2NDkyNzE1MDQ&ixlib=rb-1.2.1&q=85","regular":"https://images.unsplash.com/photo-1489171078254-c3365d6e359f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxM3x8RnVybml0dXJlfGVufDB8MHx8fDE2NDkyNzE1MDQ&ixlib=rb-1.2.1&q=80&w=1080","small":"https://images.unsplash.com/photo-1489171078254-c3365d6e359f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxM3x8RnVybml0dXJlfGVufDB8MHx8fDE2NDkyNzE1MDQ&ixlib=rb-1.2.1&q=80&w=400","thumb":"https://images.unsplash.com/photo-1489171078254-c3365d6e359f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxM3x8RnVybml0dXJlfGVufDB8MHx8fDE2NDkyNzE1MDQ&ixlib=rb-1.2.1&q=80&w=200","small_s3":"https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1489171078254-c3365d6e359f"},"links":{"self":"https://api.unsplash.com/photos/4HG3Ca3EzWw","html":"https://unsplash.com/photos/4HG3Ca3EzWw","download":"https://unsplash.com/photos/4HG3Ca3EzWw/download?ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxM3x8RnVybml0dXJlfGVufDB8MHx8fDE2NDkyNzE1MDQ","download_location":"https://api.unsplash.com/photos/4HG3Ca3EzWw/download?ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxM3x8RnVybml0dXJlfGVufDB8MHx8fDE2NDkyNzE1MDQ"},"categories":[],"likes":1562,"liked_by_user":false,"current_user_collections":[],"sponsorship":null,"topic_submissions":{"interiors":{"status":"approved","approved_on":"2020-08-17T08:38:47-04:00"}},"user":{"id":"aIFG31Iva4w","updated_at":"2022-04-06T14:44:20-04:00","username":"danielcgold","name":"Dan
+          Gold","first_name":"Dan","last_name":"Gold","twitter_username":"danielcgold","portfolio_url":"https://www.danielcgold.com?friends=unsplash","bio":"Brooklyn.","location":"New
+          York City","links":{"self":"https://api.unsplash.com/users/danielcgold","html":"https://unsplash.com/@danielcgold","photos":"https://api.unsplash.com/users/danielcgold/photos","likes":"https://api.unsplash.com/users/danielcgold/likes","portfolio":"https://api.unsplash.com/users/danielcgold/portfolio","following":"https://api.unsplash.com/users/danielcgold/following","followers":"https://api.unsplash.com/users/danielcgold/followers"},"profile_image":{"small":"https://images.unsplash.com/profile-1442326044675-1c0fd9643709?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=32&w=32","medium":"https://images.unsplash.com/profile-1442326044675-1c0fd9643709?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64","large":"https://images.unsplash.com/profile-1442326044675-1c0fd9643709?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128"},"instagram_username":"danielcgold","total_collections":12,"total_likes":5995,"total_photos":558,"accepted_tos":true,"for_hire":true,"social":{"instagram_username":"danielcgold","portfolio_url":"https://www.danielcgold.com?friends=unsplash","twitter_username":"danielcgold","paypal_email":null}},"tags":[{"type":"search","title":"interior"}]}'
+        /myproject:mobileImage:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+        /myproject:desktopImage:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+        /myproject:tabletImage:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+    /furniture-navigation-banner[2]:
+      jcr:primaryType: myproject:navigationBanner
+      jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+      jcr:uuid: e5377d6d-c7e3-49c8-a8db-f2a310a3a63b
+      hippo:availability: [preview]
+      hippostd:retainable: false
+      hippostd:state: unpublished
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2022-04-06T11:58:08.476-07:00
+      hippostdpubwf:lastModificationDate: 2022-04-06T11:58:39.589-07:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: c6ba57d2-b2c4-4995-a0d5-bc14c0e968be
+      hippotranslation:locale: en
+      myproject:heading: Furniture Store
+      /myproject:image:
+        jcr:primaryType: myproject:imageCompound
+        myproject:altText: Furniture store
+        myproject:unsplash: '{"id":"4HG3Ca3EzWw","created_at":"2017-03-10T13:39:18-05:00","updated_at":"2022-04-05T22:01:19-04:00","promoted_at":"2017-03-10T13:39:18-05:00","width":5501,"height":3095,"color":"#f3f3f3","blur_hash":"LgJ*x99Zxt-;_ND%nhkCtSRPbJad","description":"Communal
+          Coworking interior","alt_description":"photo of flat screen television","urls":{"raw":"https://images.unsplash.com/photo-1489171078254-c3365d6e359f?ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxM3x8RnVybml0dXJlfGVufDB8MHx8fDE2NDkyNzE1MDQ&ixlib=rb-1.2.1","full":"https://images.unsplash.com/photo-1489171078254-c3365d6e359f?crop=entropy&cs=srgb&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxM3x8RnVybml0dXJlfGVufDB8MHx8fDE2NDkyNzE1MDQ&ixlib=rb-1.2.1&q=85","regular":"https://images.unsplash.com/photo-1489171078254-c3365d6e359f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxM3x8RnVybml0dXJlfGVufDB8MHx8fDE2NDkyNzE1MDQ&ixlib=rb-1.2.1&q=80&w=1080","small":"https://images.unsplash.com/photo-1489171078254-c3365d6e359f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxM3x8RnVybml0dXJlfGVufDB8MHx8fDE2NDkyNzE1MDQ&ixlib=rb-1.2.1&q=80&w=400","thumb":"https://images.unsplash.com/photo-1489171078254-c3365d6e359f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxM3x8RnVybml0dXJlfGVufDB8MHx8fDE2NDkyNzE1MDQ&ixlib=rb-1.2.1&q=80&w=200","small_s3":"https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1489171078254-c3365d6e359f"},"links":{"self":"https://api.unsplash.com/photos/4HG3Ca3EzWw","html":"https://unsplash.com/photos/4HG3Ca3EzWw","download":"https://unsplash.com/photos/4HG3Ca3EzWw/download?ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxM3x8RnVybml0dXJlfGVufDB8MHx8fDE2NDkyNzE1MDQ","download_location":"https://api.unsplash.com/photos/4HG3Ca3EzWw/download?ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxM3x8RnVybml0dXJlfGVufDB8MHx8fDE2NDkyNzE1MDQ"},"categories":[],"likes":1562,"liked_by_user":false,"current_user_collections":[],"sponsorship":null,"topic_submissions":{"interiors":{"status":"approved","approved_on":"2020-08-17T08:38:47-04:00"}},"user":{"id":"aIFG31Iva4w","updated_at":"2022-04-06T14:44:20-04:00","username":"danielcgold","name":"Dan
+          Gold","first_name":"Dan","last_name":"Gold","twitter_username":"danielcgold","portfolio_url":"https://www.danielcgold.com?friends=unsplash","bio":"Brooklyn.","location":"New
+          York City","links":{"self":"https://api.unsplash.com/users/danielcgold","html":"https://unsplash.com/@danielcgold","photos":"https://api.unsplash.com/users/danielcgold/photos","likes":"https://api.unsplash.com/users/danielcgold/likes","portfolio":"https://api.unsplash.com/users/danielcgold/portfolio","following":"https://api.unsplash.com/users/danielcgold/following","followers":"https://api.unsplash.com/users/danielcgold/followers"},"profile_image":{"small":"https://images.unsplash.com/profile-1442326044675-1c0fd9643709?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=32&w=32","medium":"https://images.unsplash.com/profile-1442326044675-1c0fd9643709?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64","large":"https://images.unsplash.com/profile-1442326044675-1c0fd9643709?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128"},"instagram_username":"danielcgold","total_collections":12,"total_likes":5995,"total_photos":558,"accepted_tos":true,"for_hire":true,"social":{"instagram_username":"danielcgold","portfolio_url":"https://www.danielcgold.com?friends=unsplash","twitter_username":"danielcgold","paypal_email":null}},"tags":[{"type":"search","title":"interior"}]}'
+        /myproject:mobileImage:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+        /myproject:desktopImage:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+        /myproject:tabletImage:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+    /furniture-navigation-banner[3]:
+      jcr:primaryType: myproject:navigationBanner
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: 215087a9-9146-419a-b4cf-88093caf83eb
+      hippo:availability: [live]
+      hippostd:retainable: false
+      hippostd:state: published
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2022-04-06T11:58:08.476-07:00
+      hippostdpubwf:lastModificationDate: 2022-04-06T11:58:39.589-07:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippostdpubwf:publicationDate: 2022-04-06T11:58:40.990-07:00
+      hippotranslation:id: c6ba57d2-b2c4-4995-a0d5-bc14c0e968be
+      hippotranslation:locale: en
+      myproject:heading: Furniture Store
+      /myproject:image:
+        jcr:primaryType: myproject:imageCompound
+        myproject:altText: Furniture store
+        myproject:unsplash: '{"id":"4HG3Ca3EzWw","created_at":"2017-03-10T13:39:18-05:00","updated_at":"2022-04-05T22:01:19-04:00","promoted_at":"2017-03-10T13:39:18-05:00","width":5501,"height":3095,"color":"#f3f3f3","blur_hash":"LgJ*x99Zxt-;_ND%nhkCtSRPbJad","description":"Communal
+          Coworking interior","alt_description":"photo of flat screen television","urls":{"raw":"https://images.unsplash.com/photo-1489171078254-c3365d6e359f?ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxM3x8RnVybml0dXJlfGVufDB8MHx8fDE2NDkyNzE1MDQ&ixlib=rb-1.2.1","full":"https://images.unsplash.com/photo-1489171078254-c3365d6e359f?crop=entropy&cs=srgb&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxM3x8RnVybml0dXJlfGVufDB8MHx8fDE2NDkyNzE1MDQ&ixlib=rb-1.2.1&q=85","regular":"https://images.unsplash.com/photo-1489171078254-c3365d6e359f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxM3x8RnVybml0dXJlfGVufDB8MHx8fDE2NDkyNzE1MDQ&ixlib=rb-1.2.1&q=80&w=1080","small":"https://images.unsplash.com/photo-1489171078254-c3365d6e359f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxM3x8RnVybml0dXJlfGVufDB8MHx8fDE2NDkyNzE1MDQ&ixlib=rb-1.2.1&q=80&w=400","thumb":"https://images.unsplash.com/photo-1489171078254-c3365d6e359f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxM3x8RnVybml0dXJlfGVufDB8MHx8fDE2NDkyNzE1MDQ&ixlib=rb-1.2.1&q=80&w=200","small_s3":"https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1489171078254-c3365d6e359f"},"links":{"self":"https://api.unsplash.com/photos/4HG3Ca3EzWw","html":"https://unsplash.com/photos/4HG3Ca3EzWw","download":"https://unsplash.com/photos/4HG3Ca3EzWw/download?ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxM3x8RnVybml0dXJlfGVufDB8MHx8fDE2NDkyNzE1MDQ","download_location":"https://api.unsplash.com/photos/4HG3Ca3EzWw/download?ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxM3x8RnVybml0dXJlfGVufDB8MHx8fDE2NDkyNzE1MDQ"},"categories":[],"likes":1562,"liked_by_user":false,"current_user_collections":[],"sponsorship":null,"topic_submissions":{"interiors":{"status":"approved","approved_on":"2020-08-17T08:38:47-04:00"}},"user":{"id":"aIFG31Iva4w","updated_at":"2022-04-06T14:44:20-04:00","username":"danielcgold","name":"Dan
+          Gold","first_name":"Dan","last_name":"Gold","twitter_username":"danielcgold","portfolio_url":"https://www.danielcgold.com?friends=unsplash","bio":"Brooklyn.","location":"New
+          York City","links":{"self":"https://api.unsplash.com/users/danielcgold","html":"https://unsplash.com/@danielcgold","photos":"https://api.unsplash.com/users/danielcgold/photos","likes":"https://api.unsplash.com/users/danielcgold/likes","portfolio":"https://api.unsplash.com/users/danielcgold/portfolio","following":"https://api.unsplash.com/users/danielcgold/following","followers":"https://api.unsplash.com/users/danielcgold/followers"},"profile_image":{"small":"https://images.unsplash.com/profile-1442326044675-1c0fd9643709?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=32&w=32","medium":"https://images.unsplash.com/profile-1442326044675-1c0fd9643709?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64","large":"https://images.unsplash.com/profile-1442326044675-1c0fd9643709?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128"},"instagram_username":"danielcgold","total_collections":12,"total_likes":5995,"total_photos":558,"accepted_tos":true,"for_hire":true,"social":{"instagram_username":"danielcgold","portfolio_url":"https://www.danielcgold.com?friends=unsplash","twitter_username":"danielcgold","paypal_email":null}},"tags":[{"type":"search","title":"interior"}]}'
+        /myproject:mobileImage:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
           hippo:facets: []
           hippo:modes: []
           hippo:values: []

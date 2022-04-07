@@ -1,12 +1,14 @@
 import React, { useContext } from 'react';
 import { ImageSet, Reference } from '@bloomreach/spa-sdk';
 import { BrPageContext } from '@bloomreach/react-sdk';
+import { Picture } from '../uikit/Picture';
 
 interface ImageCompoundProps {
     image: {
         altText: string;
+        unsplash?: any;
         desktopImage?: Reference;
-        mobileImage: Reference;
+        mobileImage?: Reference;
         tabletImage?: Reference;
     }
 }
@@ -15,22 +17,34 @@ const ImageCompound = ({ image }: ImageCompoundProps) => {
     const page = useContext(BrPageContext);
     const {
         altText,
-        desktopImage,
-        mobileImage,
-        tabletImage,
+        unsplash: unsplashRef,
+        desktopImage: desktopImageRef,
+        mobileImage: mobileImageRef,
+        tabletImage: tabletImageRef,
     } = image;
 
-    const mobileImg = mobileImage && page?.getContent<ImageSet>(mobileImage);
-    const tabletImg = tabletImage && page?.getContent<ImageSet>(tabletImage);
-    const desktopImg = desktopImage && page?.getContent<ImageSet>(desktopImage);
+    const unsplash = unsplashRef && JSON.parse(unsplashRef);
+    const mobileImage = mobileImageRef && page?.getContent<ImageSet>(mobileImageRef);
+    const tabletImage = tabletImageRef && page?.getContent<ImageSet>(tabletImageRef);
+    const desktopImage = desktopImageRef && page?.getContent<ImageSet>(desktopImageRef);
 
     return (
-        <picture>
-            { desktopImg && <source srcSet={ desktopImg?.getOriginal()?.getUrl() } media="(min-width: 1025px)" /> }
-            { tabletImg && <source srcSet={ tabletImg?.getOriginal()?.getUrl() } media="(min-width: 768px) and (max-width: 1024px)" /> }
-            <source srcSet={ mobileImg?.getOriginal()?.getUrl() } media="(max-width: 767px)" />
-            <img src={ mobileImg?.getOriginal()?.getUrl() } alt={ altText } />
-        </picture>
+        <>
+            {unsplash
+                ? <Picture
+                    altText={unsplash?.urls?.alt?.description}
+                    mobileImage={unsplash.urls.small}
+                    tabletImage={unsplash.urls.regular}
+                    desktopImage={unsplash.urls.full}
+                />
+                : <Picture
+                    altText={altText}
+                    mobileImage={mobileImage?.getOriginal()?.getUrl()}
+                    tabletImage={tabletImage?.getOriginal()?.getUrl()}
+                    desktopImage={desktopImage?.getOriginal()?.getUrl()}
+                />
+            }
+        </>
     )
 }
 

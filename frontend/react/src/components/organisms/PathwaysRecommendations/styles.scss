@@ -1,9 +1,14 @@
+@import '../../../scss/variables';
+
 .pathways-recommendations {
     position: relative;
 
     &__title {
         display: block;
-        font-size: 18px;
+        font-size: 24px;
+        font-family: $font-secondary;
+        line-height: 30px;
+        margin-bottom: 0;
     }
 
     &__grid {

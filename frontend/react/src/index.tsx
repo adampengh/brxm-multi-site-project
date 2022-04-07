@@ -22,6 +22,7 @@ import {
     Route,
     Switch,
 } from 'react-router-dom';
+import { ErrorContextProvider } from './ErrorContext';
 
 import App from './App';
 import './fontawesome';
@@ -33,7 +34,11 @@ import './scss/styles.scss';
 ReactDOM.render(
     <BrowserRouter>
         <Switch>
-            <Route path="/(.*)" component={App} />
+            <Route path="/(.*)">
+                <ErrorContextProvider>
+                    <App />
+                </ErrorContextProvider>
+            </Route>
             <Redirect to="/" />
         </Switch>
     </BrowserRouter>,
