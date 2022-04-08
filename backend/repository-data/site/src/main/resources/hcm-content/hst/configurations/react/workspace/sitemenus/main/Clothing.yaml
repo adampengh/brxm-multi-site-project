@@ -1,0 +1,36 @@
+/hst:hst/hst:configurations/react/hst:workspace/hst:sitemenus/main/Clothing:
+  jcr:primaryType: hst:sitemenuitem
+  hst:parameternames: [Banner Name]
+  hst:parametervalues: ['']
+  hst:repobased: false
+  /Column 1:
+    jcr:primaryType: hst:sitemenuitem
+    hst:parameternames: [Banner Name]
+    hst:parametervalues: ['']
+    hst:repobased: false
+    /Women:
+      jcr:primaryType: hst:sitemenuitem
+      hst:parameternames: [Banner Name]
+      hst:parametervalues: ['']
+      hst:repobased: false
+      /Dresses:
+        jcr:primaryType: hst:sitemenuitem
+        hst:parameternames: [Banner Name]
+        hst:parametervalues: ['']
+        hst:referencesitemapitem: c/womens-dresses
+        hst:repobased: false
+  /Column 2:
+    jcr:primaryType: hst:sitemenuitem
+    hst:parameternames: [Banner Name]
+    hst:parametervalues: ['']
+    hst:repobased: false
+  /Column 3:
+    jcr:primaryType: hst:sitemenuitem
+    hst:parameternames: [Banner Name]
+    hst:parametervalues: ['']
+    hst:repobased: false
+  /Column 4:
+    jcr:primaryType: hst:sitemenuitem
+    hst:parameternames: [Banner Name]
+    hst:parametervalues: ['']
+    hst:repobased: false

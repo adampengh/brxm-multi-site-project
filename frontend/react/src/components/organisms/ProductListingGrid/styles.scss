@@ -89,7 +89,8 @@
         padding: 0;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 24px;
+        margin-left: -12px;
+        margin-right: -12px;
         @for $i from 1 through 2 {
             &[data-mobile-columns="#{$i}"] {
                 @media screen and (max-width: ($breakpoint-lg - 1)) {
@@ -105,11 +106,5 @@
             }
         }
 
-        // @media screen and (min-width: $breakpoint-md) {
-        //     grid-template-columns: repeat(3, 1fr);
-        // }
-        // @media screen and (min-width: $breakpoint-lg) {
-        //     grid-template-columns: repeat(3, 1fr);
-        // }
     }
 }

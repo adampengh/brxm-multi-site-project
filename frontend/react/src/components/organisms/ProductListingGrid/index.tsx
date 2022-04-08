@@ -6,6 +6,7 @@ import { Container, Row, Column } from '../../../uikit/Layout';
 
 import { CategoryBreadcrumb } from '../../molecules/Breadcrumbs';
 // import FacetsList from './FacetsList';
+import PageMetadata from '../../atoms/PageMetadata';
 import PageTitle from '../../atoms/PageTitle';
 import ProductCard from '../../molecules/ProductCard';
 
@@ -31,14 +32,6 @@ export const ProductListingGrid = ({ page, component }: BrProps) => {
     } = document?.getData<any>();
 
     const {
-        // canonicalUrl,
-        // metaDescription,
-        // metaKeywords,
-        // ogDescription,
-        // ogImage,
-        // ogTitle,
-        // ogType,
-        // ogUrl,
         pageTitle,
     } = pageMetadata;
 
@@ -86,7 +79,7 @@ export const ProductListingGrid = ({ page, component }: BrProps) => {
     }
 
     const {
-        // count,
+        count,
         // facetResult,
         items,
         limit,
@@ -95,7 +88,7 @@ export const ProductListingGrid = ({ page, component }: BrProps) => {
     } = itemsPageResult;
 
     const start = offset + 1;
-    let end = limit;
+    let end = count < limit ? count : limit;
     if (offset !== 0) {
         end = offset + limit;
     }
@@ -103,6 +96,7 @@ export const ProductListingGrid = ({ page, component }: BrProps) => {
 
     return(
         <Container className='product-listing'>
+            <PageMetadata pageMetadata={pageMetadata} />
             <Row>
                 <Column>
                     <CategoryBreadcrumb text={pageTitle} />

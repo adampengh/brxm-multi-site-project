@@ -4,8 +4,8 @@ import CurrencyFormat from 'react-currency-format';
 import './styles.scss';
 
 interface ProductPriceProps {
-    price: string | number;
-    salePrice?: string | number;
+    price: any;
+    salePrice?: any;
 };
 
 const ProductPrice = ({ price, salePrice }: ProductPriceProps) => {

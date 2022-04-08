@@ -41,7 +41,6 @@ const ProductCard = ({
                             salePrice={salePrice}
                         />
                     </div>
-                    <p className='product-card__details-variants'>Petite, Regular, Tall</p>
                 </div>
             </Link>
         </div>

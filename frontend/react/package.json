@@ -21,6 +21,7 @@
     "react-currency-format": "^1.0.0",
     "react-dom": "^16.14",
     "react-gtm-module": "^2.0.11",
+    "react-helmet": "^6.1.0",
     "react-router-dom": "^5.2",
     "react-slick": "^0.28.1",
     "react-transition-group": "^4.4.2",
@@ -32,6 +33,7 @@
   "scripts": {
     "build": "SKIP_PREFLIGHT_CHECK=true react-scripts build",
     "dev": "SKIP_PREFLIGHT_CHECK=true react-scripts start",
+    "dev:express": "nodemon server.js",
     "dev:storybook": "concurrently \"yarn dev\" \"yarn storybook\"",
     "lint": "eslint --ext js,ts,tsx src",
     "start:express": "node server.js",
@@ -63,12 +65,14 @@
     "@types/react-currency-format": "^1.0.0",
     "@types/react-dom": "^16.9",
     "@types/react-gtm-module": "^2.0.1",
+    "@types/react-helmet": "^6.1.5",
     "@types/react-router-dom": "^5.1",
     "@types/react-slick": "^0.23.8",
     "concurrently": "^7.0.0",
     "eslint": "^7.12",
     "eslint-config-react-app": "^6.0",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "nodemon": "^2.0.15",
     "prettier": "^2.5.1",
     "react-scripts": "4.0.0"
   }

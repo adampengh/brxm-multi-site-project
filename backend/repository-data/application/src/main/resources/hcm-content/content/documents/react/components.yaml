@@ -304,7 +304,7 @@
         hippostd:state: draft
         hippostdpubwf:createdBy: admin
         hippostdpubwf:creationDate: 2022-04-04T07:01:48.943-07:00
-        hippostdpubwf:lastModificationDate: 2022-04-05T12:55:40.506-07:00
+        hippostdpubwf:lastModificationDate: 2022-04-08T08:30:06.889-07:00
         hippostdpubwf:lastModifiedBy: admin
         hippotranslation:id: f72e13d6-d790-4a68-88ad-93f6c6608e5e
         hippotranslation:locale: en
@@ -592,7 +592,7 @@
       jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
       jcr:uuid: 544b4814-8cbe-44e0-a16a-c95bec899bf0
       hippo:name: PDP Frequently Viewed Together
-      hippo:versionHistory: 299eb69d-2faa-45d3-bade-d8e73320cd81
+      hippo:versionHistory: 3cdf47a4-9aff-42d3-91cc-32250ac4aa1c
       /pdp-frequently-viewed-together[1]:
         jcr:primaryType: myproject:PathwaysRecommendationsDocument
         jcr:mixinTypes: ['mix:referenceable']
@@ -602,7 +602,7 @@
         hippostd:state: draft
         hippostdpubwf:createdBy: admin
         hippostdpubwf:creationDate: 2022-04-05T12:03:07.696-07:00
-        hippostdpubwf:lastModificationDate: 2022-04-05T12:03:07.696-07:00
+        hippostdpubwf:lastModificationDate: 2022-04-08T08:28:23.682-07:00
         hippostdpubwf:lastModifiedBy: admin
         hippotranslation:id: f6442cb3-e2e0-49c7-8653-79008d6a3e5a
         hippotranslation:locale: en
@@ -636,7 +636,7 @@
         hippostd:state: unpublished
         hippostdpubwf:createdBy: admin
         hippostdpubwf:creationDate: 2022-04-05T12:03:07.696-07:00
-        hippostdpubwf:lastModificationDate: 2022-04-05T12:03:51.737-07:00
+        hippostdpubwf:lastModificationDate: 2022-04-08T08:28:25.964-07:00
         hippostdpubwf:lastModifiedBy: admin
         hippotranslation:id: f6442cb3-e2e0-49c7-8653-79008d6a3e5a
         hippotranslation:locale: en
@@ -670,9 +670,9 @@
         hippostd:state: published
         hippostdpubwf:createdBy: admin
         hippostdpubwf:creationDate: 2022-04-05T12:03:07.696-07:00
-        hippostdpubwf:lastModificationDate: 2022-04-05T12:03:51.737-07:00
+        hippostdpubwf:lastModificationDate: 2022-04-08T08:28:25.964-07:00
         hippostdpubwf:lastModifiedBy: admin
-        hippostdpubwf:publicationDate: 2022-04-05T12:03:53.488-07:00
+        hippostdpubwf:publicationDate: 2022-04-08T08:28:27.340-07:00
         hippotranslation:id: f6442cb3-e2e0-49c7-8653-79008d6a3e5a
         hippotranslation:locale: en
         myproject:title: Frequently Viewed Together
@@ -701,7 +701,7 @@
       jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
       jcr:uuid: dbf95270-d7f7-4a2f-81e8-2c9377d76b29
       hippo:name: PDP Frequently Bought Together
-      hippo:versionHistory: 33bf2b37-ca16-4b58-9449-db240ed9ebd3
+      hippo:versionHistory: e0b86c7f-b299-45c6-b2eb-e509d4b4f75f
       /pdp-frequently-bought-together[1]:
         jcr:primaryType: myproject:PathwaysRecommendationsDocument
         jcr:mixinTypes: ['mix:versionable']
@@ -711,12 +711,12 @@
         hippostd:state: unpublished
         hippostdpubwf:createdBy: admin
         hippostdpubwf:creationDate: 2022-04-05T12:03:07.696-07:00
-        hippostdpubwf:lastModificationDate: 2022-04-05T12:52:34.278-07:00
+        hippostdpubwf:lastModificationDate: 2022-04-08T08:28:05.791-07:00
         hippostdpubwf:lastModifiedBy: admin
         hippotranslation:id: 28bbabaf-f249-4d5e-be12-82e7b2de8a30
         hippotranslation:locale: en
         myproject:title: Frequently Bought Together
-        myproject:widgetId: JD9YBD
+        myproject:widgetId: ojd7q4je
         myproject:widgetType: item
         /myproject:settings:
           jcr:primaryType: myproject:slickSliderSettingsCompound
@@ -745,12 +745,12 @@
         hippostd:state: draft
         hippostdpubwf:createdBy: admin
         hippostdpubwf:creationDate: 2022-04-05T12:03:07.696-07:00
-        hippostdpubwf:lastModificationDate: 2022-04-05T12:52:30.035-07:00
+        hippostdpubwf:lastModificationDate: 2022-04-08T08:28:02.768-07:00
         hippostdpubwf:lastModifiedBy: admin
         hippotranslation:id: 28bbabaf-f249-4d5e-be12-82e7b2de8a30
         hippotranslation:locale: en
         myproject:title: Frequently Bought Together
-        myproject:widgetId: JD9YBD
+        myproject:widgetId: ojd7q4je
         myproject:widgetType: item
         /myproject:settings:
           jcr:primaryType: myproject:slickSliderSettingsCompound
@@ -779,14 +779,123 @@
         hippostd:state: published
         hippostdpubwf:createdBy: admin
         hippostdpubwf:creationDate: 2022-04-05T12:03:07.696-07:00
-        hippostdpubwf:lastModificationDate: 2022-04-05T12:52:34.278-07:00
+        hippostdpubwf:lastModificationDate: 2022-04-08T08:28:05.791-07:00
         hippostdpubwf:lastModifiedBy: admin
-        hippostdpubwf:publicationDate: 2022-04-05T12:52:35.905-07:00
+        hippostdpubwf:publicationDate: 2022-04-08T08:28:07.668-07:00
         hippotranslation:id: 28bbabaf-f249-4d5e-be12-82e7b2de8a30
         hippotranslation:locale: en
         myproject:title: Frequently Bought Together
-        myproject:widgetId: JD9YBD
+        myproject:widgetId: ojd7q4je
         myproject:widgetType: item
+        /myproject:settings:
+          jcr:primaryType: myproject:slickSliderSettingsCompound
+          myproject:arrows: true
+          myproject:autoplay: false
+          myproject:autoplaySpeed: 3000
+          myproject:dots: false
+          myproject:dotsStyle: dots
+          myproject:fade: false
+          myproject:infinite: true
+          myproject:pauseOnDotsHover: false
+          myproject:pauseOnFocus: false
+          myproject:pauseOnHover: false
+          myproject:rows: 1
+          myproject:slidesPerRow: 1
+          myproject:slidesToScroll: 1
+          myproject:slidesToShow: 4
+          myproject:speed: 500
+          myproject:vertical: false
+    /pdp-similar-products:
+      jcr:primaryType: hippo:handle
+      jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+      jcr:uuid: 8d9084ee-10bd-4eb5-afd8-f6bbd05dfe4d
+      hippo:name: PDP Similar Products
+      hippo:versionHistory: ed2923dc-9096-4a7e-a59e-7c63e8ac3f59
+      /pdp-similar-products[1]:
+        jcr:primaryType: myproject:PathwaysRecommendationsDocument
+        jcr:mixinTypes: ['mix:referenceable']
+        jcr:uuid: 967e93af-9b3c-4be7-8d14-4880cae53a8a
+        hippo:availability: []
+        hippostd:retainable: false
+        hippostd:state: draft
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-04-08T08:34:51.270-07:00
+        hippostdpubwf:lastModificationDate: 2022-04-08T08:34:51.271-07:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: b72b05fd-0e09-47ca-bd6d-9fef12ce6789
+        hippotranslation:locale: en
+        myproject:title: Similar Products
+        myproject:widgetId: kl6pwo92
+        myproject:widgetType: keyword
+        /myproject:settings:
+          jcr:primaryType: myproject:slickSliderSettingsCompound
+          myproject:arrows: true
+          myproject:autoplay: false
+          myproject:autoplaySpeed: 3000
+          myproject:dots: false
+          myproject:dotsStyle: dots
+          myproject:fade: false
+          myproject:infinite: true
+          myproject:pauseOnDotsHover: false
+          myproject:pauseOnFocus: false
+          myproject:pauseOnHover: false
+          myproject:rows: 1
+          myproject:slidesPerRow: 1
+          myproject:slidesToScroll: 1
+          myproject:slidesToShow: 4
+          myproject:speed: 500
+          myproject:vertical: false
+      /pdp-similar-products[2]:
+        jcr:primaryType: myproject:PathwaysRecommendationsDocument
+        jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+        jcr:uuid: 3b07c9fe-a2b4-42a8-83a0-94b737871ae5
+        hippo:availability: [preview]
+        hippostd:retainable: false
+        hippostd:state: unpublished
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-04-08T08:34:51.270-07:00
+        hippostdpubwf:lastModificationDate: 2022-04-08T08:35:10.728-07:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: b72b05fd-0e09-47ca-bd6d-9fef12ce6789
+        hippotranslation:locale: en
+        myproject:title: Similar Products
+        myproject:widgetId: kl6pwo92
+        myproject:widgetType: keyword
+        /myproject:settings:
+          jcr:primaryType: myproject:slickSliderSettingsCompound
+          myproject:arrows: true
+          myproject:autoplay: false
+          myproject:autoplaySpeed: 3000
+          myproject:dots: false
+          myproject:dotsStyle: dots
+          myproject:fade: false
+          myproject:infinite: true
+          myproject:pauseOnDotsHover: false
+          myproject:pauseOnFocus: false
+          myproject:pauseOnHover: false
+          myproject:rows: 1
+          myproject:slidesPerRow: 1
+          myproject:slidesToScroll: 1
+          myproject:slidesToShow: 4
+          myproject:speed: 500
+          myproject:vertical: false
+      /pdp-similar-products[3]:
+        jcr:primaryType: myproject:PathwaysRecommendationsDocument
+        jcr:mixinTypes: ['mix:referenceable']
+        jcr:uuid: 7f38e368-9028-44a4-9dbe-4dca539bbade
+        hippo:availability: [live]
+        hippostd:retainable: false
+        hippostd:state: published
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-04-08T08:34:51.270-07:00
+        hippostdpubwf:lastModificationDate: 2022-04-08T08:35:10.728-07:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippostdpubwf:publicationDate: 2022-04-08T08:35:12.386-07:00
+        hippotranslation:id: b72b05fd-0e09-47ca-bd6d-9fef12ce6789
+        hippotranslation:locale: en
+        myproject:title: Similar Products
+        myproject:widgetId: kl6pwo92
+        myproject:widgetType: keyword
         /myproject:settings:
           jcr:primaryType: myproject:slickSliderSettingsCompound
           myproject:arrows: true

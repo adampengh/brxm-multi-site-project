@@ -74,7 +74,8 @@ export const PathwaysRecommendations = ({ page, component }: BrProps) => {
     }
 
     if (error) {
-        return <div>Error</div>;
+        console.error(error);
+        return null;
     }
 
     if (!isLoaded) {
