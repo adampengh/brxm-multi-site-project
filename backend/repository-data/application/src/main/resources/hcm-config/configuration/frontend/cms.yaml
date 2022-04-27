@@ -1,6 +1,7 @@
 definitions:
   config:
     /hippo:configuration/hippo:frontend/cms/ui-extensions/commerceCategoryPicker:
+      .meta:order-before: colorPicker
       jcr:primaryType: frontend:uiExtension
       frontend:config: "{\r\n  \"apollo.server.url\": \"http://localhost:4000/graphql\"\
         ,\r\n  \"default.connector.id\": \"brsm\",\r\n  \"field.connector.id\": \"\
@@ -10,6 +11,7 @@ definitions:
       frontend:initialHeightInPixels: 80
       frontend:url: angular/starterstore/index.html?id=categories
     /hippo:configuration/hippo:frontend/cms/ui-extensions/commerceProductPicker:
+      .meta:order-before: colorPicker
       jcr:primaryType: frontend:uiExtension
       frontend:config: "{\r\n  \"apollo.server.url\": \"http://localhost:4000/graphql\"\
         ,\r\n  \"default.connector.id\": \"brsm\",\r\n  \"field.connector.id\": \"\
@@ -19,6 +21,7 @@ definitions:
       frontend:initialHeightInPixels: 300
       frontend:url: angular/starterstore/index.html?id=products
     /hippo:configuration/hippo:frontend/cms/ui-extensions/commerceProductVariantPicker:
+      .meta:order-before: colorPicker
       jcr:primaryType: frontend:uiExtension
       frontend:config: "{\r\n  \"apollo.server.url\": \"http://localhost:4000/graphql\"\
         ,\r\n  \"default.connector.id\": \"brsm\",\r\n  \"field.connector.id\": \"\
@@ -29,15 +32,24 @@ definitions:
       frontend:initialHeightInPixels: 300
       frontend:url: angular/starterstore/index.html?id=product-variants
     /hippo:configuration/hippo:frontend/cms/ui-extensions/previewMode:
+      .meta:order-before: colorPicker
       jcr:primaryType: frontend:uiExtension
       frontend:config: '{ "spaUrl": "http://localhost:3000" }'
       frontend:displayName: Preview Mode
       frontend:extensionPoint: channel.page.tools
       frontend:url: pagetools/previewMode/index.html
     /hippo:configuration/hippo:frontend/cms/ui-extensions/unsplash:
+      .meta:order-before: colorPicker
       jcr:primaryType: frontend:uiExtension
       frontend:config: '{"clientId":"e-N5y0yesl02zmuVUpSXPa1svoTqoWiI8JXCXQhep2Y",
         "unsplashRandomUrl":"https://api.unsplash.com/photos/random","unsplashSearchUrl":"https://api.unsplash.com/search/photos"}'
       frontend:displayName: Unsplash
       frontend:extensionPoint: document.field
       frontend:url: ui-extensions/unsplash/index.html
+      frontend:initialHeightInPixels: 250
+    /hippo:configuration/hippo:frontend/cms/ui-extensions/colorPicker:
+      jcr:primaryType: frontend:uiExtension
+      frontend:displayName: Color Picker
+      frontend:extensionPoint: document.field
+      frontend:initialHeightInPixels: 350
+      frontend:url: http://localhost:9000

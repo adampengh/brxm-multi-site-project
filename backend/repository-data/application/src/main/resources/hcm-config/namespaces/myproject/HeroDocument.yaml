@@ -11,7 +11,7 @@ definitions:
         /hipposysedit:nodetype:
           jcr:primaryType: hipposysedit:nodetype
           jcr:mixinTypes: ['mix:referenceable', 'hipposysedit:remodel']
-          jcr:uuid: f85658a1-d7c3-4d02-88c8-b358576efed3
+          jcr:uuid: 1d5e1e03-aeb6-432c-9fe7-d464d7028098
           hipposysedit:node: true
           hipposysedit:supertype: ['myproject:basedocument', 'hippostd:relaxed', 'hippotranslation:translated']
           hipposysedit:uri: http://www.myproject.com/myproject/nt/1.0
@@ -57,6 +57,14 @@ definitions:
             hipposysedit:path: myproject:fullHeightTextBox
             hipposysedit:primary: false
             hipposysedit:type: selection:BooleanRadioGroup
+          /textBoxColor:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: myproject:textBoxColor
+            hipposysedit:primary: false
+            hipposysedit:type: OpenUiString
       /hipposysedit:prototypes:
         jcr:primaryType: hipposysedit:prototypeset
         /hipposysedit:prototype:
@@ -70,10 +78,11 @@ definitions:
           jcr:mixinTypes: ['mix:referenceable']
           myproject:horizontalPosition: left
           myproject:verticalPosition: center
-          jcr:uuid: b3f58b64-51c3-449b-8850-ab648f46efd5
+          jcr:uuid: 28ace82a-a40c-47c0-a282-4d9b36317372
           hippostdpubwf:lastModificationDate: 2022-04-04T12:20:08.803-07:00
           hippostdpubwf:creationDate: 2022-04-04T12:20:08.803-07:00
           myproject:fullHeightTextBox: false
+          myproject:textBoxColor: Hello Button
           /myproject:image:
             jcr:primaryType: myproject:imageCompound
             myproject:altText: ''
@@ -165,3 +174,13 @@ definitions:
             /cluster.options:
               jcr:primaryType: frontend:pluginconfig
               selectable.options: top,center,bottom
+          /textBoxColor:
+            jcr:primaryType: frontend:plugin
+            caption: Text Box Color
+            field: textBoxColor
+            hint: ''
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.right.item
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+              ui.extension: colorPicker

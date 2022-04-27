@@ -11,7 +11,7 @@ definitions:
         /hipposysedit:nodetype:
           jcr:primaryType: hipposysedit:nodetype
           jcr:mixinTypes: ['mix:referenceable', 'hipposysedit:remodel']
-          jcr:uuid: 8137c3a2-b119-48d1-b9aa-894116e7160c
+          jcr:uuid: 5d32ffeb-fdcc-492b-9684-7caee91b76a2
           hipposysedit:node: true
           hipposysedit:supertype: ['hippo:compound', 'hippostd:relaxed']
           hipposysedit:uri: http://www.myproject.com/myproject/nt/1.0
