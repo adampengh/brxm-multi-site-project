@@ -62,6 +62,7 @@
     <!-- ***END temporary override of versions*** -->
     <bloomreach.content-hal-api.version>4.1.0</bloomreach.content-hal-api.version>
     <bloomreach.forge.sitemapv2.version>2.0.6</bloomreach.forge.sitemapv2.version>
+    <forge.content-exim.version>4.0.1</forge.content-exim.version>
     <essentials.version>${hippo.cms.version}</essentials.version>
     <jsp-api.version>2.2</jsp-api.version>
     <starterstore.version>${hippo.cms.version}</starterstore.version>
@@ -147,6 +148,22 @@
         <groupId>org.onehippo.cms7</groupId>
         <artifactId>hippo-plugin-sitemapv2-hcm-site</artifactId>
         <version>${bloomreach.forge.sitemapv2.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.onehippo.forge.content-exim</groupId>
+        <artifactId>content-exim-core</artifactId>
+        <version>${forge.content-exim.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.onehippo.forge.content-exim</groupId>
+        <artifactId>content-exim-repository-jaxrs</artifactId>
+        <version>${forge.content-exim.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.onehippo.forge.content-exim</groupId>
+        <artifactId>content-exim-updater-examples</artifactId>
+        <version>${forge.content-exim.version}</version>
       </dependency>
 
     </dependencies>

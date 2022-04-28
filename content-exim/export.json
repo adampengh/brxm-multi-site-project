@@ -1,0 +1,5 @@
+{
+    "documents": {
+        "queries": ["/jcr:root/content/documents//element(*,hippostd:publishable)[@hippostd:state='published']"]
+    }
+}
