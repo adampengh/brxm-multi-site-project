@@ -39,7 +39,7 @@ export const PathwaysRecommendations = ({ page, component }: BrProps) => {
         account_id: process.env.REACT_APP_BRSM_ACCOUNT_ID,
         domain_key: process.env.REACT_APP_BRSM_DOMAIN_KEY,
         url: window.location.href,
-        _br_uid_2: cookies.get('_br_uid_2'),
+        _br_uid_2: cookies.get('_br_uid_2') ?? 'uid=7213779504911:v=15.0:ts=1651502310156:hc=1',
         fields: 'pid,title,price,sale_price,url,thumb_image,reviews,reviews_count',
         // ...(categoryId && {cat_id: categoryId}),
         ...(productId && {item_ids: productId}),

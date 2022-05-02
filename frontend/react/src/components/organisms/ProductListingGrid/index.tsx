@@ -13,8 +13,6 @@ import ProductCard from '../../molecules/ProductCard';
 import './styles.scss';
 
 export const ProductListingGrid = ({ page, component }: BrProps) => {
-    console.log('ProductListingGrid');
-
     // State
     let [querySort, ] = useState('-price');
     const [queryPageSize, setQueryPageSize] = useState(24);

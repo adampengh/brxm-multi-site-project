@@ -2,7 +2,6 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 const PageMetadata = ({ pageMetadata}: any) => {
-    console.log('pageMatadata', pageMetadata);
     const {
         canonicalUrl,
         metaDescription,

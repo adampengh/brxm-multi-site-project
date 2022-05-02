@@ -26,7 +26,7 @@ import { GlobalElementsProvider } from './context/GlobalElementsContext';
 import { ErrorContext, ErrorCode } from './ErrorContext';
 import ErrorPage from './ErrorPage';
 
-import { Drawer } from './uikit';
+// import { Drawer } from './uikit';
 
 // Components
 import {
@@ -40,6 +40,8 @@ import {
     ProductDetail,
     ProductListingGrid,
 } from './components';
+import BrPixel from './BrPixel';
+import BrCookieConsent from './BrCookieConsent';
 
 const MAPPING = {
     Banner,
@@ -110,7 +112,7 @@ const App = () => {
                     </main>
                     <Footer />
                     <BrComponent path='drawer'>
-                        <Drawer />
+                        {/* <Drawer /> */}
                     </BrComponent>
                 </CommerceConnectorProvider>
             </GlobalElementsProvider>
@@ -122,6 +124,8 @@ const App = () => {
                 }}
             </BrPageContext.Consumer>
             <GTM />
+            <BrCookieConsent />
+            <BrPixel />
         </BrPage>
     );
 }

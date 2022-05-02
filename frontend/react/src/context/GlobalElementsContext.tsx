@@ -16,7 +16,6 @@ function GlobalElementsProvider( props: any ) {
         const globalElementsComponentChild = globalElementsComponent?.getChildren()[0];
         const { document: documentRef } = globalElementsComponentChild?.getModels()!;
         const document = documentRef && page?.getContent(documentRef)!;
-        console.log('document', document.getData());
 
         const {
             globalElementsHeader,

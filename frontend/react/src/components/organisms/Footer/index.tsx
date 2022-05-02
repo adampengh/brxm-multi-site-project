@@ -12,7 +12,6 @@ export const Footer = () => {
     const { globalElements }: any = useContext(GlobalElementsContext);
     const logoRef = globalElements?.globalElementsFooter?.logo;
     const logo = logoRef && page?.getContent(logoRef);
-    console.log('logo', logo);
 
     return(
         <footer className='footer'>

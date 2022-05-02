@@ -1,6 +1,6 @@
 import React from 'react';
 import Cookies from 'universal-cookie';
-import { BrComponent, BrProps } from '@bloomreach/react-sdk';
+import { BrProps } from '@bloomreach/react-sdk';
 import { useProductDetail } from '@bloomreach/connector-components-react';
 import { Container, Row, Column } from '../../../uikit/Layout';
 import ProductPrice from '../../atoms/ProductPrice';
@@ -9,8 +9,6 @@ import './styles.scss';
 
 
 export const ProductDetail = ({ component, page }: BrProps) => {
-    console.log('ProductDetail');
-    console.log('component', component);
     const cookies = new Cookies();
     const prefix = 'product-detail';
     const parameters: any = component.getParameters();
