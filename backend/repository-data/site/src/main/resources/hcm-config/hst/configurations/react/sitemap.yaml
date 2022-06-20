@@ -40,7 +40,7 @@ definitions:
         /_default_:
           jcr:primaryType: hst:sitemapitem
           hst:componentconfigurationid: hst:pages/product-detail
-          hst:relativecontentpath: ${parent}/${1}
+          hst:relativecontentpath: p/${1}
           /_any_:
             jcr:primaryType: hst:sitemapitem
             hst:componentconfigurationid: hst:pages/product-detail

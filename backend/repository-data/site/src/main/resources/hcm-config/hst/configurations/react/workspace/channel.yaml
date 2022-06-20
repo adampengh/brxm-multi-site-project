@@ -11,4 +11,5 @@ definitions:
           "phone", "width": 375 }', '{ "id": "tablet", "width": 768 }', '{ "id": "desktop",
           "width": 1025 }', '{ "id": "Desktop-XL", "width": 1400, "icon": "mdi-desktop-mac-dashboard"
           }']
-      hst:lastmodified: 2021-12-28T12:28:24.889-05:00
+      hst:lastmodified: 2022-06-20T12:59:49.052-04:00
+      hst:channelinfoclass: org.example.channel.ReactChannelInfo
