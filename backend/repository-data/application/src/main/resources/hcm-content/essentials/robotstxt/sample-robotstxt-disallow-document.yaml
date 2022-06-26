@@ -1,5 +1,4 @@
 /content/documents/administration/robots-disallow:
-  .meta:order-before: pathways-recommendations-widget-type
   jcr:primaryType: hippo:handle
   jcr:mixinTypes: ['mix:referenceable']
   jcr:uuid: 947521b3-a4ac-419f-b0a8-6e21d9a06f1e

@@ -1,5 +1,4 @@
 /content/documents/administration/robots:
-  .meta:order-before: pathways-recommendations-widget-type
   jcr:primaryType: hippo:handle
   jcr:mixinTypes: ['mix:referenceable']
   jcr:uuid: 6f4c7ea3-87de-46b2-8b6d-9a969f9069eb
