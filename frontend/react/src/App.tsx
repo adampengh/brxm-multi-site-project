@@ -31,6 +31,7 @@ import ErrorPage from './ErrorPage';
 // Components
 import {
     Banner,
+    Breadcrumbs,
     Footer,
     Header,
     Hero,
@@ -45,6 +46,7 @@ import BrCookieConsent from './BrCookieConsent';
 
 const MAPPING = {
     Banner,
+    'Breadcrumb': Breadcrumbs,
     Hero,
     Navigation,
     'News List': NewsList,

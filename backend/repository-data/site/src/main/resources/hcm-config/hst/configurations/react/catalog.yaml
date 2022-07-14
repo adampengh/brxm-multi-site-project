@@ -142,3 +142,8 @@ definitions:
               hst:pickerinitialpath: components/hero
               hst:pickerselectablenodetypes: ['myproject:HeroDocument']
               hst:relative: true
+        /breadcrumb:
+          jcr:primaryType: hst:containeritemcomponent
+          hst:componentclassname: org.onehippo.forge.breadcrumb.components.BreadcrumbComponent
+          hst:label: Breadcrumb
+          hst:iconpath: images/myproject/catalog-component-icons/breadrumb.png

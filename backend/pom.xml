@@ -62,6 +62,7 @@
     <!-- ***END temporary override of versions*** -->
     <bloomreach.content-hal-api.version>4.1.0</bloomreach.content-hal-api.version>
     <bloomreach.forge.sitemapv2.version>2.0.6</bloomreach.forge.sitemapv2.version>
+    <forge.breadcrumb.version>4.1.2</forge.breadcrumb.version>
     <forge.content-exim.version>4.0.1</forge.content-exim.version>
     <essentials.version>${hippo.cms.version}</essentials.version>
     <jsp-api.version>2.2</jsp-api.version>

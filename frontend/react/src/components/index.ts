@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+export * from './molecules/Breadcrumbs'
+
 export * from './organisms/Banner';
 export * from './organisms/Content';
 export * from './organisms/Footer';

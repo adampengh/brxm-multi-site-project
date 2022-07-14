@@ -76,6 +76,11 @@
       <version>${bloomreach.content-hal-api.version}</version>
     </dependency>
 
+    <dependency>
+      <groupId>org.bloomreach.forge.breadcrumb</groupId>
+      <artifactId>breadcrumb</artifactId>
+      <version>${forge.breadcrumb.version}</version>
+    </dependency>
 
   </dependencies>
   <build>

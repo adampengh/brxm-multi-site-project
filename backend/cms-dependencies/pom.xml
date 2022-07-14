@@ -86,6 +86,12 @@
     </dependency>
 
     <dependency>
+      <groupId>org.bloomreach.forge.breadcrumb</groupId>
+      <artifactId>breadcrumb-repository</artifactId>
+      <version>${forge.breadcrumb.version}</version>
+    </dependency>
+
+    <dependency>
       <groupId>org.onehippo.forge.content-exim</groupId>
       <artifactId>content-exim-core</artifactId>
     </dependency>

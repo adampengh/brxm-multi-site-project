@@ -24,7 +24,7 @@
       jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
       jcr:uuid: cfac3f80-72f8-426c-be4e-51f96d6a1e77
       hippo:name: Test
-      hippo:versionHistory: d96d9aa5-462e-4f7c-ab3a-7b0b10dcd784
+      hippo:versionHistory: 3a4bc8fc-0532-43be-a570-6a59cb1821cc
       /test[1]:
         jcr:primaryType: myproject:ExperiencePage
         jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
@@ -64,7 +64,7 @@
         hippostd:state: unpublished
         hippostdpubwf:createdBy: admin
         hippostdpubwf:creationDate: 2021-12-08T11:28:58.429-05:00
-        hippostdpubwf:lastModificationDate: 2021-12-24T19:48:15.352-05:00
+        hippostdpubwf:lastModificationDate: 2022-06-26T13:24:09.008-04:00
         hippostdpubwf:lastModifiedBy: admin
         hippotranslation:id: f3c07ca6-768d-4a3f-bfe0-f9d3416b6cb5
         hippotranslation:locale: en
@@ -92,7 +92,16 @@
             jcr:primaryType: hst:containercomponent
             jcr:uuid: 580ef9e3-507b-4b7d-8611-e66c4aaeba64
             hippo:identifier: f13b1855-66f4-4afb-88e4-2c4e85ad3740
-            hst:lastmodified: 2021-12-25T00:48:15.351Z
+            hst:lastmodified: 2022-06-26T17:24:09.005Z
+            /breadcrumb:
+              jcr:primaryType: hst:containeritemcomponent
+              jcr:uuid: dda3ff01-4f50-4d98-bce1-158d46842416
+              hst:componentclassname: org.onehippo.forge.breadcrumb.components.BreadcrumbComponent
+              hst:iconpath: images/myproject/catalog-component-icons/breadrumb.png
+              hst:label: Breadcrumb
+              hst:parameternames: [breadcrumb-link-not-found-mode, breadcrumb-separator,
+                breadcrumb-menus, breadcrumb-add-trailing-document-only, breadcrumb-add-content-based]
+              hst:parametervalues: ['', /, '', 'off', 'on']
             /banner:
               jcr:primaryType: hst:containeritemcomponent
               jcr:uuid: a4b6fea2-811a-4845-842d-c1a05f94488c
@@ -111,9 +120,9 @@
         hippostd:state: published
         hippostdpubwf:createdBy: admin
         hippostdpubwf:creationDate: 2021-12-08T11:28:58.429-05:00
-        hippostdpubwf:lastModificationDate: 2021-12-24T19:48:15.352-05:00
+        hippostdpubwf:lastModificationDate: 2022-06-26T13:24:09.008-04:00
         hippostdpubwf:lastModifiedBy: admin
-        hippostdpubwf:publicationDate: 2021-12-24T19:48:18.997-05:00
+        hippostdpubwf:publicationDate: 2022-06-26T13:24:12.853-04:00
         hippotranslation:id: f3c07ca6-768d-4a3f-bfe0-f9d3416b6cb5
         hippotranslation:locale: en
         /myproject:pageMetadata:
@@ -134,22 +143,163 @@
             hippo:values: []
         /hst:xpage:
           jcr:primaryType: hst:xpage
-          jcr:uuid: 49e35a3a-40d4-4cee-b924-471aeebd10ef
+          jcr:uuid: de0db144-f46f-4c12-b1d6-c0c6a28fdae4
           hst:pageref: single-column
           /3957ec49-26e0-4a67-9575-0a62393fa69a:
             jcr:primaryType: hst:containercomponent
-            jcr:uuid: a8900599-64cd-4ad9-847f-892cddc4f0fc
+            jcr:uuid: 97835050-c1d3-40f4-9734-872b905127f0
             hippo:identifier: f13b1855-66f4-4afb-88e4-2c4e85ad3740
-            hst:lastmodified: 2021-12-25T00:48:15.351Z
+            hst:lastmodified: 2022-06-26T17:24:09.005Z
+            /breadcrumb:
+              jcr:primaryType: hst:containeritemcomponent
+              jcr:uuid: 5cf7e497-6006-4625-b087-8b89f6ab0677
+              hst:componentclassname: org.onehippo.forge.breadcrumb.components.BreadcrumbComponent
+              hst:iconpath: images/myproject/catalog-component-icons/breadrumb.png
+              hst:label: Breadcrumb
+              hst:parameternames: [breadcrumb-link-not-found-mode, breadcrumb-separator,
+                breadcrumb-menus, breadcrumb-add-trailing-document-only, breadcrumb-add-content-based]
+              hst:parametervalues: ['', /, '', 'off', 'on']
             /banner:
               jcr:primaryType: hst:containeritemcomponent
-              jcr:uuid: 53667c3c-156e-40c8-a2e4-f65e920a465a
+              jcr:uuid: a97cd219-97c7-410b-a906-6e5c84d8cb1b
               hst:componentclassname: org.onehippo.cms7.essentials.components.EssentialsBannerComponent
               hst:iconpath: images/essentials/catalog-component-icons/banner.svg
               hst:label: Banner
               hst:parameternames: [document, org.hippoecm.hst.core.component.template]
               hst:parametervalues: [components/banners/test-banner, 'webfile:/freemarker/hstdefault/essentials-banner.ftl']
               hst:template: essentials-banner
+    /index:
+      jcr:primaryType: hippo:handle
+      jcr:mixinTypes: ['hippo:versionInfo', 'mix:referenceable']
+      jcr:uuid: 8ebbeafa-061b-4faa-97bc-cd7b555c79a5
+      hippo:versionHistory: 0c498a74-c145-4c80-bb0c-544b2907a60d
+      /index[1]:
+        jcr:primaryType: myproject:ExperiencePage
+        jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
+        jcr:uuid: e770b4ad-bf60-453d-8c2f-dfffcc900d60
+        hippo:availability: []
+        hippostd:retainable: false
+        hippostd:state: draft
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-06-26T13:10:29.655-04:00
+        hippostdpubwf:lastModificationDate: 2022-06-26T13:10:29.658-04:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: cd326bea-ca83-42a0-9485-2897f1f73bea
+        hippotranslation:locale: en
+        myproject:categoryId: ''
+        /myproject:pageMetadata:
+          jcr:primaryType: myproject:PageMetadata
+          myproject:canonicalUrl: ''
+          myproject:metaDescription: ''
+          myproject:metaKeywords: ['']
+          myproject:ogDescription: ''
+          myproject:ogTitle: ''
+          myproject:ogType: website
+          myproject:ogUrl: ''
+          myproject:pageTitle: Level One index
+          /myproject:ogImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+      /index[2]:
+        jcr:primaryType: myproject:ExperiencePage
+        jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable', 'mix:versionable']
+        jcr:uuid: 6fea37b2-bb45-4498-8cb1-ce4841ad9785
+        hippo:availability: [preview]
+        hippostd:retainable: false
+        hippostd:state: unpublished
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-06-26T13:10:29.655-04:00
+        hippostdpubwf:lastModificationDate: 2022-06-26T13:24:28.092-04:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: cd326bea-ca83-42a0-9485-2897f1f73bea
+        hippotranslation:locale: en
+        myproject:categoryId: ''
+        /myproject:pageMetadata:
+          jcr:primaryType: myproject:PageMetadata
+          myproject:canonicalUrl: ''
+          myproject:metaDescription: ''
+          myproject:metaKeywords: ['']
+          myproject:ogDescription: ''
+          myproject:ogTitle: ''
+          myproject:ogType: website
+          myproject:ogUrl: ''
+          myproject:pageTitle: Level One index
+          /myproject:ogImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+        /hst:xpage:
+          jcr:primaryType: hst:xpage
+          jcr:uuid: ac0bae66-f3e6-4623-aed5-2e0552eda468
+          hst:pageref: single-column
+          /3957ec49-26e0-4a67-9575-0a62393fa69a:
+            jcr:primaryType: hst:containercomponent
+            jcr:uuid: a8616478-31a9-4f32-a487-ee27804dfa92
+            hippo:identifier: 151105e7-e000-406b-98a6-7a57ecb90078
+            hst:lastmodified: 2022-06-26T17:24:28.089Z
+            /breadcrumb:
+              jcr:primaryType: hst:containeritemcomponent
+              jcr:uuid: c691c8af-1a95-4a15-9acf-2362ebe18f68
+              hst:componentclassname: org.onehippo.forge.breadcrumb.components.BreadcrumbComponent
+              hst:iconpath: images/myproject/catalog-component-icons/breadrumb.png
+              hst:label: Breadcrumb
+              hst:parameternames: [breadcrumb-link-not-found-mode, breadcrumb-separator,
+                breadcrumb-menus, breadcrumb-add-trailing-document-only, breadcrumb-add-content-based]
+              hst:parametervalues: ['', /, '', 'off', 'on']
+      /index[3]:
+        jcr:primaryType: myproject:ExperiencePage
+        jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
+        jcr:uuid: da01ed93-9da5-42bc-8d2d-2f7ff6c8d249
+        hippo:availability: [live]
+        hippostd:retainable: false
+        hippostd:state: published
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-06-26T13:10:29.655-04:00
+        hippostdpubwf:lastModificationDate: 2022-06-26T13:24:28.092-04:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippostdpubwf:publicationDate: 2022-06-26T13:24:35.615-04:00
+        hippotranslation:id: cd326bea-ca83-42a0-9485-2897f1f73bea
+        hippotranslation:locale: en
+        myproject:categoryId: ''
+        /myproject:pageMetadata:
+          jcr:primaryType: myproject:PageMetadata
+          myproject:canonicalUrl: ''
+          myproject:metaDescription: ''
+          myproject:metaKeywords: ['']
+          myproject:ogDescription: ''
+          myproject:ogTitle: ''
+          myproject:ogType: website
+          myproject:ogUrl: ''
+          myproject:pageTitle: Level One index
+          /myproject:ogImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+        /hst:xpage:
+          jcr:primaryType: hst:xpage
+          jcr:uuid: 3ee00b20-1979-4088-99dd-fb1e8fd25c89
+          hst:pageref: single-column
+          /3957ec49-26e0-4a67-9575-0a62393fa69a:
+            jcr:primaryType: hst:containercomponent
+            jcr:uuid: ba41e8f9-9d38-4b9b-aa65-a82fdafbf30d
+            hippo:identifier: 151105e7-e000-406b-98a6-7a57ecb90078
+            hst:lastmodified: 2022-06-26T17:24:28.089Z
+            /breadcrumb:
+              jcr:primaryType: hst:containeritemcomponent
+              jcr:uuid: abf9e0c5-ffda-45bc-ad9e-2e50215cb2fb
+              hst:componentclassname: org.onehippo.forge.breadcrumb.components.BreadcrumbComponent
+              hst:iconpath: images/myproject/catalog-component-icons/breadrumb.png
+              hst:label: Breadcrumb
+              hst:parameternames: [breadcrumb-link-not-found-mode, breadcrumb-separator,
+                breadcrumb-menus, breadcrumb-add-trailing-document-only, breadcrumb-add-content-based]
+              hst:parametervalues: ['', /, '', 'off', 'on']
   /homepage:
     jcr:primaryType: hippo:handle
     jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
