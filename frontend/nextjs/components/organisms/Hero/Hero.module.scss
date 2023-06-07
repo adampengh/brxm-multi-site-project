@@ -1,0 +1,107 @@
+@import '../../../scss/variables';
+
+.hero {
+    display: block;
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+
+    &__img {
+        display: block;
+        font-size: 0;
+        line-height: 0;
+        position: relative;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 1rem;
+        width: 100%;
+        @media screen and (min-width: map-get($breakpoints, "sm")) {
+            background: rgba($color-brand-primary, 0.9);
+            color: white;
+            position: absolute;
+            // bottom: 0;
+        }
+        @media screen and (min-width: map-get($breakpoints, "md")) {
+        }
+        @media screen and (min-width: map-get($breakpoints, "lg")) {
+            width: 25%;
+            align-items: center;
+            padding: 2rem;
+        }
+        @media screen and (min-width: map-get($breakpoints, "xl")) {
+            width: 25%;
+        }
+        @media screen and (min-width: map-get($breakpoints, "xxl")) {
+            width: 25%;
+
+        }
+
+
+
+        // Horizontal Position
+        &.h {
+            &-left {
+                @media (min-width: map-get($breakpoints, "lg")) {
+                    left: calc((100vw - #{$container-lg}) / 2);
+                }
+                @media (min-width: map-get($breakpoints, "xl")) {
+                    left: calc((100vw - #{$container-xl}) / 2);
+                }
+                @media (min-width: map-get($breakpoints, "xxl")) {
+                    left: calc((100vw - #{$container-xxl}) / 2);
+                }
+            }
+            &-center {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            &-right {
+                @media (min-width: map-get($breakpoints, "lg")) {
+                    right: calc((100vw - #{$container-lg}) / 2);
+                }
+                @media (min-width: map-get($breakpoints, "xl")) {
+                    right: calc((100vw - #{$container-xl}) / 2);
+                }
+                @media (min-width: map-get($breakpoints, "xxl")) {
+                    right: calc((100vw - #{$container-xxl}) / 2);
+                }
+            }
+        }
+
+        // Vertical Position
+        &.v {
+            &-top {
+                top: 10%;
+            }
+            &-center {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &-bottom {
+
+            }
+        }
+
+        // Full Height
+        // &.full-height {
+        //     @media screen and (min-width: map-get($breakpoints, "lg")) {
+        //         top: 0 !important;
+        //         bottom: 0 !important;
+        //         transform: translateY(0);
+        //     }
+        // }
+
+    }
+
+
+    h3 {
+        font-size: 2rem;
+        margin: 0;
+    }
+}

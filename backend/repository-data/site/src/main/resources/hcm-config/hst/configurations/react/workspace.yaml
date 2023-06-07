@@ -3,21 +3,11 @@ definitions:
     /hst:hst/hst:configurations/react/hst:workspace:
       jcr:primaryType: hst:workspace
       jcr:mixinTypes: ['dxphst:mergeable']
-      dxphst:treehash: AA283EA0DE681705D8C5C003AADF568C
+      dxphst:treehash: BD4D18842C519F0D8F27AF3697672237
       /hst:containers:
         jcr:primaryType: hst:containercomponentfolder
         /base:
           jcr:primaryType: hst:containercomponentfolder
-          /globalElements:
-            .meta:residual-child-node-category: content
-            jcr:primaryType: hst:containercomponent
-            hippo:identifier: 10bd9e14-1943-4b47-94ea-286145e564f6
-          /navigation:
-            .meta:residual-child-node-category: content
-            jcr:primaryType: hst:containercomponent
-            hippo:identifier: 8a06bd65-4dec-4a40-8692-d7408a1fdada
-            hst:xtype: hst.nomarkup
-            hst:lastmodified: 2022-02-01T09:41:10.530-05:00
           /promoBar:
             .meta:residual-child-node-category: content
             jcr:primaryType: hst:containercomponent
@@ -39,6 +29,22 @@ definitions:
             hst:lastmodified: 2021-12-15T20:32:19.662-05:00
         /product-detail:
           jcr:primaryType: hst:containercomponentfolder
+        /newslist:
+          jcr:primaryType: hst:containercomponentfolder
+          /main:
+            .meta:residual-child-node-category: content
+            jcr:primaryType: hst:containercomponent
+            hippo:identifier: 7c53597f-ab90-4316-ad55-737355203477
+            hst:label: News List Main
+            hst:xtype: hst.vbox
+        /newspage:
+          jcr:primaryType: hst:containercomponentfolder
+          /main:
+            .meta:residual-child-node-category: content
+            jcr:primaryType: hst:containercomponent
+            hippo:identifier: 32f0ecc8-7331-4014-ba74-f66dce23e737
+            hst:label: News Page Main
+            hst:xtype: hst.vbox
       /hst:sitemenus:
         jcr:primaryType: hst:sitemenus
         /main:
@@ -53,3 +59,6 @@ definitions:
           .meta:residual-child-node-category: content
           jcr:primaryType: hst:sitemenu
           hst:lastmodified: 2022-02-01T09:43:31.687-05:00
+      /hst:components:
+        .meta:residual-child-node-category: content
+        jcr:primaryType: hst:components

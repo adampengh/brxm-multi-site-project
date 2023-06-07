@@ -10,7 +10,7 @@ definitions:
         hst:template: essentials-banner
       /carousel:
         jcr:primaryType: hst:containeritemcomponent
-        hst:componentclassname: org.onehippo.cms7.essentials.components.EssentialsCarouselComponent
+        hst:componentclassname: org.example.components.CarouselComponent
         hst:iconpath: images/essentials/catalog-component-icons/carousel.svg
         hst:label: Carousel
         hst:template: essentials-carousel

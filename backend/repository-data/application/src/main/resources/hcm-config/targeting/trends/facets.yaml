@@ -1,0 +1,14 @@
+definitions:
+  config:
+    /targeting:targeting/targeting:trends/targeting:facets:
+      jcr:primaryType: targeting:facets
+      /documenttypes:
+        jcr:primaryType: targeting:facet
+        targeting:facetName: Document Types
+        targeting:filterName: Has Seen Document Type
+        targeting:esField: requests.collectorData.documenttypes.terms
+      /country:
+        jcr:primaryType: targeting:facet
+        targeting:esField: requests.collectorData.country.country
+        targeting:facetName: Country
+        targeting:filterName: Comes from Country

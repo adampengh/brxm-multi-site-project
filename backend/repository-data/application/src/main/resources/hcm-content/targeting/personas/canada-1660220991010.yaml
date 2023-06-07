@@ -1,0 +1,11 @@
+/targeting:targeting/targeting:personas/canada-1660220991010:
+  jcr:primaryType: targeting:persona
+  targeting:alterego: canada-1660220991010-alterego
+  targeting:description: ''
+  targeting:name: Canada
+  targeting:quote: ''
+  targeting:segmentDescription: ''
+  targeting:segmentName: Canada
+  /targeting:expression:
+    jcr:primaryType: targeting:rule
+    targeting:targetgroup: country/ca-1660220935384

@@ -35,7 +35,7 @@ definitions:
             hst:relativecontentpath: pages/categories/${1}
       /p:
         jcr:primaryType: hst:sitemapitem
-        hst:componentconfigurationid: hst:pages/product-detail-template
+        hst:componentconfigurationid: hst:pages/pagenotfound
         hst:hiddeninchannelmanager: false
         /_default_:
           jcr:primaryType: hst:sitemapitem
@@ -45,3 +45,34 @@ definitions:
             jcr:primaryType: hst:sitemapitem
             hst:componentconfigurationid: hst:pages/product-detail
             hst:relativecontentpath: p/${parent}
+      /news:
+        jcr:primaryType: hst:sitemapitem
+        hst:componentconfigurationid: hst:pages/newslist
+        hst:pagetitle: List of News Items
+        hst:relativecontentpath: news
+        /_any_.html:
+          jcr:primaryType: hst:sitemapitem
+          hst:componentconfigurationid: hst:pages/newspage
+          hst:relativecontentpath: ${parent}/${1}
+        /_any_:
+          jcr:primaryType: hst:sitemapitem
+          hst:componentconfigurationid: hst:pages/newslist
+          hst:relativecontentpath: ${parent}/${1}
+      /_default_:
+        jcr:primaryType: hst:sitemapitem
+        hst:relativecontentpath: pages/${1}
+        /_default_:
+          jcr:primaryType: hst:sitemapitem
+          hst:relativecontentpath: ${parent}/${2}
+          /_default_:
+            jcr:primaryType: hst:sitemapitem
+            hst:relativecontentpath: ${parent}/${3}
+            /_index_:
+              jcr:primaryType: hst:sitemapitem
+              hst:relativecontentpath: ${parent}/index
+          /_index_:
+            jcr:primaryType: hst:sitemapitem
+            hst:relativecontentpath: ${parent}/index
+        /_index_:
+          jcr:primaryType: hst:sitemapitem
+          hst:relativecontentpath: ${parent}/index

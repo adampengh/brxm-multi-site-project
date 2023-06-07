@@ -1,0 +1,5 @@
+definitions:
+  config:
+    /targeting:targeting/targeting:collectors/country:
+      jcr:primaryType: targeting:collector
+      targeting:className: org.example.targeting.collectors.CountryCollector

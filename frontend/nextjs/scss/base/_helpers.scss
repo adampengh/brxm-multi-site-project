@@ -1,0 +1,35 @@
+
+// ================================================
+// VISIBILITY
+// ================================================
+.hidden-sm {
+    @media screen and (max-width: $breakpoint-md) {
+        display: none;
+    }
+}
+.hidden-md {
+    @media screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+        display: none;
+    }
+}
+.hidden-lg {
+    @media screen and (min-width: $breakpoint-lg) {
+        display: none;
+    }
+}
+
+
+.visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+
+.no-scroll {
+    overflow-y: hidden;
+}

@@ -1,0 +1,4 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:modules/configapi/hippo:moduleconfig/managed:
+      hippo:identifier: f2e2fc78-4be7-41f2-b399-cf33a010d632

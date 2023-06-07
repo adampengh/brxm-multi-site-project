@@ -1,0 +1,118 @@
+// ================================================
+// TIMELINE
+// ================================================
+.timeline {
+    $parent: &;
+    display: flex;
+    flex-direction: column;
+    max-width: 720px;
+    margin: 0 auto;
+
+    p {
+        margin: 0;
+        padding-bottom: pxToRem(8);
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    // ------------------------------------------------
+    // Timeline Item
+    // ------------------------------------------------
+    &__item {
+        list-style-type: none;
+        padding-top: pxToRem(4);
+        padding-bottom: pxToRem(32);
+        position: relative;
+        width: calc(50% + 1px);
+
+        &::before {
+            content: "";
+            background-color: $color-neutral-gray-82;
+            border-radius: 50%;
+            display: block;
+            position: absolute;
+            top: pxToRem(8);
+            width: pxToRem(8);
+            height: pxToRem(8);
+        }
+        &:first-child {
+            &::before {
+                width: pxToRem(16);
+                height: pxToRem(16);
+                border: pxToRem(2) solid $color-neutral-gray-82;
+                background: $color-neutral-white;
+                top: 0;
+            }
+        }
+    }
+
+
+    &.left {
+        #{$parent}__item {
+            padding-left: pxToRem(32);
+            border-left: pxToRem(2) solid $color-neutral-gray-82;
+
+            &::before {
+                left: pxToRem(-5);
+            }
+            &:first-child {
+                &::before {
+                    left: pxToRem(-10);
+                }
+            }
+        }
+    }
+
+
+    &.right {
+        #{$parent}__item {
+            padding-right: pxToRem(32);
+            border-right: pxToRem(2) solid $color-neutral-gray-82;
+            text-align: right;
+
+            &::before {
+                right: pxToRem(-5);
+            }
+            &:first-child {
+                &::before {
+                    right: pxToRem(-11);
+                }
+            }
+        }
+    }
+
+    &.center {
+        #{$parent}__item {
+            padding-right: pxToRem(32);
+            border-right: pxToRem(2) solid $color-neutral-gray-82;
+            text-align: right;
+            &:nth-child(even) {
+                padding-right: 0;
+                padding-left: pxToRem(32);
+                border-right: none;
+                border-left: pxToRem(2) solid $color-neutral-gray-82;
+                margin-left: auto;
+                text-align: left;
+            }
+
+            &::before {
+                right: pxToRem(-5);
+            }
+            &:nth-child(even) {
+                &::before {
+                    left: pxToRem(-5);
+                }
+            }
+            &:first-child {
+                &::before {
+                    right: pxToRem(-11);
+                }
+            }
+        }
+    }
+}

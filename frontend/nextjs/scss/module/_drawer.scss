@@ -1,0 +1,360 @@
+// ========================================================
+// VARIABLES
+// ========================================================
+$prefix: drawer;
+
+// ========================================================
+// MIXINS
+// ========================================================
+@mixin transition() {
+    transition: all 1s ease;
+}
+
+
+// ================================================
+// DRAWER
+// ================================================
+.#{$prefix} {
+    $parent: &;
+    display: block;
+    position: fixed;
+    z-index: $z-index-drawer;
+
+    // STATUS: OPEN
+    &[data-drawer-status="true"] {
+        #{$parent} {
+            &__overlay {
+                display: block;
+            }
+        }
+    }
+
+
+
+
+    // ========================================================
+    // INNER
+    // ========================================================
+    &__inner {
+        background: $color-neutral-white;
+        display: block;
+        position: absolute;
+        z-index: $z-index-drawer + 1;
+        @include transition();
+    }
+
+
+    // ========================================================
+    // Header
+    // ========================================================
+    &__header {
+        align-content: center;
+        align-items: center;
+        background: $color-neutral-black;
+        border: 1px solid $color-neutral-white;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        position: absolute;
+
+        &-text {
+            padding-left: pxToRem(10);;
+            width: 360px;
+            h3 {
+                color: $color-neutral-white;
+                font-size: pxToRem(12);
+                font-weight: 700;
+                line-height: pxToRem(14);
+                margin: 0;
+                margin-bottom: pxToRem(2);
+                @media screen and (min-width: $breakpoint-md) {
+                    font-size: pxToRem(14);
+                    line-height: pxToRem(18);
+                }
+            }
+            p {
+                color: $color-neutral-white;
+                font-size: pxToRem(10);
+                line-height: pxToRem(12);
+                margin: 0;
+                @media screen and (min-width: $breakpoint-md) {
+                    font-size: pxToRem(11);
+                    line-height: pxToRem(14);
+                }
+            }
+        }
+
+        &-arrow {
+            svg {
+                fill: $color-neutral-white;
+                height: pxToRem(24);
+                margin-top: pxToRem(-4);
+                width: pxToRem(32);
+                @include transition();
+                @media screen and (min-width: $breakpoint-md) {
+                    margin-top: 0;
+                }
+                path {
+                    fill: $color-neutral-white;
+                }
+            }
+        }
+    }
+
+
+    // ========================================================
+    // CONTENT
+    // ========================================================
+    &__content {
+        padding: pxToRem(16);
+        @include transition();
+    }
+
+
+    // ========================================================
+    // OVERLAY
+    // ========================================================
+    &__overlay {
+        background: #333;
+        display: none;
+        height: 100%;
+        left: 0;
+        opacity: 0.7;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+
+    // ================================================
+    // STATE
+    // ================================================
+
+    // ------------------------------------------------
+    // SIDE: BOTTOM OR TOP
+    // ------------------------------------------------
+    &[data-drawer-side="bottom"],
+    &[data-drawer-side="top"] {
+        left: 0;
+        width: 100%;
+
+        #{$parent} {
+            &__inner {
+                left: 50%;
+                width: 100%;
+            }
+            &__header {
+                height: pxToRem(50);
+                left: 0;
+                padding-left: pxToRem(10);
+                padding-right: pxToRem(20);
+                width: 100%;
+                @media screen and (min-width: $breakpoint-sm) {
+                    left: 50%;
+                    margin: 0;
+                    width: 400px;
+                }
+            }
+            &__content {
+                min-height: 200px;
+            }
+        }
+
+        // STATUS: OPEN
+        &[data-drawer-status="true"] {
+            #{$parent} {
+                &__inner {
+                    transform: translate3d(-50%, 0, 0);
+                }
+            }
+        }
+    }
+
+    // ------------------------------------------------
+    // SIDE: BOTTOM
+    // ------------------------------------------------
+    &[data-drawer-side="bottom"] {
+        bottom: 0;
+        #{$parent} {
+            &__inner {
+                bottom: 0%;
+                transform: translate3d(-50%, 100%, 0);
+            }
+            &__header {
+                border-bottom: none;
+                border-top-left-radius: pxToRem(6);
+                border-top-right-radius: pxToRem(6);
+                box-shadow: -3px -3px 4px rgba(0, 0, 0, 0.2);
+                top: 0;
+                transform: translate3d(0, -100%, 0);
+                @media screen and (min-width: $breakpoint-sm) {
+                    transform: translate3d(-50%, -100%, 0);
+                }
+            }
+        }
+
+        // STATUS: OPEN
+        &[data-drawer-status="true"] {
+            #{$parent} {
+                &__inner {
+                    box-shadow: -3px -3px 4px rgba(0, 0, 0, 0.2);
+                }
+                &__header {
+                    &-arrow {
+                        svg {
+                            transform: rotateX(180deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // ------------------------------------------------
+    // SIDE: TOP
+    // ------------------------------------------------
+    &[data-drawer-side="top"] {
+        top: 0;
+
+        #{$parent} {
+            &__inner {
+                top: 0%;
+                transform: translate3d(-50%, -100%, 0);
+            }
+            &__header {
+                border-bottom-left-radius: pxToRem(6);
+                border-bottom-right-radius: pxToRem(6);
+                border-top: none;
+                bottom: 0;
+                box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+                transform: translate3d(0, 100%, 0);
+                @media screen and (min-width: $breakpoint-sm) {
+                    transform: translate3d(-50%, 100%, 0);
+                }
+                &-arrow {
+                    svg {
+                        transform: rotateX(180deg);
+                    }
+                }
+            }
+        }
+
+        // STATUS: OPEN
+        &[data-drawer-status="true"] {
+            #{$parent} {
+                &__inner {
+                    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+                }
+                &__header {
+                    &-arrow {
+                        svg {
+                            transform: rotateX(0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    // ------------------------------------------------
+    // SIDE: LEFT OR RIGHT
+    // ------------------------------------------------
+    &[data-drawer-side="left"],
+    &[data-drawer-side="right"] {
+        height: 100%;
+        top: 0;
+
+        #{$parent} {
+            &__inner {
+                height: 100%;
+                top: 50%;
+            }
+            &__header {
+                border-bottom-left-radius: pxToRem(6);
+                border-bottom-right-radius: pxToRem(6);
+                border-top: none;
+                box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+                height: pxToRem(50);
+                padding-left: pxToRem(10);
+                padding-right: pxToRem(20);
+                top: 50%;
+                width: 100%;
+                @media screen and (min-width: $breakpoint-sm) {
+                    left: 50%;
+                    margin: 0;
+                    width: 400px;
+                }
+                &-arrow {
+                    svg {
+                        transform: rotateX(180deg);
+                    }
+                }
+            }
+            &__content {
+                min-width: 300px;
+            }
+        }
+
+        // STATUS: OPEN
+        &[data-drawer-status="true"] {
+            #{$parent} {
+                &__inner {
+                    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+                    transform: translate3d(0%, -50%, 0);
+                }
+                &__header {
+                    &-arrow {
+                        svg {
+                            transform: rotateX(0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // ------------------------------------------------
+    // SIDE: LEFT
+    // ------------------------------------------------
+    &[data-drawer-side="left"] {
+        left: 0;
+        #{$parent} {
+            &__inner {
+                left: 50%;
+                transform: translate3d(-100%, -50%, 0);
+            }
+            &__header {
+                transform: translate3d(0, 100%, 0);
+                @media screen and (min-width: $breakpoint-sm) {
+                    transform: rotate(-90deg) translate3d(0%, -50%, 0);
+                }
+            }
+        }
+    }
+
+    // ------------------------------------------------
+    // SIDE: RIGHT
+    // ------------------------------------------------
+    &[data-drawer-side="right"] {
+        right: 0;
+        #{$parent} {
+            &__inner {
+                right: 50%;
+                transform: translate3d(100%, -50%, 0);
+            }
+            &__header {
+                left: 0;
+                transform: translate3d(0, 100%, 0);
+                @media screen and (min-width: $breakpoint-sm) {
+                    transform: rotate(90deg) translate3d(-50%, 0%, 0);
+                    transform-origin: left top;
+                }
+
+            }
+        }
+    }
+
+}

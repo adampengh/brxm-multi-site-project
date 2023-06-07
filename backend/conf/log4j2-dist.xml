@@ -101,6 +101,7 @@
     <Logger name="org.example" level="info"/>
     <Logger name="com.onehippo.cms.wpm.hst.configuration.branch" level="warn"/>
     <Logger name="com.onehippo.cms7.services.wpm.project" level="warn"/>
+    <Logger name="com.onehippo.cms7.targeting" level="warn"/>
 
     <Root level="warn">
       <AppenderRef ref="site"/>

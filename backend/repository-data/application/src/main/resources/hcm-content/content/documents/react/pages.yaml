@@ -6,7 +6,7 @@
   jcr:uuid: 0a80ffed-e43f-4389-a18d-b23158d9dbd7
   hippo:name: Pages
   hippostd:channelid: react
-  hippostd:foldertype: [new-ExperiencePage-document, new-ExperiencePage-folder]
+  hippostd:foldertype: [new-ExperiencePage-document, new-ExperiencePage-folder, new-CategoryPage-document]
   hippotranslation:id: 794bbeb7-f2db-4aee-83a3-81f5cb960f84
   hippotranslation:locale: en
   /level-one:
@@ -305,7 +305,7 @@
     jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
     jcr:uuid: 33dfd7ee-81d8-4659-abd2-a4b3480ee3e2
     hippo:name: Homepage
-    hippo:versionHistory: f8aad92a-d868-438a-9724-0b7ad4e4e03b
+    hippo:versionHistory: db654f1e-9605-4a1b-9f03-b7a8ac69bf6e
     /homepage[1]:
       jcr:primaryType: myproject:ExperiencePage
       jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
@@ -344,7 +344,7 @@
       hippostd:state: unpublished
       hippostdpubwf:createdBy: admin
       hippostdpubwf:creationDate: 2021-12-08T20:56:45.502-05:00
-      hippostdpubwf:lastModificationDate: 2022-04-05T11:24:39.898-07:00
+      hippostdpubwf:lastModificationDate: 2022-08-11T08:33:23.891-04:00
       hippostdpubwf:lastModifiedBy: admin
       hippotranslation:id: 5b0f7c79-b157-4922-8c40-92b92ece91e9
       hippotranslation:locale: en
@@ -372,13 +372,27 @@
           jcr:primaryType: hst:containercomponent
           jcr:uuid: 9b24aff9-0b14-4960-a4ff-d75eee869394
           hippo:identifier: 7658ded6-d05b-4b9c-b26f-cd4d48d116c4
-          hst:lastmodified: 2022-04-05T11:24:39.896-07:00
+          hst:lastmodified: 2022-08-11T12:33:23.887Z
           /Hero:
             jcr:primaryType: hst:containeritemcomponent
-            jcr:uuid: 628baf6a-6a52-40e4-ab68-a6825f08d3a8
+            jcr:uuid: f0657f08-644c-47ae-922b-72fdbe870e8b
             hst:componentdefinition: hst:components/react-catalog/Hero
-            hst:parameternames: [document]
-            hst:parametervalues: [components/hero/hero]
+            hst:parameternameprefixes: [canada-1660220991010@1660221193, canada-1660220991010@1660221193,
+              '', '']
+            hst:parameternames: [com.onehippo.cms7.targeting.TargetingParameterUtil.hide,
+              document, com.onehippo.cms7.targeting.TargetingParameterUtil.hide, document]
+            hst:parametervalues: ['off', components/hero/canada-user-hero, 'off',
+              components/hero/hero]
+          /banner:
+            jcr:primaryType: hst:containeritemcomponent
+            jcr:uuid: 4623515e-9742-4d42-982c-e8a57bc460fb
+            hst:componentclassname: org.onehippo.cms7.essentials.components.EssentialsBannerComponent
+            hst:iconpath: images/essentials/catalog-component-icons/banner.svg
+            hst:label: Banner
+            hst:parameternames: [com.onehippo.cms7.targeting.TargetingParameterUtil.hide,
+              document, org.hippoecm.hst.core.component.template]
+            hst:parametervalues: ['off', components/banners/homepage-banner, 'webfile:/freemarker/hstdefault/essentials-banner.ftl']
+            hst:template: essentials-banner
           /PathwaysRecommendations:
             jcr:primaryType: hst:containeritemcomponent
             jcr:uuid: 4cc64db0-59fb-483c-a43b-4559efbf7a81
@@ -394,9 +408,9 @@
       hippostd:state: published
       hippostdpubwf:createdBy: admin
       hippostdpubwf:creationDate: 2021-12-08T20:56:45.502-05:00
-      hippostdpubwf:lastModificationDate: 2022-04-05T11:24:39.898-07:00
+      hippostdpubwf:lastModificationDate: 2022-08-11T08:33:23.891-04:00
       hippostdpubwf:lastModifiedBy: admin
-      hippostdpubwf:publicationDate: 2022-04-05T11:24:44.283-07:00
+      hippostdpubwf:publicationDate: 2022-08-11T08:33:27.589-04:00
       hippotranslation:id: 5b0f7c79-b157-4922-8c40-92b92ece91e9
       hippotranslation:locale: en
       /myproject:pageMetadata:
@@ -417,22 +431,36 @@
           hippo:values: []
       /hst:xpage:
         jcr:primaryType: hst:xpage
-        jcr:uuid: 6c09bf8d-a85d-466f-b0e2-e9caf0532774
+        jcr:uuid: eb02221e-833a-4591-8b0e-6d269520fc35
         hst:pageref: single-column
         /3957ec49-26e0-4a67-9575-0a62393fa69a:
           jcr:primaryType: hst:containercomponent
-          jcr:uuid: 49dae438-9990-406a-b8bb-6fa7562cb671
+          jcr:uuid: 5b5f93db-d218-4b8e-8845-b5c8c3f2c03e
           hippo:identifier: 7658ded6-d05b-4b9c-b26f-cd4d48d116c4
-          hst:lastmodified: 2022-04-05T11:24:39.896-07:00
+          hst:lastmodified: 2022-08-11T12:33:23.887Z
           /Hero:
             jcr:primaryType: hst:containeritemcomponent
-            jcr:uuid: 6f5faf46-6c89-48d5-83d5-fb719b34b2c0
+            jcr:uuid: 098bc23d-a3bd-4ec1-a4fc-dd2d681c70e5
             hst:componentdefinition: hst:components/react-catalog/Hero
-            hst:parameternames: [document]
-            hst:parametervalues: [components/hero/hero]
+            hst:parameternameprefixes: [canada-1660220991010@1660221193, canada-1660220991010@1660221193,
+              '', '']
+            hst:parameternames: [com.onehippo.cms7.targeting.TargetingParameterUtil.hide,
+              document, com.onehippo.cms7.targeting.TargetingParameterUtil.hide, document]
+            hst:parametervalues: ['off', components/hero/canada-user-hero, 'off',
+              components/hero/hero]
+          /banner:
+            jcr:primaryType: hst:containeritemcomponent
+            jcr:uuid: e7e5b2e1-9168-408b-b8df-0fd8e5cbb356
+            hst:componentclassname: org.onehippo.cms7.essentials.components.EssentialsBannerComponent
+            hst:iconpath: images/essentials/catalog-component-icons/banner.svg
+            hst:label: Banner
+            hst:parameternames: [com.onehippo.cms7.targeting.TargetingParameterUtil.hide,
+              document, org.hippoecm.hst.core.component.template]
+            hst:parametervalues: ['off', components/banners/homepage-banner, 'webfile:/freemarker/hstdefault/essentials-banner.ftl']
+            hst:template: essentials-banner
           /PathwaysRecommendations:
             jcr:primaryType: hst:containeritemcomponent
-            jcr:uuid: f73a6e86-fb92-4b9b-b56a-8bdff4921228
+            jcr:uuid: d413dab0-621f-4149-8b27-1e4796ae221f
             hst:componentdefinition: hst:components/react-catalog/PathwaysRecommendations
             hst:parameternames: [document]
             hst:parametervalues: [components/pathways-and-recommendations/trending-products]
@@ -442,13 +470,13 @@
     jcr:uuid: e44247b9-8d88-4449-8048-293b445aa39c
     hippo:name: Categories
     hippostd:channelid: react
-    hippostd:foldertype: [new-ExperiencePage-document]
+    hippostd:foldertype: [new-CategoryPage-document]
     /bath-and-body:
       jcr:primaryType: hippo:handle
       jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
       jcr:uuid: ec2b9f89-39a1-4142-a802-1455da62769b
       hippo:name: Bath and Body
-      hippo:versionHistory: a617e8f2-5840-427e-88db-2fbd1adebd8c
+      hippo:versionHistory: da0cd3d1-a052-428f-860e-1d42f5a23a6e
       /bath-and-body[1]:
         jcr:primaryType: myproject:ExperiencePage
         jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
@@ -456,9 +484,10 @@
         hippo:availability: []
         hippostd:retainable: false
         hippostd:state: draft
+        hippostd:transferable: false
         hippostdpubwf:createdBy: admin
         hippostdpubwf:creationDate: 2022-01-11T09:00:41.184-05:00
-        hippostdpubwf:lastModificationDate: 2022-04-07T12:19:19.310-07:00
+        hippostdpubwf:lastModificationDate: 2022-08-09T12:08:55.020-04:00
         hippostdpubwf:lastModifiedBy: admin
         hippotranslation:id: d80d2eca-cd44-417d-8271-26c91da261b7
         hippotranslation:locale: document-type-locale
@@ -501,7 +530,7 @@
         hippostd:state: unpublished
         hippostdpubwf:createdBy: admin
         hippostdpubwf:creationDate: 2022-01-11T09:00:41.184-05:00
-        hippostdpubwf:lastModificationDate: 2022-04-07T12:19:26.891-07:00
+        hippostdpubwf:lastModificationDate: 2022-07-27T13:50:45.996-04:00
         hippostdpubwf:lastModifiedBy: admin
         hippotranslation:id: d80d2eca-cd44-417d-8271-26c91da261b7
         hippotranslation:locale: document-type-locale
@@ -519,7 +548,26 @@
             jcr:primaryType: hst:containercomponent
             jcr:uuid: c343603f-6c71-41a1-9156-9f58ada26cc6
             hippo:identifier: b6935596-6be4-4ae3-af04-d86b7aa12c88
-            hst:lastmodified: 2022-04-03T16:58:43.160-07:00
+            hst:lastmodified: 2022-07-27T17:50:45.993Z
+            /banner:
+              jcr:primaryType: hst:containeritemcomponent
+              jcr:uuid: 693ded70-731f-413f-8366-e132bd0fe6bc
+              hst:componentclassname: org.onehippo.cms7.essentials.components.EssentialsBannerComponent
+              hst:iconpath: images/essentials/catalog-component-icons/banner.svg
+              hst:label: Banner
+              hst:parameternames: [com.onehippo.cms7.targeting.TargetingParameterUtil.hide,
+                document, org.hippoecm.hst.core.component.template]
+              hst:parametervalues: ['off', components/banners/homepage-banner, 'webfile:/freemarker/hstdefault/essentials-banner.ftl']
+              hst:template: essentials-banner
+          /main:
+            jcr:primaryType: hst:component
+            jcr:uuid: 8d0422d5-5ab3-4dfa-8322-74ae7001c87e
+            /ProductListingGrid:
+              jcr:primaryType: hst:component
+              jcr:uuid: f891b457-a997-4254-a745-80c20fcc8d3f
+              hst:componentclassname: org.onehippo.cms7.essentials.components.EssentialsDocumentComponent
+              hst:parameternames: [categoryId, document, newParameter]
+              hst:parametervalues: ['${1}', 'pages/categories/${1}', value]
         /myproject:pageMetadata:
           jcr:primaryType: myproject:PageMetadata
           myproject:canonicalUrl: https://www.example.com/c/bath-and-body
@@ -558,26 +606,45 @@
         hippostd:state: published
         hippostdpubwf:createdBy: admin
         hippostdpubwf:creationDate: 2022-01-11T09:00:41.184-05:00
-        hippostdpubwf:lastModificationDate: 2022-04-07T12:19:26.891-07:00
+        hippostdpubwf:lastModificationDate: 2022-07-27T13:50:45.996-04:00
         hippostdpubwf:lastModifiedBy: admin
-        hippostdpubwf:publicationDate: 2022-04-07T12:19:28.721-07:00
+        hippostdpubwf:publicationDate: 2022-07-27T13:50:49.171-04:00
         hippotranslation:id: d80d2eca-cd44-417d-8271-26c91da261b7
         hippotranslation:locale: document-type-locale
         myproject:categoryId: '116990'
         /hst:xpage:
           jcr:primaryType: hst:xpage
-          jcr:uuid: d63bdced-255a-43b0-b2dd-fe0fd78ada87
+          jcr:uuid: 77398e05-29d9-4795-af4d-2923bae20a5b
           hst:pageref: product-listing
           /032a3a4a-826b-4721-bb0f-c5b8a76e94b5:
             jcr:primaryType: hst:containercomponent
-            jcr:uuid: 5f33bd76-d401-47f0-b654-e7d639a42b28
+            jcr:uuid: 5607037d-f416-4e17-a7b8-d599bc50473b
             hippo:identifier: fd788672-7df6-49ba-9e2d-8e65f94ee889
             hst:lastmodified: 2022-03-14T12:53:39.641-07:00
           /bb745c41-7ada-4afb-9240-44034412aae7:
             jcr:primaryType: hst:containercomponent
-            jcr:uuid: c6722134-cd12-4e76-90e3-04d608d25a58
+            jcr:uuid: 27b1ca80-ea4d-4394-b216-0442598eeffa
             hippo:identifier: b6935596-6be4-4ae3-af04-d86b7aa12c88
-            hst:lastmodified: 2022-04-03T16:58:43.160-07:00
+            hst:lastmodified: 2022-07-27T17:50:45.993Z
+            /banner:
+              jcr:primaryType: hst:containeritemcomponent
+              jcr:uuid: bde93ea0-dec1-4518-b227-f6be12832153
+              hst:componentclassname: org.onehippo.cms7.essentials.components.EssentialsBannerComponent
+              hst:iconpath: images/essentials/catalog-component-icons/banner.svg
+              hst:label: Banner
+              hst:parameternames: [com.onehippo.cms7.targeting.TargetingParameterUtil.hide,
+                document, org.hippoecm.hst.core.component.template]
+              hst:parametervalues: ['off', components/banners/homepage-banner, 'webfile:/freemarker/hstdefault/essentials-banner.ftl']
+              hst:template: essentials-banner
+          /main:
+            jcr:primaryType: hst:component
+            jcr:uuid: 3e94f73b-ae61-4fa0-9719-d7d0903bb66f
+            /ProductListingGrid:
+              jcr:primaryType: hst:component
+              jcr:uuid: 0aa754b8-1de0-4caf-88a1-029db7a5a695
+              hst:componentclassname: org.onehippo.cms7.essentials.components.EssentialsDocumentComponent
+              hst:parameternames: [categoryId, document, newParameter]
+              hst:parametervalues: ['${1}', 'pages/categories/${1}', value]
         /myproject:pageMetadata:
           jcr:primaryType: myproject:PageMetadata
           myproject:canonicalUrl: https://www.example.com/c/bath-and-body
@@ -601,128 +668,6 @@
           myproject:ogType: website
           myproject:ogUrl: https://www.example.com/c/bath-and-body
           myproject:pageTitle: Bath & Body
-          /myproject:ogImage:
-            jcr:primaryType: hippogallerypicker:imagelink
-            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
-            hippo:facets: []
-            hippo:modes: []
-            hippo:values: []
-    /furniture:
-      jcr:primaryType: hippo:handle
-      jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
-      jcr:uuid: b5c7ed7d-9a21-4328-98aa-31d3cdd4b9cb
-      hippo:name: Furniture
-      hippo:versionHistory: 31326875-3591-4f85-8ac9-e2c096a28ea2
-      /furniture[1]:
-        jcr:primaryType: myproject:ExperiencePage
-        jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
-        jcr:uuid: dd0cb404-e543-412a-a19a-2d544d5ee69f
-        hippo:availability: []
-        hippostd:retainable: false
-        hippostd:state: draft
-        hippostd:transferable: false
-        hippostdpubwf:createdBy: admin
-        hippostdpubwf:creationDate: 2022-04-06T11:24:08.690-07:00
-        hippostdpubwf:lastModificationDate: 2022-04-06T11:36:57.390-07:00
-        hippostdpubwf:lastModifiedBy: admin
-        hippotranslation:id: 5bff6984-81fd-40b7-8677-f6945994d58f
-        hippotranslation:locale: document-type-locale
-        myproject:categoryId: '116745'
-        /myproject:pageMetadata:
-          jcr:primaryType: myproject:PageMetadata
-          myproject:canonicalUrl: ''
-          myproject:metaDescription: ''
-          myproject:metaKeywords: ['']
-          myproject:ogDescription: ''
-          myproject:ogTitle: ''
-          myproject:ogType: website
-          myproject:ogUrl: ''
-          myproject:pageTitle: Shop All Furniture
-          /myproject:ogImage:
-            jcr:primaryType: hippogallerypicker:imagelink
-            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
-            hippo:facets: []
-            hippo:modes: []
-            hippo:values: []
-      /furniture[2]:
-        jcr:primaryType: myproject:ExperiencePage
-        jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable', 'mix:versionable']
-        jcr:uuid: 9368ed12-1cce-4533-9ddc-db748eb3562d
-        hippo:availability: [preview]
-        hippostd:retainable: false
-        hippostd:state: unpublished
-        hippostdpubwf:createdBy: admin
-        hippostdpubwf:creationDate: 2022-04-06T11:24:08.690-07:00
-        hippostdpubwf:lastModificationDate: 2022-04-06T11:36:57.328-07:00
-        hippostdpubwf:lastModifiedBy: admin
-        hippotranslation:id: 5bff6984-81fd-40b7-8677-f6945994d58f
-        hippotranslation:locale: document-type-locale
-        myproject:categoryId: '116745'
-        /hst:xpage:
-          jcr:primaryType: hst:xpage
-          jcr:uuid: 6bab3f5f-d60b-4b98-ab9b-0aded6d3367b
-          hst:pageref: product-listing
-          /032a3a4a-826b-4721-bb0f-c5b8a76e94b5:
-            jcr:primaryType: hst:containercomponent
-            jcr:uuid: 5f35391f-1074-428b-84b7-c767131e75f3
-            hippo:identifier: c8b27b94-a08f-4a82-9a67-f1ed2dac8655
-          /bb745c41-7ada-4afb-9240-44034412aae7:
-            jcr:primaryType: hst:containercomponent
-            jcr:uuid: d558e896-b157-4cf7-bf84-fd41e9b10f5f
-            hippo:identifier: 98dca791-a28e-4528-a64e-d703b7eed3a5
-        /myproject:pageMetadata:
-          jcr:primaryType: myproject:PageMetadata
-          myproject:canonicalUrl: ''
-          myproject:metaDescription: ''
-          myproject:metaKeywords: ['']
-          myproject:ogDescription: ''
-          myproject:ogTitle: ''
-          myproject:ogType: website
-          myproject:ogUrl: ''
-          myproject:pageTitle: Shop All Furniture
-          /myproject:ogImage:
-            jcr:primaryType: hippogallerypicker:imagelink
-            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
-            hippo:facets: []
-            hippo:modes: []
-            hippo:values: []
-      /furniture[3]:
-        jcr:primaryType: myproject:ExperiencePage
-        jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
-        jcr:uuid: 5c2556e3-2c0b-437f-a0b5-19ae52526cfe
-        hippo:availability: [live]
-        hippostd:retainable: false
-        hippostd:state: published
-        hippostdpubwf:createdBy: admin
-        hippostdpubwf:creationDate: 2022-04-06T11:24:08.690-07:00
-        hippostdpubwf:lastModificationDate: 2022-04-06T11:36:57.328-07:00
-        hippostdpubwf:lastModifiedBy: admin
-        hippostdpubwf:publicationDate: 2022-04-06T11:37:04.494-07:00
-        hippotranslation:id: 5bff6984-81fd-40b7-8677-f6945994d58f
-        hippotranslation:locale: document-type-locale
-        myproject:categoryId: '116745'
-        /hst:xpage:
-          jcr:primaryType: hst:xpage
-          jcr:uuid: 7aabc1da-1ae9-453b-859a-898022d85419
-          hst:pageref: product-listing
-          /032a3a4a-826b-4721-bb0f-c5b8a76e94b5:
-            jcr:primaryType: hst:containercomponent
-            jcr:uuid: 2f8335a0-e231-468a-8f6d-b689394557ba
-            hippo:identifier: c8b27b94-a08f-4a82-9a67-f1ed2dac8655
-          /bb745c41-7ada-4afb-9240-44034412aae7:
-            jcr:primaryType: hst:containercomponent
-            jcr:uuid: 9293bd82-734a-4eae-bcb8-4e94eb0f7441
-            hippo:identifier: 98dca791-a28e-4528-a64e-d703b7eed3a5
-        /myproject:pageMetadata:
-          jcr:primaryType: myproject:PageMetadata
-          myproject:canonicalUrl: ''
-          myproject:metaDescription: ''
-          myproject:metaKeywords: ['']
-          myproject:ogDescription: ''
-          myproject:ogTitle: ''
-          myproject:ogType: website
-          myproject:ogUrl: ''
-          myproject:pageTitle: Shop All Furniture
           /myproject:ogImage:
             jcr:primaryType: hippogallerypicker:imagelink
             hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
@@ -850,3 +795,741 @@
             jcr:primaryType: hst:containercomponent
             jcr:uuid: 9f0c8abd-2561-4f5e-a288-e17820acea04
             hippo:identifier: 0b68ca94-616c-4821-a2f7-839efdb84cf7
+    /furniture:
+      jcr:primaryType: hippo:handle
+      jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+      jcr:uuid: f7b9fda4-74bd-4dbc-908a-337901e1c893
+      hippo:name: Furniture
+      hippo:versionHistory: db9241f1-cf78-47d2-9af0-05bec4528c15
+      /furniture[1]:
+        jcr:primaryType: myproject:CategoryPage
+        jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
+        jcr:uuid: 20e0cbca-0c63-42c3-98e1-458ea2795792
+        hippo:availability: []
+        hippostd:retainable: false
+        hippostd:state: draft
+        hippostd:transferable: false
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-07-25T13:58:49.453-04:00
+        hippostdpubwf:lastModificationDate: 2023-01-25T05:46:03.704-05:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: a3152b8e-82aa-4c9d-9231-313848c1a0a6
+        hippotranslation:locale: document-type-locale
+        myproject:categoryId: '116745'
+        /myproject:pageMetadata:
+          jcr:primaryType: myproject:PageMetadata
+          myproject:canonicalUrl: ''
+          myproject:metaDescription: ''
+          myproject:metaKeywords: ['']
+          myproject:ogDescription: ''
+          myproject:ogTitle: ''
+          myproject:ogType: website
+          myproject:ogUrl: ''
+          myproject:pageTitle: Shop All Furniture
+          /myproject:ogImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+        /myproject:categoryPageInGridBanners[1]:
+          jcr:primaryType: myproject:CategoryPageInGridBannerCompound
+          myproject:desktopPosition: 4
+          myproject:href: /c/area-rugs
+          myproject:html: |-
+            <h1>Area Rugs</h1>
+
+            <p>Shop Now &gt;</p>
+          myproject:mobilePosition: 6
+          /myproject:image:
+            jcr:primaryType: myproject:imageCompound
+            myproject:altText: Furniture In-Grid Banner Second
+            myproject:unsplash: ''
+            /myproject:mobileImage:
+              jcr:primaryType: hippogallerypicker:imagelink
+              hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
+            /myproject:desktopImage:
+              jcr:primaryType: hippogallerypicker:imagelink
+              hippo:docbase: 2b987757-eb4c-4690-8d7e-bc431aa1d408
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
+            /myproject:tabletImage:
+              jcr:primaryType: hippogallerypicker:imagelink
+              hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
+        /myproject:categoryPageInGridBanners[2]:
+          jcr:primaryType: myproject:CategoryPageInGridBannerCompound
+          myproject:desktopPosition: 12
+          myproject:href: ''
+          myproject:html: |-
+            <h1>Loveseats</h1>
+
+            <p>Shop Now &gt;</p>
+          myproject:mobilePosition: 20
+          /myproject:image:
+            jcr:primaryType: myproject:imageCompound
+            myproject:altText: Furniture In-Grid Banner
+            myproject:unsplash: ''
+            /myproject:mobileImage:
+              jcr:primaryType: hippogallerypicker:imagelink
+              hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
+            /myproject:desktopImage:
+              jcr:primaryType: hippogallerypicker:imagelink
+              hippo:docbase: 5e5b9f6f-8cd4-4a24-9979-6b8bb4ed8132
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
+            /myproject:tabletImage:
+              jcr:primaryType: hippogallerypicker:imagelink
+              hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
+      /furniture[2]:
+        jcr:primaryType: myproject:CategoryPage
+        jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable', 'mix:versionable']
+        jcr:uuid: d885b9a5-b99d-4e43-9365-662474037e6e
+        hippo:availability: [preview]
+        hippostd:retainable: false
+        hippostd:state: unpublished
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-07-25T13:58:49.453-04:00
+        hippostdpubwf:lastModificationDate: 2022-08-12T08:57:09.463-04:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: a3152b8e-82aa-4c9d-9231-313848c1a0a6
+        hippotranslation:locale: document-type-locale
+        myproject:categoryId: '116745'
+        /hst:xpage:
+          jcr:primaryType: hst:xpage
+          jcr:uuid: ae3904ae-7e36-43e5-81b4-a9e86ec8bd7c
+          hst:pageref: product-listing
+          /032a3a4a-826b-4721-bb0f-c5b8a76e94b5:
+            jcr:primaryType: hst:containercomponent
+            jcr:uuid: 8006cfbf-2c52-4ece-8872-dbc84e4821e7
+            hippo:identifier: 53e38653-b2ec-4b55-907f-0581ba715090
+          /bb745c41-7ada-4afb-9240-44034412aae7:
+            jcr:primaryType: hst:containercomponent
+            jcr:uuid: 84848c46-94ca-48f6-a13a-f4e11715e125
+            hippo:identifier: 6802266a-b44a-4dd0-81e4-0753493b1db0
+        /myproject:pageMetadata:
+          jcr:primaryType: myproject:PageMetadata
+          myproject:canonicalUrl: ''
+          myproject:metaDescription: ''
+          myproject:metaKeywords: ['']
+          myproject:ogDescription: ''
+          myproject:ogTitle: ''
+          myproject:ogType: website
+          myproject:ogUrl: ''
+          myproject:pageTitle: Shop All Furniture
+          /myproject:ogImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+        /myproject:categoryPageInGridBanners[1]:
+          jcr:primaryType: myproject:CategoryPageInGridBannerCompound
+          myproject:desktopPosition: 4
+          myproject:href: /c/area-rugs
+          myproject:html: |-
+            <h1>Area Rugs</h1>
+
+            <p>Shop Now &gt;</p>
+          myproject:mobilePosition: 6
+          /myproject:image:
+            jcr:primaryType: myproject:imageCompound
+            myproject:altText: Furniture In-Grid Banner Second
+            myproject:unsplash: ''
+            /myproject:mobileImage:
+              jcr:primaryType: hippogallerypicker:imagelink
+              hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
+            /myproject:desktopImage:
+              jcr:primaryType: hippogallerypicker:imagelink
+              hippo:docbase: 2b987757-eb4c-4690-8d7e-bc431aa1d408
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
+            /myproject:tabletImage:
+              jcr:primaryType: hippogallerypicker:imagelink
+              hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
+        /myproject:categoryPageInGridBanners[2]:
+          jcr:primaryType: myproject:CategoryPageInGridBannerCompound
+          myproject:desktopPosition: 12
+          myproject:href: ''
+          myproject:html: |-
+            <h1>Loveseats</h1>
+
+            <p>Shop Now &gt;</p>
+          myproject:mobilePosition: 20
+          /myproject:image:
+            jcr:primaryType: myproject:imageCompound
+            myproject:altText: Furniture In-Grid Banner
+            myproject:unsplash: ''
+            /myproject:mobileImage:
+              jcr:primaryType: hippogallerypicker:imagelink
+              hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
+            /myproject:desktopImage:
+              jcr:primaryType: hippogallerypicker:imagelink
+              hippo:docbase: 5e5b9f6f-8cd4-4a24-9979-6b8bb4ed8132
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
+            /myproject:tabletImage:
+              jcr:primaryType: hippogallerypicker:imagelink
+              hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
+      /furniture[3]:
+        jcr:primaryType: myproject:CategoryPage
+        jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
+        jcr:uuid: 89f57e2d-bb6d-4e49-bfa6-7afda43483f9
+        hippo:availability: [live]
+        hippostd:retainable: false
+        hippostd:state: published
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-07-25T13:58:49.453-04:00
+        hippostdpubwf:lastModificationDate: 2022-08-12T08:57:09.463-04:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippostdpubwf:publicationDate: 2022-08-12T08:57:11.934-04:00
+        hippotranslation:id: a3152b8e-82aa-4c9d-9231-313848c1a0a6
+        hippotranslation:locale: document-type-locale
+        myproject:categoryId: '116745'
+        /hst:xpage:
+          jcr:primaryType: hst:xpage
+          jcr:uuid: e384d3f7-3c40-4cca-b62a-a4791bfe6183
+          hst:pageref: product-listing
+          /032a3a4a-826b-4721-bb0f-c5b8a76e94b5:
+            jcr:primaryType: hst:containercomponent
+            jcr:uuid: 09cc828b-d4a8-4ee3-b4c3-c6bebbdddc0f
+            hippo:identifier: 53e38653-b2ec-4b55-907f-0581ba715090
+          /bb745c41-7ada-4afb-9240-44034412aae7:
+            jcr:primaryType: hst:containercomponent
+            jcr:uuid: e1c04b65-9fbf-4b50-8fc1-61d4499a831d
+            hippo:identifier: 6802266a-b44a-4dd0-81e4-0753493b1db0
+        /myproject:pageMetadata:
+          jcr:primaryType: myproject:PageMetadata
+          myproject:canonicalUrl: ''
+          myproject:metaDescription: ''
+          myproject:metaKeywords: ['']
+          myproject:ogDescription: ''
+          myproject:ogTitle: ''
+          myproject:ogType: website
+          myproject:ogUrl: ''
+          myproject:pageTitle: Shop All Furniture
+          /myproject:ogImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+        /myproject:categoryPageInGridBanners[1]:
+          jcr:primaryType: myproject:CategoryPageInGridBannerCompound
+          myproject:desktopPosition: 4
+          myproject:href: /c/area-rugs
+          myproject:html: |-
+            <h1>Area Rugs</h1>
+
+            <p>Shop Now &gt;</p>
+          myproject:mobilePosition: 6
+          /myproject:image:
+            jcr:primaryType: myproject:imageCompound
+            myproject:altText: Furniture In-Grid Banner Second
+            myproject:unsplash: ''
+            /myproject:mobileImage:
+              jcr:primaryType: hippogallerypicker:imagelink
+              hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
+            /myproject:desktopImage:
+              jcr:primaryType: hippogallerypicker:imagelink
+              hippo:docbase: 2b987757-eb4c-4690-8d7e-bc431aa1d408
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
+            /myproject:tabletImage:
+              jcr:primaryType: hippogallerypicker:imagelink
+              hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
+        /myproject:categoryPageInGridBanners[2]:
+          jcr:primaryType: myproject:CategoryPageInGridBannerCompound
+          myproject:desktopPosition: 12
+          myproject:href: ''
+          myproject:html: |-
+            <h1>Loveseats</h1>
+
+            <p>Shop Now &gt;</p>
+          myproject:mobilePosition: 20
+          /myproject:image:
+            jcr:primaryType: myproject:imageCompound
+            myproject:altText: Furniture In-Grid Banner
+            myproject:unsplash: ''
+            /myproject:mobileImage:
+              jcr:primaryType: hippogallerypicker:imagelink
+              hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
+            /myproject:desktopImage:
+              jcr:primaryType: hippogallerypicker:imagelink
+              hippo:docbase: 5e5b9f6f-8cd4-4a24-9979-6b8bb4ed8132
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
+            /myproject:tabletImage:
+              jcr:primaryType: hippogallerypicker:imagelink
+              hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+              hippo:facets: []
+              hippo:modes: []
+              hippo:values: []
+    /area-rugs:
+      jcr:primaryType: hippo:handle
+      jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+      jcr:uuid: 02682ef4-f3a3-413f-b691-2abf25b48d1d
+      hippo:name: Area Rugs
+      hippo:versionHistory: b3d820d0-e290-41cd-88ca-09b321a7ff02
+      /area-rugs[1]:
+        jcr:primaryType: myproject:CategoryPage
+        jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
+        jcr:uuid: 9b3b6f0e-1c2d-4a19-acfa-764242c3d47c
+        hippo:availability: []
+        hippostd:retainable: false
+        hippostd:state: draft
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-08-12T08:54:10.444-04:00
+        hippostdpubwf:lastModificationDate: 2022-08-12T08:54:10.447-04:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: eb97eec6-e167-459c-b4bd-f98b336cfe4d
+        hippotranslation:locale: document-type-locale
+        myproject:categoryId: '119556'
+        /myproject:pageMetadata:
+          jcr:primaryType: myproject:PageMetadata
+          myproject:canonicalUrl: ''
+          myproject:metaDescription: ''
+          myproject:metaKeywords: ['']
+          myproject:ogDescription: ''
+          myproject:ogTitle: ''
+          myproject:ogType: website
+          myproject:ogUrl: ''
+          myproject:pageTitle: Area Rugs
+          /myproject:ogImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+      /area-rugs[2]:
+        jcr:primaryType: myproject:CategoryPage
+        jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable', 'mix:versionable']
+        jcr:uuid: c3384a6f-cc44-4c61-86ac-e23e30ba02e9
+        hippo:availability: [preview]
+        hippostd:retainable: false
+        hippostd:state: unpublished
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-08-12T08:54:10.444-04:00
+        hippostdpubwf:lastModificationDate: 2022-08-12T08:55:02.246-04:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: eb97eec6-e167-459c-b4bd-f98b336cfe4d
+        hippotranslation:locale: document-type-locale
+        myproject:categoryId: '119556'
+        /myproject:pageMetadata:
+          jcr:primaryType: myproject:PageMetadata
+          myproject:canonicalUrl: ''
+          myproject:metaDescription: ''
+          myproject:metaKeywords: ['']
+          myproject:ogDescription: ''
+          myproject:ogTitle: ''
+          myproject:ogType: website
+          myproject:ogUrl: ''
+          myproject:pageTitle: Area Rugs
+          /myproject:ogImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+        /hst:xpage:
+          jcr:primaryType: hst:xpage
+          jcr:uuid: 1ea9ad04-0c5d-45e3-941a-f24097b9e54d
+          hst:pageref: product-listing
+          /032a3a4a-826b-4721-bb0f-c5b8a76e94b5:
+            jcr:primaryType: hst:containercomponent
+            jcr:uuid: fae5f62f-b876-4670-8ca7-b8fd3518966a
+            hippo:identifier: 7d758032-f55f-49a0-9210-b5af21ad1df2
+          /bb745c41-7ada-4afb-9240-44034412aae7:
+            jcr:primaryType: hst:containercomponent
+            jcr:uuid: 27bf1ab0-3802-4cf4-944c-c0469a27deec
+            hippo:identifier: a4949a3c-8a60-4b98-bd8a-8eab8c2cfde2
+      /area-rugs[3]:
+        jcr:primaryType: myproject:CategoryPage
+        jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
+        jcr:uuid: 6d686b30-1e67-4e85-a2a3-ab99e581c225
+        hippo:availability: [live]
+        hippostd:retainable: false
+        hippostd:state: published
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-08-12T08:54:10.444-04:00
+        hippostdpubwf:lastModificationDate: 2022-08-12T08:55:02.246-04:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippostdpubwf:publicationDate: 2022-08-12T08:55:23.249-04:00
+        hippotranslation:id: eb97eec6-e167-459c-b4bd-f98b336cfe4d
+        hippotranslation:locale: document-type-locale
+        myproject:categoryId: '119556'
+        /myproject:pageMetadata:
+          jcr:primaryType: myproject:PageMetadata
+          myproject:canonicalUrl: ''
+          myproject:metaDescription: ''
+          myproject:metaKeywords: ['']
+          myproject:ogDescription: ''
+          myproject:ogTitle: ''
+          myproject:ogType: website
+          myproject:ogUrl: ''
+          myproject:pageTitle: Area Rugs
+          /myproject:ogImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+        /hst:xpage:
+          jcr:primaryType: hst:xpage
+          jcr:uuid: 7c57a45c-c077-4f3c-b8ce-2a1d5b268bf1
+          hst:pageref: product-listing
+          /032a3a4a-826b-4721-bb0f-c5b8a76e94b5:
+            jcr:primaryType: hst:containercomponent
+            jcr:uuid: 6d05e2d9-fc79-45f2-8373-9708f4068c4f
+            hippo:identifier: 7d758032-f55f-49a0-9210-b5af21ad1df2
+          /bb745c41-7ada-4afb-9240-44034412aae7:
+            jcr:primaryType: hst:containercomponent
+            jcr:uuid: 94f266aa-c788-45f1-9e8e-11bafedb2eeb
+            hippo:identifier: a4949a3c-8a60-4b98-bd8a-8eab8c2cfde2
+    /mattresses:
+      jcr:primaryType: hippo:handle
+      jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+      jcr:uuid: e71592ec-6785-406e-a6dc-bfecd0de022d
+      hippo:name: Mattresses
+      hippo:versionHistory: 9b1696cb-4c77-4737-8433-86b831b5b0c5
+      /mattresses[1]:
+        jcr:primaryType: myproject:CategoryPage
+        jcr:mixinTypes: ['hippotaxonomy:classifiable', 'hst:xpagemixin', 'mix:referenceable']
+        jcr:uuid: f2b5d203-b495-4ac3-b5dd-783299e19d4d
+        hippo:availability: []
+        hippostd:retainable: false
+        hippostd:state: draft
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2023-01-25T05:46:14.165-05:00
+        hippostdpubwf:lastModificationDate: 2023-01-25T05:46:14.168-05:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotaxonomy:keys: [furniture, bedroom, mattresses]
+        hippotranslation:id: da57be40-12d1-4166-a300-f414a1f02cfd
+        hippotranslation:locale: document-type-locale
+        myproject:categoryId: ''
+        /myproject:pageMetadata:
+          jcr:primaryType: myproject:PageMetadata
+          myproject:canonicalUrl: ''
+          myproject:metaDescription: ''
+          myproject:metaKeywords: ['']
+          myproject:ogDescription: ''
+          myproject:ogTitle: ''
+          myproject:ogType: website
+          myproject:ogUrl: ''
+          myproject:pageTitle: Mattresses
+          /myproject:ogImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+      /mattresses[2]:
+        jcr:primaryType: myproject:CategoryPage
+        jcr:mixinTypes: ['hippotaxonomy:classifiable', 'hst:xpagemixin', 'mix:referenceable',
+          'mix:versionable']
+        jcr:uuid: 4e849135-0abb-4f3e-840e-7df5c3590e1a
+        hippo:availability: [preview]
+        hippostd:retainable: false
+        hippostd:state: unpublished
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2023-01-25T05:46:14.165-05:00
+        hippostdpubwf:lastModificationDate: 2023-01-25T05:46:54.642-05:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotaxonomy:keys: [furniture, bedroom, mattresses]
+        hippotranslation:id: da57be40-12d1-4166-a300-f414a1f02cfd
+        hippotranslation:locale: document-type-locale
+        myproject:categoryId: ''
+        /myproject:pageMetadata:
+          jcr:primaryType: myproject:PageMetadata
+          myproject:canonicalUrl: ''
+          myproject:metaDescription: ''
+          myproject:metaKeywords: ['']
+          myproject:ogDescription: ''
+          myproject:ogTitle: ''
+          myproject:ogType: website
+          myproject:ogUrl: ''
+          myproject:pageTitle: Mattresses
+          /myproject:ogImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+        /hst:xpage:
+          jcr:primaryType: hst:xpage
+          jcr:uuid: 680cc19b-6521-46e1-8b96-7ef7d8c3207b
+          hst:pageref: single-column
+          /3957ec49-26e0-4a67-9575-0a62393fa69a:
+            jcr:primaryType: hst:containercomponent
+            jcr:uuid: e72e524c-c176-4cbd-9c75-4036cf82f938
+            hippo:identifier: bc2f533e-7ad2-4d9f-8862-3b890d7bc707
+      /mattresses[3]:
+        jcr:primaryType: myproject:CategoryPage
+        jcr:mixinTypes: ['hippotaxonomy:classifiable', 'hst:xpagemixin', 'mix:referenceable']
+        jcr:uuid: 993bbb9a-370b-4ff9-9ec5-6a6b143a2538
+        hippo:availability: [live]
+        hippostd:retainable: false
+        hippostd:state: published
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2023-01-25T05:46:14.165-05:00
+        hippostdpubwf:lastModificationDate: 2023-01-25T05:46:54.642-05:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippostdpubwf:publicationDate: 2023-01-25T05:49:21.837-05:00
+        hippotaxonomy:keys: [furniture, bedroom, mattresses]
+        hippotranslation:id: da57be40-12d1-4166-a300-f414a1f02cfd
+        hippotranslation:locale: document-type-locale
+        myproject:categoryId: ''
+        /myproject:pageMetadata:
+          jcr:primaryType: myproject:PageMetadata
+          myproject:canonicalUrl: ''
+          myproject:metaDescription: ''
+          myproject:metaKeywords: ['']
+          myproject:ogDescription: ''
+          myproject:ogTitle: ''
+          myproject:ogType: website
+          myproject:ogUrl: ''
+          myproject:pageTitle: Mattresses
+          /myproject:ogImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+        /hst:xpage:
+          jcr:primaryType: hst:xpage
+          jcr:uuid: f823d84b-6879-44f8-86b8-00438e7e2b85
+          hst:pageref: single-column
+          /3957ec49-26e0-4a67-9575-0a62393fa69a:
+            jcr:primaryType: hst:containercomponent
+            jcr:uuid: 99db3a0e-3f65-4537-8676-714f13309907
+            hippo:identifier: bc2f533e-7ad2-4d9f-8862-3b890d7bc707
+  /new-landing-page:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+    jcr:uuid: 758e042c-1f7d-46f5-9a40-adac577b82e0
+    hippo:name: New Landing Page
+    hippo:versionHistory: d6a1e501-83f0-4944-a74b-e785218e2f0c
+    /new-landing-page[1]:
+      jcr:primaryType: myproject:ExperiencePage
+      jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
+      jcr:uuid: 4b8cbaac-9f38-4a61-89c7-40591fbbcc1a
+      hippo:availability: []
+      hippostd:retainable: false
+      hippostd:state: draft
+      hippostd:transferable: false
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2022-07-19T11:26:06.735-04:00
+      hippostdpubwf:lastModificationDate: 2022-07-19T11:37:32.956-04:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: a1c168c2-a674-4c10-baf9-cbf763530d87
+      hippotranslation:locale: en
+      myproject:categoryId: ''
+      /myproject:pageMetadata:
+        jcr:primaryType: myproject:PageMetadata
+        myproject:canonicalUrl: ''
+        myproject:metaDescription: ''
+        myproject:metaKeywords: ['']
+        myproject:ogDescription: ''
+        myproject:ogTitle: ''
+        myproject:ogType: website
+        myproject:ogUrl: ''
+        myproject:pageTitle: New Landing Page
+        /myproject:ogImage:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+    /new-landing-page[2]:
+      jcr:primaryType: myproject:ExperiencePage
+      jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable', 'mix:versionable']
+      jcr:uuid: 5141a0fb-58c4-4b74-a4a2-3943ab53c48f
+      hippo:availability: [preview]
+      hippostd:retainable: false
+      hippostd:state: unpublished
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2022-07-19T11:26:06.735-04:00
+      hippostdpubwf:lastModificationDate: 2022-07-20T08:28:29.002-04:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: a1c168c2-a674-4c10-baf9-cbf763530d87
+      hippotranslation:locale: en
+      myproject:categoryId: ''
+      /myproject:pageMetadata:
+        jcr:primaryType: myproject:PageMetadata
+        myproject:canonicalUrl: ''
+        myproject:metaDescription: ''
+        myproject:metaKeywords: ['']
+        myproject:ogDescription: ''
+        myproject:ogTitle: ''
+        myproject:ogType: website
+        myproject:ogUrl: ''
+        myproject:pageTitle: New Landing Page
+        /myproject:ogImage:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+      /hst:xpage:
+        jcr:primaryType: hst:xpage
+        jcr:uuid: 48c27f7b-7971-468c-9440-1a254ba7e4fb
+        hst:pageref: single-column
+        /3957ec49-26e0-4a67-9575-0a62393fa69a:
+          jcr:primaryType: hst:containercomponent
+          jcr:uuid: 1c429d8f-3319-48d4-b67c-5b62c5340bf8
+          hippo:identifier: f803aa56-92a0-45db-bf18-472a2144c2e2
+          hst:lastmodified: 2022-07-19T15:38:33.184Z
+          /breadcrumb:
+            jcr:primaryType: hst:containeritemcomponent
+            jcr:uuid: 39ffdfb6-6255-4321-9306-faf6da45a8d7
+            hst:componentclassname: org.onehippo.forge.breadcrumb.components.BreadcrumbComponent
+            hst:iconpath: images/myproject/catalog-component-icons/breadrumb.png
+            hst:label: Breadcrumb
+            hst:parameternames: [breadcrumb-link-not-found-mode, breadcrumb-separator,
+              breadcrumb-menus, breadcrumb-add-trailing-document-only, breadcrumb-add-content-based]
+            hst:parametervalues: ['', /, '', 'off', 'on']
+        /main:
+          jcr:primaryType: hst:component
+          jcr:uuid: e61ed572-2c38-4be9-931f-ce7d8882389a
+          /section-:
+            jcr:primaryType: hst:component
+            jcr:uuid: 1b00d216-1aa1-431a-a747-107f9fa5a954
+            hst:description: Section
+            /row-:
+              jcr:primaryType: hst:component
+              jcr:uuid: 14cb4eb4-7b3d-436e-8f87-35eed67e9481
+              hst:description: Row
+              /col-1:
+                jcr:primaryType: hst:containercomponent
+                jcr:uuid: 8dbf6f6d-d83d-4528-bd29-b958af16b3fd
+                hippo:identifier: 12088ecc-752d-4a53-1954-5007af5b26f0
+                hst:description: Column
+                hst:lastmodified: 2020-08-08T06:23:11.158+02:00
+                hst:lockedby: admin
+                hst:lockedon: 2022-07-20T08:28:29-04:00
+                hst:xtype: hst.vbox
+              /col-2:
+                jcr:primaryType: hst:containercomponent
+                jcr:uuid: ecbb3db1-2bbb-440a-9401-55a1a6c5e655
+                hippo:identifier: b8a910b6-51ea-41c0-2719-c45da374cb25
+                hst:description: Column
+                hst:lastmodified: 2020-08-08T06:23:11.158+02:00
+                hst:lockedby: admin
+                hst:lockedon: 2022-07-20T08:28:29.001-04:00
+                hst:xtype: hst.vbox
+    /new-landing-page[3]:
+      jcr:primaryType: myproject:ExperiencePage
+      jcr:mixinTypes: ['hst:xpagemixin', 'mix:referenceable']
+      jcr:uuid: 341b9e60-fec3-49ea-b0ad-ea7ed5fc1038
+      hippo:availability: [live]
+      hippostd:retainable: false
+      hippostd:state: published
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2022-07-19T11:26:06.735-04:00
+      hippostdpubwf:lastModificationDate: 2022-07-20T08:28:29.002-04:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippostdpubwf:publicationDate: 2022-07-20T08:28:41.833-04:00
+      hippotranslation:id: a1c168c2-a674-4c10-baf9-cbf763530d87
+      hippotranslation:locale: en
+      myproject:categoryId: ''
+      /myproject:pageMetadata:
+        jcr:primaryType: myproject:PageMetadata
+        myproject:canonicalUrl: ''
+        myproject:metaDescription: ''
+        myproject:metaKeywords: ['']
+        myproject:ogDescription: ''
+        myproject:ogTitle: ''
+        myproject:ogType: website
+        myproject:ogUrl: ''
+        myproject:pageTitle: New Landing Page
+        /myproject:ogImage:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+      /hst:xpage:
+        jcr:primaryType: hst:xpage
+        jcr:uuid: 12a6e4f2-87cb-4c52-bd35-ca34e1c9b1ac
+        hst:pageref: single-column
+        /3957ec49-26e0-4a67-9575-0a62393fa69a:
+          jcr:primaryType: hst:containercomponent
+          jcr:uuid: 7407a2cb-cedf-45a1-baaf-50730002af20
+          hippo:identifier: f803aa56-92a0-45db-bf18-472a2144c2e2
+          hst:lastmodified: 2022-07-19T15:38:33.184Z
+          /breadcrumb:
+            jcr:primaryType: hst:containeritemcomponent
+            jcr:uuid: 7ee50fcf-d5be-4f34-a217-5538be774f08
+            hst:componentclassname: org.onehippo.forge.breadcrumb.components.BreadcrumbComponent
+            hst:iconpath: images/myproject/catalog-component-icons/breadrumb.png
+            hst:label: Breadcrumb
+            hst:parameternames: [breadcrumb-link-not-found-mode, breadcrumb-separator,
+              breadcrumb-menus, breadcrumb-add-trailing-document-only, breadcrumb-add-content-based]
+            hst:parametervalues: ['', /, '', 'off', 'on']
+        /main:
+          jcr:primaryType: hst:component
+          jcr:uuid: eb810f53-499b-4bc7-a173-b4f1e1916657
+          /section-:
+            jcr:primaryType: hst:component
+            jcr:uuid: 76d2eed3-8e86-4e6d-89bb-8c47de9d9c96
+            hst:description: Section
+            /row-:
+              jcr:primaryType: hst:component
+              jcr:uuid: 9ec9cbb5-30a8-48d1-9750-9183338f9945
+              hst:description: Row
+              /col-1:
+                jcr:primaryType: hst:containercomponent
+                jcr:uuid: 591d8978-39b4-4cec-98f6-17d42a4c7f2e
+                hippo:identifier: 12088ecc-752d-4a53-1954-5007af5b26f0
+                hst:description: Column
+                hst:lastmodified: 2020-08-08T06:23:11.158+02:00
+                hst:lockedby: admin
+                hst:lockedon: 2022-07-20T08:28:29-04:00
+                hst:xtype: hst.vbox
+              /col-2:
+                jcr:primaryType: hst:containercomponent
+                jcr:uuid: b5e1d8a7-c49a-45c2-a0ec-0d205c933804
+                hippo:identifier: b8a910b6-51ea-41c0-2719-c45da374cb25
+                hst:description: Column
+                hst:lastmodified: 2020-08-08T06:23:11.158+02:00
+                hst:lockedby: admin
+                hst:lockedon: 2022-07-20T08:28:29.001-04:00
+                hst:xtype: hst.vbox

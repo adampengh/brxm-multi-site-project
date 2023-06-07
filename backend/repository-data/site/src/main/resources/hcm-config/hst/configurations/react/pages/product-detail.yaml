@@ -8,6 +8,11 @@ definitions:
         /ProductDetail:
           jcr:primaryType: hst:component
           hst:referencecomponent: hst:components/ProductDetail
+        /Banner:
+          jcr:primaryType: hst:component
+          hst:componentclassname: org.onehippo.cms7.essentials.components.EssentialsDocumentComponent
+          hst:parameternames: [document]
+          hst:parametervalues: ['products/banners/${1}']
         /FrequentlyViewedTogether:
           jcr:primaryType: hst:containeritemcomponent
           hst:componentdefinition: hst:components/react-catalog/PathwaysRecommendations

@@ -9,12 +9,8 @@ function GlobalElementsProvider( props: any ) {
     const [ globalElements, setGlobalElements ] = React.useState(null);
 
     useEffect(() => {
-        const globalElementsComponent = component?.getChildren()?.filter((child: any) => {
-            return child.getName() === 'globalElements'
-        })[0];
-
-        const globalElementsComponentChild = globalElementsComponent?.getChildren()[0];
-        const { document: documentRef } = globalElementsComponentChild?.getModels()!;
+        const globalElementsComponent = component?.getComponent('globalElements');
+        const { document: documentRef } = globalElementsComponent?.getModels()!;
         const document = documentRef && page?.getContent(documentRef)!;
 
         const {
@@ -31,7 +27,7 @@ function GlobalElementsProvider( props: any ) {
     }, [setGlobalElements, component, page]);
 
     return (
-        <GlobalElementsContext.Provider value={ { globalElements, setGlobalElements } }>
+        <GlobalElementsContext.Provider value={{ globalElements, setGlobalElements }}>
             { props.children }
         </GlobalElementsContext.Provider>
     )

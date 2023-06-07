@@ -41,3 +41,18 @@ definitions:
       frontend:displayName: Unsplash
       frontend:extensionPoint: document.field
       frontend:url: ui-extensions/unsplash/index.html
+    /hippo:configuration/hippo:frontend/cms/ui-extensions/channelConfigEditor:
+      frontend:url: http://localhost:3001/index.html#/flex-page
+    /hippo:configuration/hippo:frontend/cms/hippo-targeting/characteristic-documenttypes:
+      plugin.class: org.example.targeting.DocumentTypeCharacteristicPlugin
+    /hippo:configuration/hippo:frontend/cms/hippo-targeting/visitor-details-panel:
+      plugin.class: org.example.targeting.VisitorDetailsPanel
+    /hippo:configuration/hippo:frontend/cms/hippo-targeting/characteristic-country:
+      collector: country
+      plugin.class: org.example.targeting.CountryCharacteristicPlugin
+    /hippo:configuration/hippo:frontend/cms/hippo-targeting/collector-country:
+      .meta:order-before: characteristic-country
+      jcr:primaryType: frontend:plugin
+      collector: country
+      plugin.class: org.example.targeting.CountryCollectorPlugin
+      countries: [US, CA]

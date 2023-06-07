@@ -1,0 +1,4 @@
+/targeting:targeting/targeting:characteristics/documenttypes/categorypage-1658772006502:
+  jcr:primaryType: targeting:targetgroup
+  targeting:name: Category Page
+  targeting:propertynames: ['myproject:categorypage']

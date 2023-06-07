@@ -1,0 +1,35 @@
+@mixin button($backgroundColor, $color, $borderColor: transparent) {
+    background-color: $backgroundColor;
+    color: $color;
+    border-color: $borderColor;
+    &:hover,
+    &:active,
+    &.active {
+        background-color: darken($backgroundColor, 10);
+        color: $color;
+        border-color: darken($borderColor, 10);
+    }
+    &[disabled] {
+        background-color: rgba($backgroundColor, 0.5);
+        color: $color;
+        border-color: transparent;
+    }
+}
+
+@mixin buttonOutline($backgroundColor, $color, $borderColor: transparent) {
+    background-color: $backgroundColor;
+    color: $color;
+    border-color: $borderColor;
+    &:hover,
+    &:active,
+    &.active {
+        background-color: $color;
+        color: $backgroundColor;
+        border-color: $borderColor;
+    }
+    &[disabled] {
+        background-color: rgba($color, 0.5);
+        color: rgba($backgroundColor, 0.5);
+        border-color: rgba($backgroundColor, 0.5);
+    }
+}

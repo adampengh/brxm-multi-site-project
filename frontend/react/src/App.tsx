@@ -19,6 +19,7 @@ import axios from 'axios';
 import Cookies from 'universal-cookie';
 import GTM from './GTM';
 import PreviewMode from './PreviewMode';
+import { Configuration } from '@bloomreach/spa-sdk';
 import { BrComponent, BrPage, BrPageContext } from '@bloomreach/react-sdk';
 import { CommerceConnectorProvider } from '@bloomreach/connector-components-react';
 import { useLocation } from 'react-router-dom';
@@ -32,6 +33,7 @@ import ErrorPage from './ErrorPage';
 import {
     Banner,
     Breadcrumbs,
+    Content,
     Footer,
     Header,
     Hero,
@@ -42,13 +44,14 @@ import {
     ProductListingGrid,
 } from './components';
 import BrPixel from './BrPixel';
-import BrCookieConsent from './BrCookieConsent';
+import VisitorIdCookie from './utils/VisitorIdCookie';
 
 const MAPPING = {
     Banner,
     'Breadcrumb': Breadcrumbs,
+    Content,
     Hero,
-    Navigation,
+    'navigation': Navigation,
     'News List': NewsList,
     PathwaysRecommendations,
     ProductDetail,
@@ -62,6 +65,7 @@ export const ERROR_PAGE_PATH_MAP = {
 };
 
 const App = () => {
+    const cookies = new Cookies();
     const { errorCode, requestURL } = useContext(ErrorContext);
     const location = useLocation();
 
@@ -73,6 +77,9 @@ const App = () => {
         }
     }
 
+    const visitorId = cookies.get('visitor');
+    console.log('visitorId', visitorId);
+
     const path = errorCode
         ? `${ERROR_PAGE_PATH_MAP[errorCode] ?? ERROR_PAGE_PATH_MAP[ErrorCode.GENERAL_ERROR]}${location.search}`
         : `${location.pathname}${location.search}`;
@@ -82,21 +89,28 @@ const App = () => {
     const existingToken = sessionStorage.getItem('token') ?? undefined; // retrieve existing token from session storage
 
     // To view the site in "Preview" mode, pass the query sting parameter "preview=true"
-    const cookies = new Cookies();
     const queryString = require('query-string');
     const previewQueryString = queryString.parse(window?.location.search);
     if (previewQueryString?.preview) {
         cookies.set('previewMode', 'true', { path: '/' });
     }
 
+
+
     // brXM Configuration
     const previewMode = cookies.get('previewMode') || false;
-    const configuration = {
+    const configuration: Configuration = {
         endpoint: previewMode === 'true' ? process.env.REACT_APP_BRXM_ENDPOINT_PREVIEW : process.env.REACT_APP_BRXM_ENDPOINT,
         endpointQueryParameter: 'endpoint',
         httpClient: axios,
         path,
     };
+    if (visitorId) {
+        configuration.visitor = {
+            id: visitorId,
+            header: 'visitor'
+        }
+    }
 
     return (
         <BrPage configuration={configuration} mapping={MAPPING}>
@@ -126,8 +140,8 @@ const App = () => {
                 }}
             </BrPageContext.Consumer>
             <GTM />
-            <BrCookieConsent />
             <BrPixel />
+            <VisitorIdCookie />
         </BrPage>
     );
 }

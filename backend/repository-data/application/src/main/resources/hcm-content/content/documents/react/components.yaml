@@ -1095,3 +1095,154 @@
             <h3>Text Heading</h3>
 
             <p>Mauris et lacinia ante. Sed tempus facilisis consectetur. Duis ut tempus enim. Duis ut accumsan nibh. Vestibulum non pellentesque lectus. Ut nec ex nisl. Vestibulum tincidunt mauris scelerisque, feugiat nisi nec, vestibulum felis. Mauris imperdiet metus justo, ac blandit urna euismod eget.</p>
+    /canada-user-hero:
+      jcr:primaryType: hippo:handle
+      jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+      jcr:uuid: cc36e5fa-9dd7-43a3-b03b-2181dfa6f026
+      hippo:name: Canada User Hero
+      hippo:versionHistory: 9b0320b4-1512-455d-ad55-84db947078e5
+      /canada-user-hero[1]:
+        jcr:primaryType: myproject:HeroDocument
+        jcr:mixinTypes: ['mix:referenceable']
+        jcr:uuid: 6d002a07-f3bc-4064-866d-80eb368ce4c0
+        hippo:availability: []
+        hippostd:retainable: false
+        hippostd:state: draft
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-08-11T07:52:00.309-04:00
+        hippostdpubwf:lastModificationDate: 2022-08-11T08:32:09.875-04:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: ca9ff657-fb00-4f71-939d-ccae4441ef8a
+        hippotranslation:locale: en
+        myproject:fullHeightTextBox: false
+        myproject:horizontalPosition: right
+        myproject:verticalPosition: center
+        /myproject:image:
+          jcr:primaryType: myproject:imageCompound
+          myproject:altText: Furniture
+          myproject:unsplash: '{"id":"c0JoR_-2x3E","created_at":"2021-09-15T04:23:27Z","updated_at":"2022-08-11T09:21:52Z","promoted_at":"2021-09-15T06:56:01Z","width":5688,"height":4166,"color":"#d9d9c0","blur_hash":"LFNJ,m_3%gxt?wIUNGM_%KxuRPWA","description":null,"alt_description":null,"urls":{"raw":"https://images.unsplash.com/photo-1631679706909-1844bbd07221?ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxNXx8ZnVybml0dXJlfGVufDB8fHx8MTY2MDIxODcyOA&ixlib=rb-1.2.1","full":"https://images.unsplash.com/photo-1631679706909-1844bbd07221?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxNXx8ZnVybml0dXJlfGVufDB8fHx8MTY2MDIxODcyOA&ixlib=rb-1.2.1&q=80","regular":"https://images.unsplash.com/photo-1631679706909-1844bbd07221?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxNXx8ZnVybml0dXJlfGVufDB8fHx8MTY2MDIxODcyOA&ixlib=rb-1.2.1&q=80&w=1080","small":"https://images.unsplash.com/photo-1631679706909-1844bbd07221?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxNXx8ZnVybml0dXJlfGVufDB8fHx8MTY2MDIxODcyOA&ixlib=rb-1.2.1&q=80&w=400","thumb":"https://images.unsplash.com/photo-1631679706909-1844bbd07221?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxNXx8ZnVybml0dXJlfGVufDB8fHx8MTY2MDIxODcyOA&ixlib=rb-1.2.1&q=80&w=200","small_s3":"https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1631679706909-1844bbd07221"},"links":{"self":"https://api.unsplash.com/photos/c0JoR_-2x3E","html":"https://unsplash.com/photos/c0JoR_-2x3E","download":"https://unsplash.com/photos/c0JoR_-2x3E/download?ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxNXx8ZnVybml0dXJlfGVufDB8fHx8MTY2MDIxODcyOA","download_location":"https://api.unsplash.com/photos/c0JoR_-2x3E/download?ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxNXx8ZnVybml0dXJlfGVufDB8fHx8MTY2MDIxODcyOA"},"categories":[],"likes":551,"liked_by_user":false,"current_user_collections":[],"sponsorship":null,"topic_submissions":{"interiors":{"status":"approved","approved_on":"2021-09-15T11:46:29Z"},"architecture-interior":{"status":"approved","approved_on":"2021-09-28T19:05:46Z"}},"user":{"id":"kBk1xLMjLmA","updated_at":"2022-08-11T09:26:29Z","username":"spacejoy","name":"Spacejoy","first_name":"Spacejoy","last_name":null,"twitter_username":"spacejoyapp","portfolio_url":"https://www.spacejoy.com/","bio":"Download
+            free beautiful room designs, designed by expert designers. ","location":"Santa
+            Monica ","links":{"self":"https://api.unsplash.com/users/spacejoy","html":"https://unsplash.com/@spacejoy","photos":"https://api.unsplash.com/users/spacejoy/photos","likes":"https://api.unsplash.com/users/spacejoy/likes","portfolio":"https://api.unsplash.com/users/spacejoy/portfolio","following":"https://api.unsplash.com/users/spacejoy/following","followers":"https://api.unsplash.com/users/spacejoy/followers"},"profile_image":{"small":"https://images.unsplash.com/profile-1643951035335-b83b9758ad8aimage?ixlib=rb-1.2.1&crop=faces&fit=crop&w=32&h=32","medium":"https://images.unsplash.com/profile-1643951035335-b83b9758ad8aimage?ixlib=rb-1.2.1&crop=faces&fit=crop&w=64&h=64","large":"https://images.unsplash.com/profile-1643951035335-b83b9758ad8aimage?ixlib=rb-1.2.1&crop=faces&fit=crop&w=128&h=128"},"instagram_username":"spacejoyapp
+            ","total_collections":0,"total_likes":0,"total_photos":166,"accepted_tos":true,"for_hire":false,"social":{"instagram_username":"spacejoyapp
+            ","portfolio_url":"https://www.spacejoy.com/","twitter_username":"spacejoyapp","paypal_email":null}},"tags":[]}'
+          /myproject:mobileImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+          /myproject:desktopImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+          /myproject:tabletImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+        /myproject:html:
+          jcr:primaryType: hippostd:html
+          hippostd:content: |-
+            <h1>Canada User</h1>
+
+            <p>Mauris et lacinia ante. Sed tempus facilisis consectetur. Duis ut tempus enim. Duis ut accumsan nibh. Vestibulum non pellentesque lectus. Ut nec ex nisl. Vestibulum tincidunt mauris scelerisque, feugiat nisi nec, vestibulum felis. Mauris imperdiet metus justo, ac blandit urna euismod eget.</p>
+      /canada-user-hero[2]:
+        jcr:primaryType: myproject:HeroDocument
+        jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+        jcr:uuid: f0e84b91-e120-4c23-9e81-b41088d8ed10
+        hippo:availability: [preview]
+        hippostd:retainable: false
+        hippostd:state: unpublished
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-08-11T07:52:00.309-04:00
+        hippostdpubwf:lastModificationDate: 2022-08-11T08:32:16.592-04:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: ca9ff657-fb00-4f71-939d-ccae4441ef8a
+        hippotranslation:locale: en
+        myproject:fullHeightTextBox: false
+        myproject:horizontalPosition: right
+        myproject:verticalPosition: center
+        /myproject:image:
+          jcr:primaryType: myproject:imageCompound
+          myproject:altText: Furniture
+          myproject:unsplash: '{"id":"c0JoR_-2x3E","created_at":"2021-09-15T04:23:27Z","updated_at":"2022-08-11T09:21:52Z","promoted_at":"2021-09-15T06:56:01Z","width":5688,"height":4166,"color":"#d9d9c0","blur_hash":"LFNJ,m_3%gxt?wIUNGM_%KxuRPWA","description":null,"alt_description":null,"urls":{"raw":"https://images.unsplash.com/photo-1631679706909-1844bbd07221?ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxNXx8ZnVybml0dXJlfGVufDB8fHx8MTY2MDIxODcyOA&ixlib=rb-1.2.1","full":"https://images.unsplash.com/photo-1631679706909-1844bbd07221?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxNXx8ZnVybml0dXJlfGVufDB8fHx8MTY2MDIxODcyOA&ixlib=rb-1.2.1&q=80","regular":"https://images.unsplash.com/photo-1631679706909-1844bbd07221?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxNXx8ZnVybml0dXJlfGVufDB8fHx8MTY2MDIxODcyOA&ixlib=rb-1.2.1&q=80&w=1080","small":"https://images.unsplash.com/photo-1631679706909-1844bbd07221?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxNXx8ZnVybml0dXJlfGVufDB8fHx8MTY2MDIxODcyOA&ixlib=rb-1.2.1&q=80&w=400","thumb":"https://images.unsplash.com/photo-1631679706909-1844bbd07221?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxNXx8ZnVybml0dXJlfGVufDB8fHx8MTY2MDIxODcyOA&ixlib=rb-1.2.1&q=80&w=200","small_s3":"https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1631679706909-1844bbd07221"},"links":{"self":"https://api.unsplash.com/photos/c0JoR_-2x3E","html":"https://unsplash.com/photos/c0JoR_-2x3E","download":"https://unsplash.com/photos/c0JoR_-2x3E/download?ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxNXx8ZnVybml0dXJlfGVufDB8fHx8MTY2MDIxODcyOA","download_location":"https://api.unsplash.com/photos/c0JoR_-2x3E/download?ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxNXx8ZnVybml0dXJlfGVufDB8fHx8MTY2MDIxODcyOA"},"categories":[],"likes":551,"liked_by_user":false,"current_user_collections":[],"sponsorship":null,"topic_submissions":{"interiors":{"status":"approved","approved_on":"2021-09-15T11:46:29Z"},"architecture-interior":{"status":"approved","approved_on":"2021-09-28T19:05:46Z"}},"user":{"id":"kBk1xLMjLmA","updated_at":"2022-08-11T09:26:29Z","username":"spacejoy","name":"Spacejoy","first_name":"Spacejoy","last_name":null,"twitter_username":"spacejoyapp","portfolio_url":"https://www.spacejoy.com/","bio":"Download
+            free beautiful room designs, designed by expert designers. ","location":"Santa
+            Monica ","links":{"self":"https://api.unsplash.com/users/spacejoy","html":"https://unsplash.com/@spacejoy","photos":"https://api.unsplash.com/users/spacejoy/photos","likes":"https://api.unsplash.com/users/spacejoy/likes","portfolio":"https://api.unsplash.com/users/spacejoy/portfolio","following":"https://api.unsplash.com/users/spacejoy/following","followers":"https://api.unsplash.com/users/spacejoy/followers"},"profile_image":{"small":"https://images.unsplash.com/profile-1643951035335-b83b9758ad8aimage?ixlib=rb-1.2.1&crop=faces&fit=crop&w=32&h=32","medium":"https://images.unsplash.com/profile-1643951035335-b83b9758ad8aimage?ixlib=rb-1.2.1&crop=faces&fit=crop&w=64&h=64","large":"https://images.unsplash.com/profile-1643951035335-b83b9758ad8aimage?ixlib=rb-1.2.1&crop=faces&fit=crop&w=128&h=128"},"instagram_username":"spacejoyapp
+            ","total_collections":0,"total_likes":0,"total_photos":166,"accepted_tos":true,"for_hire":false,"social":{"instagram_username":"spacejoyapp
+            ","portfolio_url":"https://www.spacejoy.com/","twitter_username":"spacejoyapp","paypal_email":null}},"tags":[]}'
+          /myproject:mobileImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+          /myproject:desktopImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+          /myproject:tabletImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+        /myproject:html:
+          jcr:primaryType: hippostd:html
+          hippostd:content: |-
+            <h1>Canada User</h1>
+
+            <p>Mauris et lacinia ante. Sed tempus facilisis consectetur. Duis ut tempus enim. Duis ut accumsan nibh. Vestibulum non pellentesque lectus. Ut nec ex nisl. Vestibulum tincidunt mauris scelerisque, feugiat nisi nec, vestibulum felis. Mauris imperdiet metus justo, ac blandit urna euismod eget.</p>
+      /canada-user-hero[3]:
+        jcr:primaryType: myproject:HeroDocument
+        jcr:mixinTypes: ['mix:referenceable']
+        jcr:uuid: e10c0c74-9a11-4414-a7ba-35ffd2e55bd8
+        hippo:availability: [live]
+        hippostd:retainable: false
+        hippostd:state: published
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-08-11T07:52:00.309-04:00
+        hippostdpubwf:lastModificationDate: 2022-08-11T08:32:16.592-04:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippostdpubwf:publicationDate: 2022-08-11T08:32:35.219-04:00
+        hippotranslation:id: ca9ff657-fb00-4f71-939d-ccae4441ef8a
+        hippotranslation:locale: en
+        myproject:fullHeightTextBox: false
+        myproject:horizontalPosition: right
+        myproject:verticalPosition: center
+        /myproject:image:
+          jcr:primaryType: myproject:imageCompound
+          myproject:altText: Furniture
+          myproject:unsplash: '{"id":"c0JoR_-2x3E","created_at":"2021-09-15T04:23:27Z","updated_at":"2022-08-11T09:21:52Z","promoted_at":"2021-09-15T06:56:01Z","width":5688,"height":4166,"color":"#d9d9c0","blur_hash":"LFNJ,m_3%gxt?wIUNGM_%KxuRPWA","description":null,"alt_description":null,"urls":{"raw":"https://images.unsplash.com/photo-1631679706909-1844bbd07221?ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxNXx8ZnVybml0dXJlfGVufDB8fHx8MTY2MDIxODcyOA&ixlib=rb-1.2.1","full":"https://images.unsplash.com/photo-1631679706909-1844bbd07221?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxNXx8ZnVybml0dXJlfGVufDB8fHx8MTY2MDIxODcyOA&ixlib=rb-1.2.1&q=80","regular":"https://images.unsplash.com/photo-1631679706909-1844bbd07221?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxNXx8ZnVybml0dXJlfGVufDB8fHx8MTY2MDIxODcyOA&ixlib=rb-1.2.1&q=80&w=1080","small":"https://images.unsplash.com/photo-1631679706909-1844bbd07221?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxNXx8ZnVybml0dXJlfGVufDB8fHx8MTY2MDIxODcyOA&ixlib=rb-1.2.1&q=80&w=400","thumb":"https://images.unsplash.com/photo-1631679706909-1844bbd07221?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxNXx8ZnVybml0dXJlfGVufDB8fHx8MTY2MDIxODcyOA&ixlib=rb-1.2.1&q=80&w=200","small_s3":"https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1631679706909-1844bbd07221"},"links":{"self":"https://api.unsplash.com/photos/c0JoR_-2x3E","html":"https://unsplash.com/photos/c0JoR_-2x3E","download":"https://unsplash.com/photos/c0JoR_-2x3E/download?ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxNXx8ZnVybml0dXJlfGVufDB8fHx8MTY2MDIxODcyOA","download_location":"https://api.unsplash.com/photos/c0JoR_-2x3E/download?ixid=MnwzMTY4OTl8MHwxfHNlYXJjaHwxNXx8ZnVybml0dXJlfGVufDB8fHx8MTY2MDIxODcyOA"},"categories":[],"likes":551,"liked_by_user":false,"current_user_collections":[],"sponsorship":null,"topic_submissions":{"interiors":{"status":"approved","approved_on":"2021-09-15T11:46:29Z"},"architecture-interior":{"status":"approved","approved_on":"2021-09-28T19:05:46Z"}},"user":{"id":"kBk1xLMjLmA","updated_at":"2022-08-11T09:26:29Z","username":"spacejoy","name":"Spacejoy","first_name":"Spacejoy","last_name":null,"twitter_username":"spacejoyapp","portfolio_url":"https://www.spacejoy.com/","bio":"Download
+            free beautiful room designs, designed by expert designers. ","location":"Santa
+            Monica ","links":{"self":"https://api.unsplash.com/users/spacejoy","html":"https://unsplash.com/@spacejoy","photos":"https://api.unsplash.com/users/spacejoy/photos","likes":"https://api.unsplash.com/users/spacejoy/likes","portfolio":"https://api.unsplash.com/users/spacejoy/portfolio","following":"https://api.unsplash.com/users/spacejoy/following","followers":"https://api.unsplash.com/users/spacejoy/followers"},"profile_image":{"small":"https://images.unsplash.com/profile-1643951035335-b83b9758ad8aimage?ixlib=rb-1.2.1&crop=faces&fit=crop&w=32&h=32","medium":"https://images.unsplash.com/profile-1643951035335-b83b9758ad8aimage?ixlib=rb-1.2.1&crop=faces&fit=crop&w=64&h=64","large":"https://images.unsplash.com/profile-1643951035335-b83b9758ad8aimage?ixlib=rb-1.2.1&crop=faces&fit=crop&w=128&h=128"},"instagram_username":"spacejoyapp
+            ","total_collections":0,"total_likes":0,"total_photos":166,"accepted_tos":true,"for_hire":false,"social":{"instagram_username":"spacejoyapp
+            ","portfolio_url":"https://www.spacejoy.com/","twitter_username":"spacejoyapp","paypal_email":null}},"tags":[]}'
+          /myproject:mobileImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+          /myproject:desktopImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+          /myproject:tabletImage:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+        /myproject:html:
+          jcr:primaryType: hippostd:html
+          hippostd:content: |-
+            <h1>Canada User</h1>
+
+            <p>Mauris et lacinia ante. Sed tempus facilisis consectetur. Duis ut tempus enim. Duis ut accumsan nibh. Vestibulum non pellentesque lectus. Ut nec ex nisl. Vestibulum tincidunt mauris scelerisque, feugiat nisi nec, vestibulum felis. Mauris imperdiet metus justo, ac blandit urna euismod eget.</p>

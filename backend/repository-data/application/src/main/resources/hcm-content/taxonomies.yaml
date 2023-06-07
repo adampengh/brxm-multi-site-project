@@ -1,0 +1,230 @@
+/content/taxonomies:
+  jcr:primaryType: hippotaxonomy:container
+  /test taxonomy:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['hippo:versionInfo']
+    hippo:versionHistory: 592b7cac-57b7-47b8-abae-cae842342741
+    /test taxonomy[1]:
+      jcr:primaryType: hippotaxonomy:taxonomy
+      jcr:mixinTypes: ['hippostd:publishableSummary', 'mix:versionable']
+      jcr:uuid: a24d1a6b-4526-4edc-993a-98a8aca0964e
+      hippo:availability: [live]
+      hippostd:holder: admin
+      hippostd:retainable: false
+      hippostd:state: published
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2023-01-25T05:22:23.480-05:00
+      hippostdpubwf:lastModificationDate: 2023-01-25T05:26:26.610-05:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippostdpubwf:publicationDate: 2023-01-25T05:26:30.007-05:00
+      hippotaxonomy:locales: [en]
+      /furniture:
+        jcr:primaryType: hippotaxonomy:category
+        hippotaxonomy:key: furniture
+        /hippotaxonomy:categoryinfos:
+          jcr:primaryType: hippotaxonomy:categoryinfos
+          /en:
+            jcr:primaryType: hippotaxonomy:categoryinfo
+            hippotaxonomy:name: Furniture
+        /bedroom:
+          jcr:primaryType: hippotaxonomy:category
+          hippotaxonomy:key: bedroom
+          /hippotaxonomy:categoryinfos:
+            jcr:primaryType: hippotaxonomy:categoryinfos
+            /en:
+              jcr:primaryType: hippotaxonomy:categoryinfo
+              hippotaxonomy:name: Bedroom
+          /matresses:
+            jcr:primaryType: hippotaxonomy:category
+            hippotaxonomy:key: matresses
+            /hippotaxonomy:categoryinfos:
+              jcr:primaryType: hippotaxonomy:categoryinfos
+              /en:
+                jcr:primaryType: hippotaxonomy:categoryinfo
+                hippotaxonomy:name: Matresses
+    /test taxonomy[2]:
+      jcr:primaryType: hippotaxonomy:taxonomy
+      jcr:mixinTypes: ['hippostd:publishableSummary', 'mix:referenceable', 'mix:versionable']
+      jcr:uuid: 5d071087-931f-4352-bd11-c9a05dda9478
+      hippo:availability: [preview]
+      hippostd:retainable: false
+      hippostd:state: unpublished
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2023-01-25T05:22:23.480-05:00
+      hippostdpubwf:lastModificationDate: 2023-01-25T05:26:26.610-05:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotaxonomy:locales: [en]
+      /furniture:
+        jcr:primaryType: hippotaxonomy:category
+        hippotaxonomy:key: furniture
+        /hippotaxonomy:categoryinfos:
+          jcr:primaryType: hippotaxonomy:categoryinfos
+          /en:
+            jcr:primaryType: hippotaxonomy:categoryinfo
+            hippotaxonomy:name: Furniture
+        /bedroom:
+          jcr:primaryType: hippotaxonomy:category
+          hippotaxonomy:key: bedroom
+          /hippotaxonomy:categoryinfos:
+            jcr:primaryType: hippotaxonomy:categoryinfos
+            /en:
+              jcr:primaryType: hippotaxonomy:categoryinfo
+              hippotaxonomy:name: Bedroom
+          /matresses:
+            jcr:primaryType: hippotaxonomy:category
+            hippotaxonomy:key: matresses
+            /hippotaxonomy:categoryinfos:
+              jcr:primaryType: hippotaxonomy:categoryinfos
+              /en:
+                jcr:primaryType: hippotaxonomy:categoryinfo
+                hippotaxonomy:name: Matresses
+    /test taxonomy[3]:
+      jcr:primaryType: hippotaxonomy:taxonomy
+      jcr:mixinTypes: ['hippostd:publishableSummary', 'mix:referenceable']
+      jcr:uuid: f28d3b03-f790-455a-8b6c-e9376d5a71c0
+      hippo:availability: []
+      hippostd:retainable: false
+      hippostd:state: draft
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2023-01-25T05:22:23.480-05:00
+      hippostdpubwf:lastModificationDate: 2023-01-25T05:24:34.442-05:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotaxonomy:locales: [en]
+      /furniture:
+        jcr:primaryType: hippotaxonomy:category
+        hippotaxonomy:key: furniture
+        /hippotaxonomy:categoryinfos:
+          jcr:primaryType: hippotaxonomy:categoryinfos
+          /en:
+            jcr:primaryType: hippotaxonomy:categoryinfo
+            hippotaxonomy:name: Furniture
+        /bedroom:
+          jcr:primaryType: hippotaxonomy:category
+          hippotaxonomy:key: bedroom
+          /hippotaxonomy:categoryinfos:
+            jcr:primaryType: hippotaxonomy:categoryinfos
+            /en:
+              jcr:primaryType: hippotaxonomy:categoryinfo
+              hippotaxonomy:name: Bedroom
+          /matresses:
+            jcr:primaryType: hippotaxonomy:category
+            hippotaxonomy:key: matresses
+            /hippotaxonomy:categoryinfos:
+              jcr:primaryType: hippotaxonomy:categoryinfos
+              /en:
+                jcr:primaryType: hippotaxonomy:categoryinfo
+                hippotaxonomy:name: Matresses
+  /SampleTaxonomy:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['hippo:versionInfo']
+    hippo:versionHistory: c5680b4a-cef5-4385-982c-4ffd9b8b4682
+    /SampleTaxonomy[1]:
+      jcr:primaryType: hippotaxonomy:taxonomy
+      jcr:mixinTypes: ['hippostd:publishableSummary', 'mix:versionable']
+      jcr:uuid: 83b1936d-e248-49a5-b9d9-828dd484a2d4
+      hippo:availability: [live]
+      hippostd:holder: admin
+      hippostd:retainable: false
+      hippostd:state: published
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2023-01-25T05:41:01.944-05:00
+      hippostdpubwf:lastModificationDate: 2023-01-25T05:45:21.085-05:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippostdpubwf:publicationDate: 2023-01-25T05:45:23.337-05:00
+      hippotaxonomy:locales: [en]
+      /furniture:
+        jcr:primaryType: hippotaxonomy:category
+        hippotaxonomy:key: furniture
+        /hippotaxonomy:categoryinfos:
+          jcr:primaryType: hippotaxonomy:categoryinfos
+          /en:
+            jcr:primaryType: hippotaxonomy:categoryinfo
+            hippotaxonomy:name: Furniture
+        /bedroom:
+          jcr:primaryType: hippotaxonomy:category
+          hippotaxonomy:key: bedroom
+          /hippotaxonomy:categoryinfos:
+            jcr:primaryType: hippotaxonomy:categoryinfos
+            /en:
+              jcr:primaryType: hippotaxonomy:categoryinfo
+              hippotaxonomy:name: Bedroom
+          /mattresses:
+            jcr:primaryType: hippotaxonomy:category
+            hippotaxonomy:key: mattresses
+            /hippotaxonomy:categoryinfos:
+              jcr:primaryType: hippotaxonomy:categoryinfos
+              /en:
+                jcr:primaryType: hippotaxonomy:categoryinfo
+                hippotaxonomy:name: Mattresses
+    /SampleTaxonomy[2]:
+      jcr:primaryType: hippotaxonomy:taxonomy
+      jcr:mixinTypes: ['hippostd:publishableSummary', 'mix:referenceable', 'mix:versionable']
+      jcr:uuid: 20c4f337-b730-46e1-8a32-da9c6baf4475
+      hippo:availability: [preview]
+      hippostd:retainable: false
+      hippostd:state: unpublished
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2023-01-25T05:41:01.944-05:00
+      hippostdpubwf:lastModificationDate: 2023-01-25T05:45:21.085-05:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotaxonomy:locales: [en]
+      /furniture:
+        jcr:primaryType: hippotaxonomy:category
+        hippotaxonomy:key: furniture
+        /hippotaxonomy:categoryinfos:
+          jcr:primaryType: hippotaxonomy:categoryinfos
+          /en:
+            jcr:primaryType: hippotaxonomy:categoryinfo
+            hippotaxonomy:name: Furniture
+        /bedroom:
+          jcr:primaryType: hippotaxonomy:category
+          hippotaxonomy:key: bedroom
+          /hippotaxonomy:categoryinfos:
+            jcr:primaryType: hippotaxonomy:categoryinfos
+            /en:
+              jcr:primaryType: hippotaxonomy:categoryinfo
+              hippotaxonomy:name: Bedroom
+          /mattresses:
+            jcr:primaryType: hippotaxonomy:category
+            hippotaxonomy:key: mattresses
+            /hippotaxonomy:categoryinfos:
+              jcr:primaryType: hippotaxonomy:categoryinfos
+              /en:
+                jcr:primaryType: hippotaxonomy:categoryinfo
+                hippotaxonomy:name: Mattresses
+    /SampleTaxonomy[3]:
+      jcr:primaryType: hippotaxonomy:taxonomy
+      jcr:mixinTypes: ['hippostd:publishableSummary', 'mix:referenceable']
+      jcr:uuid: 79b65357-7b5e-40cb-8592-2053e60f270b
+      hippo:availability: []
+      hippostd:retainable: false
+      hippostd:state: draft
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2023-01-25T05:41:01.944-05:00
+      hippostdpubwf:lastModificationDate: 2023-01-25T05:43:53.960-05:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotaxonomy:locales: [en]
+      /furniture:
+        jcr:primaryType: hippotaxonomy:category
+        hippotaxonomy:key: furniture
+        /hippotaxonomy:categoryinfos:
+          jcr:primaryType: hippotaxonomy:categoryinfos
+          /en:
+            jcr:primaryType: hippotaxonomy:categoryinfo
+            hippotaxonomy:name: Furniture
+        /bedroom:
+          jcr:primaryType: hippotaxonomy:category
+          hippotaxonomy:key: bedroom
+          /hippotaxonomy:categoryinfos:
+            jcr:primaryType: hippotaxonomy:categoryinfos
+            /en:
+              jcr:primaryType: hippotaxonomy:categoryinfo
+              hippotaxonomy:name: Bedroom
+          /mattresses:
+            jcr:primaryType: hippotaxonomy:category
+            hippotaxonomy:key: mattresses
+            /hippotaxonomy:categoryinfos:
+              jcr:primaryType: hippotaxonomy:categoryinfos
+              /en:
+                jcr:primaryType: hippotaxonomy:categoryinfo
+                hippotaxonomy:name: Mattresses

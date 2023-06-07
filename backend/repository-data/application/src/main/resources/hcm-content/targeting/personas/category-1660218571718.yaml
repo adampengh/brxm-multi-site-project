@@ -1,0 +1,11 @@
+/targeting:targeting/targeting:personas/category-1660218571718:
+  jcr:primaryType: targeting:persona
+  targeting:alterego: category-1660218571718-alterego
+  targeting:description: ''
+  targeting:name: Category
+  targeting:quote: ''
+  targeting:segmentDescription: Visitors that have visited a category page
+  targeting:segmentName: Category Page
+  /targeting:expression:
+    jcr:primaryType: targeting:rule
+    targeting:targetgroup: documenttypes/categorypage-1658772006502

@@ -1,0 +1,3 @@
+/targeting:targeting/targeting:alteregos/unitedstates-1660220965415-alterego:
+  jcr:primaryType: targeting:alterego
+  targeting:targetingdata: '{"targetingData":{"country":{"collectorId":"country","country":"US"}}}'

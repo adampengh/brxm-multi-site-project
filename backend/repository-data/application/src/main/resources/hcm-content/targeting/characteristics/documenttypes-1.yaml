@@ -1,0 +1,4 @@
+/targeting:targeting/targeting:characteristics/documenttypes/experiencepage-1660218459368:
+  jcr:primaryType: targeting:targetgroup
+  targeting:name: Experience Page
+  targeting:propertynames: ['myproject:experiencepage']

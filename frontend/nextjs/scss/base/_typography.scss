@@ -1,0 +1,15 @@
+p {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+
+.sans-m-bold-uppercase {
+    font-size: pxToRem(14);
+    line-height: pxToRem(18);
+    text-transform: uppercase;
+    font-weight: 600;
+    @media ($breakpoint-lg) {
+        font-size: pxToRem(16);
+        line-height: pxToRem(20);
+    }
+}

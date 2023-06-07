@@ -1,4 +1,5 @@
 /content/gallery/react/spacejoy-desktop.jpg:
+  .meta:order-before: category-in-grid-banners
   jcr:primaryType: hippo:handle
   jcr:mixinTypes: ['mix:referenceable']
   jcr:uuid: ac5247db-61f1-4d07-b9f9-f0dbe927c949

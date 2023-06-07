@@ -1,0 +1,103 @@
+/content/documents/react/products:
+  jcr:primaryType: hippostd:folder
+  jcr:mixinTypes: ['hippo:named', 'hippotranslation:translated', 'mix:versionable']
+  jcr:uuid: 939dbac0-bf74-4c81-b36c-3ead1383edd4
+  hippo:name: Products
+  hippostd:foldertype: [new-translated-folder, new-document]
+  hippotranslation:id: 960a1cb2-ad53-48fb-8fa6-3df81694a927
+  hippotranslation:locale: en
+  /banners:
+    jcr:primaryType: hippostd:folder
+    jcr:mixinTypes: ['hippo:named', 'hippotranslation:translated', 'mix:versionable']
+    jcr:uuid: b82bafd3-68ca-4adb-acf6-0b84342fdffa
+    hippo:name: Banners
+    hippostd:foldertype: [new-translated-folder, new-document]
+    hippotranslation:id: 46f4424a-5a2d-4f51-ae72-c7a7fc4c0eb3
+    hippotranslation:locale: en
+    /91805:
+      jcr:primaryType: hippo:handle
+      jcr:mixinTypes: ['hippo:versionInfo', 'mix:referenceable']
+      jcr:uuid: 4c52734c-5719-4680-b075-f3f71bdabf84
+      hippo:versionHistory: e4382021-937e-48b5-a891-f090955eecd6
+      /91805[1]:
+        jcr:primaryType: myproject:bannerdocument
+        jcr:mixinTypes: ['mix:referenceable']
+        jcr:uuid: bb46ecb3-6415-494d-a4b5-ec35d417962d
+        hippo:availability: []
+        hippo:related___pathreference: []
+        hippostd:retainable: false
+        hippostd:state: draft
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-08-12T09:47:04.922-04:00
+        hippostdpubwf:lastModificationDate: 2022-08-12T09:52:45.358-04:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: 9b63b52d-3383-4c15-9412-eb467bbe67c5
+        hippotranslation:locale: en
+        myproject:title: 91805 Banner
+        /myproject:content:
+          jcr:primaryType: hippostd:html
+          hippostd:content: <h1>This is a product detail banner</h1>
+        /myproject:image:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: 9e440e6d-e93a-4d5f-913b-9c3b0867c812
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+        /myproject:link:
+          jcr:primaryType: hippo:mirror
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+      /91805[2]:
+        jcr:primaryType: myproject:bannerdocument
+        jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+        jcr:uuid: 36e763a4-60a4-435f-8b01-b475da2ca1d7
+        hippo:availability: [preview]
+        hippo:related___pathreference: []
+        hippostd:retainable: false
+        hippostd:state: unpublished
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-08-12T09:47:04.922-04:00
+        hippostdpubwf:lastModificationDate: 2022-08-12T09:52:55.425-04:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: 9b63b52d-3383-4c15-9412-eb467bbe67c5
+        hippotranslation:locale: en
+        myproject:title: 91805 Banner
+        /myproject:content:
+          jcr:primaryType: hippostd:html
+          hippostd:content: <h1>This is a product detail banner</h1>
+        /myproject:image:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: 9e440e6d-e93a-4d5f-913b-9c3b0867c812
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+        /myproject:link:
+          jcr:primaryType: hippo:mirror
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+      /91805[3]:
+        jcr:primaryType: myproject:bannerdocument
+        jcr:mixinTypes: ['mix:referenceable']
+        jcr:uuid: d943765c-f125-4fad-95ae-cd1077b05a46
+        hippo:availability: [live]
+        hippo:related___pathreference: []
+        hippostd:retainable: false
+        hippostd:state: published
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2022-08-12T09:47:04.922-04:00
+        hippostdpubwf:lastModificationDate: 2022-08-12T09:52:55.425-04:00
+        hippostdpubwf:lastModifiedBy: admin
+        hippostdpubwf:publicationDate: 2022-08-12T09:52:56.982-04:00
+        hippotranslation:id: 9b63b52d-3383-4c15-9412-eb467bbe67c5
+        hippotranslation:locale: en
+        myproject:title: 91805 Banner
+        /myproject:content:
+          jcr:primaryType: hippostd:html
+          hippostd:content: <h1>This is a product detail banner</h1>
+        /myproject:image:
+          jcr:primaryType: hippogallerypicker:imagelink
+          hippo:docbase: 9e440e6d-e93a-4d5f-913b-9c3b0867c812
+          hippo:facets: []
+          hippo:modes: []
+          hippo:values: []
+        /myproject:link:
+          jcr:primaryType: hippo:mirror
+          hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe

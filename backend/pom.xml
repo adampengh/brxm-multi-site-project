@@ -5,7 +5,7 @@
   <parent>
     <groupId>com.onehippo.cms7</groupId>
     <artifactId>hippo-cms7-enterprise-release</artifactId>
-    <version>14.7.7</version>
+    <version>14.7.8</version>
   </parent>
 
   <name>My Project</name>
@@ -62,6 +62,7 @@
     <!-- ***END temporary override of versions*** -->
     <bloomreach.content-hal-api.version>4.1.0</bloomreach.content-hal-api.version>
     <bloomreach.forge.sitemapv2.version>2.0.6</bloomreach.forge.sitemapv2.version>
+    <brxm-configuration-editor.version>0.9.7rc2-SNAPSHOT</brxm-configuration-editor.version>
     <forge.breadcrumb.version>4.1.2</forge.breadcrumb.version>
     <forge.content-exim.version>4.0.1</forge.content-exim.version>
     <essentials.version>${hippo.cms.version}</essentials.version>
@@ -167,6 +168,18 @@
         <version>${forge.content-exim.version}</version>
       </dependency>
 
+      <dependency>
+        <groupId>com.bloomreach.xm</groupId>
+        <artifactId>brxm-configuration-editor-api</artifactId>
+        <version>${brxm-configuration-editor.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.bloomreach.xm</groupId>
+        <artifactId>brxm-configuration-editor-openui-frontend</artifactId>
+        <version>${brxm-configuration-editor.version}</version>
+      </dependency>
+
     </dependencies>
   </dependencyManagement>
 
@@ -174,6 +187,11 @@
     <dependency>
       <groupId>com.onehippo.cms7</groupId>
       <artifactId>hippo-enterprise-services</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.onehippo.cms7</groupId>
+      <artifactId>hippo-addon-targeting-shared-api</artifactId>
       <scope>provided</scope>
     </dependency>
   </dependencies>
@@ -403,6 +421,7 @@
                   <project.basedir>${project.basedir}</project.basedir>
                   <send.usage.statistics.to.hippo>true</send.usage.statistics.to.hippo>
                   <brx.wpm.external-bpm-engine.disabled>true</brx.wpm.external-bpm-engine.disabled>
+                  <org.apache.tomcat.util.buf.UDecoder.ALLOW_ENCODED_SLASH>true</org.apache.tomcat.util.buf.UDecoder.ALLOW_ENCODED_SLASH>
                 </systemProperties>
                 <dependencies>
                   <dependency>
@@ -410,12 +429,58 @@
                     <artifactId>hippo-enterprise-services</artifactId>
                     <classpath>shared</classpath>
                   </dependency>
+                  <dependency>
+                    <groupId>com.onehippo.cms7</groupId>
+                    <artifactId>hippo-addon-targeting-shared-api</artifactId>
+                    <classpath>shared</classpath>
+                  </dependency>
                 </dependencies>
               </container>
             </configuration>
           </plugin>
+          <plugin>
+            <groupId>com.github.alexcojocaru</groupId>
+            <artifactId>elasticsearch-maven-plugin</artifactId>
+            <version>${maven.plugin.elasticsearch.version}</version>
+            <executions>
+              <execution>
+                <id>start-elasticsearch</id>
+                <phase>validate</phase>
+                <goals>
+                  <goal>runforked</goal>
+                </goals>
+              </execution>
+              <execution>
+                <id>stop-elasticsearch</id>
+                <phase>post-integration-test</phase>
+                <goals>
+                  <goal>stop</goal>
+                </goals>
+              </execution>
+            </executions>
+            <configuration>
+              <clusterName>esDevCluster</clusterName>
+              <httpPort>${es.httpPort}</httpPort>
+              <transportPort>${es.tcpPort}</transportPort>
+              <version>${maven.plugin.elasticsearch.configuration.version}</version>
+              <keepExistingData>true</keepExistingData>
+              <timeout>60</timeout>
+              <skip>${targeting.elastic.disabled}</skip>
+            </configuration>
+          </plugin>
         </plugins>
       </build>
+      <properties>
+        <targeting.bootstrap>false</targeting.bootstrap>
+        <es.tcpPort>9300</es.tcpPort>
+        <es.path>${project.build.directory}/storage</es.path>
+        <sql.url>jdbc:h2:${repo.path}/targeting/targeting;AUTO_SERVER=TRUE</sql.url>
+        <es.httpPort>9200</es.httpPort>
+        <targeting.elastic.disabled>false</targeting.elastic.disabled>
+        <sql.driver>org.h2.Driver</sql.driver>
+        <targeting.truncate>true</targeting.truncate>
+        <sql.username>sa</sql.username>
+      </properties>
     </profile>
 
     <profile>

@@ -1,0 +1,70 @@
+
+// ================================================
+// BREAKPOINTS
+// ================================================
+$breakpoint-xs:                640px;
+$breakpoint-sm:                640px;
+$breakpoint-md:                768px;
+$breakpoint-lg:                1025px;
+$breakpoint-xl:                1200px;
+$breakpoint-xxl:               1440px;
+
+$breakpoints: (
+    "xs": 375px,
+    "sm": 640px,
+    "md": 768px,
+    "lg": 1025px,
+    "xl": 1200px,
+    "xxl": 1440px
+);
+
+// ================================================
+// COLORS
+// ================================================
+$color-brand-primary:          #2F404f;
+$color-brand-secondary:        #3894A1;
+$color-brand-tertiary:         #C7DAD3;
+
+$color-neutral-black:          #313436;
+$color-neutral-gray-18:        #2D3339;
+$color-neutral-gray-25:        #3F4850;
+$color-neutral-gray-32:        #515367;
+$color-neutral-gray-39:        #63717E;
+$color-neutral-gray-46:        #768693;
+$color-neutral-gray-55:        #8D9AA5;
+$color-neutral-gray-64:        #A4AEB7;
+$color-neutral-gray-73:        #BAC2C9;
+$color-neutral-gray-82:        #D1D7DB;
+$color-neutral-gray-91:        #E8EBED;
+$color-neutral-white:          #FFFFFF;
+
+$color-utility-success:        #00A64C;
+$color-utility-warning:        #FA8C15;
+$color-utility-error:          #ED565D;
+$color-utility-info:           #1487B8;
+
+// ================================================
+// CONTAINERS
+// ================================================
+$container-sm:                  576px;
+$container-md:                  720px;
+$container-lg:                  960px;
+$container-xl:                  1180px;
+$container-xxl:                 1440px;
+
+// ================================================
+// FONT - FAMILIES
+// ================================================
+$font-primary: 'Montserrat', Helvetica, Arial, sans-serif;
+$font-secondary: 'Taviraj', serif;
+
+// ================================================
+// FONT - SIZES
+// ================================================
+
+
+// ================================================
+// Z-INDEX
+// ================================================
+$z-index-drawer:               10050;
+$z-index-modal:                10070;

@@ -53,7 +53,7 @@ export class ErrorContextProvider extends React.Component<React.PropsWithChildre
         ErrorContextProvider.hasError = false;
     }
 
-    render(): React.ReactElement | null {
+    render() {
         const { errorCode, error, requestURL } = this.state;
         const value: ErrorContextProps = ErrorContextProvider.hasError ? { errorCode, error, requestURL } : {};
         const { children } = this.props;

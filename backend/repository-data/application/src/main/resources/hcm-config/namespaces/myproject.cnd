@@ -7,6 +7,12 @@
 [myproject:basedocument] > hippo:document, hippostd:publishableSummary, hippostdpubwf:document
   orderable
 
+[myproject:CategoryPage] > hippostd:relaxed, hippotranslation:translated, myproject:basedocument
+  orderable
+
+[myproject:CategoryPageInGridBannerCompound] > hippo:compound, hippostd:relaxed
+  orderable
+
 [myproject:ExperiencePage] > hippostd:relaxed, hippotranslation:translated, myproject:basedocument
   orderable
 

@@ -1,17 +1,16 @@
-import React, { ElementType, HTMLAttributes, FC } from 'react';
+import React, { HTMLAttributes, FC } from 'react';
 
 import './PageTitle.scss';
 
 interface PageTitleProps extends HTMLAttributes<HTMLOrSVGElement> {
     alignment?: string;
-    as?: ElementType;
+    as?: keyof JSX.IntrinsicElements;
 }
 
 const PageTitle: FC<PageTitleProps> = ({ alignment, as: Tag = 'h1', ...props }) => {
     return (
         <Tag
             className='page-title'
-            style={{ textAlign: alignment }}
             {...props}
         />
     );

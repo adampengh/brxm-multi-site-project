@@ -1,0 +1,11 @@
+/targeting:targeting/targeting:personas/unitedstates-1660220965415:
+  jcr:primaryType: targeting:persona
+  targeting:alterego: unitedstates-1660220965415-alterego
+  targeting:description: ''
+  targeting:name: United States
+  targeting:quote: ''
+  targeting:segmentDescription: ''
+  targeting:segmentName: United States
+  /targeting:expression:
+    jcr:primaryType: targeting:rule
+    targeting:targetgroup: country/us-1660220931932

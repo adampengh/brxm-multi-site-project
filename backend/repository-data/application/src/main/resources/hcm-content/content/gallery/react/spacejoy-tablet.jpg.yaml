@@ -1,4 +1,5 @@
 /content/gallery/react/spacejoy-tablet.jpg:
+  .meta:order-before: category-in-grid-banners
   jcr:primaryType: hippo:handle
   jcr:mixinTypes: ['mix:referenceable']
   jcr:uuid: e0946975-439a-46c5-92ff-a9c45a977eb8

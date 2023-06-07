@@ -1,0 +1,4 @@
+/targeting:targeting/targeting:characteristics/documenttypes/newspage-1660218467278:
+  jcr:primaryType: targeting:targetgroup
+  targeting:name: News Page
+  targeting:propertynames: ['myproject:newsdocument']

@@ -1,0 +1,91 @@
+/content/gallery/react/category-in-grid-banners:
+  jcr:primaryType: hippogallery:stdImageGallery
+  jcr:mixinTypes: ['hippo:named', 'mix:versionable']
+  jcr:uuid: 28fe4db5-14c8-44eb-a024-0b962fa76e01
+  hippo:name: Category In-Grid Banners
+  hippostd:foldertype: [new-image-folder]
+  hippostd:gallerytype: ['hippogallery:imageset']
+  /jean-philippe-delberghe-t5bf4oyqlwu-unsplash.jpg:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+    jcr:uuid: 5e5b9f6f-8cd4-4a24-9979-6b8bb4ed8132
+    hippo:name: jean-philippe-delberghe-T5BF4OyQLwU-unsplash.jpg
+    /jean-philippe-delberghe-t5bf4oyqlwu-unsplash.jpg:
+      jcr:primaryType: hippogallery:imageset
+      hippo:availability: [live, preview]
+      hippogallery:filename: jean-philippe-delberghe-T5BF4OyQLwU-unsplash.jpg
+      /hippogallery:thumbnail:
+        jcr:primaryType: hippogallery:image
+        hippo:filename: jean-philippe-delberghe-T5BF4OyQLwU-unsplash.jpg
+        hippogallery:height: 60
+        hippogallery:width: 40
+        jcr:data:
+          type: binary
+          resource: /content/gallery/react/category-in-grid-banners/jean-philippe-delberghe-t5bf4oyqlwu-unsplash.jpg/jean-philippe-delberghe-T5BF4OyQLwU-unsplash_thumbnail.jpg
+        jcr:lastModified: 2022-08-12T07:57:22.507-04:00
+        jcr:mimeType: image/jpeg
+      /hippogallery:original:
+        jcr:primaryType: hippogallery:image
+        hippogallery:height: 1200
+        hippogallery:width: 800
+        jcr:data:
+          type: binary
+          resource: /content/gallery/react/category-in-grid-banners/jean-philippe-delberghe-t5bf4oyqlwu-unsplash.jpg/jean-philippe-delberghe-T5BF4OyQLwU-unsplash_original.jpg
+        jcr:lastModified: 2022-08-12T07:57:22.507-04:00
+        jcr:mimeType: image/jpeg
+  /cesar-couto-ob2f6csmva8-unsplash.jpg:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+    jcr:uuid: a79c6495-c857-49c8-8825-c9b534b05924
+    hippo:name: cesar-couto-OB2F6CsMva8-unsplash.jpg
+    /cesar-couto-ob2f6csmva8-unsplash.jpg:
+      jcr:primaryType: hippogallery:imageset
+      hippo:availability: [live, preview]
+      hippogallery:filename: cesar-couto-OB2F6CsMva8-unsplash.jpg
+      /hippogallery:thumbnail:
+        jcr:primaryType: hippogallery:image
+        hippo:filename: cesar-couto-OB2F6CsMva8-unsplash.jpg
+        hippogallery:height: 60
+        hippogallery:width: 40
+        jcr:data:
+          type: binary
+          resource: /content/gallery/react/category-in-grid-banners/cesar-couto-ob2f6csmva8-unsplash.jpg/cesar-couto-OB2F6CsMva8-unsplash_thumbnail.jpg
+        jcr:lastModified: 2022-08-12T08:05:53.082-04:00
+        jcr:mimeType: image/jpeg
+      /hippogallery:original:
+        jcr:primaryType: hippogallery:image
+        hippogallery:height: 1200
+        hippogallery:width: 800
+        jcr:data:
+          type: binary
+          resource: /content/gallery/react/category-in-grid-banners/cesar-couto-ob2f6csmva8-unsplash.jpg/cesar-couto-OB2F6CsMva8-unsplash_original.jpg
+        jcr:lastModified: 2022-08-12T08:05:53.082-04:00
+        jcr:mimeType: image/jpeg
+  /josh-hemsley-negt3kixi_k-unsplash.jpg:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+    jcr:uuid: 2b987757-eb4c-4690-8d7e-bc431aa1d408
+    hippo:name: josh-hemsley-NegT3kIxI_k-unsplash.jpg
+    /josh-hemsley-negt3kixi_k-unsplash.jpg:
+      jcr:primaryType: hippogallery:imageset
+      hippo:availability: [live, preview]
+      hippogallery:filename: josh-hemsley-NegT3kIxI_k-unsplash.jpg
+      /hippogallery:thumbnail:
+        jcr:primaryType: hippogallery:image
+        hippo:filename: josh-hemsley-NegT3kIxI_k-unsplash.jpg
+        hippogallery:height: 60
+        hippogallery:width: 40
+        jcr:data:
+          type: binary
+          resource: /content/gallery/react/category-in-grid-banners/josh-hemsley-negt3kixi_k-unsplash.jpg/josh-hemsley-NegT3kIxI_k-unsplash_thumbnail.jpg
+        jcr:lastModified: 2022-08-12T08:56:33.095-04:00
+        jcr:mimeType: image/jpeg
+      /hippogallery:original:
+        jcr:primaryType: hippogallery:image
+        hippogallery:height: 1200
+        hippogallery:width: 800
+        jcr:data:
+          type: binary
+          resource: /content/gallery/react/category-in-grid-banners/josh-hemsley-negt3kixi_k-unsplash.jpg/josh-hemsley-NegT3kIxI_k-unsplash_original.jpg
+        jcr:lastModified: 2022-08-12T08:56:33.095-04:00
+        jcr:mimeType: image/jpeg

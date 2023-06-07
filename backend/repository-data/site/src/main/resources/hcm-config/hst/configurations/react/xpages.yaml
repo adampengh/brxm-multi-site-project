@@ -7,10 +7,21 @@ definitions:
         hst:label: Single Column Page
         hst:referencecomponent: hst:abstractpages/base
         /main:
-          jcr:primaryType: hst:containercomponent
-          hippo:identifier: 3957ec49-26e0-4a67-9575-0a62393fa69a
-          hst:xtype: hst.vbox
-          hst:label: Main
+          jcr:primaryType: hst:component
+          /container:
+            jcr:primaryType: hst:containercomponent
+            hippo:identifier: 3957ec49-26e0-4a67-9575-0a62393fa69a
+            hst:label: Main
+            hst:xtype: hst.vbox
+      /two-column:
+        jcr:primaryType: hst:xpage
+        hst:label: Two-Column Layout
+        hst:referencecomponent: hst:abstractpages/base
+        /main:
+          jcr:primaryType: hst:component
+          /container:
+            jcr:primaryType: hst:containercomponent
+            hippo:identifier: 534ed05f-b8ff-44b6-bd6f-1591886c4da3
       /product-listing:
         jcr:primaryType: hst:xpage
         hst:label: Product Listing Page

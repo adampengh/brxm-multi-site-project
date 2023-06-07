@@ -1,0 +1,3 @@
+/targeting:targeting/targeting:alteregos/canada-1660220991010-alterego:
+  jcr:primaryType: targeting:alterego
+  targeting:targetingdata: '{"targetingData":{"country":{"collectorId":"country","country":"CA"}}}'

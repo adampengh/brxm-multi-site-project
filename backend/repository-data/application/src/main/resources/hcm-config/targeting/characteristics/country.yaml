@@ -1,0 +1,5 @@
+definitions:
+  config:
+    /targeting:targeting/targeting:characteristics/country:
+      targeting:scorerClassName: org.example.targeting.scoring.CountryScorer
+      targeting:collector: country

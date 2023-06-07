@@ -1,0 +1,7 @@
+definitions:
+  config:
+    /hst:hst/hst:configurations/react/hst:components/ProductDetailBanner:
+      jcr:primaryType: hst:component
+      hst:parameternames: [document, productId]
+      hst:parametervalues: ['react/products/banners/${1}', '${1}']
+      hst:componentclassname: org.onehippo.cms7.essentials.components.EssentialsDocumentComponent

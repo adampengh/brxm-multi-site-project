@@ -1,0 +1,4 @@
+/targeting:targeting/targeting:characteristics/country/us-1660220931932:
+  jcr:primaryType: targeting:targetgroup
+  targeting:name: US
+  targeting:propertynames: [US]

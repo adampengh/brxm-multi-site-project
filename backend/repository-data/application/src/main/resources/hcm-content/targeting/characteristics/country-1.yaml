@@ -1,0 +1,4 @@
+/targeting:targeting/targeting:characteristics/country/ca-1660220935384:
+  jcr:primaryType: targeting:targetgroup
+  targeting:name: CA
+  targeting:propertynames: [CA]

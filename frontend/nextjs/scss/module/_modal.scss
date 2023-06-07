@@ -1,0 +1,79 @@
+// ================================================
+// MODAL
+// ================================================
+$prefix: modal;
+
+.#{$prefix} {
+    $parent: &;
+    display: none;
+    position: fixed;
+    z-index: $z-index-modal;
+
+    // STATUS: OPEN
+    &[data-modal-status="true"] {
+        display: block;
+        #{$parent} {
+            &__overlay {
+                display: block;
+            }
+        }
+    }
+
+    // ================================================
+    // CLOSE
+    // ================================================
+    &__close {
+        align-items: center;
+        background: $color-neutral-white;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        font-size: pxToRem(24);
+        height: pxToRem(48);
+        justify-content: center;
+        line-height: pxToRem(18);
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: all 0.3s ease;
+        width: pxToRem(48);
+        &:hover {
+            background: $color-neutral-gray-91;
+        }
+    }
+
+
+
+    // ================================================
+    // CONTENT
+    // ================================================
+    &__content {
+        background: $color-neutral-white;
+        display: block;
+        height: 80%;
+        left: 50%;
+        padding: pxToRem(30);
+        position: fixed;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: $z-index-modal + 2;
+        width: 80%;
+        overflow: auto;
+    }
+
+    // ========================================================
+    // OVERLAY
+    // ========================================================
+    &__overlay {
+        background: #333;
+        display: none;
+        height: 100%;
+        left: 0;
+        opacity: 0.7;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: $z-index-modal + 1;
+    }
+
+}
