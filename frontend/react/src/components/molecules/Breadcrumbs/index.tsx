@@ -21,8 +21,8 @@ const BreadcrumbItem = ({ breadcrumb, separator }: any) => {
 }
 
 export const Breadcrumbs = ({ component, page }: BrProps) => {
-    console.log('component', component.getModels())
-    const { breadcrumb: breadcrumbs } = component.getModels()
+    console.log('component', component?.getModels())
+    const { breadcrumb: breadcrumbs } = component?.getModels<any>()
     console.log('breadcrumbs', breadcrumbs)
     return (
         <section className='breadcrumbs'>

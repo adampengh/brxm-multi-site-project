@@ -19,7 +19,7 @@ const dotenv = require('dotenv');
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
-const { createProxyMiddleware } = require('http-proxy-middleware');
+const { createProxyMiddleware, responseInterceptor } = require('http-proxy-middleware');
 
 const dotenvPath = path.resolve(process.cwd(), '.env');
 if (fs.existsSync(dotenvPath)) {
@@ -42,53 +42,68 @@ app.get('/robots.txt', createProxyMiddleware({
     }
 }));
 
-// Proxy sitemap.xml to brXM
+
 app.get('/sitemap.xml', createProxyMiddleware({
+    logger: console,
     target: process.env.REACT_APP_CMS_BASE_URL, // Only the protocol and domain
     changeOrigin: true,
     pathRewrite: {
         '/sitemap.xml': '/site/sitemap.xml'
-    }
+    },
+    onProxyRes: (proxyResponse, request, response) => {
+        const _write = response.write;
+        let output;
+        let body = "";
+        proxyResponse.on('data', (data) => {
+            data = data.toString('utf-8');
+            body += data;
+            // replace localhost with actual domain
+            body = body.replace(/http\:\/\/localhost\:8080\/site/g, 'https://www.example.com');
+        });
+        response.write = () => {
+            try {
+              eval("output="+body)
+              output = mock.mock(output)
+              _write.call(res, JSON.stringify(output));
+            } catch (err) {}
+        }
+        proxyResponse.on('end', () => {
+            response.send(body)
+        })
+    },
 }));
 
-axios({
-    method: 'get',
-    url: `${process.env.REACT_APP_CMS_BASE_URL}/site/api/documents`,
-    timeout: 5000
-})
-    .then((response) => {
-        // handle success
-        const redirects = response.data._embedded.documents;
-        redirects.forEach((redirect, index) => {
-            if (redirect.rulefrom && redirect.ruleto) {
-                app.get(redirect.rulefrom, (req, res) => {
-                    let statusCode = 302;
-                    if (redirect.ruletype && redirect.ruletype === 'permanent-redirect') {
-                        statusCode = 301;
-                    }
-                    res.redirect(statusCode, redirect.ruleto);
-                })
-            }
-        })
-
-        app.get('/*', (req, res) => {
-            res.sendFile(path.join(__dirname, 'build', 'index.html'));
-        });
-
-        app.listen(PORT, () => {
-            console.log(`Server listening on ${PORT}`);
-        });
+// Process all other requests
+app.get('/*', async (req, res) => {
+    await axios({
+        method: 'get',
+        url: `${process.env.REACT_APP_CMS_BASE_URL}/site/api/documents`,
+        timeout: 5000
     })
-    .catch((error) => {
-        // handle error
-        error = error.toJSON();
-        console.log(error.name, error.message);
-
-        app.get('/*', (req, res) => {
-            res.sendFile(path.join(__dirname, 'build', 'index.html'));
+        .then(async (response) => {
+            const redirects = response?.data?._embedded?.documents || [];
+            await redirects?.forEach(async(redirect, index) => {
+                if (redirect.rulefrom && redirect.ruleto) {
+                    // Strip query parameters, but in a more advanced implementation you could use them
+                    const path = req.url.replace(/(\?.*)/g, '')
+                    if (redirect.rulefrom === path) {
+                        let statusCode = 302;
+                        if (redirect.ruletype && redirect.ruletype === 'permanent-redirect') {
+                            statusCode = 301;
+                        }
+                        await res.redirect(statusCode, redirect.ruleto);
+                    }
+                }
+            })
+            await res.sendFile(path.join(__dirname, 'build', 'index.html'));
+        })
+        .catch(async (error) => {
+            error = error.toJSON();
+            console.log(error.name, error.message);
+            await res.sendFile(path.join(__dirname, 'build', 'index.html'));
         });
+});
 
-        app.listen(PORT, () => {
-            console.log(`Server listening on ${PORT}`);
-        });
-    });
+app.listen(PORT, () => {
+    console.log(`Server listening on Port: ${PORT}`);
+});

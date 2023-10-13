@@ -9,6 +9,7 @@ interface PageTitleProps extends HTMLAttributes<HTMLOrSVGElement> {
 
 const PageTitle: FC<PageTitleProps> = ({ alignment, as: Tag = 'h1', ...props }) => {
     return (
+        // @ts-ignore
         <Tag
             className='page-title'
             {...props}

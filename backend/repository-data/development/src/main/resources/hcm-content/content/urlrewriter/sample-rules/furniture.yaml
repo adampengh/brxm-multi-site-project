@@ -1,0 +1,52 @@
+/content/urlrewriter/sample-rules/furniture:
+  jcr:primaryType: hippo:handle
+  jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+  jcr:uuid: 0afb5cc4-cb8f-4234-9cd5-5260fde98f54
+  hippo:name: Furniture
+  hippo:versionHistory: 3a37860e-d09f-409b-983e-63ad7c3e204a
+  /furniture[1]:
+    jcr:primaryType: urlrewriter:rule
+    jcr:mixinTypes: ['mix:versionable']
+    jcr:uuid: 287baede-84f6-4d75-a58f-7a646e9759d7
+    hippo:availability: [preview]
+    hippostd:retainable: false
+    hippostd:state: unpublished
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2022-04-06T07:16:25.311-07:00
+    hippostdpubwf:lastModificationDate: 2023-10-13T11:38:42.728-04:00
+    hippostdpubwf:lastModifiedBy: admin
+    urlrewriter:ruledescription: Furniture vanity url
+    urlrewriter:rulefrom: /furniture
+    urlrewriter:ruleto: /c/furniture
+    urlrewriter:ruletype: temporary-redirect
+  /furniture[2]:
+    jcr:primaryType: urlrewriter:rule
+    jcr:mixinTypes: ['mix:referenceable']
+    jcr:uuid: 7c331979-b7ac-4d59-b80e-82e3a9803343
+    hippo:availability: []
+    hippostd:retainable: false
+    hippostd:state: draft
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2022-04-06T07:16:25.311-07:00
+    hippostdpubwf:lastModificationDate: 2023-10-13T11:38:28.644-04:00
+    hippostdpubwf:lastModifiedBy: admin
+    urlrewriter:ruledescription: Furniture vanity url
+    urlrewriter:rulefrom: /furniture
+    urlrewriter:ruleto: /c/furniture
+    urlrewriter:ruletype: temporary-redirect
+  /furniture[3]:
+    jcr:primaryType: urlrewriter:rule
+    jcr:mixinTypes: ['mix:referenceable']
+    jcr:uuid: 1832ab0f-bba0-42f8-b736-5d81b34ae7b4
+    hippo:availability: []
+    hippostd:retainable: false
+    hippostd:state: published
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2022-04-06T07:16:25.311-07:00
+    hippostdpubwf:lastModificationDate: 2023-10-13T11:38:42.728-04:00
+    hippostdpubwf:lastModifiedBy: admin
+    hippostdpubwf:publicationDate: 2023-10-13T11:38:45.192-04:00
+    urlrewriter:ruledescription: Furniture vanity url
+    urlrewriter:rulefrom: /furniture
+    urlrewriter:ruleto: /c/furniture
+    urlrewriter:ruletype: temporary-redirect

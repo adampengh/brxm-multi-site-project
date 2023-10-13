@@ -3,6 +3,9 @@
   "description": "Example React SPA for Bloomreach Experience",
   "version": "14.6.1",
   "private": true,
+  "engines": {
+    "node": "14.x"
+  },
   "dependencies": {
     "@bloomreach/connector-components-react": "14.7.2",
     "@bloomreach/react-sdk": "15.5.0",
@@ -15,7 +18,7 @@
     "axios": "0.26.1",
     "classnames": "2.3.1",
     "express-http-proxy": "1.6.3",
-    "http-proxy-middleware": "2.0.1",
+    "http-proxy-middleware": "2.0.6",
     "node-sass": "^6.0.0",
     "query-string": "7.1.0",
     "react": "17.0.2",

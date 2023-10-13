@@ -101,7 +101,6 @@ const App = () => {
     const previewMode = cookies.get('previewMode') || false;
     const configuration: Configuration = {
         endpoint: previewMode === 'true' ? process.env.REACT_APP_BRXM_ENDPOINT_PREVIEW : process.env.REACT_APP_BRXM_ENDPOINT,
-        endpointQueryParameter: 'endpoint',
         httpClient: axios,
         path,
     };

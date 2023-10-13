@@ -22,11 +22,11 @@ export const PathwaysRecommendations = ({ page, component }: BrProps) => {
     // Component Parameters
     const {
         productId
-    } = component.getParameters();
+    } = component?.getParameters<any>();
 
     // Document Data
-    const { document: documentRef } = component.getModels();
-    const document = documentRef && page.getContent(documentRef);
+    const { document: documentRef } = component?.getModels<any>();
+    const document = documentRef && page?.getContent(documentRef);
     const {
         title,
         widgetId,
@@ -62,6 +62,7 @@ export const PathwaysRecommendations = ({ page, component }: BrProps) => {
     if (!document) {
         return (
             <Container className='pathways-recommendations'>
+                {/* @ts-ignore */}
                 <BrManageContentButton
                     documentTemplateQuery="new-PathwaysRecommendationsDocument-document"
                     folderTemplateQuery="new-PathwaysRecommendationsDocument-folder"
@@ -112,6 +113,7 @@ export const PathwaysRecommendations = ({ page, component }: BrProps) => {
 
     return (
         <Container className='pathways-recommendations' style={{positon: 'relative'}}>
+            {/* @ts-ignore */}
             <BrManageContentButton
                 content={document}
                 documentTemplateQuery="new-PathwaysRecommendationsDocument-document"

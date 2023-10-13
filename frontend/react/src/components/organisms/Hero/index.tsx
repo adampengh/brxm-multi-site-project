@@ -6,8 +6,8 @@ import './Hero.scss';
 import ImageCompound from '../../../compounds/ImageCompound';
 
 export const Hero = ({ component, page}: BrProps) => {
-    const { document: documentRef } = component.getModels();
-    const document = documentRef && page.getContent(documentRef);
+    const { document: documentRef } = component?.getModels<any>();
+    const document = documentRef && page?.getContent(documentRef);
 
     if (!document) {
         return null;
@@ -24,6 +24,7 @@ export const Hero = ({ component, page}: BrProps) => {
     const className = 'hero';
     return (
         <section className={`${className}`}>
+            {/* @ts-ignore */}
             <BrManageContentButton
                 content={document}
             />

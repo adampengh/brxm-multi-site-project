@@ -11,7 +11,7 @@ import './styles.scss';
 export const ProductDetail = ({ component, page }: BrProps) => {
     const cookies = new Cookies();
     const prefix = 'product-detail';
-    const parameters: any = component.getParameters();
+    const parameters: any = component?.getParameters();
     const itemId = parameters.productId;
 
     const [item, loading, error] = useProductDetail({

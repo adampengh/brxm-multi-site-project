@@ -16,11 +16,11 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Document } from '@bloomreach/spa-sdk';
+import { Document, Reference } from '@bloomreach/spa-sdk';
 import { BrManageContentButton, BrPageContext, BrProps } from '@bloomreach/react-sdk';
 
-export function NewsList(props: BrProps) {
-    const { pageable } = props.component.getModels<PageableModels>();
+export function NewsList({ component, page }: BrProps) {
+    const { pageable } = component?.getModels<any>();
 
     if (!pageable) {
         return null;
@@ -28,9 +28,10 @@ export function NewsList(props: BrProps) {
 
     return (
         <div>
-            { pageable.items.map((reference, key) => <NewsListItem key={key} item={props.page.getContent<Document>(reference)!} />) }
-            { props.page.isPreview() && (
+            { pageable.items.map((reference: Reference, key: number) => <NewsListItem key={key} item={page?.getContent<Document>(reference)!} />) }
+            { page?.isPreview() && (
                 <div className="has-edit-button float-right">
+                    {/* @ts-ignore */}
                     <BrManageContentButton
                         documentTemplateQuery="new-news-document"
                         folderTemplateQuery="new-news-folder"
@@ -52,6 +53,7 @@ export function NewsListItem({ item }: NewsListItemProps) {
 
     return (
         <div className="card mb-3">
+            {/* @ts-ignore */}
             <BrManageContentButton content={item} />
             <div className="card-body">
                 { title && (

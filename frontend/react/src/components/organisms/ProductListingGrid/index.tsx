@@ -99,9 +99,6 @@ export const ProductListingGrid = ({ page, component }: BrProps) => {
     const sortedBanners = categoryPageInGridBanners && categoryPageInGridBanners.sort((a: any, b: any) => {
         return a?.desktopPosition - b?.desktopPosition;
     });
-    const products = items.map((item: any, index: number) => {
-        return sortedBanners.find((banner: any) => banner.desktopPosition === index + 1) || item;
-    })
 
     return(
         <Container className='product-listing'>
@@ -181,7 +178,7 @@ export const ProductListingGrid = ({ page, component }: BrProps) => {
                 </Column>
                 <Column className='product-grid__grid'>
                     <ul className='product-grid__list' data-mobile-columns={mobileColumns} data-desktop-columns={desktopColumns}>
-                        { products && products.map((item: any, index: number) => {
+                        { items && items.map((item: any, index: number) => {
                             if (item.contentType) {
                                 return (
                                     <InGridBanner key={index} banner={item} />
